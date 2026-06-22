@@ -32,98 +32,138 @@ It is these combined elements that determine the possible movements and the inst
 
 ### T-junction
 
-A T-junction connects a road that ends on another road. The segments must meet at angles close to 90°. When the roads meet at an acute angle, the router may produce an instruction of the "keep right / keep left" type instead of a "turn". The guide then indicates to adjust the intersection to obtain the right instruction.
+A T-junction connects a road that ends on another road. The segments must meet at angles close to 90°. When the roads meet at an acute angle, add geometry points to straighten the intersection towards 90°. Without this, the router may produce a "keep right / keep left" instead of a "turn", omit an instruction, or generate automatic map errors.
 
 ### + junction
 
-A + junction (cross-shaped) connects four branches at a node. As with the T-junction, angles close to 90° help the router distinguish "straight ahead" from turns.
+A + junction (cross-shaped) connects four branches at a node. As with the T-junction, aiming for angles close to 90° helps the router distinguish "straight ahead" from turns. Work at high zoom: angle corrections become almost invisible at normal zoom.
 
 ## Controlling guidance instructions
 
-The guide explains how to influence the instruction given to the driver (turn, keep, continue straight ahead).
+The turn angle determines the instruction given to the driver.
 
-::: important Sections marked as outdated
-In the source, the **Geometry** and **Segment type and name** subsections of this chapter are flagged as containing directives that are outdated. Do not apply them as current rules. In case of doubt about the geometry or naming of segments, consult the Country Manager.
+| Angle | Range | Road type | Instruction |
+| --- | --- | --- | --- |
+| 22° | 0° to 44° | Ordinary roads | Keep left / right |
+| 22° | 0° to 44° | Ramps / freeways | Exit left / right |
+| 90° | 45° to 150° | All types | Turn left / right |
+
+::: important Angles to avoid
+- Around 45°: an error of 0.5° can be enough to trigger the wrong instruction.
+- Below 10°: the arrows become hard to select in the editor and the segments hard to touch in the app.
 :::
+
+### Naming internal segments
+
+The segments located inside an intersection stay nameless, unless all possible directions would receive a correct instruction anyway. Naming an internal segment is only acceptable if no direction (including U-turn) can produce a routing error.
 
 ## Between roads
 
 ### Fork
 
-::: important Section marked as outdated
-The **Fork** subsection of the source is flagged as containing directives that are outdated. Not to be applied as is; check the current standard with the Country Manager.
-:::
+The routing server considers that two segments of the same name connected at an angle of about 0° represent a "straight ahead" trip.
+
+Example: an avenue that continues straight while a street branches off.
+
+- The two segments of the avenue (before and after): same name, angle of about 0° at the junction.
+- The street that branches off: 90° angle relative to the avenue.
+- Result: the router correctly identifies the turn onto the street.
 
 ### Dead-end roads
 
-The guide deals with dead ends, cul-de-sacs and loops. The part dedicated to dead ends, no-through roads and cul-de-sacs is flagged in the source as containing directives that are outdated.
+- A dead end is represented by a single segment, with no connection at its end, with a junction node at the terminus, placed where the driver can physically reach it. Do not extend it to the absolute edge.
+- A circular cul-de-sac is generally drawn like a standard dead end, with the node placed near the centre of the loop to stay accessible regardless of the direction of arrival.
+- Exception: if a small island occupies the centre, place the segment on the outer edge of the loop so that the end stays accessible.
 
-::: important Section marked as outdated
-Dead end, no-through road and cul-de-sac: outdated directives in the source. The "Loop" subsection is not marked as such.
+### Loops
+
+A segment cannot connect to itself via a single node. A loop must be interrupted by an additional node, or drawn with two segments. In practice, create a 3-branch intersection roughly halfway along the loop so that routing works.
+
+### Offset roads
+
+When two roads cross almost without being perfectly aligned:
+
+1. True 4-branch crossing: convert it into a real 4-branch intersection.
+2. Near-alignment: slightly offset the roads off-axis and add geometry points to obtain 90° angles at the node.
+3. Genuinely distinct approaches: keep separate junctions with a "turn left" then "turn right" guidance.
+
+::: important Very short segments
+A very short segment between two offset approaches triggers automatic map errors and route recalculations. Maximise the distance between the approach points.
 :::
 
 ### Roundabouts and traffic circles
 
-The guide refers to a dedicated guide for roundabouts and traffic circles.
+The guide refers to a dedicated page for roundabouts and traffic circles.
 
 ::: note Note
-See the dedicated page: [Roundabouts and traffic circles](./ronds-points.md).
+See the dedicated page: [Roundabouts and traffic circles](/en/editors/ronds-points).
 :::
 
-### At-grade junction connectors
+### Transition nodes
 
-::: important Section marked as outdated
-The **At-grade junction connectors** subsection is flagged in the source as containing directives that are outdated, with a recommendation to consult the Country Manager before any application. Do not use it as a current rule.
-:::
+Transition nodes are junctions invisible on the app side. They are used for street name changes, locality limits, direction changes and loop components. Only delete them when certain they are no longer used: they simplify the map and reduce unnecessary routing factors.
 
 ### Bowtie intersection
 
-The bowtie intersection simplifies the crossing between a divided road and a single-carriageway road by reducing the crossing to a single logical point. This construction improves the control of U-turns at that point.
+The bowtie intersection simplifies the crossing between a divided road and a single-carriageway road by reducing the crossing to a single logical point. This construction improves the control of U-turns at that point, without depending on segment length.
+
+## Soft and Hard turns
+
+The connections generated automatically by WME are soft-turns (purple question mark); the editor's manual decisions are hard-turns. Four states exist, from the most penalising to the least penalising: hard restricted (red arrow), soft restricted (purple question mark), soft allowed (green arrow), hard allowed (confirmed green arrow).
+
+::: example Quick method at a new intersection
+First check the directions, then "Q" to restrict all turns, then "W" to allow them all, and finally set to hard restricted only the turns that are actually forbidden.
+:::
 
 ## Ramps
 
-Ramps are used to connect Highway or Freeway segments at grade-separated interchanges (crossings on separate levels).
+Ramps are used to connect Highway or Freeway type segments at grade-separated interchanges (crossings on separate levels).
 
-::: important When to use a ramp: section marked as outdated
-In the source, the **When to use a ramp** subsection is flagged as containing directives that are outdated. The **How to draw a ramp** subsection is not. In case of doubt about the choice to use a ramp, consult the Country Manager.
-:::
-
-On the drawing side, the "the simpler, the better" principle applies: a single ramp segment is generally enough, unless the trajectories diverge sharply and justify a split.
+On the drawing side, the "the simpler, the better" principle applies: a single ramp segment is generally enough, with a single junction if distances are short. A split into several segments is only justified if the ends are clearly spaced. Keep a departure angle of 20 to 30° to produce the "Exit" instruction.
 
 ## Highway and Freeway intersections
 
 ### Exits
 
-Exit ramps must diverge from the main road at an angle of 20 to 30°. This angle produces the "Exit right" instruction. The structure, the name and an example are detailed in the source.
+Exit ramps must diverge from the main road at an angle of 20 to 30°. This angle produces the "Exit right" instruction. The segments before and after the junction stay of Highway or Freeway type, same name, at an angle of about 0°; the ramp is of Ramp type.
 
 ### Highway / Freeway split
 
-When three Highway segments meet without an obvious "straight ahead", different names and similar angles produce a "Keep right" or "Keep left" instruction.
+When three Highway segments meet without an obvious "straight ahead", different names and angles of 20 to 30° produce a "Keep right" or "Keep left" instruction with the name of the branch.
 
 ### Guidance segments
 
-Guidance segments must be 15 to 20 metres long. They serve to set the right instruction point before an exit or a split.
+Guidance segments must be 15 to 20 metres long. They serve to warn the driver in case of a lane reduction, inconsistent signage or non-obvious routing (for example, exit left then merge right). The three segments concerned must carry distinct names, and the two framing segments be of identical type.
 
 ### Ramp split
 
 The source also details the split of a ramp. The same principle of angles and naming applies to obtain the expected instruction.
 
-## Interchanges
+## Bridges and tunnels
 
-For interchanges, the guide refers to a dedicated external resource ("Limited Access Interchange Style Guide").
+Roads that overlap without actually crossing (bridges, overpasses, underpasses, tunnels) must be separated by segment elevation levels.
 
-::: note Note
-The detail of interchanges is not reproduced here. Refer to the dedicated resource indicated in the source.
+- By default, every segment is at level 0.
+- The bridge function assigns the upper segment a level one unit above the higher of the two selected segments.
+- A tunnel receives level -1, so that Waze recognises it as a tunnel and excludes automatic map errors.
+
+::: important Conditions of the bridge function
+The bridge function acts on two segments at a time and requires matching properties: country, canton, locality and street name. It does not work if a segment has no defined direction of travel ("Unknown"). The road type and the lock have no incidence.
 :::
 
-## Special cases
+After application, manually correct the resulting levels and delete the geometry points that have become useless where an intersection previously existed.
 
-The source covers a few special cases: transitions, road to nowhere and offset roads.
+## Interchanges
 
-::: note Note
-The detail of these cases is not reproduced here. Consult the source for the precise treatment.
+For interchanges, the guide refers to a dedicated external resource.
+
+::: note Limited Access Interchange Style Guide
+The detail of interchanges is not reproduced here. Refer to the "Limited Access Interchange Style Guide" indicated in the source.
 :::
 
 ::: quote Sources
-- Intersection guide (Switzerland): https://www.waze.com/discuss/t/guide-des-intersections/377286
+- Kreuzungen: https://www.waze.com/discuss/t/kreuzungen/377258
+- Guide des intersections (Switzerland): https://www.waze.com/discuss/t/guide-des-intersections/377286
+- Unterführungen und Brücken: https://www.waze.com/discuss/t/unterfuhrungen-und-brucken/377274
+- Soft und Hard Turns: https://www.waze.com/discuss/t/soft-und-hard-turns/377271
 :::

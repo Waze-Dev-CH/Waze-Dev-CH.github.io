@@ -6,8 +6,8 @@ title: Editoren
 
 Willkommen im Editoren-Bereich. Diese Dokumentation fasst die Best Practices für die Mitarbeit an der Waze-Karte in der Schweiz zusammen.
 
-::: note Im Aufbau
-Dieser Abschnitt wird gerade geschrieben. Inhalte werden schrittweise hinzugefügt. Einige Seiten sind noch Entwürfe.
+::: note Lebendige Dokumentation
+Die meisten Seiten werden im Schweizer Wiki verfasst und mit Quellen belegt. Einige Themen müssen noch ausgebaut werden (zum Beispiel die Geschwindigkeitsbegrenzungen). Der Inhalt entwickelt sich mit den Rückmeldungen der Community weiter.
 :::
 
 ## Bearbeitungsphilosophie in der Schweiz
@@ -18,7 +18,7 @@ Die Schweiz hat ihre eigenen Bearbeitungsregeln. Sie sind nicht an jene von Fran
 Wenden Sie niemals eine Regel eines Nachbarlandes durch blosse Analogie an. Eine in Frankreich, Deutschland oder Italien gültige Praxis ist nicht zwangsläufig auch in der Schweiz gültig.
 :::
 
-Im Zweifelsfall bearbeiten Sie die Karte nicht aufs Geratewohl. Fragen Sie zuerst:
+Im Zweifelsfall bearbeiten Sie die Karte nicht aufs Geratewohl. Stellen Sie zuerst die Frage:
 
 - im Romandie-Forum (angepinnte Themen),
 - oder auf dem Community-Discord.
@@ -39,7 +39,7 @@ Benennungskonventionen für Strassen und Städte in der Schweiz: keine Abkürzun
 
 - [Benennung von Strassen und Städten](/de/editors/nommage-routes-villes)
 
-### Segmenttypen und Routing
+### Strassentypen und Routing
 
 Wahl des Segmenttyps und Auswirkungen auf die Führung.
 
@@ -79,7 +79,7 @@ Um zu verstehen, wer was macht und wo man Hilfe findet:
 - [Ressourcen](/de/editors/ressources)
 
 ::: quote Quellen
-- Informationen auf Französisch (Waze-Schweiz-Hub): https://www.waze.com/discuss/t/informations-en-francais/377254
-- Bearbeitungsregeln in der Westschweiz: https://www.waze.com/discuss/t/regles-dedition-en-suisse-romande/377277
+- Informations en français (Waze-Schweiz-Hub): https://www.waze.com/discuss/t/informations-en-francais/377254
+- Règles d'édition en Suisse romande: https://www.waze.com/discuss/t/regles-dedition-en-suisse-romande/377277
 - Hauptseite (DACH-Hauptseite): https://www.waze.com/discuss/t/hauptseite/377253
 :::

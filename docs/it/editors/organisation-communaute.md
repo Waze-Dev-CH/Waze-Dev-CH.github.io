@@ -6,28 +6,34 @@ title: Organizzazione della community
 
 La community Waze svizzera fa parte della zona DACH (Germania, Austria, Svizzera). Si basa su ruoli di supervisione e su livelli di editor. Questa pagina spiega chi fa cosa e dove porre una domanda.
 
-::: note In costruzione
-Questa pagina sarà completata man mano. Per l'elenco nominativo aggiornato dei responsabili, fai riferimento al Wiki svizzero e al forum.
+## Livelli di editor
+
+Un editor avanza per livelli. Il livello determina il raggio entro cui può editare e il livello di blocco dei segmenti che può modificare. I livelli 1 e 2 sono automatici. A partire dal livello 3, il passaggio si richiede tramite messaggio privato (PM) al team di autogestione.
+
+| Livello | Raggio di editing | Edit minimi | Attribuzione |
+| --- | --- | --- | --- |
+| 1 | 1,6 km | 0 | Automatico (prende confidenza con il wiki e il forum) |
+| 2 | 3,2 km | 3'000 | Automatico (ha letto il wiki, segue le regole) |
+| 3 | 4,8 km | 25'000 | Su richiesta (PM) al team di autogestione |
+| 4 | 6,4 km | 100'000 | Su richiesta (PM) al team di autogestione |
+| 5 | 6,4 km | 250'000 | Su richiesta (PM) al team di autogestione |
+| 6 | 6,4 km | 500'000 | Su richiesta (PM) al team di autogestione |
+
+::: important Regole chiave
+I diritti legati alla guida scadono dopo 3 mesi. Un segmento bloccato può essere editato solo da un editor di livello superiore o uguale al livello di blocco. La mancata risposta ai messaggi privati può comportare una retrocessione o una sospensione dell'account.
 :::
 
-## Ruoli di supervisione (zona DACH)
+## Ruoli di supervisione
 
-La gestione della mappa si basa su più ruoli.
+La gestione della mappa si basa su più ruoli, oltre al livello di editor.
 
-- **Country Manager (CM)**: responsabile a livello nazionale. Il Wiki mantiene aggiornata una panoramica dei Country Manager della zona DACH.
-- **State Manager (SM)**: responsabile a livello regionale.
-- **Area Manager (AM)**: responsabile di una zona geografica.
+- **Area Manager (AM)**: editing completo nel proprio territorio, soggetto alle regole di blocco secondo il proprio livello.
+- **State Manager (SM)**: editing completo nel cantone che gli è assegnato, soggetto alle stesse regole di blocco.
+- **RTC State Manager**: ruolo di gestione delle chiusure stradali, proprio della Svizzera (esiste solo in questo paese). Vedi [Chiusure stradali](/it/editors/fermetures).
+- **Country Manager (CM)**: supporto a livello nazionale, applicazione delle regole e animazione della community.
 
 ::: note Elenco aggiornato
 L'elenco nominativo di CM, SM e AM evolve. Consulta la sezione dedicata del Wiki svizzero anziché affidarti a una copia statica.
-:::
-
-## Livelli di editor
-
-Un editor avanza per livelli. Il livello determina la portata delle modifiche possibili e la zona modificabile.
-
-::: note Dettaglio da completare
-La griglia precisa dei livelli di editor e dei diritti associati non è ancora riportata qui. Fai riferimento al Wiki e al forum per i valori esatti.
 :::
 
 ## Dove e quando porre una domanda
@@ -49,6 +55,7 @@ Se esiti su una regola, chiedi prima sul forum Romandie o su Discord. Non applic
 - [Risorse](/it/editors/ressources)
 
 ::: quote Fonti
+- Rechte zum Bearbeiten der Karte: https://www.waze.com/discuss/t/rechte-zum-bearbeiten-der-karte/377276
 - Hauptseite (pagina principale DACH): https://www.waze.com/discuss/t/hauptseite/377253
-- Informazioni in francese (hub Waze Svizzera): https://www.waze.com/discuss/t/informations-en-francais/377254
+- Informations en français (hub Waze Svizzera): https://www.waze.com/discuss/t/informations-en-francais/377254
 :::

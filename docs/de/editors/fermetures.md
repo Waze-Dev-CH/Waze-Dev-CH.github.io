@@ -4,51 +4,66 @@ title: Straßensperrungen
 
 # Straßensperrungen
 
-Diese Seite behandelt die Verwaltung von Straßensperrungen in der Schweiz: temporäre Sperrungen (Real Time Closures und Major Traffic Events) sowie die Bearbeitung von Meldungen über Baustellen oder Sperrungen.
+Diese Seite behandelt den Umgang mit Straßensperrungen und zeitlich beschränkten Fahrverboten in der Schweiz: die Wahl des Vorgehens je nach Dauer, das Hinzufügen zeitlicher Beschränkungen im Editor, das Melden einer Sperrung und die Bearbeitung von Sperrungs-Update-Requests (URs).
 
-## Temporäre Sperrungen
+## Zwei Ansätze je nach Dauer
 
-Temporäre Sperrungen dienen dazu, in Waze eine für einen bestimmten Zeitraum unzugängliche Straße darzustellen: Baustelle, Veranstaltung, Notarbeiten usw.
+Die Wahl der Methode hängt von der Dauer der Sperrung ab.
 
-### Real Time Closures (RTC)
+- **Kurze Dauer (von einigen Stunden bis zu einigen Wochen):** die Sperrung über die App oder das DACH-Formular melden (siehe „Eine Sperrung melden" weiter unten). Die Karte wird innerhalb von etwa zwei Tagen aktualisiert.
+- **Lange Dauer (von mehreren Monaten bis zu mehreren Jahren):** eine zeitliche Beschränkung direkt auf dem oder den Segmenten im Editor anwenden. Die Beschränkung ist sofort aktiv, ohne auf eine Kartenaktualisierung zu warten.
 
-Real Time Closures sind Sperrungen, die direkt auf ein Segment angewendet werden, mit einem Anfangs- und Enddatum. Sie blockieren das Routing auf dem betroffenen Segment während des festgelegten Zeitraums.
+## Eine zeitliche Beschränkung hinzufügen
 
-::: note Verfahrensdetails zu vervollständigen
-Das detaillierte Verfahren zum Erstellen von RTCs (Oberfläche, erforderliche Rechte, Verwaltung der Fahrtrichtungen) wird in den konsultierten Quellen nicht übernommen. Konsultieren Sie das Schweizer Forum und den Discord-Server, bevor Sie eine Sperrung anwenden.
+Zeitliche Beschränkungen werden Segment für Segment gesetzt und berücksichtigen die Fahrtrichtung. Achten Sie auf die Richtung: eine auf „A nach B" gesetzte Beschränkung gilt nicht automatisch für „B nach A".
+
+Vorgehen:
+
+1. Das Segment auswählen, dann auf das Uhrsymbol „Eine Beschränkung hinzufügen" klicken oder das Tastenkürzel **T** verwenden.
+2. Auf einer Straße mit Gegenverkehr erscheinen zwei Registerkarten: **„A nach B"** und **„B nach A"**, die den beiden Fahrtrichtungen entsprechen. In der Registerkarte der betreffenden Richtung arbeiten.
+3. **Tage:** die betreffenden Tage ankreuzen. Links „Alle auswählen / abwählen" erleichtern die Eingabe.
+4. **Stunden:** „Ganztägig" für eine durchgehende Beschränkung wählen oder eine Zeitspanne im 24-Stunden-Format festlegen (zum Beispiel „10:00 bis 15:00").
+5. **Mitternachtsüberschreitung:** für eine Spanne, die Mitternacht überschreitet (zum Beispiel 22 Uhr bis 5 Uhr), „22:00 bis 05:00" eingeben. Das System verlängert sie automatisch auf den folgenden Tag; die Eingabe nicht verdoppeln.
+6. **Datumsbereich:** standardmäßig wiederholt sich die Beschränkung jede Woche. „Bereich" wählen, um sie auf bestimmte Daten zu beschränken (Grenzen eingeschlossen).
+7. **Fahrzeugtypen:** standardmäßig sind alle Fahrzeuge betroffen. Auf „Bearbeiten" klicken, um die Beschränkung auf bestimmte Typen einzuschränken. Die angekreuzten Typen sind die gesperrten.
+8. **Beschreibung:** den Grund der Sperrung angeben (Baustelle, Veranstaltung usw.). Der Text ist auf **100 Zeichen** beschränkt; darüber hinaus schlägt das Speichern fehl.
+
+### In die Gegenrichtung kopieren
+
+Nach dem Erstellen einer Beschränkung „Dieselbe Beschränkung für die Gegenrichtung kopieren" verwenden, um sie auf beide Richtungen anzuwenden. Ohne diese Aktion gilt die Beschränkung nur für die ausgewählte Richtung.
+
+### Auf mehrere Segmente anwenden
+
+Um eine Beschränkung auf eine Reihe von Segmenten anzuwenden, mehrere auswählen (Strg, oder Cmd unter macOS) und dann „Auf alle anwenden" verwenden, um die Beschränkung auf die gesamte Auswahl zu übertragen. Vorab die Einbahnstraßen und die Richtung der Segmente (A nach B oder B nach A) prüfen, bevor übertragen wird.
+
+## Eine Sperrung melden
+
+- **Über die App:** „Melden > Sperrung". Die Meldung erfolgt vom betreffenden Ort aus.
+- **Über das DACH-Formular:** für Sperrungen, die nicht vor Ort gemeldet werden können. In beiden Fällen spiegelt die Karte die Änderung innerhalb von etwa zwei Tagen wider.
+
+## Sperrungs-URs bearbeiten
+
+Die Bearbeitung eines Sperrungs-Update-Requests folgt dem Grundsatz der Vorsicht:
+
+- Nur als **„Gelöst"** schließen, wenn die Ursache identifiziert, die Korrektur angewendet und die Änderung gespeichert wurde.
+- Wenn die Situation nicht überprüft werden kann, als **„Nicht identifiziert"** schließen.
+- Keine falsche Schließung vornehmen.
+- Fälle, in denen die Fahrtrichtung mehrdeutig ist, mit Vorsicht behandeln.
+
+## Rolle RTC State Manager
+
+Die Schweiz verfügt über eine spezielle Rolle für Sperrungen, den **RTC State Manager**, dokumentiert auf der Seite zu den Editierrechten der Community. Zur Verteilung der Rollen und Rechte siehe [Organisation der Community](/de/editors/organisation-communaute).
+
+::: note RTC- / MTE-Verfahren nicht ausführlich beschrieben
+Die konsultierten Quellen beschreiben kein eigenes Verfahren speziell für die Abkürzungen „RTC" (Real Time Closures) oder „MTE" (Major Traffic Events). Vor dem Anwenden dieser Art von Sperrung auf das Schweizer Forum und den Discord-Server zurückgreifen.
 :::
-
-### Major Traffic Events (MTE)
-
-Major Traffic Events fassen mehrere Sperrungen zusammen, die mit demselben Ereignis verbunden sind (Veranstaltung, Rennen, große Baustelle). Sie ermöglichen es, eine Reihe von Sperrungen koordiniert zu planen und zu aktivieren.
-
-::: note Verfahrensdetails zu vervollständigen
-Das Verfahren zum Erstellen und Aktivieren von MTEs sowie die erforderlichen Rechte werden in den konsultierten Quellen nicht detailliert beschrieben.
-:::
-
-## Schließen der URs (Update Requests)
-
-Das Schweizer Forum verweist auf einen eigenen Artikel mit dem Titel «Fermeture des URs», der sich mit der Bearbeitung von Update Requests befasst, die Sperrungen melden.
-
-::: note Zu konsultierende Quelle
-Der Artikel «Fermeture des URs» wird im französischsprachigen Hub erwähnt, sein verfahrenstechnischer Inhalt wird hier jedoch nicht wiedergegeben. Beziehen Sie sich auf den Originalartikel und auf das Schweizer Forum für das weitere Vorgehen.
-:::
-
-## Bearbeitung einer Meldung über eine Baustelle oder Sperrung
-
-Meldungen über Baustellen und Sperrungen tauchen regelmäßig im Schweizer Forum auf. Beobachtete Beispiele: Sperrungen in Basel, Zürich, auf der A3 und der A9, Arbeiten in Yvonand (VD) oder an der Bellerivestrasse in Zürich.
-
-Allgemeines Vorgehen:
-
-- Die Tatsächlichkeit und die Dauer der Sperrung anhand einer zuverlässigen Quelle überprüfen (offizielle Beschilderung, kantonale Mitteilung, Fotos).
-- Im Zweifelsfall die Frage im Schweizer Forum stellen, anstatt eine Änderung anzuwenden.
-- Sich niemals auf die Regeln der Nachbarländer oder auf Vermutungen stützen, um die Karte in der Schweiz zu bearbeiten.
 
 ::: important Vorsichtsregel
-Im Zweifelsfall, bei fehlenden Informationen oder einer mehrdeutigen Situation die Karte nicht auf der Grundlage von Vermutungen oder der Regeln eines Nachbarlandes bearbeiten. Stellen Sie die Frage systematisch im Schweizer Forum.
+Im Zweifelsfall, bei fehlenden Informationen oder einer mehrdeutigen Situation die Karte nicht auf der Grundlage von Annahmen oder der Regeln eines Nachbarlandes ändern. Die Frage stets im Schweizer Forum stellen.
 :::
 
 ::: quote Quellen
-- Französischsprachiger Hub (Fermeture des URs): https://www.waze.com/discuss/t/informations-en-francais/377254
-- Schweizer Forum (Sperrungen und Baustellen): https://www.waze.com/discuss/c/editors/switzerland/4790
+- Straßensperrungen und zeitlich beschränkte Fahrverbote: https://www.waze.com/discuss/t/strassensperrungen-und-zeitlich-beschrankte-fahrverbote/377293
+- Frankophoner Hub (Sperrungs-URs): https://www.waze.com/discuss/t/informations-en-francais/377254
+- Editierrechte der Schweizer Community: https://www.waze.com/discuss/t/377276
 :::

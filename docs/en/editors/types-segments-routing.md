@@ -46,6 +46,12 @@ Swiss standard: lock level expected by road type.
 The higher the road type is in the hierarchy, the higher the expected lock level. This protects the structuring segments of the network against unintended changes.
 :::
 
+### Locking
+
+Lock in moderation. Locking mainly targets the structuring types: freeways, highways, ramps and roundabouts. Do not lock everything without reason, because too broad a lock needlessly hinders the other editors.
+
+An editor can only modify a locked segment if their rank is at least equal to the lock level. Choose the lock level according to the importance of the segment, not out of excessive caution.
+
 ::: quote Sources
 - Routing basics: segment types in WME and effects on long/short trips: https://www.waze.com/discuss/t/bases-du-routing-types-de-segments-dans-wme-et-effets-sur-les-trajets-longs-courts/389975
 - Information in French: https://www.waze.com/discuss/t/informations-en-francais/377254

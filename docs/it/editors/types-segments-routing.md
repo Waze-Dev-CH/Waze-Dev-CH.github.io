@@ -46,6 +46,12 @@ Standard svizzero: livello di blocco atteso per tipo di strada.
 Più il tipo di strada è elevato nella gerarchia, più è elevato il livello di blocco atteso. Questo protegge i segmenti strutturanti della rete dalle modifiche involontarie.
 :::
 
+### Blocco (locking)
+
+Bloccare con moderazione. Il blocco mira soprattutto ai tipi strutturanti: autostrade, strade, rampe e rotatorie. Non bisogna bloccare tutto senza motivo, perché un blocco troppo ampio frena inutilmente gli altri editor.
+
+Un editor può modificare un segmento bloccato solo se il suo rango è almeno pari al livello di blocco. Scegliere il livello di blocco in funzione dell'importanza del segmento, non per eccesso di prudenza.
+
 ::: quote Fonti
 - Basi del routing: tipi di segmenti in WME ed effetti sui tragitti lunghi/brevi: https://www.waze.com/discuss/t/bases-du-routing-types-de-segments-dans-wme-et-effets-sur-les-trajets-longs-courts/389975
 - Informazioni in francese: https://www.waze.com/discuss/t/informations-en-francais/377254

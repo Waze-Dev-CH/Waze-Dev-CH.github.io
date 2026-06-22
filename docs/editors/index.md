@@ -6,8 +6,8 @@ title: Éditeurs
 
 Bienvenue dans la section des éditeurs. Cette documentation regroupe les bonnes pratiques pour contribuer à la carte Waze en Suisse.
 
-::: note En construction
-Cette section est en cours de rédaction. Le contenu sera ajouté progressivement. Certaines pages sont encore des ébauches.
+::: note Documentation vivante
+La plupart des pages sont rédigées et sourcées sur le Wiki suisse. Quelques sujets restent à étoffer (par exemple les limites de vitesse). Le contenu évolue avec les retours de la communauté.
 :::
 
 ## Philosophie d'édition en Suisse

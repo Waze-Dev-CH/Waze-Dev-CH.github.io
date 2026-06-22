@@ -4,51 +4,66 @@ title: Fermetures de routes
 
 # Fermetures de routes
 
-Cette page couvre la gestion des fermetures de routes en Suisse: les fermetures temporaires (Real Time Closures et Major Traffic Events) et le traitement des signalements de chantiers ou de fermetures.
+Cette page couvre la gestion des fermetures de routes et des interdictions de circuler limitées dans le temps en Suisse: le choix de l'approche selon la durée, l'ajout de restrictions horaires dans l'éditeur, le signalement d'une fermeture et le traitement des Update Requests (URs) de fermeture.
 
-## Fermetures temporaires
+## Deux approches selon la durée
 
-Les fermetures temporaires servent à représenter dans Waze une route inaccessible pour une durée déterminée: chantier, événement, travaux d'urgence, etc.
+Le choix de la méthode dépend de la durée de la fermeture.
 
-### Real Time Closures (RTC)
+- **Courte durée (de quelques heures à quelques semaines):** signaler la fermeture via l'application ou le formulaire DACH (voir « Signaler une fermeture » ci-dessous). La carte est mise à jour sous un délai d'environ deux jours.
+- **Longue durée (de plusieurs mois à plusieurs années):** appliquer une restriction horaire directement sur le ou les segments dans l'éditeur. La restriction est active immédiatement, sans attendre une mise à jour de la carte.
 
-Les Real Time Closures sont des fermetures appliquées directement sur un segment, avec une date de début et de fin. Elles bloquent le routage sur le segment concerné pendant la période définie.
+## Ajouter une restriction horaire
 
-::: note Détail procédural à compléter
-La procédure détaillée de création des RTC (interface, droits requis, gestion des sens de circulation) n'est pas reprise dans les sources consultées. Consulter le forum suisse et le serveur Discord avant d'appliquer une fermeture.
+Les restrictions horaires se posent segment par segment et tiennent compte du sens de circulation. Soyez attentif au sens: une restriction posée sur « A vers B » ne s'applique pas automatiquement à « B vers A ».
+
+Marche à suivre:
+
+1. Sélectionner le segment, puis cliquer sur l'icône horloge « Ajouter une restriction » ou utiliser le raccourci clavier **T**.
+2. Sur une route à double sens, deux onglets apparaissent: **« A vers B »** et **« B vers A »**, qui correspondent aux deux sens de circulation. Travailler dans l'onglet du sens concerné.
+3. **Jours:** cocher les jours concernés. Des liens « Tout sélectionner / désélectionner » facilitent la saisie.
+4. **Heures:** choisir « Toute la journée » pour une restriction continue, ou définir une plage horaire au format 24 h (par exemple « 10:00 à 15:00 »).
+5. **Passage de minuit:** pour une plage qui franchit minuit (par exemple 22 h à 5 h), saisir « 22:00 à 05:00 ». Le système prolonge automatiquement sur le jour suivant; ne pas dédoubler la saisie.
+6. **Plage de dates:** par défaut la restriction se répète chaque semaine. Choisir « Plage » pour la limiter à des dates précises (bornes incluses).
+7. **Types de véhicules:** par défaut tous les véhicules sont concernés. Cliquer sur « Modifier » pour restreindre la restriction à certains types. Les types cochés sont ceux qui sont bloqués.
+8. **Description:** indiquer la raison de la fermeture (chantier, événement, etc.). Le texte est limité à **100 caractères**; au-delà, l'enregistrement échoue.
+
+### Copier vers le sens inverse
+
+Après avoir créé une restriction, utiliser « Copier la même restriction pour le sens inverse » pour l'appliquer aux deux sens. Sans cette action, la restriction ne vaut que pour le sens sélectionné.
+
+### Appliquer à plusieurs segments
+
+Pour appliquer une restriction à une suite de segments, en sélectionner plusieurs (Ctrl, ou Cmd sous macOS) puis utiliser « Appliquer à tous » pour propager la restriction à l'ensemble de la sélection. Vérifier au préalable les sens uniques et le sens des segments (A vers B ou B vers A) avant de propager.
+
+## Signaler une fermeture
+
+- **Via l'application:** « Signaler > Fermeture ». Le signalement se fait depuis le lieu concerné.
+- **Via le formulaire DACH:** pour les fermetures qui ne peuvent pas être signalées sur place. Dans les deux cas, la carte reflète le changement sous un délai d'environ deux jours.
+
+## Traiter les URs de fermeture
+
+Le traitement d'une Update Request de fermeture suit le principe de prudence:
+
+- Ne clôturer en **« Corrigé »** que si la cause a été identifiée, la correction appliquée et la modification enregistrée.
+- Si la situation ne peut pas être vérifiée, clôturer en **« Non identifié »**.
+- Ne pas faire de fausse clôture.
+- Traiter avec prudence les cas où le sens de circulation est ambigu.
+
+## Rôle RTC State Manager
+
+La Suisse dispose d'un rôle spécial dédié aux fermetures, le **RTC State Manager**, documenté dans la page des droits d'édition de la communauté. Pour la répartition des rôles et des droits, voir [Organisation de la communauté](/editors/organisation-communaute).
+
+::: note Procédures RTC / MTE non détaillées
+Les sources consultées ne décrivent pas de procédure distincte propre aux sigles « RTC » (Real Time Closures) ou « MTE » (Major Traffic Events). Se reporter au forum suisse et au serveur Discord avant d'appliquer ce type de fermeture.
 :::
-
-### Major Traffic Events (MTE)
-
-Les Major Traffic Events regroupent plusieurs fermetures liées à un même événement (manifestation, course, gros chantier). Ils permettent de planifier et d'activer un ensemble de fermetures de manière coordonnée.
-
-::: note Détail procédural à compléter
-La procédure de création et d'activation des MTE, ainsi que les droits requis, ne sont pas détaillés dans les sources consultées.
-:::
-
-## Fermeture des URs (Update Requests)
-
-Le forum suisse renvoie vers un article dédié intitulé "Fermeture des URs", consacré au traitement des Update Requests signalant des fermetures.
-
-::: note Source à consulter
-L'article "Fermeture des URs" est référencé dans le hub francophone mais son contenu procédural n'est pas reproduit ici. Se reporter à l'article original et au forum suisse pour la marche à suivre.
-:::
-
-## Traiter un signalement de chantier ou de fermeture
-
-Les signalements de chantiers et de fermetures remontent régulièrement sur le forum suisse. Exemples observés: fermetures à Bâle, Zurich, sur l'A3 et l'A9, travaux à Yvonand (VD) ou Bellerivestrasse à Zurich.
-
-Marche à suivre générale:
-
-- Vérifier la réalité et la durée de la fermeture à partir d'une source fiable (signalisation officielle, communiqué cantonal, photos).
-- En cas de doute, poster la question sur le forum suisse plutôt que d'appliquer une modification.
-- Ne jamais se baser sur les règles des pays voisins ou sur des suppositions pour modifier la carte en Suisse.
 
 ::: important Règle de prudence
 En cas de doute, de manque d'information ou de situation ambiguë, ne pas modifier la carte sur la base de suppositions ou des règles d'un pays voisin. Poser systématiquement la question sur le forum suisse.
 :::
 
 ::: quote Sources
+- Straßensperrungen und zeitlich beschränkte Fahrverbote: https://www.waze.com/discuss/t/strassensperrungen-und-zeitlich-beschrankte-fahrverbote/377293
 - Hub francophone (Fermeture des URs): https://www.waze.com/discuss/t/informations-en-francais/377254
-- Forum Suisse (fermetures et chantiers): https://www.waze.com/discuss/c/editors/switzerland/4790
+- Droits d'édition de la communauté suisse: https://www.waze.com/discuss/t/377276
 :::

@@ -14,9 +14,19 @@ On the driver's side, the preference is set in the app under Settings, then Navi
 
 ## How to use it in WME
 
-It is up to the local community to flag difficult turns, via a checkbox in the editor. Only editors of level 2 and above can change this feature.
+It is up to the local community to flag difficult turns, via a checkbox in the editor. Only editors of level L2 and above can change this feature. If the segment is locked at a higher level, ask an editor of the required rank to unlock it before intervening.
 
-::: failure Error
+The checkbox is found in the same menu as the turn restrictions, that is, by clicking on the permission arrows that connect two segments at an intersection. Once the movement is selected, the "difficult turn" checkbox lets you activate the penalty.
+
+Three types of penalty are available:
+
+- Permanent: the turn is penalised continuously.
+- Weekdays: the penalty applies according to the chosen days.
+- Time ranges: the penalty applies according to defined time slots.
+
+On the driver's side, the setting that avoids these turns is enabled by default. The penalty therefore affects the vast majority of users, which means it must be used with caution.
+
+::: failure To avoid
 - Do not use this feature at intersections equipped with traffic lights.
 - Do not use it for personal purposes to negatively influence a route.
 :::
@@ -25,8 +35,8 @@ It is up to the local community to flag difficult turns, via a checkbox in the e
 When in doubt, open a discussion on the forum before marking a turn as difficult.
 :::
 
-::: note Detailed content not reproduced
-The exact step-by-step procedure in WME (precise location of the checkbox, time range options) is not detailed in the sources consulted. It is therefore not reproduced here, so as not to invent it. Refer to the source page.
+::: note Driver-side setting
+The individual setting remains accessible in the app under Settings, then Navigation. The detail of this driver-side interface is not reproduced here. Refer to the source page.
 :::
 
 ::: quote Sources

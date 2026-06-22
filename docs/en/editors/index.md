@@ -6,8 +6,8 @@ title: Editors
 
 Welcome to the editors section. This documentation gathers the best practices for contributing to the Waze map in Switzerland.
 
-::: note Under construction
-This section is being written. Content will be added progressively. Some pages are still drafts.
+::: note Living documentation
+Most pages are written and sourced on the Swiss Wiki. A few topics still need fleshing out (for example speed limits). The content evolves with feedback from the community.
 :::
 
 ## Editing philosophy in Switzerland
@@ -18,7 +18,7 @@ Switzerland has its own editing rules. They are not modelled on those of France,
 Never apply a rule from a bordering country by simple analogy. A practice that is valid in France, Germany or Italy is not necessarily valid in Switzerland.
 :::
 
-When in doubt, do not edit the map at random. Ask first:
+When in doubt, do not edit the map at random. Ask the question first:
 
 - on the Romandie forum (pinned topics),
 - or on the community Discord.
@@ -39,7 +39,7 @@ Naming conventions for roads and cities in Switzerland: no abbreviations, respec
 
 - [Naming of roads and cities](/en/editors/nommage-routes-villes)
 
-### Segment types and routing
+### Road types and routing
 
 Choosing the segment type and its consequences on guidance.
 
@@ -79,7 +79,7 @@ To understand who does what and where to find help:
 - [Resources](/en/editors/ressources)
 
 ::: quote Sources
-- Information in French (Waze Switzerland hub): https://www.waze.com/discuss/t/informations-en-francais/377254
-- Editing rules in French-speaking Switzerland: https://www.waze.com/discuss/t/regles-dedition-en-suisse-romande/377277
+- Informations en français (Waze Switzerland hub): https://www.waze.com/discuss/t/informations-en-francais/377254
+- Règles d'édition en Suisse romande: https://www.waze.com/discuss/t/regles-dedition-en-suisse-romande/377277
 - Hauptseite (DACH main page): https://www.waze.com/discuss/t/hauptseite/377253
 :::

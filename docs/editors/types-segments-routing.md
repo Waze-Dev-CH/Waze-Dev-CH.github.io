@@ -46,6 +46,12 @@ Standard suisse : niveau de verrouillage attendu par type de route.
 Plus le type de route est élevé dans la hiérarchie, plus le niveau de verrouillage attendu est élevé. Cela protège les segments structurants du réseau contre les modifications involontaires.
 :::
 
+### Verrouillage (locking)
+
+Verrouiller avec modération. Le verrouillage vise surtout les types structurants : autoroutes, routes, bretelles et ronds-points. Il ne faut pas tout verrouiller sans raison, car un verrou trop large freine inutilement les autres éditeurs.
+
+Un éditeur ne peut modifier un segment verrouillé que si son rang est au moins égal au niveau de verrou. Choisir le niveau de verrou en fonction de l'importance du segment, pas par excès de précaution.
+
 ::: quote Sources
 - Bases du Routing : types de segments dans WME et effets sur les trajets longs/courts : https://www.waze.com/discuss/t/bases-du-routing-types-de-segments-dans-wme-et-effets-sur-les-trajets-longs-courts/389975
 - Informations en français : https://www.waze.com/discuss/t/informations-en-francais/377254

@@ -14,7 +14,17 @@ Côté conducteur, la préférence se règle dans l'application sous Réglages, 
 
 ## Comment l'utiliser dans WME
 
-C'est à la communauté locale d'indiquer les virages difficiles, via une case à cocher dans l'éditeur. Seuls les éditeurs de niveau 2 et plus peuvent modifier cette fonction.
+C'est à la communauté locale d'indiquer les virages difficiles, via une case à cocher dans l'éditeur. Seuls les éditeurs de niveau L2 et plus peuvent modifier cette fonction. Si le segment est verrouillé à un niveau supérieur, demander le déverrouillage à un éditeur du rang requis avant d'intervenir.
+
+La case se trouve dans le même menu que les restrictions de virage, c'est-à-dire en cliquant sur les flèches de permission qui relient deux segments à un carrefour. Une fois le mouvement sélectionné, la case « virage difficile » permet d'activer la pénalité.
+
+Trois types de pénalité sont disponibles :
+
+- Permanente : le virage est pénalisé en continu.
+- Jours de semaine : la pénalité s'applique selon les jours choisis.
+- Plages horaires : la pénalité s'applique selon des créneaux horaires définis.
+
+Côté conducteur, le réglage qui évite ces virages est activé par défaut. La pénalité touche donc la grande majorité des utilisateurs, ce qui impose de l'utiliser avec prudence.
 
 ::: failure À éviter
 - Ne pas utiliser cette fonction sur des carrefours équipés de feux de signalisation.
@@ -25,8 +35,8 @@ C'est à la communauté locale d'indiquer les virages difficiles, via une case �
 En cas de doute, ouvrir une discussion sur le forum avant de marquer un virage comme difficile.
 :::
 
-::: note Contenu détaillé non reproduit
-La procédure pas à pas exacte dans WME (emplacement précis de la case, options de plages horaires) n'est pas détaillée dans les sources consultées. Elle n'est donc pas reproduite ici, pour ne pas l'inventer. Se référer à la page source.
+::: note Réglage côté conducteur
+Le réglage individuel reste accessible dans l'application sous Réglages, puis Navigation. Le détail de cette interface côté conducteur n'est pas reproduit ici. Se référer à la page source.
 :::
 
 ::: quote Sources

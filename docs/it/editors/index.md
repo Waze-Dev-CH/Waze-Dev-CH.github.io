@@ -6,8 +6,8 @@ title: Editor
 
 Benvenuto nella sezione editor. Questa documentazione raccoglie le buone pratiche per contribuire alla mappa Waze in Svizzera.
 
-::: note In costruzione
-Questa sezione è in fase di redazione. I contenuti saranno aggiunti progressivamente. Alcune pagine sono ancora delle bozze.
+::: note Documentazione viva
+La maggior parte delle pagine è redatta e corredata di fonti sul Wiki svizzero. Alcuni argomenti restano da approfondire (per esempio i limiti di velocità). Il contenuto evolve con i riscontri della community.
 :::
 
 ## Filosofia di editing in Svizzera
@@ -79,7 +79,7 @@ Per capire chi fa cosa e dove trovare aiuto:
 - [Risorse](/it/editors/ressources)
 
 ::: quote Fonti
-- Informazioni in francese (hub Waze Svizzera): https://www.waze.com/discuss/t/informations-en-francais/377254
-- Regole di editing nella Svizzera romanda: https://www.waze.com/discuss/t/regles-dedition-en-suisse-romande/377277
+- Informations en français (hub Waze Svizzera): https://www.waze.com/discuss/t/informations-en-francais/377254
+- Règles d'édition en Suisse romande: https://www.waze.com/discuss/t/regles-dedition-en-suisse-romande/377277
 - Hauptseite (pagina principale DACH): https://www.waze.com/discuss/t/hauptseite/377253
 :::

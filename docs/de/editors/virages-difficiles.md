@@ -14,9 +14,19 @@ Auf der Fahrerseite wird die Vorliebe in der App unter Einstellungen, dann Navig
 
 ## Verwendung in WME
 
-Es ist Aufgabe der lokalen Community, die schwierigen Abbiegungen über ein Kontrollkästchen im Editor zu kennzeichnen. Nur Editoren der Stufe 2 und höher können diese Funktion ändern.
+Es ist Aufgabe der lokalen Community, die schwierigen Abbiegungen über ein Kontrollkästchen im Editor zu kennzeichnen. Nur Editoren der Stufe L2 und höher können diese Funktion ändern. Wenn das Segment auf einer höheren Stufe gesperrt ist, bitten Sie einen Editor des erforderlichen Rangs um die Entsperrung, bevor Sie eingreifen.
 
-::: failure Fehler
+Das Kontrollkästchen befindet sich im selben Menü wie die Abbiegebeschränkungen, das heisst, indem man auf die Erlaubnispfeile klickt, die zwei Segmente an einer Kreuzung verbinden. Sobald die Bewegung ausgewählt ist, ermöglicht das Kontrollkästchen «schwierige Abbiegung» das Aktivieren der Benachteiligung.
+
+Drei Arten von Benachteiligung sind verfügbar:
+
+- Dauerhaft: Die Abbiegung wird durchgehend benachteiligt.
+- Wochentage: Die Benachteiligung gilt gemäss den gewählten Tagen.
+- Zeitbereiche: Die Benachteiligung gilt gemäss festgelegten Zeitfenstern.
+
+Auf der Fahrerseite ist die Einstellung, die diese Abbiegungen vermeidet, standardmässig aktiviert. Die Benachteiligung betrifft daher die grosse Mehrheit der Nutzer, was eine vorsichtige Verwendung erfordert.
+
+::: failure Zu vermeiden
 - Verwenden Sie diese Funktion nicht an Kreuzungen mit Ampeln.
 - Verwenden Sie sie nicht zu persönlichen Zwecken, um eine Route negativ zu beeinflussen.
 :::
@@ -25,8 +35,8 @@ Es ist Aufgabe der lokalen Community, die schwierigen Abbiegungen über ein Kont
 Eröffnen Sie im Zweifelsfall eine Diskussion im Forum, bevor Sie eine Abbiegung als schwierig markieren.
 :::
 
-::: note Detaillierter Inhalt nicht wiedergegeben
-Das genaue schrittweise Vorgehen in WME (genauer Ort des Kontrollkästchens, Optionen für Zeitbereiche) ist in den konsultierten Quellen nicht beschrieben. Es wird daher hier nicht wiedergegeben, um es nicht zu erfinden. Beziehen Sie sich auf die Quellseite.
+::: note Einstellung auf der Fahrerseite
+Die individuelle Einstellung bleibt in der App unter Einstellungen, dann Navigation zugänglich. Das Detail dieser Schnittstelle auf der Fahrerseite wird hier nicht wiedergegeben. Beziehen Sie sich auf die Quellseite.
 :::
 
 ::: quote Quellen

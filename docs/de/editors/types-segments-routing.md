@@ -46,6 +46,12 @@ Schweizer Standard: nach Strassentyp erwartete Sperrstufe.
 Je höher der Strassentyp in der Hierarchie steht, desto höher ist die erwartete Sperrstufe. Dies schützt die strukturierenden Segmente des Netzes vor unbeabsichtigten Änderungen.
 :::
 
+### Sperren (Locking)
+
+Mit Mass sperren. Das Sperren zielt vor allem auf die strukturierenden Typen ab: Autobahnen, Strassen, Rampen und Kreisverkehre. Man sollte nicht alles ohne Grund sperren, denn eine zu breite Sperrung bremst die anderen Editoren unnötig aus.
+
+Ein Editor kann ein gesperrtes Segment nur dann ändern, wenn sein Rang mindestens der Sperrstufe entspricht. Die Sperrstufe je nach Bedeutung des Segments wählen, nicht aus übertriebener Vorsicht.
+
 ::: quote Quellen
 - Routing-Grundlagen: Segmenttypen in WME und Auswirkungen auf lange/kurze Fahrten: https://www.waze.com/discuss/t/bases-du-routing-types-de-segments-dans-wme-et-effets-sur-les-trajets-longs-courts/389975
 - Informationen auf Französisch: https://www.waze.com/discuss/t/informations-en-francais/377254

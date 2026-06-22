@@ -6,28 +6,34 @@ title: Organisation der Community
 
 Die Schweizer Waze-Community ist Teil der DACH-Zone (Deutschland, Österreich, Schweiz). Sie stützt sich auf Betreuungsrollen und auf Editor-Stufen. Diese Seite erklärt, wer was macht und wo man eine Frage stellt.
 
-::: note Im Aufbau
-Diese Seite wird nach und nach ergänzt. Für die aktuelle namentliche Liste der Verantwortlichen beziehen Sie sich auf das Schweizer Wiki und das Forum.
+## Editor-Stufen
+
+Ein Editor steigt über Stufen auf. Die Stufe bestimmt den Radius, in dem er bearbeiten kann, und die Sperrstufe der Segmente, die er ändern kann. Die Stufen 1 und 2 sind automatisch. Ab Stufe 3 wird der Aufstieg per privater Nachricht (PM) an das Selbstverwaltungsteam beantragt.
+
+| Stufe | Bearbeitungsradius | Mindestanzahl Edits | Vergabe |
+| --- | --- | --- | --- |
+| 1 | 1,6 km | 0 | Automatisch (macht sich mit dem Wiki und dem Forum vertraut) |
+| 2 | 3,2 km | 3'000 | Automatisch (hat das Wiki gelesen, befolgt die Regeln) |
+| 3 | 4,8 km | 25'000 | Auf Anfrage (PM) an das Selbstverwaltungsteam |
+| 4 | 6,4 km | 100'000 | Auf Anfrage (PM) an das Selbstverwaltungsteam |
+| 5 | 6,4 km | 250'000 | Auf Anfrage (PM) an das Selbstverwaltungsteam |
+| 6 | 6,4 km | 500'000 | Auf Anfrage (PM) an das Selbstverwaltungsteam |
+
+::: important Wichtige Regeln
+Mit dem Fahren verbundene Rechte verfallen nach 3 Monaten. Ein gesperrtes Segment kann nur von einem Editor mit einer Stufe grösser oder gleich der Sperrstufe bearbeitet werden. Das Ausbleiben einer Antwort auf private Nachrichten kann zu einer Herabstufung oder einer Sperrung des Kontos führen.
 :::
 
-## Betreuungsrollen (DACH-Zone)
+## Betreuungsrollen
 
-Die Verwaltung der Karte beruht auf mehreren Rollen.
+Die Verwaltung der Karte beruht auf mehreren Rollen, zusätzlich zur Editor-Stufe.
 
-- **Country Manager (CM)**: verantwortlich auf nationaler Ebene. Das Wiki hält eine Übersicht der Country Manager der DACH-Zone aktuell.
-- **State Manager (SM)**: verantwortlich auf regionaler Ebene.
-- **Area Manager (AM)**: verantwortlich für ein geografisches Gebiet.
+- **Area Manager (AM)**: vollständige Bearbeitung in seinem Gebiet, den Sperrregeln gemäss seiner Stufe unterworfen.
+- **State Manager (SM)**: vollständige Bearbeitung im ihm zugewiesenen Kanton, denselben Sperrregeln unterworfen.
+- **RTC State Manager**: Rolle zur Verwaltung von Strassensperrungen, der Schweiz eigen (sie existiert nur in diesem Land). Siehe [Strassensperrungen](/de/editors/fermetures).
+- **Country Manager (CM)**: Unterstützung auf nationaler Ebene, Durchsetzung der Regeln und Betreuung der Community.
 
 ::: note Aktuelle Liste
 Die namentliche Liste der CM, SM und AM ändert sich. Konsultieren Sie den entsprechenden Abschnitt des Schweizer Wikis, anstatt sich auf eine festgelegte Kopie zu verlassen.
-:::
-
-## Editor-Stufen
-
-Ein Editor steigt über Stufen auf. Die Stufe bestimmt die Reichweite der möglichen Änderungen und das bearbeitbare Gebiet.
-
-::: note Details zu ergänzen
-Das genaue Raster der Editor-Stufen und der zugehörigen Rechte ist hier noch nicht erfasst. Beziehen Sie sich auf das Wiki und das Forum für die genauen Werte.
 :::
 
 ## Wo und wann eine Frage stellen
@@ -49,6 +55,7 @@ Wenn Sie sich bei einer Regel unsicher sind, fragen Sie zuerst im Romandie-Forum
 - [Ressourcen](/de/editors/ressources)
 
 ::: quote Quellen
+- Rechte zum Bearbeiten der Karte: https://www.waze.com/discuss/t/rechte-zum-bearbeiten-der-karte/377276
 - Hauptseite (DACH-Hauptseite): https://www.waze.com/discuss/t/hauptseite/377253
-- Informationen auf Französisch (Waze-Schweiz-Hub): https://www.waze.com/discuss/t/informations-en-francais/377254
+- Informations en français (Waze-Schweiz-Hub): https://www.waze.com/discuss/t/informations-en-francais/377254
 :::
