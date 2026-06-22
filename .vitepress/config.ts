@@ -70,7 +70,37 @@ export default defineConfig({
           { text: 'Scripteurs', link: '/scripters/', activeMatch: '/scripters/' },
         ],
         sidebar: {
-          '/editors/': [{ text: 'Éditeurs', items: [{ text: 'Introduction', link: '/editors/' }] }],
+          '/editors/': [
+            { text: 'Démarrer', items: [
+              { text: 'Introduction', link: '/editors/' },
+              { text: 'Légende de la carte', link: '/editors/legende-carte' },
+              { text: 'Organisation & communauté', link: '/editors/organisation-communaute' },
+            ] },
+            { text: 'Routes & segments', items: [
+              { text: 'Nommage des routes et villes', link: '/editors/nommage-routes-villes' },
+              { text: 'Types de segments & routing', link: '/editors/types-segments-routing' },
+              { text: 'Géométrie des segments', link: '/editors/geometrie-segments' },
+            ] },
+            { text: 'Intersections', items: [
+              { text: 'Guide des intersections', link: '/editors/intersections' },
+              { text: 'Ronds-points', link: '/editors/ronds-points' },
+              { text: 'Virages difficiles', link: '/editors/virages-difficiles' },
+            ] },
+            { text: 'Types de voies', items: [
+              { text: 'Parkings', link: '/editors/parkings' },
+              { text: 'Chemins piétons', link: '/editors/chemins-pietons' },
+              { text: 'Routes à travers champs', link: '/editors/field-roads' },
+              { text: 'Lanes & passages à niveau', link: '/editors/lanes' },
+            ] },
+            { text: 'Signalements & gestion', items: [
+              { text: 'Fermetures de routes', link: '/editors/fermetures' },
+              { text: 'Dangers permanents', link: '/editors/dangers-permanents' },
+              { text: 'Limites de vitesse', link: '/editors/limites-vitesse' },
+            ] },
+            { text: 'Ressources', items: [
+              { text: 'Ressources utiles', link: '/editors/ressources' },
+            ] },
+          ],
           '/scripters/': [{ text: 'Scripteurs', items: [{ text: 'Introduction', link: '/scripters/' }] }],
         },
         outline: { level: [2, 3], label: 'Sur cette page' },
@@ -94,7 +124,37 @@ export default defineConfig({
           { text: 'Scripters', link: '/en/scripters/', activeMatch: '/en/scripters/' },
         ],
         sidebar: {
-          '/en/editors/': [{ text: 'Editors', items: [{ text: 'Introduction', link: '/en/editors/' }] }],
+          '/en/editors/': [
+            { text: 'Getting started', items: [
+              { text: 'Introduction', link: '/en/editors/' },
+              { text: 'Map legend', link: '/en/editors/legende-carte' },
+              { text: 'Organisation & community', link: '/en/editors/organisation-communaute' },
+            ] },
+            { text: 'Roads & segments', items: [
+              { text: 'Naming roads and cities', link: '/en/editors/nommage-routes-villes' },
+              { text: 'Segment types & routing', link: '/en/editors/types-segments-routing' },
+              { text: 'Segment geometry', link: '/en/editors/geometrie-segments' },
+            ] },
+            { text: 'Intersections', items: [
+              { text: 'Intersections guide', link: '/en/editors/intersections' },
+              { text: 'Roundabouts', link: '/en/editors/ronds-points' },
+              { text: 'Difficult turns', link: '/en/editors/virages-difficiles' },
+            ] },
+            { text: 'Road types', items: [
+              { text: 'Parking lots', link: '/en/editors/parkings' },
+              { text: 'Pedestrian paths', link: '/en/editors/chemins-pietons' },
+              { text: 'Field roads', link: '/en/editors/field-roads' },
+              { text: 'Lanes & railroad crossings', link: '/en/editors/lanes' },
+            ] },
+            { text: 'Reports & management', items: [
+              { text: 'Road closures', link: '/en/editors/fermetures' },
+              { text: 'Permanent hazards', link: '/en/editors/dangers-permanents' },
+              { text: 'Speed limits', link: '/en/editors/limites-vitesse' },
+            ] },
+            { text: 'Resources', items: [
+              { text: 'Useful resources', link: '/en/editors/ressources' },
+            ] },
+          ],
           '/en/scripters/': [{ text: 'Scripters', items: [{ text: 'Introduction', link: '/en/scripters/' }] }],
         },
         outline: { level: [2, 3], label: 'On this page' },
@@ -118,7 +178,37 @@ export default defineConfig({
           { text: 'Skripter', link: '/de/scripters/', activeMatch: '/de/scripters/' },
         ],
         sidebar: {
-          '/de/editors/': [{ text: 'Editoren', items: [{ text: 'Einführung', link: '/de/editors/' }] }],
+          '/de/editors/': [
+            { text: 'Erste Schritte', items: [
+              { text: 'Einführung', link: '/de/editors/' },
+              { text: 'Kartenlegende', link: '/de/editors/legende-carte' },
+              { text: 'Organisation & Community', link: '/de/editors/organisation-communaute' },
+            ] },
+            { text: 'Strassen & Segmente', items: [
+              { text: 'Strassen und Orte benennen', link: '/de/editors/nommage-routes-villes' },
+              { text: 'Segmenttypen & Routing', link: '/de/editors/types-segments-routing' },
+              { text: 'Segmentgeometrie', link: '/de/editors/geometrie-segments' },
+            ] },
+            { text: 'Kreuzungen', items: [
+              { text: 'Kreuzungsleitfaden', link: '/de/editors/intersections' },
+              { text: 'Kreisverkehre', link: '/de/editors/ronds-points' },
+              { text: 'Schwierige Abbiegungen', link: '/de/editors/virages-difficiles' },
+            ] },
+            { text: 'Wegtypen', items: [
+              { text: 'Parkplätze', link: '/de/editors/parkings' },
+              { text: 'Fusswege', link: '/de/editors/chemins-pietons' },
+              { text: 'Feldwege', link: '/de/editors/field-roads' },
+              { text: 'Spuren & Bahnübergänge', link: '/de/editors/lanes' },
+            ] },
+            { text: 'Meldungen & Verwaltung', items: [
+              { text: 'Strassensperrungen', link: '/de/editors/fermetures' },
+              { text: 'Permanente Gefahren', link: '/de/editors/dangers-permanents' },
+              { text: 'Tempolimits', link: '/de/editors/limites-vitesse' },
+            ] },
+            { text: 'Ressourcen', items: [
+              { text: 'Nützliche Ressourcen', link: '/de/editors/ressources' },
+            ] },
+          ],
           '/de/scripters/': [{ text: 'Skripter', items: [{ text: 'Einführung', link: '/de/scripters/' }] }],
         },
         outline: { level: [2, 3], label: 'Auf dieser Seite' },
@@ -142,7 +232,37 @@ export default defineConfig({
           { text: 'Scrittori', link: '/it/scripters/', activeMatch: '/it/scripters/' },
         ],
         sidebar: {
-          '/it/editors/': [{ text: 'Editor', items: [{ text: 'Introduzione', link: '/it/editors/' }] }],
+          '/it/editors/': [
+            { text: 'Per iniziare', items: [
+              { text: 'Introduzione', link: '/it/editors/' },
+              { text: 'Legenda della mappa', link: '/it/editors/legende-carte' },
+              { text: 'Organizzazione e comunità', link: '/it/editors/organisation-communaute' },
+            ] },
+            { text: 'Strade e segmenti', items: [
+              { text: 'Nomenclatura di strade e città', link: '/it/editors/nommage-routes-villes' },
+              { text: 'Tipi di segmento e routing', link: '/it/editors/types-segments-routing' },
+              { text: 'Geometria dei segmenti', link: '/it/editors/geometrie-segments' },
+            ] },
+            { text: 'Incroci', items: [
+              { text: 'Guida agli incroci', link: '/it/editors/intersections' },
+              { text: 'Rotatorie', link: '/it/editors/ronds-points' },
+              { text: 'Svolte difficili', link: '/it/editors/virages-difficiles' },
+            ] },
+            { text: 'Tipi di strada', items: [
+              { text: 'Parcheggi', link: '/it/editors/parkings' },
+              { text: 'Percorsi pedonali', link: '/it/editors/chemins-pietons' },
+              { text: 'Strade campestri', link: '/it/editors/field-roads' },
+              { text: 'Corsie e passaggi a livello', link: '/it/editors/lanes' },
+            ] },
+            { text: 'Segnalazioni e gestione', items: [
+              { text: 'Chiusure stradali', link: '/it/editors/fermetures' },
+              { text: 'Pericoli permanenti', link: '/it/editors/dangers-permanents' },
+              { text: 'Limiti di velocità', link: '/it/editors/limites-vitesse' },
+            ] },
+            { text: 'Risorse', items: [
+              { text: 'Risorse utili', link: '/it/editors/ressources' },
+            ] },
+          ],
           '/it/scripters/': [{ text: 'Scrittori', items: [{ text: 'Introduzione', link: '/it/scripters/' }] }],
         },
         outline: { level: [2, 3], label: 'In questa pagina' },

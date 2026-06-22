@@ -4,24 +4,82 @@ title: Editors
 
 # Waze CH Editors
 
-Welcome to the editors section. This documentation covers best practices for contributing to the Waze map in Switzerland.
+Welcome to the editors section. This documentation gathers the best practices for contributing to the Waze map in Switzerland.
 
 ::: note Under construction
-This section is being written. Content will be added gradually.
+This section is being written. Content will be added progressively. Some pages are still drafts.
 :::
 
-## General best practices
+## Editing philosophy in Switzerland
 
-*Coming soon — core rules for quality map editing.*
+Switzerland has its own editing rules. They are not modelled on those of France, Germany or Italy, even though these countries share a border and a language with us.
 
-## Swiss specifics
+::: important Do not automatically apply a neighbouring country's rules
+Never apply a rule from a bordering country by simple analogy. A practice that is valid in France, Germany or Italy is not necessarily valid in Switzerland.
+:::
 
-*Coming soon — particularities of mapping in Switzerland (road numbering, zones, etc.).*
+When in doubt, do not edit the map at random. Ask first:
 
-## Places and points of interest
+- on the Romandie forum (pinned topics),
+- or on the community Discord.
 
-*Coming soon — adding and editing places (POI).*
+::: success Habit to adopt
+Read the Wiki and the forum before editing, and ask when in doubt. Better one extra question than an edit that needs fixing.
+:::
 
-## Useful resources
+The German-language Wiki is the reference for editing in Switzerland, as the French translations may lag behind. Local resources (Swiss Wiki, forum, Discord) always take precedence over improvisation.
 
-*Coming soon — links to the Waze Wiki, forums and community tools.*
+## Main topics covered
+
+The documentation is organised by topic. Here are the main themes.
+
+### Naming
+
+Naming conventions for roads and cities in Switzerland: no abbreviations, respect for the case of proper nouns.
+
+- [Naming of roads and cities](/en/editors/nommage-routes-villes)
+
+### Segment types and routing
+
+Choosing the segment type and its consequences on guidance.
+
+- [Segment types and routing](/en/editors/types-segments-routing)
+- [Swiss map legend](/en/editors/legende-carte)
+
+### Geometry
+
+Drawing segments: minimum length, private roads, pedestrian paths, narrow streets.
+
+- [Segment geometry](/en/editors/geometrie-segments)
+
+### Intersections and roundabouts
+
+Connections between segments and roundabouts.
+
+- [Intersections](/en/editors/intersections)
+- [Roundabouts](/en/editors/ronds-points)
+
+### Parking lots
+
+Mapping parking lots: entrances, exits, main aisles and perimeter.
+
+- [Parking lots](/en/editors/parkings)
+
+### Reports and closures
+
+Handling reports (UR) and road closures.
+
+- [Closures](/en/editors/fermetures)
+
+## Organisation and resources
+
+To understand who does what and where to find help:
+
+- [Community organisation](/en/editors/organisation-communaute)
+- [Resources](/en/editors/ressources)
+
+::: quote Sources
+- Information in French (Waze Switzerland hub): https://www.waze.com/discuss/t/informations-en-francais/377254
+- Editing rules in French-speaking Switzerland: https://www.waze.com/discuss/t/regles-dedition-en-suisse-romande/377277
+- Hauptseite (DACH main page): https://www.waze.com/discuss/t/hauptseite/377253
+:::
