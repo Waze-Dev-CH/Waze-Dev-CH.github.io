@@ -21,8 +21,11 @@ docs/public/            Assets statiques servis à la racine (/)
 - Chaque locale a `editors/index.md` et `scripters/index.md`
 - Quand on ajoute une page dans une langue, on ajoute un stub dans les 3 autres
 - La sidebar est configurée statiquement dans `config.ts` (pas d'auto-génération)
-- Blocs d'admonition disponibles : `::: note`, `::: tip`, `::: warning`, `::: important`, `::: success`, `::: failure`, `::: reminder`, `::: example`, `::: question`
+- Blocs d'admonition personnalisés (définis dans `config.ts`) : `note`, `example`, `question`, `quote`, `reminder`, `people`, `bug`, `abstract`, `important`, `failure`, `help`, `success` (titres par défaut en français uniquement)
 - Assets publics (images, SVG) : dans `docs/public/`, accessibles à `/nom-du-fichier`
+
+Guide d'édition détaillé : voir `CONTRIBUTING.md` (workflow, parité i18n, admonitions, navigation).
+Pour traduire une page fr vers en/de/it : skill `translate-page` (`.claude/skills/translate-page/`).
 
 ## Développement
 
