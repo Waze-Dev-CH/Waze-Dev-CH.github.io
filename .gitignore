@@ -1,0 +1,25 @@
+docker-compose.override.yml
+.cache
+.vscode
+
+# Claude Code local settings (permissions, etc.)
+.claude/settings.local.json
+
+# Design handoff archives
+*.zip
+
+# VitePress
+node_modules/
+.vitepress/cache
+.vitepress/dist
+docs/.vitepress/cache
+docs/.vitepress/dist
+# Build output (outDir) — not the docs/public/ assets folder
+/public/
+
+# Environment
+.env
+.env.local
+
+# Package manager
+npm-debug.log*
