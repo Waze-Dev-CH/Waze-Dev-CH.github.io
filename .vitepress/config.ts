@@ -73,6 +73,7 @@ export default defineConfig({
           '/editors/': [
             { text: 'Démarrer', items: [
               { text: 'Introduction', link: '/editors/' },
+              { text: 'Premiers pas', link: '/editors/premiers-pas' },
               { text: 'Légende de la carte', link: '/editors/legende-carte' },
               { text: 'Organisation & communauté', link: '/editors/organisation-communaute' },
             ] },
@@ -127,6 +128,7 @@ export default defineConfig({
           '/en/editors/': [
             { text: 'Getting started', items: [
               { text: 'Introduction', link: '/en/editors/' },
+              { text: 'First steps', link: '/en/editors/premiers-pas' },
               { text: 'Map legend', link: '/en/editors/legende-carte' },
               { text: 'Organisation & community', link: '/en/editors/organisation-communaute' },
             ] },
@@ -181,6 +183,7 @@ export default defineConfig({
           '/de/editors/': [
             { text: 'Erste Schritte', items: [
               { text: 'Einführung', link: '/de/editors/' },
+              { text: 'Erste Schritte als Editor', link: '/de/editors/premiers-pas' },
               { text: 'Kartenlegende', link: '/de/editors/legende-carte' },
               { text: 'Organisation & Community', link: '/de/editors/organisation-communaute' },
             ] },
@@ -235,6 +238,7 @@ export default defineConfig({
           '/it/editors/': [
             { text: 'Per iniziare', items: [
               { text: 'Introduzione', link: '/it/editors/' },
+              { text: 'Primi passi', link: '/it/editors/premiers-pas' },
               { text: 'Legenda della mappa', link: '/it/editors/legende-carte' },
               { text: 'Organizzazione e comunità', link: '/it/editors/organisation-communaute' },
             ] },
