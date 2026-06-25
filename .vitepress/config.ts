@@ -77,7 +77,6 @@ export default defineConfig({
               text: 'Premiers pas',
               items: [
                 { text: 'Premiers pas (L1)', link: '/fr/editors/premiers-pas' },
-                { text: 'À propos de l\'édition', link: '/fr/editors/a-propos' },
                 { text: 'Légende de la carte', link: '/fr/editors/legende-carte' },
               ],
             },

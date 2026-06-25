@@ -8,7 +8,7 @@ La communauté Waze suisse fait partie de la zone DACH (Allemagne, Autriche, Sui
 
 ## Niveaux d'éditeur
 
-Un éditeur progresse par niveaux. Le niveau détermine le rayon dans lequel il peut éditer et le niveau de verrouillage des segments qu'il peut modifier. Les niveaux 1 à 3 sont automatiques une fois le seuil d'edits atteint. À partir du niveau 4, la promotion requiert l'approbation du staff Waze et des champions locaux (demande par message privé à l'équipe d'auto-gestion). Les seuils d'edits sont des minimums indicatifs : un éditeur particulièrement actif dans la communauté peut être proposé pour une promotion anticipée. Le détail des niveaux figure aussi dans [À propos de l'édition](/fr/editors/a-propos).
+Un éditeur progresse par niveaux. Le niveau détermine le rayon dans lequel il peut éditer et le niveau de verrouillage des segments qu'il peut modifier. Les niveaux 1 à 3 sont automatiques une fois le seuil d'edits atteint. À partir du niveau 4, la promotion requiert l'approbation du staff Waze et des champions locaux (demande par message privé à l'équipe d'auto-gestion). Les seuils d'edits sont des minimums indicatifs : un éditeur particulièrement actif dans la communauté peut être proposé pour une promotion anticipée. Le détail des niveaux figure aussi dans [Introduction](/fr/editors/).
 
 | Niveau | Rayon d'édition | Edits minimum | Attribution |
 | --- | --- | --- | --- |

@@ -37,7 +37,6 @@ Les segments verrouillés à un niveau supérieur au vôtre nécessitent une dem
 ## Contenu de cette section
 
 ### Premiers pas
-- [À propos de l'édition](/fr/editors/a-propos) — fonctionnement de la carte communautaire et niveaux d'éditeur
 - [Légende de la carte](/fr/editors/legende-carte) — types de segments et leur rôle dans le routing
 
 ### Cartographie
@@ -67,6 +66,36 @@ Les segments verrouillés à un niveau supérieur au vôtre nécessitent une dem
 
 ### Routing
 - [Bases du routing](/fr/editors/routing) — comment les types de segments influencent la navigation
+
+## Lien permanent (Permalink)
+
+Le WME offre une fonction de lien permanent permettant de partager un emplacement précis sur la carte. Très utile pour demander de l'aide sur le forum ou Discord.
+
+## Serveurs Waze
+
+Waze opère sur trois serveurs distincts :
+
+| Serveur | Couverture |
+|---------|-----------|
+| NA | Amérique du Nord |
+| IL | Israël |
+| **INTL** | Reste du monde, dont la **Suisse** |
+
+::: important
+En cas de doute, ne modifiez jamais la carte en vous basant sur les règles d'un pays voisin. Posez votre question sur le [forum local](https://www.waze.com/discuss/c/editors/switzerland/romandie/4797).
+:::
+
+## Communauté suisse
+
+| Ressource | Lien |
+|-----------|------|
+| Forum Waze Discuss | [Romandie](https://www.waze.com/discuss/c/editors/switzerland/romandie/4797) |
+| Site communautaire CH | [waze-switzerland.ch](https://www.waze-switzerland.ch/) |
+| Facebook | [WazeSwiss](https://www.facebook.com/WazeSwiss/) |
+
+::: note
+Chaque région linguistique a ses propres règles. Pour la Suisse romande, suivez toujours les règles locales — pas celles de France. Pour la Suisse alémanique, le wiki germanophone fait référence.
+:::
 
 ## Ressources externes
 
