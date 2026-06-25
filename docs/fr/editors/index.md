@@ -37,6 +37,7 @@ Les segments verrouillés à un niveau supérieur au vôtre nécessitent une dem
 ## Contenu de cette section
 
 ### Premiers pas
+- [Premiers pas (L1)](/fr/editors/premiers-pas) — démarrer l'édition en Suisse
 - [Légende de la carte](/fr/editors/legende-carte) — types de segments et leur rôle dans le routing
 
 ### Cartographie
@@ -54,11 +55,14 @@ Les segments verrouillés à un niveau supérieur au vôtre nécessitent une dem
 - [Stick'AIR — Genève](/fr/editors/stickair-geneve) — circulation différenciée dans le canton de Genève
 
 ### Communauté
+- [Organisation de la communauté](/fr/editors/organisation-communaute) — rôles, niveaux et où poser une question
 - [Devenir Area Manager](/fr/editors/area-manager) — rôle, responsabilités et candidature
 - [FAQ](/fr/editors/faq) — questions fréquentes sur l'application et la carte
+- [Ressources](/fr/editors/ressources) — liens externes, outils et wikis
 
 ### WME — Outils avancés
 - [Virages difficiles](/fr/editors/virages-difficiles) — signaler et configurer (L2+)
+- [Fermetures de routes](/fr/editors/fermetures) — restrictions horaires et signalement (L2+)
 - [Fermeture des URs](/fr/editors/fermeture-urs) — clore correctement les Update Requests (L2+)
 - [Délais de mise à jour](/fr/editors/delais-mise-a-jour) — quand les modifications deviennent visibles
 - [Voies & passages à niveau](/fr/editors/lanes-passages-niveau) — lane guidance (L3+)
@@ -81,28 +85,17 @@ Waze opère sur trois serveurs distincts :
 | IL | Israël |
 | **INTL** | Reste du monde, dont la **Suisse** |
 
-::: important
-En cas de doute, ne modifiez jamais la carte en vous basant sur les règles d'un pays voisin. Posez votre question sur le [forum local](https://www.waze.com/discuss/c/editors/switzerland/romandie/4797).
-:::
-
-## Communauté suisse
-
-| Ressource | Lien |
-|-----------|------|
-| Forum Waze Discuss | [Romandie](https://www.waze.com/discuss/c/editors/switzerland/romandie/4797) |
-| Site communautaire CH | [waze-switzerland.ch](https://www.waze-switzerland.ch/) |
-| Facebook | [WazeSwiss](https://www.facebook.com/WazeSwiss/) |
-
-::: note
-Chaque région linguistique a ses propres règles. Pour la Suisse romande, suivez toujours les règles locales — pas celles de France. Pour la Suisse alémanique, le wiki germanophone fait référence.
-:::
-
-## Ressources externes
+## Ressources
 
 | Ressource | Lien |
 |-----------|------|
 | Waze Map Editor | [waze.com/editor](https://www.waze.com/editor) |
 | Forum Romandie | [Waze Discuss](https://www.waze.com/discuss/c/editors/switzerland/romandie/4797) |
 | Site communautaire CH | [waze-switzerland.ch](https://www.waze-switzerland.ch/) |
+| Facebook | [WazeSwiss](https://www.facebook.com/WazeSwiss/) |
 | Règles locales CH | [waze-switzerland.ch/editing](https://www.waze-switzerland.ch/editing/local-rules-guidelines) |
 | Carte nationale | [map.geo.admin.ch](https://map.geo.admin.ch/) |
+
+::: note
+Chaque région linguistique a ses propres règles. Pour la Suisse romande, suivez toujours les règles locales — pas celles de France. Pour la Suisse alémanique, le wiki germanophone fait référence.
+:::

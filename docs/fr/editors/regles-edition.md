@@ -19,9 +19,7 @@ Toute édition de carte doit viser trois objectifs :
 
 ## Nommage des segments
 
-Les noms de rues doivent être :
-- Orthographiés **sans abréviation** (« Chemin » et non « Ch. »)
-- **Correctement capitalisés** (« Rue de la Paix » et non « rue de la paix »)
+Voir [Nommage des routes et des villes](/fr/editors/nommage-routes) — la page de référence pour la casse, les abréviations et les types de voies.
 
 ## Parkings et aires de stationnement
 
@@ -42,7 +40,7 @@ Réserver aux parkings avec voies d'accès dédiées. Utiliser la catégorie **P
 
 ## Chemins piétons
 
-Waze est **avant tout** une application automobile. N'inclure un chemin piéton que s'il sert à l'orientation des conducteurs ou permet de rejoindre une destination accessible. Exclure les trottoirs et les passages cachés sans intérêt de navigation.
+Voir [Chemins piétons](/fr/editors/chemins-pietons) — quand les inclure et quand ne pas les tracer.
 
 ## Voies privées
 
