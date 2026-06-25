@@ -1,0 +1,23 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+    "name": "Handbook",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+    "remoteUser": "node",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/stu-bell/devcontainer-features/claude-code:0": {},
+        "ghcr.io/devcontainers-extra/features/curl-apt-get:1": {},
+        "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {}
+    },
+    "postCreateCommand": "npm install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Anthropic.claude-code"
+            ]
+        }
+    },
+    "mounts": [
+        "source=waze-dev-ch-github-io-node-home,target=/home/node/,type=volume"
+    ]
+}
