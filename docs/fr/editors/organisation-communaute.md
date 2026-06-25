@@ -8,16 +8,16 @@ La communauté Waze suisse fait partie de la zone DACH (Allemagne, Autriche, Sui
 
 ## Niveaux d'éditeur
 
-Un éditeur progresse par niveaux. Le niveau détermine le rayon dans lequel il peut éditer et le niveau de verrouillage des segments qu'il peut modifier. Les niveaux 1 et 2 sont automatiques. À partir du niveau 3, le passage se demande par message privé (PM) à l'équipe d'auto-gestion.
+Un éditeur progresse par niveaux. Le niveau détermine le rayon dans lequel il peut éditer et le niveau de verrouillage des segments qu'il peut modifier. Les niveaux 1 à 3 sont automatiques une fois le seuil d'edits atteint. À partir du niveau 4, la promotion requiert l'approbation du staff Waze et des champions locaux (demande par message privé à l'équipe d'auto-gestion). Les seuils d'edits sont des minimums indicatifs : un éditeur particulièrement actif dans la communauté peut être proposé pour une promotion anticipée. Le détail des niveaux figure aussi dans [À propos de l'édition](/fr/editors/a-propos).
 
 | Niveau | Rayon d'édition | Edits minimum | Attribution |
 | --- | --- | --- | --- |
 | 1 | 1,6 km | 0 | Automatique (se familiarise avec le wiki et le forum) |
 | 2 | 3,2 km | 3 000 | Automatique (a lu le wiki, suit les règles) |
-| 3 | 4,8 km | 25 000 | Sur demande (PM) à l'équipe d'auto-gestion |
-| 4 | 6,4 km | 100 000 | Sur demande (PM) à l'équipe d'auto-gestion |
-| 5 | 6,4 km | 250 000 | Sur demande (PM) à l'équipe d'auto-gestion |
-| 6 | 6,4 km | 500 000 | Sur demande (PM) à l'équipe d'auto-gestion |
+| 3 | 4,8 km | 25 000 | Automatique |
+| 4 | 6,4 km | 100 000 | Approbation staff + champions locaux (PM) |
+| 5 | 6,4 km | 250 000 | Approbation staff + champions locaux (PM) |
+| 6 | 6,4 km | 500 000 | Approbation staff + champions locaux (PM) |
 
 ::: important Règles clés
 Les droits liés à la conduite expirent après 3 mois. Un segment verrouillé ne peut être édité que par un éditeur de niveau supérieur ou égal au niveau de verrou. L'absence de réponse aux messages privés peut entraîner une rétrogradation ou une suspension du compte.
