@@ -9,30 +9,46 @@ description: Comment marquer et configurer les virages difficiles dans le WME en
 Seuls les éditeurs de niveau 2 et plus peuvent modifier cette fonctionnalité.
 :::
 
-La fonctionnalité **Virages difficiles** permet à la communauté — et non à l'algorithme Waze — de signaler les virages complexes. Elle s'active via le même menu que les restrictions de virages, par une simple case à cocher.
+La fonction « virages difficiles » (difficult turns) permet à la communauté — et non à l'algorithme Waze — de signaler un mouvement compliqué à un carrefour, pour que Waze puisse l'éviter selon les préférences du conducteur.
 
-## Côté application
+## À quoi ça sert
 
-Les utilisateurs peuvent activer l'option dans **Paramètres > Navigation** pour indiquer s'ils souhaitent éviter les virages difficiles.
+Cette fonction s'adresse aux carrefours sans feux où tourner à droite est simple, mais où traverser ou tourner à gauche peut être très difficile à réaliser en raison du trafic prioritaire. Le mouvement reste autorisé, mais Waze le pénalise selon les réglages définis (en permanence ou selon des plages jours / horaires).
 
-## Côté WME
+Côté conducteur, la préférence se règle dans l'application sous Réglages, puis Navigation, pour indiquer s'il souhaite éviter ce type de virage.
 
-Le marquage est accessible depuis le panneau de restrictions de virage. Si le segment est verrouillé à un niveau supérieur, une demande de déverrouillage est nécessaire avant de pouvoir modifier ce paramètre.
+## Comment l'utiliser dans WME
 
-## Effets et configuration
+C'est à la communauté locale d'indiquer les virages difficiles, via une case à cocher dans l'éditeur. Seuls les éditeurs de niveau L2 et plus peuvent modifier cette fonction. Si le segment est verrouillé à un niveau supérieur, demander le déverrouillage à un éditeur du rang requis avant d'intervenir.
 
-Marquer un virage comme difficile applique une **pénalité de routage** configurable par jour et par plage horaire. Cela permet :
+La case se trouve dans le même menu que les restrictions de virage, c'est-à-dire en cliquant sur les flèches de permission qui relient deux segments à un carrefour. Une fois le mouvement sélectionné, la case « virage difficile » permet d'activer la pénalité.
 
-- Des pénalités permanentes
-- Des restrictions uniquement les jours et heures de fort trafic
+Trois types de pénalité sont disponibles :
+
+- Permanente : le virage est pénalisé en continu.
+- Jours de semaine : la pénalité s'applique selon les jours choisis.
+- Plages horaires : la pénalité s'applique selon des créneaux horaires définis.
 
 ## Bonnes pratiques
 
 ::: important
-Le paramètre est **activé par défaut** pour tous les utilisateurs Waze. Un nouveau marquage impactera environ **95 % des utilisateurs**. À utiliser avec discernement.
+Côté conducteur, le réglage qui évite ces virages est **activé par défaut**. Un nouveau marquage impactera donc environ **95 % des utilisateurs**. À utiliser avec discernement.
 :::
 
-- Conçu principalement pour les **intersections sans feux** où un virage à gauche ou un franchissement est dangereux du fait de la priorité
-- **Ne pas utiliser** pour des préférences personnelles de routage
-- **Ne pas marquer** les intersections avec feux tricolores — l'algorithme prend déjà en compte les temps d'attente
-- Appliquer uniquement quand le virage est **objectivement difficile** pour la majorité des conducteurs
+- Conçu principalement pour les **intersections sans feux** où un virage à gauche ou un franchissement est dangereux du fait de la priorité.
+- **Ne pas utiliser** à des fins personnelles pour influencer négativement un itinéraire.
+- **Ne pas marquer** les intersections équipées de feux de signalisation — l'algorithme prend déjà en compte les temps d'attente.
+- Appliquer uniquement quand le virage est **objectivement difficile** pour la majorité des conducteurs.
+
+::: help En cas de doute
+En cas de doute, ouvrir une discussion sur le forum avant de marquer un virage comme difficile.
+:::
+
+::: note Réglage côté conducteur
+Le réglage individuel reste accessible dans l'application sous Réglages, puis Navigation. Le détail de cette interface côté conducteur n'est pas reproduit ici. Se référer à la page source.
+:::
+
+::: quote Sources
+- Virages difficiles (Suisse) : https://www.waze.com/discuss/t/virages-difficiles/377280
+- Hub francophone (informations en français) : https://www.waze.com/discuss/t/informations-en-francais/377254
+:::

@@ -76,6 +76,7 @@ export default defineConfig({
             {
               text: 'Premiers pas',
               items: [
+                { text: 'Premiers pas (L1)', link: '/fr/editors/premiers-pas' },
                 { text: 'À propos de l\'édition', link: '/fr/editors/a-propos' },
                 { text: 'Légende de la carte', link: '/fr/editors/legende-carte' },
               ],
@@ -85,8 +86,13 @@ export default defineConfig({
               items: [
                 { text: 'Nommage des routes', link: '/fr/editors/nommage-routes' },
                 { text: 'Règles d\'édition', link: '/fr/editors/regles-edition' },
+                { text: 'Géométrie des segments', link: '/fr/editors/geometrie-segments' },
+                { text: 'Intersections', link: '/fr/editors/intersections' },
+                { text: 'Ronds-points', link: '/fr/editors/ronds-points' },
+                { text: 'Limites de vitesse', link: '/fr/editors/limites-vitesse' },
                 { text: 'Parkings', link: '/fr/editors/parkings' },
                 { text: 'Chemins agricoles', link: '/fr/editors/chemins-agricoles' },
+                { text: 'Chemins piétons', link: '/fr/editors/chemins-pietons' },
               ],
             },
             {
@@ -106,14 +112,17 @@ export default defineConfig({
             {
               text: 'Communauté',
               items: [
+                { text: 'Organisation de la communauté', link: '/fr/editors/organisation-communaute' },
                 { text: 'Devenir Area Manager', link: '/fr/editors/area-manager' },
                 { text: 'FAQ', link: '/fr/editors/faq' },
+                { text: 'Ressources', link: '/fr/editors/ressources' },
               ],
             },
             {
               text: 'WME — Outils',
               items: [
                 { text: 'Virages difficiles', link: '/fr/editors/virages-difficiles' },
+                { text: 'Fermetures de routes', link: '/fr/editors/fermetures' },
                 { text: 'Fermeture des URs', link: '/fr/editors/fermeture-urs' },
                 { text: 'Délais de mise à jour', link: '/fr/editors/delais-mise-a-jour' },
                 { text: 'Voies & passages à niveau (L3+)', link: '/fr/editors/lanes-passages-niveau' },

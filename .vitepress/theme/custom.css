@@ -69,8 +69,31 @@
 /* ── Typography ──────────────────────────────────────────────────────── */
 .vp-doc { line-height: 1.68; }
 .vp-doc h1 { letter-spacing: -0.02em; font-weight: 700; }
-.vp-doc h2 { letter-spacing: -0.01em; margin-top: 2.2rem; padding-bottom: 0.5rem; }
-.vp-doc h3 { letter-spacing: -0.005em; margin-top: 1.5rem; }
+.vp-doc h2 {
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-top: 2.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--vp-c-divider);
+}
+.vp-doc h3 {
+    letter-spacing: -0.005em;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 1.9rem;
+}
+/* Marqueur rouge suisse devant les titres de section */
+.vp-doc h2::before,
+.vp-doc h3::before {
+    content: "";
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 0.55rem;
+    background: linear-gradient(180deg, var(--swiss-red), var(--swiss-red-deep));
+}
+.vp-doc h2::before { width: 0.5rem; height: 0.95em; vertical-align: -0.1em; }
+.vp-doc h3::before { width: 0.32rem; height: 0.82em; vertical-align: -0.04em; }
 
 .vp-doc a { color: var(--vp-c-brand-1); text-decoration: none; transition: color 0.2s; }
 .vp-doc a:hover { color: var(--vp-c-brand-2); }
@@ -183,3 +206,52 @@
 .vp-doc .custom-block.help .custom-block-title { color: #00838f; }
 .vp-doc .custom-block.success { border-color: #2e7d32; background-color: rgba(46, 125, 50, 0.07); }
 .vp-doc .custom-block.success .custom-block-title { color: #2e7d32; }
+
+/* ── Pastilles de type de route (segment coloré, couleurs WME courantes) ── */
+.vp-doc .road-chip {
+    display: inline-block;
+    width: 12rem;
+    max-width: 100%;
+    height: 1rem;
+    border-radius: 999px;
+    vertical-align: -0.16em;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.20), inset 0 0 0 1px rgba(255, 255, 255, 0.28);
+}
+
+/* Panneaux affichés côte à côte */
+.vp-doc .sign-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+.vp-doc .sign-row img {
+    height: 120px;
+    width: auto;
+    margin: 0;
+    border-radius: 0.4rem;
+}
+
+/* Illustration maison : segment et croisement */
+.vp-doc .diagram {
+    display: block;
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    margin: 1.5rem auto;
+    font-family: var(--vp-font-family-base);
+}
+.vp-doc .diagram .d-panel { fill: var(--vp-c-bg-soft); stroke: var(--vp-c-divider); stroke-width: 1.5; }
+.vp-doc .diagram .d-casing { stroke: #333; stroke-width: 19; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+.vp-doc .diagram .d-road { stroke-width: 11; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+.vp-doc .diagram .d-major { stroke: #46B8D2; }
+.vp-doc .diagram .d-minor { stroke: #69BF88; }
+.vp-doc .diagram .d-primary { stroke: #F1EA58; }
+.vp-doc .diagram .d-street { stroke: #fff; }
+.vp-doc .diagram .d-junction { fill: #fff; stroke: var(--swiss-red); stroke-width: 4; }
+.vp-doc .diagram .d-end { fill: #fff; stroke: #333; stroke-width: 2.5; }
+.vp-doc .diagram .d-lead { stroke: var(--vp-c-text-3); stroke-width: 1.5; fill: none; }
+.vp-doc .diagram .d-cap { fill: var(--vp-c-text-1); font-weight: 600; font-size: 17px; }
+.vp-doc .diagram .d-sub { fill: var(--vp-c-text-2); font-size: 14px; }
