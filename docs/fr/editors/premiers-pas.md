@@ -31,7 +31,7 @@ Prends le temps de te familiariser avec l'interface avant de modifier quoi que c
 
 ## Installer le bon outil
 
-::: help WME Switzerland Helper
+::: help [WME Switzerland Helper](https://github.com/Waze-Dev-CH/WME-Switzerland-Helper)
 Installe le userscript **WME Switzerland Helper** dès le départ. Il ajoute les couches géographiques suisses, les données de transports publics (arrêts SBB) et une vérification des noms de rue — autant d'aides précieuses pour éditer selon les règles locales.
 :::
 
