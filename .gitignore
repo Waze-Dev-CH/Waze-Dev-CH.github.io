@@ -23,3 +23,9 @@ docs/.vitepress/dist
 
 # Package manager
 npm-debug.log*
+
+# macOS
+.DS_Store
+
+# Obsidian vault
+.obsidian/
