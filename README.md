@@ -9,7 +9,7 @@ Documentation pour les éditeurs et scripteurs Waze en Suisse.
 Disponible en français (défaut), anglais, allemand et italien.
 
 ```
-docs/           Français
+docs/fr/        Français
 docs/en/        English
 docs/de/        Deutsch
 docs/it/        Italiano
