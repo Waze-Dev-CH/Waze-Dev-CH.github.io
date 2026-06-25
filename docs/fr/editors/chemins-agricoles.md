@@ -47,4 +47,12 @@ Deux options acceptables :
 
 Deux options acceptables :
 1. **Street** — les utilisateurs ayant le droit légal de passer peuvent y être routés
-2. **Narrow Street** (Rue étroite) — permet davantage de flexibilité dans le routage
+2. **Narrow Street** (Rue étroite) — préférée pour les passages à voie unique, permet davantage de flexibilité dans le routage
+
+::: note À propos de l'attribut Unpaved
+L'attribut Unpaved s'ajoute à n'importe quelle Street et ajoute une pénalité que l'utilisateur peut choisir d'éviter ou non. Appliqué à un segment qui porte déjà une pénalité de type (Private Road, Off-road), il n'a aucun effet.
+:::
+
+::: quote Sources
+- Waze Discuss, Field Roads / Feldwege / Routes à travers champs (2017) : https://www.waze.com/discuss/t/field-roads-feldwege-routes-a-travers-champs-new-2017/64680
+:::

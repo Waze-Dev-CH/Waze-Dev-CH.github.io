@@ -1,6 +1,6 @@
 ---
 title: Bases du routing
-description: Comment les types de segments influencent le calcul d'itinéraire dans Waze, et le principe de pruning.
+description: Comment les types de segments influencent le calcul d'itinéraire dans Waze, le pruning et les niveaux de verrouillage attendus.
 ---
 
 # Bases du routing
@@ -51,4 +51,30 @@ Les préférences « Éviter » dans l'application n'empêchent **pas** l'utilis
 
 ::: example
 Une route classée « défavorisée » sera toujours empruntée si elle est la seule option pour rejoindre une destination dans le quartier. L'effet ne se manifeste que sur les gros calculs d'itinéraire.
+:::
+
+## Niveaux de verrouillage (locks)
+
+Standard suisse : niveau de verrouillage attendu par type de route.
+
+| Type de route | Niveau de lock |
+| --- | --- |
+| Autoroute (Freeway) | L5 |
+| Route majeure (Major Highway) | L4 |
+| Route mineure (Minor Highway) | L3 |
+| Rue primaire (Primary Street) | L2 |
+| Rue (Street) | L1 |
+
+::: reminder
+Plus le type de route est élevé dans la hiérarchie, plus le niveau de verrouillage attendu est élevé. Cela protège les segments structurants du réseau contre les modifications involontaires.
+:::
+
+Verrouiller avec modération. Le verrouillage vise surtout les types structurants : autoroutes, routes, bretelles et ronds-points. Il ne faut pas tout verrouiller sans raison, car un verrou trop large freine inutilement les autres éditeurs.
+
+Un éditeur ne peut modifier un segment verrouillé que si son rang est au moins égal au niveau de verrou. Choisir le niveau de verrou en fonction de l'importance du segment, pas par excès de précaution.
+
+::: quote Sources
+- Bases du Routing : types de segments dans WME et effets sur les trajets longs/courts : https://www.waze.com/discuss/t/bases-du-routing-types-de-segments-dans-wme-et-effets-sur-les-trajets-longs-courts/389975
+- Informations en français : https://www.waze.com/discuss/t/informations-en-francais/377254
+- Niveaux de verrouillage : règles communautaires suisses condensées dans le script WME Switzerland Helper.
 :::
