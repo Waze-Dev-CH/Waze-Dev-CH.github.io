@@ -46,7 +46,7 @@ La Suisse a ses propres règles d'édition. Une pratique valable en France, en A
 Le réflexe juste : lire le Wiki et le forum avant d'éditer, et demander quand on hésite.
 
 ::: success Mieux vaut une question de plus
-Une question de plus vaut toujours mieux qu'une modification à corriger.
+Une question de plus vaut toujours mieux qu'une modification à corriger. Pose-la sur le [Discord communautaire](https://discord.gg/dmxUwvTkk5) ou le [forum Romandie](https://www.waze.com/forum/viewforum.php?f=836).
 :::
 
 ## Que puis-je éditer en sécurité au L1 ?
