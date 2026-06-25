@@ -19,18 +19,7 @@ Avant toute modification, lisez les règles spécifiques à la Suisse présenté
 
 ## Niveaux d'éditeur
 
-| Niveau | Modifications requises | Promotion |
-|--------|----------------------|-----------|
-| L1 | — | Niveau de départ |
-| L2 | 3 000 | Automatique |
-| L3 | 25 000 | Automatique |
-| L4 | 100 000 | Approbation staff + champions locaux |
-| L5 | 250 000 | Approbation staff + champions locaux |
-| L6 | 500 000 | Approbation staff + champions locaux |
-
-::: note
-Les seuils sont indicatifs. Les champions locaux peuvent proposer une promotion anticipée pour un éditeur très actif dans la communauté (développement de scripts, aide aux autres éditeurs, participation aux mapraids et événements).
-:::
+<!--@include: ../_shared/niveaux-editeur.md-->
 
 Les segments verrouillés à un niveau supérieur au vôtre nécessitent une demande de déverrouillage sur le forum.
 

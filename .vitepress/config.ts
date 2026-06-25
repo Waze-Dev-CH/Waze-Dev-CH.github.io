@@ -52,6 +52,7 @@ export default defineConfig({
   description: 'Documentation communautaire pour les éditeurs et scripteurs Waze en Suisse.',
 
   srcDir: 'docs',
+  srcExclude: ['**/_shared/**'],
   outDir: 'public',
   lastUpdated: true,
   ignoreDeadLinks: [/localhost/],

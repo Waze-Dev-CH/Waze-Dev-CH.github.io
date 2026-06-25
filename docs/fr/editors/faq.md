@@ -23,14 +23,8 @@ Toute personne disposant d'un compte Waze avec une adresse e-mail valide peut ac
 Les zones où vous avez conduit avec Waze au cours des **90 derniers jours**. Les droits d'accès expirent si vous ne repassez pas sur la route dans ce délai.
 
 **Comment fonctionne le système de niveaux ?**
-- **Niveau 1** : niveau de départ
-- **Niveau 2** : automatique après **3 000 modifications**
-- **Niveau 3** : automatique après **25 000 modifications**
-- **Niveau 4** : après **100 000 modifications** + approbation staff / champions locaux
-- **Niveau 5** : après **250 000 modifications** + approbation staff / champions locaux
-- **Niveau 6** : après **500 000 modifications** + approbation staff / champions locaux
 
-Les seuils sont indicatifs. Les champions locaux peuvent proposer une promotion anticipée pour un éditeur très actif dans la communauté (scripts, mapraids et événements, aide aux autres éditeurs).
+<!--@include: ../_shared/niveaux-editeur.md-->
 
 **Comment éditer un segment verrouillé à un niveau supérieur ?**
 Vous ne pouvez pas l'éditer directement. Demandez le déverrouillage via le forum communautaire. Une fois approuvé, vous pouvez faire la modification.
