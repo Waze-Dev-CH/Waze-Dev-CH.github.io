@@ -32,7 +32,7 @@ Le français est la **locale racine** (pas de préfixe). Les autres langues vive
 
 | Langue   | Dossier      | Exemple de page                    |
 | -------- | ------------ | ---------------------------------- |
-| Français | `docs/`      | `docs/editors/routing.md`          |
+| Français | `docs/fr/`   | `docs/fr/editors/routing.md`       |
 | English  | `docs/en/`   | `docs/en/editors/routing.md`       |
 | Deutsch  | `docs/de/`   | `docs/de/editors/routing.md`       |
 | Italiano | `docs/it/`   | `docs/it/editors/routing.md`       |
@@ -89,22 +89,22 @@ Les titres par défaut sont **codés en français uniquement**. Dans une page `e
 ### Frontmatter
 
 - Pages de contenu : `title: "..."` suffit.
-- Pages d'accueil de langue (`docs/index.md`, `docs/en/index.md`, ...) : `layout: home` avec hero et features.
+- Pages d'accueil de langue (`docs/fr/index.md`, `docs/en/index.md`, ...) : `layout: home` avec hero et features.
 
 ## Arborescence et navigation
 
 ```
 docs/
 ├── index.md            Accueil FR (layout: home)
-├── editors/index.md    Section éditeurs FR
-├── scripters/index.md  Section scripteurs FR
+├── fr/editors/index.md    Section éditeurs FR
+├── fr/scripters/index.md  Section scripteurs FR
 ├── en/ de/ it/         Mêmes fichiers, traduits
 └── public/             Images, SVG (servis à la racine /)
 ```
 
 ### Ajouter une page
 
-1. Créer le fichier français, ex. `docs/editors/routing.md`, avec son frontmatter `title:`.
+1. Créer le fichier français, ex. `docs/fr/editors/routing.md`, avec son frontmatter `title:`.
 2. Créer les équivalents `docs/en/editors/routing.md`, `docs/de/...`, `docs/it/...` (skill `translate-page`).
 3. Si la page doit apparaître dans le menu, l'ajouter à la **`sidebar`** (et au besoin la **`nav`**) dans `.vitepress/config.ts`, pour les **4 locales**, avec les libellés traduits. La navigation n'est pas auto-générée.
 4. Images : déposer dans `docs/public/`, référencer par `/nom-du-fichier.svg`.
