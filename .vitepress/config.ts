@@ -225,7 +225,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: { src: '/waze-swiss-hero.svg', alt: 'Waze CH' },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/Waze-Dev-CH' }],
+      socialLinks: [{ icon: 'github', link: 'https://github.com/Waze-Dev-CH/Waze-Dev-CH.github.io' }],
     search: {
       provider: 'local',
       options: {

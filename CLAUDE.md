@@ -35,6 +35,25 @@ npm install
 npm run docs:dev   # http://localhost:8765
 ```
 
+## Commits
+
+Utiliser le format **Conventional Commits** :
+
+```
+<type>: <description courte>
+
+[corps optionnel]
+```
+
+| Type | Usage |
+|------|-------|
+| `docs:` | Ajout ou modification de pages de documentation |
+| `feat:` | Nouvelle fonctionnalité (composant, page, section) |
+| `fix:` | Correction d'une erreur de contenu ou de configuration |
+| `chore:` | Config, CI, outillage, fichiers de projet |
+| `refactor:` | Restructuration sans changement de contenu |
+| `style:` | Formatage, typos, mise en forme |
+
 ## Déploiement
 
 Push sur `main` → GitHub Actions build + deploy sur Pages automatiquement.
