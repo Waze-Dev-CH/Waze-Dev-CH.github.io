@@ -5,12 +5,12 @@ description: Décline une page de doc française du site Waze CH (VitePress) ver
 
 # Traduire une page vers en / de / it
 
-Ce site VitePress a le **français comme locale racine** (pas de préfixe) et `en` / `de` / `it` sous préfixe. Ce skill prend une page française et produit ses équivalents traduits au bon chemin, en préservant la structure.
+Ce site VitePress a **quatre locales symétriques** : `fr` / `en` / `de` / `it`, toutes sous leur sous-dossier. Ce skill prend une page française et produit ses équivalents traduits au bon chemin, en préservant la structure.
 
 ## Étape 1 — Identifier la source
 
-- La source est un fichier sous `docs/` **hors** des dossiers `en/`, `de/`, `it/`, `public/` et `.vitepress/`.
-- Calculer le **chemin relatif** : `docs/editors/routing.md` → chemin relatif `editors/routing.md`.
+- La source est un fichier sous `docs/fr/`.
+- Calculer le **chemin relatif** : `docs/fr/editors/routing.md` → chemin relatif `editors/routing.md`.
 - Les cibles sont :
   - `docs/en/editors/routing.md`
   - `docs/de/editors/routing.md`
@@ -26,8 +26,8 @@ Pour chaque langue cible (en, de, it), créer le fichier au chemin ci-dessus en 
 
 2. **Structure markdown** : conserver à l'identique titres (niveaux `#`), listes, tableaux, task lists (`- [ ]`), abréviations, blocs de code. **Ne pas traduire le contenu des blocs de code** (sauf commentaires si pertinent).
 
-3. **Liens internes** : préfixer par la locale.
-   - `/editors/routing` → `/en/editors/routing` (resp. `/de/`, `/it/`)
+3. **Liens internes** : adapter le préfixe de locale.
+   - `/fr/editors/routing` → `/en/editors/routing` (resp. `/de/`, `/it/`)
    - Laisser les liens externes (`https://…`) inchangés.
 
 4. **Admonitions** : garder le marqueur `::: type` et le `:::` de fermeture. **Ajouter un titre explicite traduit** sur chaque bloc, car les titres par défaut du thème sont codés en français uniquement (un `::: example` sans titre afficherait « Exemple » même en anglais).
