@@ -69,8 +69,31 @@
 /* ── Typography ──────────────────────────────────────────────────────── */
 .vp-doc { line-height: 1.68; }
 .vp-doc h1 { letter-spacing: -0.02em; font-weight: 700; }
-.vp-doc h2 { letter-spacing: -0.01em; margin-top: 2.2rem; padding-bottom: 0.5rem; }
-.vp-doc h3 { letter-spacing: -0.005em; margin-top: 1.5rem; }
+.vp-doc h2 {
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-top: 2.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--vp-c-divider);
+}
+.vp-doc h3 {
+    letter-spacing: -0.005em;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 1.9rem;
+}
+/* Marqueur rouge suisse devant les titres de section */
+.vp-doc h2::before,
+.vp-doc h3::before {
+    content: "";
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 0.55rem;
+    background: linear-gradient(180deg, var(--swiss-red), var(--swiss-red-deep));
+}
+.vp-doc h2::before { width: 0.5rem; height: 0.95em; vertical-align: -0.1em; }
+.vp-doc h3::before { width: 0.32rem; height: 0.82em; vertical-align: -0.04em; }
 
 .vp-doc a { color: var(--vp-c-brand-1); text-decoration: none; transition: color 0.2s; }
 .vp-doc a:hover { color: var(--vp-c-brand-2); }
