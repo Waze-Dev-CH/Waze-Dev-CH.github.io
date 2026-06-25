@@ -72,10 +72,20 @@ Pour tes premières éditions, reste sur des modifications simples et à faible 
 
 ## Où trouver de l'aide
 
-Avant de poser une question, vérifie le Wiki et le forum : la réponse y figure souvent déjà. Sinon :
+Avant de poser une question, vérifie le Wiki et le forum : la réponse y figure souvent déjà. Sinon, le moyen le plus simple et le plus rapide d'obtenir de l'aide reste le **Discord de la communauté** — c'est là que les éditeurs suisses échangent au quotidien.
+
+<a class="discord-card" href="https://discord.gg/dmxUwvTkk5" target="_blank" rel="noreferrer">
+  <img class="discord-card-logo" src="/discord-mark.svg" alt="Logo Discord" />
+  <span class="discord-card-body">
+    <strong>Rejoins la communauté sur Discord</strong>
+    <span>Pose tes questions, demande un déverrouillage, échange avec les éditeurs suisses et reste au courant des actualités de la carte.</span>
+  </span>
+  <span class="discord-card-cta">Rejoindre</span>
+</a>
+
+Pour les questions d'édition plus formelles, le forum reste la référence :
 
 - **Forum Romandie** : pour les questions d'édition en Suisse romande (sujets épinglés) — https://www.waze.com/forum/viewforum.php?f=836
-- **Discord communautaire** : pour les échanges plus directs — https://discord.gg/dmxUwvTkk5
 
 Pour comprendre qui fait quoi dans la communauté, voir [Organisation de la communauté](/fr/editors/organisation-communaute). Pour l'ensemble des liens et outils, voir [Ressources](/fr/editors/ressources).
 

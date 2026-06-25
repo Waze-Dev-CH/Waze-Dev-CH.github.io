@@ -255,3 +255,51 @@
 .vp-doc .diagram .d-lead { stroke: var(--vp-c-text-3); stroke-width: 1.5; fill: none; }
 .vp-doc .diagram .d-cap { fill: var(--vp-c-text-1); font-weight: 600; font-size: 17px; }
 .vp-doc .diagram .d-sub { fill: var(--vp-c-text-2); font-size: 14px; }
+
+/* ── Carte d'appel Discord ──────────────────────────────────────────── */
+.vp-doc a.discord-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border-radius: 0.9rem;
+    background: linear-gradient(135deg, rgba(88, 101, 242, 0.14), rgba(88, 101, 242, 0.04));
+    border: 1px solid rgba(88, 101, 242, 0.40);
+    color: var(--vp-c-text-1);
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.vp-doc a.discord-card:hover {
+    border-color: #5865F2;
+    background: linear-gradient(135deg, rgba(88, 101, 242, 0.22), rgba(88, 101, 242, 0.07));
+    transform: translateY(-1px);
+}
+.vp-doc a.discord-card .discord-card-logo {
+    flex: 0 0 auto;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    border-radius: 0;
+}
+.vp-doc a.discord-card .discord-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1 1 auto;
+}
+.vp-doc a.discord-card .discord-card-body strong { font-size: 1.05rem; color: var(--vp-c-text-1); }
+.vp-doc a.discord-card .discord-card-body span { color: var(--vp-c-text-2); font-size: 0.9rem; line-height: 1.45; }
+.vp-doc a.discord-card .discord-card-cta {
+    flex: 0 0 auto;
+    background: #5865F2;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+@media (max-width: 640px) {
+    .vp-doc a.discord-card { flex-wrap: wrap; }
+    .vp-doc a.discord-card .discord-card-cta { width: 100%; text-align: center; }
+}
