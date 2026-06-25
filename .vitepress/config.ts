@@ -61,17 +61,73 @@ export default defineConfig({
   ],
 
   locales: {
-    root: {
+    fr: {
       label: 'Français',
       lang: 'fr',
+      link: '/fr/',
       themeConfig: {
         nav: [
-          { text: 'Éditeurs', link: '/editors/', activeMatch: '/editors/' },
-          { text: 'Scripteurs', link: '/scripters/', activeMatch: '/scripters/' },
+          { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
+          { text: 'Scripteurs', link: '/fr/scripters/', activeMatch: '/fr/scripters/' },
         ],
         sidebar: {
-          '/editors/': [{ text: 'Éditeurs', items: [{ text: 'Introduction', link: '/editors/' }] }],
-          '/scripters/': [{ text: 'Scripteurs', items: [{ text: 'Introduction', link: '/scripters/' }] }],
+          '/fr/editors/': [
+            { text: 'Éditeurs', items: [{ text: 'Introduction', link: '/fr/editors/' }] },
+            {
+              text: 'Premiers pas',
+              items: [
+                { text: 'À propos de l\'édition', link: '/fr/editors/a-propos' },
+                { text: 'Légende de la carte', link: '/fr/editors/legende-carte' },
+              ],
+            },
+            {
+              text: 'Cartographie',
+              items: [
+                { text: 'Nommage des routes', link: '/fr/editors/nommage-routes' },
+                { text: 'Règles d\'édition', link: '/fr/editors/regles-edition' },
+                { text: 'Parkings', link: '/fr/editors/parkings' },
+                { text: 'Chemins agricoles', link: '/fr/editors/chemins-agricoles' },
+              ],
+            },
+            {
+              text: 'Autoroutes',
+              items: [
+                { text: 'Numérotation Axx / Exx', link: '/fr/editors/numeros-autoroutes' },
+                { text: 'Guidelines cartographie 2024', link: '/fr/editors/freeways-guidelines' },
+              ],
+            },
+            {
+              text: 'Spécificités suisses',
+              items: [
+                { text: 'Vignette autoroutière', link: '/fr/editors/vignette' },
+                { text: 'Stick\'AIR (Genève)', link: '/fr/editors/stickair-geneve' },
+              ],
+            },
+            {
+              text: 'Communauté',
+              items: [
+                { text: 'Devenir Area Manager', link: '/fr/editors/area-manager' },
+                { text: 'FAQ', link: '/fr/editors/faq' },
+              ],
+            },
+            {
+              text: 'WME — Outils',
+              items: [
+                { text: 'Virages difficiles', link: '/fr/editors/virages-difficiles' },
+                { text: 'Fermeture des URs', link: '/fr/editors/fermeture-urs' },
+                { text: 'Délais de mise à jour', link: '/fr/editors/delais-mise-a-jour' },
+                { text: 'Voies & passages à niveau (L3+)', link: '/fr/editors/lanes-passages-niveau' },
+                { text: 'Dangers permanents (L4+)', link: '/fr/editors/dangers-permanents' },
+              ],
+            },
+            {
+              text: 'Routing',
+              items: [
+                { text: 'Bases du routing', link: '/fr/editors/routing' },
+              ],
+            },
+          ],
+          '/fr/scripters/': [{ text: 'Scripteurs', items: [{ text: 'Introduction', link: '/fr/scripters/' }] }],
         },
         outline: { level: [2, 3], label: 'Sur cette page' },
         docFooter: { prev: 'Page précédente', next: 'Page suivante' },

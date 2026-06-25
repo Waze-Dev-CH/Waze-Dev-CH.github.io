@@ -6,7 +6,7 @@ Construit avec VitePress, déployé sur GitHub Pages.
 ## Structure
 
 ```
-docs/                   Contenu français (locale par défaut)
+docs/fr/                Contenu français (locale /fr/)
 docs/en/                Contenu anglais
 docs/de/                Contenu allemand
 docs/it/                Contenu italien
@@ -17,11 +17,12 @@ docs/public/            Assets statiques servis à la racine (/)
 
 ## Conventions
 
-- Le français est la locale racine (pas de préfixe `/fr/`) ; les autres langues ont leur sous-répertoire
+- Le français est sous `/fr/` ; toutes les locales ont leur sous-répertoire (`fr/`, `en/`, `de/`, `it/`)
 - Chaque locale a `editors/index.md` et `scripters/index.md`
 - Quand on ajoute une page dans une langue, on ajoute un stub dans les 3 autres
 - La sidebar est configurée statiquement dans `config.ts` (pas d'auto-génération)
 - Blocs d'admonition personnalisés (définis dans `config.ts`) : `note`, `example`, `question`, `quote`, `reminder`, `people`, `bug`, `abstract`, `important`, `failure`, `help`, `success` (titres par défaut en français uniquement)
+- Ne pas mettre de séparateur `---` avant les titres `#` (h1) ni `##` (h2) — VitePress l'insère automatiquement. Le `---` reste utilisable dans d'autres contextes si nécessaire.
 - Assets publics (images, SVG) : dans `docs/public/`, accessibles à `/nom-du-fichier`
 
 Guide d'édition détaillé : voir `CONTRIBUTING.md` (workflow, parité i18n, admonitions, navigation).
