@@ -177,7 +177,7 @@ Les Stairway sont les escaliers. Même restriction de connexion.
 
 ### Voie ferrée (Railroad)
 
-Les voies ferrées sont les chemins de fer. En général, ne pas les enregistrer via le client mais dans l'éditeur. Elles peuvent être connectées à d'autres rues pour les passages à niveau. Indiquer le nom de la compagnie comme nom de rue, sans ville. Verrouiller au niveau L2.
+Les voies ferrées sont les chemins de fer. En général, ne pas les enregistrer via le client mais dans l'éditeur. Elles peuvent être connectées à d'autres rues pour les passages à niveau. Indiquer le nom de la compagnie comme nom de rue, sans ville. Verrouiller au niveau L5.
 
 ### Runway/Taxiway
 

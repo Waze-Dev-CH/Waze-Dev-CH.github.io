@@ -1,6 +1,7 @@
 ---
 title: Éditeurs
 description: Documentation pour les éditeurs Waze en Suisse — bonnes pratiques, règles locales et guides cartographiques.
+order: 1
 ---
 
 # Éditeurs Waze CH

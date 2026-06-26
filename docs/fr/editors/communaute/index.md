@@ -1,6 +1,6 @@
 ---
 title: Communauté
-order: 1
+order: 50
 ---
 
 # Communauté
