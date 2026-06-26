@@ -21,7 +21,7 @@ Tout nouvel éditeur démarre au niveau 1. Ce niveau définit ce que tu peux mod
 | Verrouillage | tu peux éditer les segments verrouillés au niveau 1 |
 | Durée | les droits liés à la conduite expirent après 3 mois d'inactivité |
 
-Le passage au niveau 2 est automatique une fois les critères atteints. Pour tout le détail des niveaux et des rôles, voir [Organisation de la communauté](/fr/editors/organisation-communaute).
+Le passage au niveau 2 est automatique une fois les critères atteints. Pour tout le détail des niveaux et des rôles, voir [Organisation de la communauté](/fr/editors/communaute/).
 
 ## Ouvrir l'éditeur (WME)
 
@@ -35,7 +35,7 @@ Prends le temps de te familiariser avec l'interface avant de modifier quoi que c
 Installe le userscript **WME Switzerland Helper** dès le départ. Il ajoute les couches géographiques suisses, les données de transports publics (arrêts SBB) et une vérification des noms de rue — autant d'aides précieuses pour éditer selon les règles locales.
 :::
 
-Le script s'installe via un gestionnaire de userscripts comme Tampermonkey. Détails et autres outils sur la page [Ressources](/fr/editors/ressources).
+Le script s'installe via un gestionnaire de userscripts comme Tampermonkey. Détails et autres outils sur la page [Ressources](/fr/editors/communaute/ressources).
 
 ## Le piège à éviter absolument
 
@@ -53,20 +53,20 @@ Une question de plus vaut toujours mieux qu'une modification à corriger. Pose-l
 
 Pour tes premières éditions, reste sur des modifications simples et à faible risque :
 
-- corriger un nom de rue selon les conventions suisses (voir [Nommage des routes et des villes](/fr/editors/nommage-routes)) ;
+- corriger un nom de rue selon les conventions suisses (voir [Nommage des routes et des villes](/fr/editors/cartographie/nommage-routes)) ;
 - ajuster légèrement la géométrie d'un segment que tu connais sur le terrain ;
 - traiter des signalements simples.
 
 ::: failure À garder pour plus tard
-Évite au début les sujets qui demandent de l'expérience et souvent un niveau supérieur : intersections complexes, [ronds-points](/fr/editors/ronds-points), [lanes](/fr/editors/lanes-passages-niveau) (L3+) ou [dangers permanents](/fr/editors/dangers-permanents) (L4+). Observe comment font les éditeurs expérimentés, et demande avant de te lancer.
+Évite au début les sujets qui demandent de l'expérience et souvent un niveau supérieur : intersections complexes, [ronds-points](/fr/editors/cartographie/ronds-points), [lanes](/fr/editors/wme/lanes-passages-niveau) (L3+) ou [dangers permanents](/fr/editors/wme/dangers-permanents) (L4+). Observe comment font les éditeurs expérimentés, et demande avant de te lancer.
 :::
 
 ## Checklist premiers pas
 
 1. Avoir un compte Waze actif (utilise l'application sur tes trajets).
 2. Ouvrir le [Waze Map Editor](https://www.waze.com/editor).
-3. Installer le userscript **WME Switzerland Helper** (voir [Ressources](/fr/editors/ressources)).
-4. Lire les bases : [Nommage des routes et des villes](/fr/editors/nommage-routes), [Types de segments et routing](/fr/editors/routing) et la [Légende de la carte suisse](/fr/editors/legende-carte).
+3. Installer le userscript **WME Switzerland Helper** (voir [Ressources](/fr/editors/communaute/ressources)).
+4. Lire les bases : [Nommage des routes et des villes](/fr/editors/cartographie/nommage-routes), [Types de segments et routing](/fr/editors/wme/routing) et la [Légende de la carte suisse](/fr/editors/wme/legende-carte).
 5. Rejoindre le forum Romandie et le Discord communautaire (voir ci-dessous).
 6. Faire un premier petit edit simple, sur une zone que tu connais.
 
@@ -77,7 +77,7 @@ Avant de poser une question, vérifie le Wiki et le forum : la réponse y figure
 - **Forum Romandie** : pour les questions d'édition en Suisse romande (sujets épinglés) — https://www.waze.com/forum/viewforum.php?f=836
 - **Discord communautaire** : pour les échanges plus directs — https://discord.gg/dmxUwvTkk5
 
-Pour comprendre qui fait quoi dans la communauté, voir [Organisation de la communauté](/fr/editors/organisation-communaute). Pour l'ensemble des liens et outils, voir [Ressources](/fr/editors/ressources).
+Pour comprendre qui fait quoi dans la communauté, voir [Organisation de la communauté](/fr/editors/communaute/). Pour l'ensemble des liens et outils, voir [Ressources](/fr/editors/communaute/ressources).
 
 ::: quote Source(s)
 - Informations en français (hub Waze Suisse) : https://www.waze.com/discuss/t/informations-en-francais/377254

@@ -1,6 +1,7 @@
 ---
 title: Voies de circulation et passages à niveau
 description: Règles d'édition pour les voies (lanes) et passages à niveau en Suisse — L3+.
+order: 13
 ---
 
 # Voies de circulation et passages à niveau
@@ -22,7 +23,7 @@ Le tracé de voies de présélection ne se justifie que dans des cas particulier
 - Une erreur cartographique (« Map problem ») nécessite un segment de voie comme contournement.
 - Des retours d'utilisateurs ou de gestionnaires de zone signalent des annonces vocales tardives.
 
-En cas de doute, ne pas tracer la voie: la simplicité sert mieux les utilisateurs que la complexité. Pour la mise en place des intersections, voir [Intersections](/fr/editors/intersections).
+En cas de doute, ne pas tracer la voie: la simplicité sert mieux les utilisateurs que la complexité. Pour la mise en place des intersections, voir [Intersections](/fr/editors/cartographie/intersections).
 
 Les guidelines détaillées pour la configuration des voies en Suisse sont disponibles dans le document officiel de la communauté :
 
@@ -45,7 +46,7 @@ Les nouveaux éditeurs et les éditeurs juniors devraient consulter un éditeur 
 ## Passages à niveau
 
 ::: note Passages à niveau — Niveau L4+
-Depuis juin 2024, les règles relatives aux passages à niveau ont été déplacées dans les directives « Permanent Hazards » (dangers permanents) de Waze. Voir [Dangers permanents](/fr/editors/dangers-permanents) (L4+).
+Depuis juin 2024, les règles relatives aux passages à niveau ont été déplacées dans les directives « Permanent Hazards » (dangers permanents) de Waze. Voir [Dangers permanents](/fr/editors/wme/dangers-permanents) (L4+).
 :::
 
 ::: note Contenu détaillé à compléter

@@ -82,7 +82,12 @@ export default defineConfig({
   srcExclude: ['**/_shared/**', 'superpowers/**'],
   outDir: 'public',
   lastUpdated: true,
-  ignoreDeadLinks: [/localhost/],
+  ignoreDeadLinks: [
+    /localhost/,
+    // Pages créées dans des tâches ultérieures (restructuration doc fr/editors)
+    /\/fr\/editors\/(wme|cartographie|communaute)\//,
+    /\/fr\/editors\/wme\/roles/,
+  ],
 
   head: [
     ['link', { rel: 'icon', href: '/waze-swiss-hero.svg', type: 'image/svg+xml' }],

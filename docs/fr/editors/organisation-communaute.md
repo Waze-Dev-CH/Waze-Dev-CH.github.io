@@ -22,7 +22,7 @@ La gestion de la carte repose sur plusieurs rôles, en plus du niveau d'éditeur
 
 - **Area Manager (AM)** : édition complète dans son territoire, soumise aux règles de verrouillage selon son niveau.
 - **State Manager (SM)** : édition complète dans le canton qui lui est assigné, soumise aux mêmes règles de verrouillage.
-- **RTC State Manager** : rôle de gestion des fermetures de route, propre à la Suisse (il n'existe que dans ce pays). Voir [Fermetures de routes](/fr/editors/fermetures).
+- **RTC State Manager** : rôle de gestion des fermetures de route, propre à la Suisse (il n'existe que dans ce pays). Voir [Fermetures de routes](/fr/editors/wme/fermetures).
 - **Country Manager (CM)** : support au niveau national, application des règles et animation de la communauté.
 
 ::: note Liste à jour
@@ -45,7 +45,7 @@ Si vous hésitez sur une règle, demandez d'abord sur le forum Romandie ou le Di
 ## Voir aussi
 
 - [Éditeurs Waze CH](/fr/editors/)
-- [Ressources](/fr/editors/ressources)
+- [Ressources](/fr/editors/communaute/ressources)
 
 ::: quote Source(s)
 - Rechte zum Bearbeiten der Karte : https://www.waze.com/discuss/t/rechte-zum-bearbeiten-der-karte/377276

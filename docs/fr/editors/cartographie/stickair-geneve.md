@@ -1,6 +1,7 @@
 ---
 title: Stick'AIR — Genève
 description: Le macaron environnemental Stick'AIR est intégré dans Waze pour les restrictions de circulation différenciée à Genève.
+order: 14
 ---
 
 # Stick'AIR — Genève

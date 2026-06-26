@@ -1,5 +1,6 @@
 ---
 title: Ressources utiles
+order: 3
 ---
 
 # Ressources utiles
@@ -52,11 +53,11 @@ Le script s'installe via un gestionnaire de userscripts comme Tampermonkey.
 
 Documents de règles repris sur ce site :
 
-- [Parkings](/fr/editors/parkings)
-- [Chemins piétons](/fr/editors/chemins-pietons)
-- [Routes à travers champs](/fr/editors/chemins-agricoles)
-- [Lanes et passages à niveau](/fr/editors/lanes-passages-niveau)
-- [Dangers permanents](/fr/editors/dangers-permanents)
+- [Parkings](/fr/editors/cartographie/parkings)
+- [Chemins piétons](/fr/editors/cartographie/chemins-pietons)
+- [Routes à travers champs](/fr/editors/cartographie/chemins-agricoles)
+- [Lanes et passages à niveau](/fr/editors/wme/lanes-passages-niveau)
+- [Dangers permanents](/fr/editors/wme/dangers-permanents)
 
 ::: quote Source(s)
 - Informations en français (hub Waze Suisse) : https://www.waze.com/discuss/t/informations-en-francais/377254

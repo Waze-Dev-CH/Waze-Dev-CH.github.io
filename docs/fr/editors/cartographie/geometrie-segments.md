@@ -1,5 +1,6 @@
 ---
 title: Géométrie des segments
+order: 4
 ---
 
 # Géométrie des segments

@@ -1,6 +1,7 @@
 ---
 title: Nommage des routes et des villes
 description: Conventions de nommage des segments, entrées/sorties et localités en Suisse.
+order: 3
 ---
 
 # Nommage des routes et des villes
@@ -99,7 +100,7 @@ Pour une voie portant un nom dans deux langues, renseigner le second nom via le 
 
 ## Voies ferrées
 
-Les voies ferrées ne portent jamais de nom de ville ni de nom de rue. Laisser le champ de nom vide (ou y indiquer le nom de la compagnie, sans ville — voir [Légende de la carte](/fr/editors/legende-carte)).
+Les voies ferrées ne portent jamais de nom de ville ni de nom de rue. Laisser le champ de nom vide (ou y indiquer le nom de la compagnie, sans ville — voir [Légende de la carte](/fr/editors/wme/legende-carte)).
 
 ## Nommage des villes et villages
 

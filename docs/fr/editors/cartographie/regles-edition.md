@@ -1,6 +1,7 @@
 ---
 title: Règles d'édition — Suisse romande
 description: Règles spécifiques à la Suisse romande pour l'édition de la carte Waze.
+order: 2
 ---
 
 # Règles d'édition — Suisse romande
@@ -19,7 +20,7 @@ Toute édition de carte doit viser trois objectifs :
 
 ## Nommage des segments
 
-Voir [Nommage des routes et des villes](/fr/editors/nommage-routes) — la page de référence pour la casse, les abréviations et les types de voies.
+Voir [Nommage des routes et des villes](/fr/editors/cartographie/nommage-routes) — la page de référence pour la casse, les abréviations et les types de voies.
 
 ## Parkings et aires de stationnement
 
@@ -40,7 +41,7 @@ Réserver aux parkings avec voies d'accès dédiées. Utiliser la catégorie **P
 
 ## Chemins piétons
 
-Voir [Chemins piétons](/fr/editors/chemins-pietons) — quand les inclure et quand ne pas les tracer.
+Voir [Chemins piétons](/fr/editors/cartographie/chemins-pietons) — quand les inclure et quand ne pas les tracer.
 
 ## Voies privées
 

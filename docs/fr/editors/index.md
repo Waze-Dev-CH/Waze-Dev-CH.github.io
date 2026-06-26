@@ -27,38 +27,38 @@ Les segments verrouillés à un niveau supérieur au vôtre nécessitent une dem
 
 ### Premiers pas
 - [Premiers pas (L1)](/fr/editors/premiers-pas) — démarrer l'édition en Suisse
-- [Légende de la carte](/fr/editors/legende-carte) — types de segments et leur rôle dans le routing
+- [Légende de la carte](/fr/editors/wme/legende-carte) — types de segments et leur rôle dans le routing
 
 ### Cartographie
-- [Nommage des routes](/fr/editors/nommage-routes) — conventions de nommage des segments et localités
-- [Règles d'édition — Suisse romande](/fr/editors/regles-edition) — règles spécifiques à la région
-- [Parkings](/fr/editors/parkings) — guidelines pour mapper les aires de stationnement
-- [Chemins agricoles](/fr/editors/chemins-agricoles) — accord communautaire sur les Feldwege
+- [Nommage des routes](/fr/editors/cartographie/nommage-routes) — conventions de nommage des segments et localités
+- [Règles d'édition — Suisse romande](/fr/editors/cartographie/regles-edition) — règles spécifiques à la région
+- [Parkings](/fr/editors/cartographie/parkings) — guidelines pour mapper les aires de stationnement
+- [Chemins agricoles](/fr/editors/cartographie/chemins-agricoles) — accord communautaire sur les Feldwege
 
 ### Autoroutes
-- [Numérotation Axx / Exx](/fr/editors/numeros-autoroutes) — ajouter les numéros de routes suisses et européens
-- [Guidelines cartographie 2024](/fr/editors/freeways-guidelines) — bretelles, échangeurs, géométrie
+- [Numérotation Axx / Exx](/fr/editors/cartographie/numeros-autoroutes) — ajouter les numéros de routes suisses et européens
+- [Guidelines cartographie 2024](/fr/editors/cartographie/freeways-guidelines) — bretelles, échangeurs, géométrie
 
 ### Spécificités suisses
-- [Vignette autoroutière](/fr/editors/vignette) — configuration et acheter la vignette
-- [Stick'AIR — Genève](/fr/editors/stickair-geneve) — circulation différenciée dans le canton de Genève
+- [Vignette autoroutière](/fr/editors/cartographie/vignette) — configuration et acheter la vignette
+- [Stick'AIR — Genève](/fr/editors/cartographie/stickair-geneve) — circulation différenciée dans le canton de Genève
 
 ### Communauté
-- [Organisation de la communauté](/fr/editors/organisation-communaute) — rôles, niveaux et où poser une question
-- [Devenir Area Manager](/fr/editors/area-manager) — rôle, responsabilités et candidature
-- [FAQ](/fr/editors/faq) — questions fréquentes sur l'application et la carte
-- [Ressources](/fr/editors/ressources) — liens externes, outils et wikis
+- [Organisation de la communauté](/fr/editors/communaute/) — rôles, niveaux et où poser une question
+- [Devenir Area Manager](/fr/editors/wme/roles) — rôle, responsabilités et candidature
+- [FAQ](/fr/editors/communaute/faq) — questions fréquentes sur l'application et la carte
+- [Ressources](/fr/editors/communaute/ressources) — liens externes, outils et wikis
 
 ### WME — Outils avancés
-- [Virages difficiles](/fr/editors/virages-difficiles) — signaler et configurer (L2+)
-- [Fermetures de routes](/fr/editors/fermetures) — restrictions horaires et signalement (L2+)
-- [Fermeture des URs](/fr/editors/fermeture-urs) — clore correctement les Update Requests (L2+)
-- [Délais de mise à jour](/fr/editors/delais-mise-a-jour) — quand les modifications deviennent visibles
-- [Voies & passages à niveau](/fr/editors/lanes-passages-niveau) — lane guidance (L3+)
-- [Dangers permanents](/fr/editors/dangers-permanents) — passages à niveau, virages dangereux (L4+)
+- [Virages difficiles](/fr/editors/wme/virages-difficiles) — signaler et configurer (L2+)
+- [Fermetures de routes](/fr/editors/wme/fermetures) — restrictions horaires et signalement (L2+)
+- [Fermeture des URs](/fr/editors/wme/fermeture-urs) — clore correctement les Update Requests (L2+)
+- [Délais de mise à jour](/fr/editors/wme/delais-mise-a-jour) — quand les modifications deviennent visibles
+- [Voies & passages à niveau](/fr/editors/wme/lanes-passages-niveau) — lane guidance (L3+)
+- [Dangers permanents](/fr/editors/wme/dangers-permanents) — passages à niveau, virages dangereux (L4+)
 
 ### Routing
-- [Bases du routing](/fr/editors/routing) — comment les types de segments influencent la navigation
+- [Bases du routing](/fr/editors/wme/routing) — comment les types de segments influencent la navigation
 
 ## Lien permanent (Permalink)
 

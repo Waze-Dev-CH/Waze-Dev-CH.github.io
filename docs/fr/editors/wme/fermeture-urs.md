@@ -1,6 +1,7 @@
 ---
 title: Fermeture des URs (Update Requests)
 description: Règles pour clore correctement les signalements de carte (Update Requests) en Suisse.
+order: 11
 ---
 
 # Fermeture des URs

@@ -1,6 +1,7 @@
 ---
 title: Légende de la carte
 description: Types de segments disponibles dans le Waze Map Editor et leur usage en Suisse.
+order: 8
 ---
 
 # Légende de la carte suisse
@@ -132,7 +133,7 @@ La Rue (Street) s'affiche en blanc dans WME. La pastille ci-dessus est entourée
 
 <span class="road-chip" style="background:#64799A" title="Rue étroite (Narrow Street)"></span>
 
-Voie étroite à double sens. Les règles d'emploi figurent dans [Géométrie des segments](/fr/editors/geometrie-segments).
+Voie étroite à double sens. Les règles d'emploi figurent dans [Géométrie des segments](/fr/editors/cartographie/geometrie-segments).
 
 ### Chemin de terre (Dirt Road / 4x4)
 
@@ -183,7 +184,7 @@ Les voies ferrées sont les chemins de fer. En général, ne pas les enregistrer
 Les Runway/Taxiway sont les pistes d'atterrissage. Elles complètent la carte, mais il n'est pas conseillé de cartographier tous les aéroports: un repère (Place de type Airport) suffit.
 
 ::: note
-Le type de segment a un impact direct sur le calcul d'itinéraire. Un mauvais classement peut induire des routes incohérentes. En cas de doute, consultez les [règles d'édition suisses](/fr/editors/regles-edition).
+Le type de segment a un impact direct sur le calcul d'itinéraire. Un mauvais classement peut induire des routes incohérentes. En cas de doute, consultez les [règles d'édition suisses](/fr/editors/cartographie/regles-edition).
 :::
 
 ::: quote Source(s)

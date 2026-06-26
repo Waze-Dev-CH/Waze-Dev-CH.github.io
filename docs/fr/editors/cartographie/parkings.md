@@ -1,6 +1,7 @@
 ---
 title: Cartographie des parkings
 description: Guidelines officielles pour mapper les parkings et aires de stationnement dans Waze en Suisse.
+order: 8
 ---
 
 # Cartographie des parkings

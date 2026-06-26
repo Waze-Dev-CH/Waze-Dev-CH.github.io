@@ -1,6 +1,7 @@
 ---
 title: FAQ — Questions fréquentes
 description: Réponses aux questions les plus courantes sur Waze en Suisse, pour les utilisateurs et les éditeurs.
+order: 2
 ---
 
 # FAQ — Questions fréquentes
@@ -24,7 +25,7 @@ Les zones où vous avez conduit avec Waze au cours des **90 derniers jours**. Le
 
 **Comment fonctionne le système de niveaux ?**
 
-<!--@include: ../_shared/niveaux-editeur.md-->
+<!--@include: ../../_shared/niveaux-editeur.md-->
 
 **Comment éditer un segment verrouillé à un niveau supérieur ?**
 Vous ne pouvez pas l'éditer directement. Demandez le déverrouillage via le forum communautaire. Une fois approuvé, vous pouvez faire la modification.
@@ -33,7 +34,7 @@ Vous ne pouvez pas l'éditer directement. Demandez le déverrouillage via le for
 ## Spécificités suisses
 
 **Pourquoi Waze évite-t-il les autoroutes suisses ?**
-Les autoroutes suisses nécessitent une **vignette** (CHF 40 / an). Sans elle, l'amende est de CHF 200. Waze évite les autoroutes par défaut pour les utilisateurs n'ayant pas confirmé la possession d'une vignette. Voir la page [Vignette autoroutière](/fr/editors/vignette).
+Les autoroutes suisses nécessitent une **vignette** (CHF 40 / an). Sans elle, l'amende est de CHF 200. Waze évite les autoroutes par défaut pour les utilisateurs n'ayant pas confirmé la possession d'une vignette. Voir la page [Vignette autoroutière](/fr/editors/cartographie/vignette).
 
 **Pourquoi les radars fixes ne sont-ils pas signalés en Suisse ?**
 Les alertes radars sont **interdites par la loi suisse**. Cette fonctionnalité est donc désactivée dans l'application en Suisse. Il n'y a pas de plan de réactivation sauf changement législatif.

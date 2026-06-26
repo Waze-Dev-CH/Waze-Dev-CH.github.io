@@ -1,5 +1,6 @@
 ---
 title: Fermetures de routes
+order: 10
 ---
 
 # Fermetures de routes
@@ -52,7 +53,7 @@ Le traitement d'une Update Request de fermeture suit le principe de prudence:
 
 ## Rôle RTC State Manager
 
-La Suisse dispose d'un rôle spécial dédié aux fermetures, le **RTC State Manager**, documenté dans la page des droits d'édition de la communauté. Pour la répartition des rôles et des droits, voir [Organisation de la communauté](/fr/editors/organisation-communaute).
+La Suisse dispose d'un rôle spécial dédié aux fermetures, le **RTC State Manager**, documenté dans la page des droits d'édition de la communauté. Pour la répartition des rôles et des droits, voir [Organisation de la communauté](/fr/editors/communaute/).
 
 ::: note Procédures RTC / MTE non détaillées
 Les sources consultées ne décrivent pas de procédure distincte propre aux sigles « RTC » (Real Time Closures) ou « MTE » (Major Traffic Events). Se reporter au forum suisse et au serveur Discord avant d'appliquer ce type de fermeture.
