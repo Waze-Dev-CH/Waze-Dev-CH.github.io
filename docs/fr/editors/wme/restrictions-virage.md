@@ -44,6 +44,3 @@ Les demi-tours sont gérés comme des restrictions de virage sur le même segmen
 
 Voir aussi [Règles d'édition](/fr/editors/cartographie/regles-edition).
 
-::: quote Sources
-- Waze Support — Turn restrictions : https://support.google.com/waze/answer/6284956
-:::

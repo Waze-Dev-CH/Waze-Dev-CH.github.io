@@ -9,11 +9,11 @@ Un segment est l'unité de base de la carte Waze : c'est un tronçon de route en
 
 ## Créer un segment
 
-1. Appuyer sur `D` (ou cliquer sur l'outil crayon dans la barre supérieure)
+1. Appuyer sur <kbd>I</kbd> (ou cliquer sur l'outil crayon dans la barre supérieure)
 2. Cliquer sur la carte pour poser le premier point
 3. Cliquer pour ajouter des points de géométrie intermédiaires
 4. Double-cliquer pour terminer le segment
-5. Appuyer sur `Ctrl+S` pour enregistrer
+5. Appuyer sur <kbd>Ctrl+S</kbd> pour enregistrer
 
 ::: important
 Tout nouveau segment doit être raccordé à la carte existante. Un segment isolé (non connecté à d'autres) ne sera pas routable.
@@ -54,6 +54,3 @@ Sélectionner le segment, puis appuyer sur `Delete`. Confirmer la suppression. L
 Ne supprimez jamais un segment existant sans raison valable : il contient des données de vitesse et d'historique de routing précieuses. Voir [Règles d'édition](/fr/editors/cartographie/regles-edition).
 :::
 
-::: quote Sources
-- Waze Support — Editing segments : https://support.google.com/waze/answer/6284952
-:::

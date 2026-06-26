@@ -50,6 +50,3 @@ Le menu des couches (icône en haut à droite) permet d'activer/désactiver :
 Les modifications ne sont visibles par les utilisateurs Waze qu'après un délai de mise à jour. Voir [Délais de mise à jour](/fr/editors/wme/delais-mise-a-jour).
 :::
 
-::: quote Sources
-- Waze Support — Waze Map Editor : https://support.google.com/waze/answer/6284933
-:::
