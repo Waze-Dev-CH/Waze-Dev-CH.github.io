@@ -1,6 +1,6 @@
 ---
 title: Rôles d'éditeur
-order: 6
+order: 14
 ---
 
 # Rôles d'éditeur

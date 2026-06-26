@@ -1,7 +1,7 @@
 ---
 title: Légende de la carte
 description: Types de segments disponibles dans le Waze Map Editor et leur usage en Suisse.
-order: 8
+order: 3
 ---
 
 # Légende de la carte suisse

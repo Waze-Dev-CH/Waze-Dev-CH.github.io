@@ -1,6 +1,6 @@
 ---
 title: Niveaux d'éditeur
-order: 5
+order: 13
 ---
 
 # Niveaux d'éditeur

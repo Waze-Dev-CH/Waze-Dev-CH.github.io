@@ -1,7 +1,7 @@
 ---
 title: Bases du routing
 description: Comment les types de segments influencent le calcul d'itinéraire dans Waze, le pruning et les niveaux de verrouillage attendus.
-order: 9
+order: 4
 ---
 
 # Bases du routing

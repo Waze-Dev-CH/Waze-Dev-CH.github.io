@@ -1,7 +1,7 @@
 ---
 title: Virages difficiles
 description: Comment marquer et configurer les virages difficiles dans le WME en Suisse.
-order: 12
+order: 7
 ---
 
 # Virages difficiles

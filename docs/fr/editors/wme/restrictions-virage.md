@@ -1,6 +1,6 @@
 ---
 title: Restrictions de virage
-order: 4
+order: 6
 ---
 
 # Restrictions de virage

@@ -1,7 +1,7 @@
 ---
 title: Voies de circulation et passages à niveau
 description: Règles d'édition pour les voies (lanes) et passages à niveau en Suisse — L3+.
-order: 13
+order: 8
 ---
 
 # Voies de circulation et passages à niveau

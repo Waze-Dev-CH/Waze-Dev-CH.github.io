@@ -1,7 +1,7 @@
 ---
 title: Dangers permanents
 description: Règles d'édition pour les dangers permanents (passages à niveau, virages dangereux, etc.) en Suisse — L4+.
-order: 14
+order: 9
 ---
 
 # Dangers permanents

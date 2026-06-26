@@ -1,7 +1,7 @@
 ---
 title: Délais de mise à jour de la carte
 description: Comprendre quand les modifications apportées dans le WME deviennent visibles dans l'application et sur le serveur de routing.
-order: 15
+order: 12
 ---
 
 # Délais de mise à jour de la carte

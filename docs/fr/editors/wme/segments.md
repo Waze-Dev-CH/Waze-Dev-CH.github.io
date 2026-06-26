@@ -1,13 +1,13 @@
 ---
 title: Segments
-order: 3
+order: 5
 ---
 
 # Segments
 
 Un segment est l'unité de base de la carte Waze : c'est un tronçon de route entre deux jonctions. Toute route est composée d'un ou plusieurs segments.
 
-## Créer un segment
+## Créer un segment{#creer-un-segment}
 
 1. Appuyer sur <kbd>I</kbd> (ou cliquer sur l'outil crayon dans la barre supérieure)
 2. Cliquer sur la carte pour poser le premier point
@@ -46,7 +46,7 @@ Pour relier deux segments, le point final de l'un doit coïncider exactement ave
 - **Point bleu** = jonction valide
 - **Point rouge** = jonction incomplète ou problématique
 
-## Supprimer un segment
+## Supprimer un segment{#supprimer-un-segment}
 
 Sélectionner le segment, puis appuyer sur <kbd>Delete</kbd>. Confirmer la suppression. Les jonctions orphelines doivent aussi être supprimées.
 
@@ -54,3 +54,7 @@ Sélectionner le segment, puis appuyer sur <kbd>Delete</kbd>. Confirmer la suppr
 Ne supprimez jamais un segment existant sans raison valable : il contient des données de vitesse et d'historique de routing précieuses. Voir [Règles d'édition](/fr/editors/cartographie/regles-edition).
 :::
 
+
+## Couper un segment
+
+Pour couper un segment en deux, il suffit de [créer un segment](#creer-un-segment) perpendiculaire au segment que l'on veut couper, de l'attacher au segment à l'endroit que l'on veut couper, puis de [supprimer](#supprimer-un-segment) le segment que l'on vient d'ajouter.
