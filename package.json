@@ -12,6 +12,7 @@
         "markdown-it-abbr": "^2.0.0",
         "markdown-it-container": "^4.0.0",
         "vitepress": "^1.0.0",
+        "vitepress-sidebar": "^1.36.1",
         "vue": "^3.4.0"
     },
     "devDependencies": {

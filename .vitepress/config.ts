@@ -1,9 +1,36 @@
 import { defineConfig } from 'vitepress';
+import { generateSidebar } from 'vitepress-sidebar';
 import container from 'markdown-it-container';
 // @ts-ignore
 import taskLists from 'markdown-it-task-lists';
 // @ts-ignore
 import abbr from 'markdown-it-abbr';
+
+const sections = [
+  'fr/editors', 'fr/scripters',
+  'en/editors', 'en/scripters',
+  'de/editors', 'de/scripters',
+  'it/editors', 'it/scripters',
+];
+
+const sidebar = generateSidebar(
+  sections.map((section) => ({
+    documentRootPath: 'docs',
+    scanStartPath: section,
+    resolvePath: `/${section}/`,
+    useTitleFromFrontmatter: true,
+    useTitleFromFileHeading: true,
+    useFolderTitleFromIndexFile: true,
+    useFolderLinkFromIndexFile: true,
+    sortMenusByFrontmatterOrder: true,
+    frontmatterOrderDefaultValue: 999,
+    includeFolderIndexFile: false,
+    folderLinkNotIncludesFileName: true,
+    collapsed: false,
+    collapseDepth: 2,
+    excludeByGlobPattern: ['**/_shared/**'],
+  }))
+);
 
 const customContainerTypes = [
   'note', 'example', 'question', 'quote', 'reminder',
@@ -52,9 +79,12 @@ export default defineConfig({
   description: 'Documentation communautaire pour les éditeurs et scripteurs Waze en Suisse.',
 
   srcDir: 'docs',
+  srcExclude: ['**/_shared/**', 'superpowers/**'],
   outDir: 'public',
   lastUpdated: true,
-  ignoreDeadLinks: [/localhost/],
+  ignoreDeadLinks: [
+    /localhost/,
+  ],
 
   head: [
     ['link', { rel: 'icon', href: '/waze-swiss-hero.svg', type: 'image/svg+xml' }],
@@ -70,74 +100,7 @@ export default defineConfig({
           { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
           { text: 'Scripteurs', link: '/fr/scripters/', activeMatch: '/fr/scripters/' },
         ],
-        sidebar: {
-          '/fr/editors/': [
-            { text: 'Éditeurs', items: [{ text: 'Introduction', link: '/fr/editors/' }] },
-            {
-              text: 'Premiers pas',
-              items: [
-                { text: 'Premiers pas (L1)', link: '/fr/editors/premiers-pas' },
-                { text: 'À propos de l\'édition', link: '/fr/editors/a-propos' },
-                { text: 'Légende de la carte', link: '/fr/editors/legende-carte' },
-              ],
-            },
-            {
-              text: 'Cartographie',
-              items: [
-                { text: 'Nommage des routes', link: '/fr/editors/nommage-routes' },
-                { text: 'Règles d\'édition', link: '/fr/editors/regles-edition' },
-                { text: 'Géométrie des segments', link: '/fr/editors/geometrie-segments' },
-                { text: 'Intersections', link: '/fr/editors/intersections' },
-                { text: 'Ronds-points', link: '/fr/editors/ronds-points' },
-                { text: 'Limites de vitesse', link: '/fr/editors/limites-vitesse' },
-                { text: 'Parkings', link: '/fr/editors/parkings' },
-                { text: 'Chemins agricoles', link: '/fr/editors/chemins-agricoles' },
-                { text: 'Chemins piétons', link: '/fr/editors/chemins-pietons' },
-              ],
-            },
-            {
-              text: 'Autoroutes',
-              items: [
-                { text: 'Numérotation Axx / Exx', link: '/fr/editors/numeros-autoroutes' },
-                { text: 'Guidelines cartographie 2024', link: '/fr/editors/freeways-guidelines' },
-              ],
-            },
-            {
-              text: 'Spécificités suisses',
-              items: [
-                { text: 'Vignette autoroutière', link: '/fr/editors/vignette' },
-                { text: 'Stick\'AIR (Genève)', link: '/fr/editors/stickair-geneve' },
-              ],
-            },
-            {
-              text: 'Communauté',
-              items: [
-                { text: 'Organisation de la communauté', link: '/fr/editors/organisation-communaute' },
-                { text: 'Devenir Area Manager', link: '/fr/editors/area-manager' },
-                { text: 'FAQ', link: '/fr/editors/faq' },
-                { text: 'Ressources', link: '/fr/editors/ressources' },
-              ],
-            },
-            {
-              text: 'WME — Outils',
-              items: [
-                { text: 'Virages difficiles', link: '/fr/editors/virages-difficiles' },
-                { text: 'Fermetures de routes', link: '/fr/editors/fermetures' },
-                { text: 'Fermeture des URs', link: '/fr/editors/fermeture-urs' },
-                { text: 'Délais de mise à jour', link: '/fr/editors/delais-mise-a-jour' },
-                { text: 'Voies & passages à niveau (L3+)', link: '/fr/editors/lanes-passages-niveau' },
-                { text: 'Dangers permanents (L4+)', link: '/fr/editors/dangers-permanents' },
-              ],
-            },
-            {
-              text: 'Routing',
-              items: [
-                { text: 'Bases du routing', link: '/fr/editors/routing' },
-              ],
-            },
-          ],
-          '/fr/scripters/': [{ text: 'Scripteurs', items: [{ text: 'Introduction', link: '/fr/scripters/' }] }],
-        },
+        sidebar,
         outline: { level: [2, 3], label: 'Sur cette page' },
         docFooter: { prev: 'Page précédente', next: 'Page suivante' },
         darkModeSwitchLabel: 'Apparence',
@@ -158,10 +121,7 @@ export default defineConfig({
           { text: 'Editors', link: '/en/editors/', activeMatch: '/en/editors/' },
           { text: 'Scripters', link: '/en/scripters/', activeMatch: '/en/scripters/' },
         ],
-        sidebar: {
-          '/en/editors/': [{ text: 'Editors', items: [{ text: 'Introduction', link: '/en/editors/' }] }],
-          '/en/scripters/': [{ text: 'Scripters', items: [{ text: 'Introduction', link: '/en/scripters/' }] }],
-        },
+        sidebar,
         outline: { level: [2, 3], label: 'On this page' },
         docFooter: { prev: 'Previous page', next: 'Next page' },
         darkModeSwitchLabel: 'Appearance',
@@ -182,10 +142,7 @@ export default defineConfig({
           { text: 'Editoren', link: '/de/editors/', activeMatch: '/de/editors/' },
           { text: 'Skripter', link: '/de/scripters/', activeMatch: '/de/scripters/' },
         ],
-        sidebar: {
-          '/de/editors/': [{ text: 'Editoren', items: [{ text: 'Einführung', link: '/de/editors/' }] }],
-          '/de/scripters/': [{ text: 'Skripter', items: [{ text: 'Einführung', link: '/de/scripters/' }] }],
-        },
+        sidebar,
         outline: { level: [2, 3], label: 'Auf dieser Seite' },
         docFooter: { prev: 'Vorherige Seite', next: 'Nächste Seite' },
         darkModeSwitchLabel: 'Erscheinungsbild',
@@ -206,10 +163,7 @@ export default defineConfig({
           { text: 'Editor', link: '/it/editors/', activeMatch: '/it/editors/' },
           { text: 'Scrittori', link: '/it/scripters/', activeMatch: '/it/scripters/' },
         ],
-        sidebar: {
-          '/it/editors/': [{ text: 'Editor', items: [{ text: 'Introduzione', link: '/it/editors/' }] }],
-          '/it/scripters/': [{ text: 'Scrittori', items: [{ text: 'Introduzione', link: '/it/scripters/' }] }],
-        },
+        sidebar,
         outline: { level: [2, 3], label: 'In questa pagina' },
         docFooter: { prev: 'Pagina precedente', next: 'Pagina successiva' },
         darkModeSwitchLabel: 'Aspetto',
