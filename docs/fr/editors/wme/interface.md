@@ -23,12 +23,12 @@ Quand un segment ou un lieu est sélectionné, le panneau droit affiche ses prop
 
 | Outil | Raccourci | Usage |
 |-------|-----------|-------|
-| Sélection | `S` ou `Esc` | Sélectionner des éléments existants |
-| Dessin de segment | `D` | Tracer un nouveau segment |
-| Restriction de virage | `T` | Poser une restriction temporelle |
-| Ajouter un lieu | `P` | Créer un point d'intérêt |
-| Annuler | `Ctrl+Z` | Annuler la dernière action |
-| Enregistrer | `Ctrl+S` | Sauvegarder les modifications |
+| Sélection | <kbd>S</kbd> ou <kbd>Esc</kbd> | Sélectionner des éléments existants |
+| Dessin de segment | <kbd>D</kbd> | Tracer un nouveau segment |
+| Restriction de virage | <kbd>T</kbd> | Poser une restriction temporelle |
+| Ajouter un lieu | <kbd>P</kbd> | Créer un point d'intérêt |
+| Annuler | <kbd>Ctrl</kbd>+<kbd>Z</kbd> | Annuler la dernière action |
+| Enregistrer | <kbd>Ctrl</kbd>+<kbd>S</kbd> | Sauvegarder les modifications |
 
 ## Couches (Layers)
 
@@ -42,7 +42,7 @@ Le menu des couches (icône en haut à droite) permet d'activer/désactiver :
 
 ## Zoom et navigation
 
-- Zoom : molette de la souris ou `+`/`-`
+- Zoom : molette de la souris ou <kbd>+</kbd>/<kbd>-</kbd>
 - Déplacement : clic droit maintenu + glisser (ou trackpad)
 - Centrer sur votre position : icône GPS dans la barre supérieure
 

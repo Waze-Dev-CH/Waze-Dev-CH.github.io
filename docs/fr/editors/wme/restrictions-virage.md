@@ -30,7 +30,7 @@ Certains virages sont interdits uniquement à certaines heures ou certains jours
 1. Sélectionner la flèche de virage concernée
 2. Cliquer sur l'icône horloge qui apparaît
 3. Définir les jours et plages horaires
-4. Sauvegarder avec `Ctrl+S`
+4. Sauvegarder avec <kbd>Ctrl</kbd>+<kbd>S</kbd>
 
 ## Restrictions par type de véhicule
 

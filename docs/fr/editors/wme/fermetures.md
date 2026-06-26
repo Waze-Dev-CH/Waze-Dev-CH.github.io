@@ -20,7 +20,7 @@ Les restrictions horaires se posent segment par segment et tiennent compte du se
 
 Marche à suivre:
 
-1. Sélectionner le segment, puis cliquer sur l'icône horloge « Ajouter une restriction » ou utiliser le raccourci clavier **T**.
+1. Sélectionner le segment, puis cliquer sur l'icône horloge « Ajouter une restriction » ou utiliser le raccourci clavier <kbd>T</kbd>.
 2. Sur une route à double sens, deux onglets apparaissent: **« A vers B »** et **« B vers A »**, qui correspondent aux deux sens de circulation. Travailler dans l'onglet du sens concerné.
 3. **Jours:** cocher les jours concernés. Des liens « Tout sélectionner / désélectionner » facilitent la saisie.
 4. **Heures:** choisir « Toute la journée » pour une restriction continue, ou définir une plage horaire au format 24 h (par exemple « 10:00 à 15:00 »).
