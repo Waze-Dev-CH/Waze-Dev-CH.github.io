@@ -21,7 +21,7 @@ Tout nouvel éditeur démarre au niveau 1. Ce niveau définit ce que tu peux mod
 | Verrouillage | tu peux éditer les segments verrouillés au niveau 1 |
 | Durée | les droits liés à la conduite expirent après 3 mois d'inactivité |
 
-Le passage au niveau 2 est automatique une fois les critères atteints. Pour tout le détail des niveaux et des rôles, voir [Organisation de la communauté](/fr/editors/communaute/).
+Le passage au niveau 2 est automatique une fois les critères atteints. Pour tout le détail des niveaux et des rôles, voir [Niveaux d'éditeur](/fr/editors/wme/niveaux) et [Rôles d'éditeur](/fr/editors/wme/roles).
 
 ## Ouvrir l'éditeur (WME)
 
