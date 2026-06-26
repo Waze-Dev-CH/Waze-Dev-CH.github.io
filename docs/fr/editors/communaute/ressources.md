@@ -35,19 +35,7 @@ Le forum Romandie (sujets épinglés) et le Discord communautaire sont les bons 
 
 ## Outils
 
-### WME Switzerland Helper
-
-GitHub : https://github.com/Waze-Dev-CH/WME-Switzerland-Helper
-
-Userscript Tampermonkey pour l'éditeur. Il ajoute :
-
-- des couches géographiques suisses (limites, imagerie aérienne, etc.),
-- les données de transports publics (arrêts SBB),
-- une vérification des noms de rue.
-
-::: note
-Le script s'installe via un gestionnaire de userscripts comme Tampermonkey.
-:::
+Les userscripts et outils pour le WME sont documentés dans [Scripts et outils](/fr/editors/wme/scripts).
 
 ## Règles thématiques
 

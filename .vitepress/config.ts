@@ -84,9 +84,6 @@ export default defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: [
     /localhost/,
-    // Pages créées dans des tâches ultérieures (restructuration doc fr/editors)
-    /\/fr\/editors\/(wme|cartographie|communaute)\//,
-    /\/fr\/editors\/wme\/roles/,
   ],
 
   head: [

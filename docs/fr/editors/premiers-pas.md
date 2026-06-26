@@ -64,20 +64,22 @@ Pour tes premières éditions, reste sur des modifications simples et à faible 
 ## Checklist premiers pas
 
 1. Avoir un compte Waze actif (utilise l'application sur tes trajets).
-2. Ouvrir le [Waze Map Editor](https://www.waze.com/editor).
-3. Installer le userscript **WME Switzerland Helper** (voir [Ressources](/fr/editors/communaute/ressources)).
-4. Lire les bases : [Nommage des routes et des villes](/fr/editors/cartographie/nommage-routes), [Types de segments et routing](/fr/editors/wme/routing) et la [Légende de la carte suisse](/fr/editors/wme/legende-carte).
-5. Rejoindre le forum Romandie et le Discord communautaire (voir ci-dessous).
-6. Faire un premier petit edit simple, sur une zone que tu connais.
+2. Ouvrir le [Waze Map Editor](https://www.waze.com/editor) et explorer l'[interface](/fr/editors/wme/interface).
+3. Comprendre ton [niveau L1 et tes droits d'édition](/fr/editors/wme/niveaux).
+4. Installer le userscript **WME Switzerland Helper** (voir [Scripts et outils](/fr/editors/wme/scripts)).
+5. Lire les bases : [Nommage des routes](/fr/editors/cartographie/nommage-routes), [Légende de la carte](/fr/editors/wme/legende-carte) et [Bases du routing](/fr/editors/wme/routing).
+6. Lire les [Règles d'édition suisses](/fr/editors/cartographie/regles-edition).
+7. Rejoindre le forum Romandie et le Discord (voir [Communauté](/fr/editors/communaute/)).
+8. Faire un premier petit edit simple, sur une zone que tu connais.
 
 ## Où trouver de l'aide
 
-Avant de poser une question, vérifie le Wiki et le forum : la réponse y figure souvent déjà. Sinon :
+Avant de poser une question, vérifie le Wiki et le forum : la réponse y figure souvent déjà.
 
-- **Forum Romandie** : pour les questions d'édition en Suisse romande (sujets épinglés) — https://www.waze.com/forum/viewforum.php?f=836
-- **Discord communautaire** : pour les échanges plus directs — https://discord.gg/dmxUwvTkk5
+- **Forum Romandie** : https://www.waze.com/discuss/c/editors/switzerland/romandie/4797
+- **Discord communautaire** : https://discord.gg/dmxUwvTkk5
 
-Pour comprendre qui fait quoi dans la communauté, voir [Organisation de la communauté](/fr/editors/communaute/). Pour l'ensemble des liens et outils, voir [Ressources](/fr/editors/communaute/ressources).
+Pour comprendre qui fait quoi dans la communauté, voir [Rôles d'éditeur](/fr/editors/wme/roles). Pour l'ensemble des liens et outils, voir [Ressources](/fr/editors/communaute/ressources).
 
 ::: quote Source(s)
 - Informations en français (hub Waze Suisse) : https://www.waze.com/discuss/t/informations-en-francais/377254
