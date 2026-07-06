@@ -46,7 +46,7 @@ const cards = computed(() => frontmatter.value.cards ?? []);
 <style scoped>
 .home-cards {
   max-width: 848px;
-  margin: 0 auto 1.25rem auto;
+  margin: 1.25rem auto 1.25rem auto;
   padding: 0 1.5rem;
   display: flex;
   flex-wrap: wrap;

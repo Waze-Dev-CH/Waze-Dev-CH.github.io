@@ -42,17 +42,14 @@ cards:
 features:
   - icon: 🚗
     title: Wazers
-    details: Conducteurs suisses — vignette autoroutière, Stick'AIR, FAQ, téléchargement de l'application.
+    details: Conducteurs — vignette autoroutière, Stick'AIR, FAQ, téléchargement de l'application.
     link: /fr/wazers/
-    linkText: Découvrir
   - icon: 🗺️
     title: Éditeurs
     details: Bonnes pratiques pour l'édition de la carte suisse — routes, lieux, spécificités locales.
     link: /fr/editors/
-    linkText: Commencer
   - icon: ⚙️
     title: Scripteurs
     details: Ressources pour contribuer aux userscripts Waze — développement, publication et maintenance.
     link: /fr/scripters/
-    linkText: Commencer
 ---
