@@ -19,7 +19,7 @@
 <style scoped>
 .home-livemap {
   max-width: 848px;
-  margin: 0 auto;
+  margin: 2.5rem auto;
   padding: 0 1.5rem;
   display: flex;
   justify-content: center;
@@ -33,16 +33,15 @@
   max-width: 560px;
   padding: 1rem 1.25rem;
   border-radius: 0.875rem;
-  border: 1.5px solid #05C8F0;
-  background: rgba(5, 200, 240, 0.06);
+  border: 1.5px solid var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
   text-decoration: none;
   color: inherit;
   transition: background-color 0.18s, box-shadow 0.18s;
 }
 
 .hl-card:hover {
-  background: rgba(5, 200, 240, 0.12);
-  box-shadow: 0 0 0 3px rgba(5, 200, 240, 0.18);
+  box-shadow: 0 0 0 3px var(--vp-c-brand-soft);
 }
 
 .hl-icon {
@@ -61,7 +60,7 @@
 .hl-title {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #05C8F0;
+  color: var(--vp-c-brand-1);
 }
 
 .hl-sub {
@@ -71,7 +70,7 @@
 
 .hl-arrow {
   font-size: 1.1rem;
-  color: #05C8F0;
+  color: var(--vp-c-brand-1);
   flex-shrink: 0;
   opacity: 0.75;
   transition: opacity 0.18s, transform 0.18s;
