@@ -97,8 +97,8 @@ export default defineConfig({
       link: '/fr/',
       themeConfig: {
         nav: [
-          { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
           { text: 'Wazers', link: '/fr/wazers/', activeMatch: '/fr/wazers/' },
+          { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
           { text: 'Scripteurs', link: '/fr/scripters/', activeMatch: '/fr/scripters/' },
         ],
         sidebar,

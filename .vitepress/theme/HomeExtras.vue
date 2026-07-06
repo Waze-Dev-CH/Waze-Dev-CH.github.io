@@ -17,21 +17,6 @@
       >iOS</a>
     </div>
 
-    <!-- Live map CTA -->
-    <a
-      class="he-livemap"
-      href="https://www.waze.com/live-map/directions?rp_subscription=vignette-switzerland"
-      target="_blank"
-      rel="noopener"
-    >
-      <span class="he-livemap-icon" aria-hidden="true">🗺️</span>
-      <span class="he-livemap-body">
-        <strong class="he-livemap-title">Live Map — vignette activée</strong>
-        <span class="he-livemap-sub">Testez un itinéraire avec la vignette suisse prise en compte.</span>
-      </span>
-      <span class="he-livemap-arrow" aria-hidden="true">→</span>
-    </a>
-
     <!-- Multilingual tagline strip -->
     <p class="he-tagline">
       Déjouons le trafic, ensemble
@@ -86,64 +71,6 @@
   background: var(--vp-c-brand-soft);
   border-color: var(--vp-c-brand-1);
   color: var(--vp-c-brand-1);
-}
-
-/* ── Live map CTA ──────────────────────────────────────────────────── */
-.he-livemap {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  max-width: 560px;
-  padding: 1rem 1.25rem;
-  border-radius: 0.875rem;
-  border: 1.5px solid #05C8F0;
-  background: rgba(5, 200, 240, 0.06);
-  text-decoration: none;
-  color: inherit;
-  transition: background-color 0.18s, box-shadow 0.18s;
-}
-
-.he-livemap:hover {
-  background: rgba(5, 200, 240, 0.12);
-  box-shadow: 0 0 0 3px rgba(5, 200, 240, 0.18);
-}
-
-.he-livemap-icon {
-  font-size: 1.75rem;
-  flex-shrink: 0;
-  line-height: 1;
-}
-
-.he-livemap-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2em;
-}
-
-.he-livemap-title {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #05C8F0;
-}
-
-.he-livemap-sub {
-  font-size: 0.825rem;
-  color: var(--vp-c-text-2);
-}
-
-.he-livemap-arrow {
-  font-size: 1.1rem;
-  color: #05C8F0;
-  flex-shrink: 0;
-  opacity: 0.75;
-  transition: opacity 0.18s, transform 0.18s;
-}
-
-.he-livemap:hover .he-livemap-arrow {
-  opacity: 1;
-  transform: translateX(3px);
 }
 
 /* ── Multilingual tagline ──────────────────────────────────────────── */
