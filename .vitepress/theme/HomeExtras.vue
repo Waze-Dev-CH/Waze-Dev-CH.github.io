@@ -1,3 +1,7 @@
+<script setup>
+import { data as taglines } from './taglines.data';
+</script>
+
 <template>
   <div class="home-extras">
     <!-- Download row -->
@@ -17,12 +21,10 @@
       >iOS</a>
     </div>
 
-    <!-- Multilingual tagline strip -->
-    <p class="he-tagline">
-      Déjouons le trafic, ensemble
-      &nbsp;·&nbsp; Gemeinsam dem Verkehr entfliehen
-      &nbsp;·&nbsp; Superiamo il traffico, tutti assieme
-      &nbsp;·&nbsp; Outsmarting traffic, together
+    <!-- Multilingual tagline strip — compiled from each locale's hero text -->
+    <p v-if="taglines.length" class="he-tagline">
+      <template v-for="(t, i) in taglines" :key="t.lang"
+        ><span v-if="i" class="he-tagline-sep">&nbsp;·&nbsp;</span>{{ t.text }}</template>
     </p>
   </div>
 </template>

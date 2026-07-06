@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Waze CH"
-  text: "Community-Dokumentation"
+  text: "Gemeinsam dem Verkehr entfliehen"
   tagline: Ressourcen für Waze-Editoren und Skripter in der Schweiz — Best Practices, Anleitungen und Werkzeuge.
   image:
     src: /waze-swiss-hero.svg
