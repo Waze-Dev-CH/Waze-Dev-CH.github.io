@@ -19,6 +19,16 @@ hero:
       text: Scripteurs →
       link: /fr/scripters/
 
+cards:
+  - variant: brand
+    icon: 🗺️
+    title: Live Map — vignette activée
+    href: https://www.waze.com/live-map/directions?rp_subscription=vignette-switzerland
+    external: true
+    body: >-
+      Testez un itinéraire avec la <a href="/fr/wazers/vignette">vignette</a>
+      suisse prise en compte.
+
 features:
   - icon: 🚗
     title: Wazers
