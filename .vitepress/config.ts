@@ -108,10 +108,6 @@ export default defineConfig({
         sidebarMenuLabel: 'Menu',
         returnToTopLabel: 'Retour en haut',
         lastUpdatedText: 'Dernière mise à jour',
-        footer: {
-          message: 'Waze Community Switzerland',
-          copyright: 'Documentation communautaire — non affiliée à Waze/Google',
-        },
       },
     },
     en: {
@@ -129,10 +125,6 @@ export default defineConfig({
         sidebarMenuLabel: 'Menu',
         returnToTopLabel: 'Return to top',
         lastUpdatedText: 'Last updated',
-        footer: {
-          message: 'Waze Community Switzerland',
-          copyright: 'Community documentation — not affiliated with Waze/Google',
-        },
       },
     },
     de: {
@@ -150,10 +142,6 @@ export default defineConfig({
         sidebarMenuLabel: 'Menü',
         returnToTopLabel: 'Nach oben',
         lastUpdatedText: 'Zuletzt aktualisiert',
-        footer: {
-          message: 'Waze Community Schweiz',
-          copyright: 'Community-Dokumentation — nicht mit Waze/Google verbunden',
-        },
       },
     },
     it: {
@@ -171,10 +159,6 @@ export default defineConfig({
         sidebarMenuLabel: 'Menu',
         returnToTopLabel: 'Torna su',
         lastUpdatedText: 'Ultimo aggiornamento',
-        footer: {
-          message: 'Waze Community Svizzera',
-          copyright: 'Documentazione comunitaria — non affiliata a Waze/Google',
-        },
       },
     },
   },

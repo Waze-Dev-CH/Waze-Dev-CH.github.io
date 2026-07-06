@@ -66,6 +66,25 @@
     padding: 18px;
 }
 
+/* ── Home — condenser la hauteur (cover sans scroll) ─────────────────── */
+@media (min-width: 768px) {
+    /* On garde la marge haute (sinon le titre passe sous la barre de nav),
+       on ne condense que le bas et l'espace vers les sections. */
+    .VPHome .VPHero {
+        padding-bottom: 0.5rem;
+    }
+
+    .VPHome .VPFeatures {
+        padding-top: 1.25rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* Cartes de section un peu plus compactes */
+    .VPHome .VPFeature {
+        padding: 1.25rem;
+    }
+}
+
 /* ── Typography ──────────────────────────────────────────────────────── */
 .vp-doc {
     line-height: 1.68;

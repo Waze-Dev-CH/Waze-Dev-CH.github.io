@@ -28,6 +28,16 @@ cards:
     body: >-
       Testez un itinéraire avec la <a href="/fr/wazers/vignette">vignette</a>
       suisse prise en compte.
+  - icon: 📲
+    title: Télécharger Waze
+    body: L'application communautaire de navigation.
+    buttons:
+      - label: Android
+        href: https://play.google.com/store/apps/details?id=com.waze
+        external: true
+      - label: iOS
+        href: https://apps.apple.com/app/id323229106
+        external: true
 
 features:
   - icon: 🚗

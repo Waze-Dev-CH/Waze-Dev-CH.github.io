@@ -28,6 +28,16 @@ const cards = computed(() => frontmatter.value.cards ?? []);
         <strong v-else class="hc-title">{{ card.title }}</strong>
         <!-- ponytail: v-html of author-controlled frontmatter — lets a locale drop an inline link (e.g. on "vignette"). Not user input, so safe. -->
         <span v-if="card.body" class="hc-text" v-html="card.body"></span>
+        <span v-if="card.buttons?.length" class="hc-buttons">
+          <a
+            v-for="(b, j) in card.buttons"
+            :key="j"
+            class="hc-pill"
+            :href="b.href"
+            :target="b.external ? '_blank' : undefined"
+            :rel="b.external ? 'noopener' : undefined"
+          >{{ b.label }}</a>
+        </span>
       </span>
     </div>
   </div>
@@ -36,11 +46,12 @@ const cards = computed(() => frontmatter.value.cards ?? []);
 <style scoped>
 .home-cards {
   max-width: 848px;
-  margin: 2.5rem auto;
+  margin: 0 auto 1.25rem auto;
   padding: 0 1.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: 1rem;
 }
 
@@ -48,9 +59,9 @@ const cards = computed(() => frontmatter.value.cards ?? []);
   display: flex;
   align-items: center;
   gap: 1rem;
-  width: 100%;
-  max-width: 560px;
-  padding: 1rem 1.25rem;
+  flex: 1 1 320px;
+  max-width: 416px;
+  padding: 0.9rem 1.15rem;
   border-radius: 0.875rem;
   border: 1.5px solid var(--vp-c-divider);
   background: var(--vp-c-bg-soft);
@@ -119,5 +130,31 @@ a.hc-title:hover .hc-arrow {
 
 .hc-text :deep(a:hover) {
   text-decoration: underline;
+}
+
+/* ── Buttons inside a card (e.g. app download) ─────────────────────── */
+.hc-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.hc-pill {
+  display: inline-block;
+  padding: 0.3em 0.95em;
+  border-radius: 999px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-brand-1);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.18s, border-color 0.18s;
+}
+
+.hc-pill:hover {
+  background: var(--vp-c-brand-soft);
+  border-color: var(--vp-c-brand-1);
 }
 </style>
