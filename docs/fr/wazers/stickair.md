@@ -1,7 +1,7 @@
 ---
 title: Stick'AIR — Genève
 description: Le macaron environnemental Stick'AIR est intégré dans Waze pour les restrictions de circulation différenciée à Genève.
-order: 14
+order: 3
 ---
 
 # Stick'AIR — Genève
@@ -33,3 +33,7 @@ Non. Le système genevois reconnaît les macarons Crit'Air français, qui sont a
 ## Informations officielles
 
 - [ge.ch — Stick'AIR et circulation différenciée](https://www.ge.ch/stick-air-circulation-differenciee)
+
+::: quote Source(s)
+https://www.waze-switzerland.ch/stickair-ge
+:::

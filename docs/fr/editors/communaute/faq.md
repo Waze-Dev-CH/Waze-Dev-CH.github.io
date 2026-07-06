@@ -34,7 +34,7 @@ Vous ne pouvez pas l'éditer directement. Demandez le déverrouillage via le for
 ## Spécificités suisses
 
 **Pourquoi Waze évite-t-il les autoroutes suisses ?**
-Les autoroutes suisses nécessitent une **vignette** (CHF 40 / an). Sans elle, l'amende est de CHF 200. Waze évite les autoroutes par défaut pour les utilisateurs n'ayant pas confirmé la possession d'une vignette. Voir la page [Vignette autoroutière](/fr/editors/cartographie/vignette).
+Les autoroutes suisses nécessitent une **vignette** (CHF 40 / an). Sans elle, l'amende est de CHF 200. Waze évite les autoroutes par défaut pour les utilisateurs n'ayant pas confirmé la possession d'une vignette. Voir la page [Vignette autoroutière](/fr/wazers/vignette).
 
 **Pourquoi les radars fixes ne sont-ils pas signalés en Suisse ?**
 Les alertes radars sont **interdites par la loi suisse**. Cette fonctionnalité est donc désactivée dans l'application en Suisse. Il n'y a pas de plan de réactivation sauf changement législatif.

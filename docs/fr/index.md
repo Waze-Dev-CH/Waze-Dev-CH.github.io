@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "Waze CH"
-  text: "Documentation communautaire"
-  tagline: Ressources pour les éditeurs et scripteurs Waze en Suisse — bonnes pratiques, guides et outils.
+  text: "Déjouons le trafic, ensemble"
+  tagline: Bienvenue sur le site communautaire des Wazers et éditeurs suisses — géré par des bénévoles, non affilié à Waze/Google.
   image:
     src: /waze-swiss-hero.svg
     alt: Waze CH
@@ -13,18 +13,26 @@ hero:
       text: Éditeurs →
       link: /fr/editors/
     - theme: alt
+      text: Wazers →
+      link: /fr/wazers/
+    - theme: alt
       text: Scripteurs →
       link: /fr/scripters/
 
 features:
   - icon: 🗺️
     title: Éditeurs
-    details: Bonnes pratiques pour l'édition de la carte Waze en Suisse — routes, lieux, spécificités locales.
+    details: Bonnes pratiques pour l'édition de la carte suisse — routes, lieux, spécificités locales.
     link: /fr/editors/
     linkText: Commencer
+  - icon: 🚗
+    title: Wazers
+    details: Conducteurs suisses — vignette autoroutière, Stick'AIR, FAQ, téléchargement de l'application.
+    link: /fr/wazers/
+    linkText: Découvrir
   - icon: ⚙️
     title: Scripteurs
-    details: Ressources pour contribuer aux scripts Waze — développement, publication et maintenance.
+    details: Ressources pour contribuer aux userscripts Waze — développement, publication et maintenance.
     link: /fr/scripters/
     linkText: Commencer
 ---

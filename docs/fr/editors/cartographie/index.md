@@ -39,5 +39,5 @@ La Suisse est multilingue, utilise sa propre classification routière (A, N1–N
 - [Guidelines cartographie autoroutes](/fr/editors/cartographie/freeways-guidelines) — bretelles, échangeurs, géométrie
 
 ### Spécificités suisses
-- [Vignette autoroutière](/fr/editors/cartographie/vignette) — configuration dans Waze
-- [Stick'AIR — Genève](/fr/editors/cartographie/stickair-geneve) — circulation différenciée
+- [Vignette autoroutière](/fr/wazers/vignette) — configuration conducteur (section Wazers)
+- [Stick'AIR — Genève](/fr/wazers/stickair) — circulation différenciée (section Wazers)
