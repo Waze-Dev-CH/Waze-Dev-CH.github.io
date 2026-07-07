@@ -27,9 +27,10 @@ Pour comprendre qui fait quoi (AM, SM, RTC, CM), voir [Rôles d'éditeur](/fr/ed
 
 - [FAQ](/fr/editors/communaute/faq) — questions fréquentes
 - [Ressources](/fr/editors/communaute/ressources) — liens externes, Wikis, outils
-- [Cafés & Meetups](/fr/editors/communaute/cafes-meetups) — rencontres de la communauté
-- [Contact](/fr/editors/communaute/contact) — coordinateurs, e-mails, canaux
-- [Partenariats](/fr/editors/communaute/partenariats) — programmes officiels Waze
+
+::: note Rencontres, contacts et partenariats
+Les **Cafés & Meetups**, les **coordinateurs (Champs)** et les **partenariats officiels** ont désormais leur propre section : voir [Communauté](/fr/communaute/).
+:::
 
 ::: quote Sources
 - Hauptseite (page principale DACH) : https://www.waze.com/discuss/t/hauptseite/377253

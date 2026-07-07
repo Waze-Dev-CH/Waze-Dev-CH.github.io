@@ -1,7 +1,7 @@
 ---
 title: Cafés & Meetups
 description: Rencontres et événements communautaires Waze en Suisse et dans la région DACH.
-order: 4
+order: 2
 ---
 
 # Cafés & Meetups

@@ -7,7 +7,7 @@ import taskLists from 'markdown-it-task-lists';
 import abbr from 'markdown-it-abbr';
 
 const sections = [
-  'fr/editors', 'fr/wazers', 'fr/scripters',
+  'fr/editors', 'fr/wazers', 'fr/communaute', 'fr/scripters',
   'en/editors', 'en/scripters',
   'de/editors', 'de/scripters',
   'it/editors', 'it/scripters',
@@ -100,6 +100,7 @@ export default defineConfig({
           { text: 'Wazers', link: '/fr/wazers/', activeMatch: '/fr/wazers/' },
           { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
           { text: 'Scripteurs', link: '/fr/scripters/', activeMatch: '/fr/scripters/' },
+          { text: 'Communauté', link: '/fr/communaute/', activeMatch: '/fr/communaute/' },
         ],
         sidebar,
         outline: { level: [2, 3], label: 'Sur cette page' },
