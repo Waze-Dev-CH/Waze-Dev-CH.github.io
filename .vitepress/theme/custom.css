@@ -465,6 +465,52 @@
     border-radius: 0.4rem;
 }
 
+/* ── Images d'illustration (captures d'app, bannières, photos) ────────── */
+.vp-doc .media-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1.5rem 0;
+}
+
+.vp-doc .media-row img {
+    margin: 0;
+}
+
+/* Captures d'écran de l'app (mockups téléphone, fond transparent) */
+.vp-doc .app-shot {
+    max-height: 440px;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Bannière / logo centré */
+.vp-doc .banner-img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: min(460px, 100%);
+    height: auto;
+}
+
+/* Petit macaron / pictogramme */
+.vp-doc .macaron {
+    display: block;
+    margin: 1rem auto;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Photo pleine largeur arrondie */
+.vp-doc .photo {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
 /* Illustration maison : segment et croisement */
 .vp-doc .diagram {
     display: block;

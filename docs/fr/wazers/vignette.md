@@ -6,6 +6,8 @@ order: 2
 
 # Vignette autoroutière suisse
 
+<img class="banner-img" style="max-width:280px" src="/img/wazers/vignette-1.png" alt="Waze et la vignette autoroutière suisse">
+
 ::: important
 La vignette est **obligatoire** sur toutes les autoroutes suisses. L'amende en cas d'absence est de **CHF 200**.
 :::
@@ -20,6 +22,10 @@ La vignette autoroutière suisse coûte **CHF 40 par an** et doit être apposée
 2. Aller dans **Navigation**
 3. Sélectionner **Ajouter un pass péage/covoiturage**
 4. Choisir **Vignette CH** et confirmer
+
+<div class="media-row">
+<img class="app-shot" src="/img/wazers/vignette-2.png" alt="Écran « Passes » de Waze avec l'option Vignette CH à ajouter">
+</div>
 
 Une fois activé, Waze utilisera les autoroutes suisses dans ses calculs d'itinéraire.
 

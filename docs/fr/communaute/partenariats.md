@@ -14,6 +14,12 @@ Ce site et cette documentation sont gérés par des bénévoles de la communaut�
 
 Waze propose plusieurs programmes officiels à destination des organisations, collectivités et développeurs.
 
+<div class="media-row">
+<img src="/img/communaute/partenariat-1.png" alt="Global Events Program">
+<img src="/img/communaute/partenariat-2.png" alt="Waze for Cities">
+<img src="/img/communaute/partenariat-3.png" alt="Waze Beacons">
+</div>
+
 - **Global Events Program** — « Planning an event? Help drivers find the fastest route, parking and more » — destiné aux organisateurs d'événements souhaitant améliorer la gestion du trafic et du stationnement autour de leur manifestation.
 
 - **Waze for Cities** — « Join the mobility leaders using data to reinvent cities » — à destination des villes et autorités de transport qui souhaitent exploiter les données de navigation pour optimiser la mobilité urbaine.

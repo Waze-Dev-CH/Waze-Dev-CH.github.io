@@ -6,6 +6,8 @@ order: 2
 
 # Cafés & Meetups
 
+<img class="banner-img" src="/img/communaute/cafe-1.png" alt="Waze Café — carte des cantons de Suisse romande">
+
 La communauté Waze suisse se retrouve régulièrement lors d'événements locaux et régionaux, sous deux formats principaux : les Waze Cafés et les Local Meetups.
 
 ## Waze Cafés
@@ -20,7 +22,11 @@ Il n'existe pas encore d'initiative équivalente côté alémanique ou tessinois
 
 ## Waze Local Meetups
 
+<img class="banner-img" src="/img/communaute/cafe-2.png" alt="Bannière Waze Local Meetups">
+
 Les Waze Local Meetups sont des événements annuels de deux jours (environ 8 heures de programme) qui réunissent des membres nouveaux et expérimentés autour des grands sujets communautaires : édition, outils, gouvernance et échanges entre régions.
+
+<img class="photo" src="/img/communaute/cafe-3.png" alt="Photo de groupe d'un Local Meetup DACH">
 
 ## D-A-CH Local Meetups
 
