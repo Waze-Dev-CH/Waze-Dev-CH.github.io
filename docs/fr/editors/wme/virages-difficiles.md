@@ -4,6 +4,8 @@ description: Comment marquer et configurer les virages difficiles dans le WME en
 order: 7
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/stressed.png" alt="">
+
 # Virages difficiles
 
 ::: note Niveau L2

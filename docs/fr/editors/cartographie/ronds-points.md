@@ -3,6 +3,8 @@ title: Ronds-points et giratoires
 order: 7
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/map-scene.png" alt="">
+
 # Ronds-points et giratoires
 
 Cette page décrit la création et l'édition d'un rond-point dans WME, ainsi que le standard suisse de verrouillage.

@@ -4,6 +4,8 @@ description: Accord suisse sur la cartographie des Feldwege, chemins forestiers 
 order: 9
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/road.png" alt="">
+
 # Chemins agricoles et routes à travers champs
 
 ::: tip Accessible à tous — Niveau L1

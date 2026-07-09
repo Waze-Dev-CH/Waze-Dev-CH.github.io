@@ -3,6 +3,8 @@ title: Éditeur de carte (WME)
 order: 30
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/scene-editor.png" alt="">
+
 # Éditeur de carte (WME)
 
 Le **Waze Map Editor (WME)** est l'outil en ligne qui permet de modifier la carte Waze. Il est accessible à tous les utilisateurs disposant d'un compte Waze sur [waze.com/editor](https://www.waze.com/editor).

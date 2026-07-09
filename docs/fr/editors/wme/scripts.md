@@ -3,6 +3,8 @@ title: Scripts et outils
 order: 15
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/code-editor.png" alt="">
+
 # Scripts et outils
 
 Des userscripts étendent les fonctionnalités du WME. Ils s'installent via un gestionnaire de scripts comme **Tampermonkey** (Chrome/Edge) ou **Greasemonkey** (Firefox).

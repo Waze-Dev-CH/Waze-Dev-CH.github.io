@@ -4,6 +4,8 @@ description: Conventions de nommage des segments, entrées/sorties et localités
 order: 4
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/city.png" alt="">
+
 # Nommage des routes et des villes
 
 ::: tip Accessible à tous — Niveau L1

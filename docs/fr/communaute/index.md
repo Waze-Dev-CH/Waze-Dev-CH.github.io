@@ -4,6 +4,8 @@ description: La communauté Waze suisse — coordinateurs (Champs), rencontres, 
 order: 1
 ---
 
+<img class="macaron" src="/img/waze-kit/communaute.png" alt="" width="96" height="96">
+
 # Communauté Waze Suisse
 
 La communauté Waze suisse fait partie de la zone **DACH** (Allemagne, Autriche, Suisse). Elle réunit conducteurs et éditeurs bénévoles autour d'un forum, d'un Discord et de rôles d'encadrement. Ce site est géré par la communauté — il n'est pas affilié à Waze/Google.

@@ -4,6 +4,8 @@ description: Documentation pour les éditeurs Waze en Suisse — bonnes pratique
 order: 1
 ---
 
+<img class="macaron" src="/img/waze-kit/editors.png" alt="" width="96" height="96">
+
 # Éditeurs Waze CH
 
 Bienvenue dans la documentation pour les éditeurs Waze en Suisse. La carte Waze est construite entièrement par des bénévoles : en conduisant avec l'application, vous accumulez des droits d'édition sur les zones parcourues.

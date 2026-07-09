@@ -3,6 +3,8 @@ title: Premiers pas
 order: 10
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/pencil.png" alt="">
+
 # Premiers pas pour un nouvel éditeur
 
 Bienvenue ! Tu viens de commencer à éditer la carte Waze en Suisse, ou tu t'apprêtes à le faire. Cette page rassemble l'essentiel pour démarrer du bon pied : comprendre ton niveau, ouvrir l'éditeur, installer le bon outil, et savoir quoi modifier sans risque.

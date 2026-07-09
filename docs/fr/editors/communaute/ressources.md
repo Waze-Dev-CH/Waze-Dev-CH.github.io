@@ -3,6 +3,8 @@ title: Ressources utiles
 order: 3
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/chart.png" alt="">
+
 # Ressources utiles
 
 Cette page regroupe les liens externes et les outils utiles pour éditer la carte Waze en Suisse. En cas de doute, les ressources locales (Wiki suisse, forum, Discord) priment toujours sur l'improvisation.

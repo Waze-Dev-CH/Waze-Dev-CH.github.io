@@ -3,6 +3,8 @@ title: Interface du WME
 order: 2
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/map-scene.png" alt="">
+
 # Interface du WME
 
 Le Waze Map Editor (WME) est accessible sur [waze.com/editor](https://www.waze.com/editor). Il se compose de trois zones principales.

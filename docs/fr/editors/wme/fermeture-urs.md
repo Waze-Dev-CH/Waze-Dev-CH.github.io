@@ -4,6 +4,8 @@ description: Règles pour clore correctement les signalements de carte (Update R
 order: 11
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/magnifier.png" alt="">
+
 # Fermeture des URs
 
 ::: note Niveau L2

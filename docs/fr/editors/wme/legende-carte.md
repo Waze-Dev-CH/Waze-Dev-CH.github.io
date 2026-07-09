@@ -4,6 +4,8 @@ description: Types de segments disponibles dans le Waze Map Editor et leur usage
 order: 3
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/map-city.png" alt="">
+
 # Légende de la carte suisse
 
 ::: tip Accessible à tous — Niveau L1

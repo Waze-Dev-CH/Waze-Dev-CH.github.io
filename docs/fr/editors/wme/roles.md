@@ -3,6 +3,8 @@ title: Rôles d'éditeur
 order: 14
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/people.png" alt="">
+
 # Rôles d'éditeur
 
 En plus du niveau d'éditeur, la communauté Waze suisse s'appuie sur des rôles spécifiques qui accordent des droits d'édition étendus.

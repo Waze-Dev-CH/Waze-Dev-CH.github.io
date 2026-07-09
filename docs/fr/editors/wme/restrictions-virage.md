@@ -3,6 +3,8 @@ title: Restrictions de virage
 order: 6
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/traffic.png" alt="">
+
 # Restrictions de virage
 
 Les restrictions de virage (turn restrictions) indiquent à Waze quels mouvements sont autorisés ou interdits à une jonction. Elles ont un impact direct sur le calcul d'itinéraire.

@@ -4,6 +4,8 @@ description: Guidelines officielles pour mapper les parkings et aires de station
 order: 8
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/location.png" alt="">
+
 # Cartographie des parkings
 
 ::: tip Accessible à tous — Niveau L1

@@ -3,6 +3,8 @@ title: "Numérotation des autoroutes (Axx / Exx)"
 order: 11
 ---
 
+<img class="macaron" src="/img/editors/badge-freeway.png" alt="" width="128" height="128">
+
 # Numérotation des autoroutes (Axx / Exx)
 
 Les autoroutes suisses sont identifiées par deux systèmes de numérotation affichés sur les panneaux physiques :

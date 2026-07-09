@@ -3,6 +3,8 @@ title: Communauté
 order: 50
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/people.png" alt="">
+
 # Communauté
 
 La communauté Waze suisse fait partie de la zone **DACH** (Allemagne, Autriche, Suisse). Elle s'organise autour d'un forum, d'un Discord et de rôles d'encadrement.

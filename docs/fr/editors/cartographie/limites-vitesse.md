@@ -3,6 +3,8 @@ title: Limites de vitesse
 order: 5
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/moto.png" alt="">
+
 # Limites de vitesse
 
 Cette page couvre le renseignement des limites de vitesse sur les segments en Suisse.

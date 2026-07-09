@@ -4,6 +4,8 @@ description: Réponses aux questions les plus courantes sur Waze en Suisse, pour
 order: 2
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/magnifier.png" alt="">
+
 # FAQ — Questions fréquentes
 
 ## Application Waze

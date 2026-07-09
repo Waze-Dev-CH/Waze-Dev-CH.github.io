@@ -3,6 +3,8 @@ title: "Cartographie des autoroutes — Guidelines 2024"
 order: 12
 ---
 
+<img class="macaron" src="/img/editors/badge-freeway.png" alt="" width="128" height="128">
+
 # Cartographie des autoroutes — Guidelines 2024
 
 Par vince1612  

@@ -4,6 +4,8 @@ description: Règles d'édition pour les voies (lanes) et passages à niveau en 
 order: 8
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/road.png" alt="">
+
 # Voies de circulation et passages à niveau
 
 ::: warning Niveau L3+

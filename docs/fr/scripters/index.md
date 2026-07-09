@@ -2,6 +2,8 @@
 title: Scripteurs
 ---
 
+<img class="macaron" src="/img/waze-kit/scripters.png" alt="" width="96" height="96">
+
 # Scripteurs Waze CH
 
 Bienvenue dans la section des scripteurs. Cette documentation couvre la contribution aux scripts Waze — de la création à la maintenance.

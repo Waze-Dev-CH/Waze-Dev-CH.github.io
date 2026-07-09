@@ -3,6 +3,8 @@ title: Segments
 order: 5
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/road.png" alt="">
+
 # Segments
 
 Un segment est l'unité de base de la carte Waze : c'est un tronçon de route entre deux jonctions. Toute route est composée d'un ou plusieurs segments.

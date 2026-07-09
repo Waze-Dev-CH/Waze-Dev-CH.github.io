@@ -3,6 +3,8 @@ title: Guide des intersections
 order: 6
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/map-city.png" alt="">
+
 # Guide des intersections
 
 Cette page synthétise le guide suisse des intersections. Le principe directeur est simple : une intersection bien dessinée produit des instructions de guidage correctes. Une intersection doit représenter la réalité logique de la circulation, pas seulement sa géométrie exacte.

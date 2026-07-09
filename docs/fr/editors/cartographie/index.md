@@ -3,6 +3,8 @@ title: Cartographie
 order: 40
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/map-scene.png" alt="">
+
 # Cartographie
 
 Cette section regroupe les règles d'édition spécifiques à la Suisse. Elles complètent les règles générales Waze et priment sur les guides des pays voisins.

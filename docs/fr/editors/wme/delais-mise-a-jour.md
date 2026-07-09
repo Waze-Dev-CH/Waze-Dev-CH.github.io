@@ -4,6 +4,8 @@ description: Comprendre quand les modifications apportées dans le WME deviennen
 order: 12
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/clocks.png" alt="">
+
 # Délais de mise à jour de la carte
 
 ::: tip Accessible à tous — Niveau L1

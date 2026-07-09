@@ -3,6 +3,8 @@ title: Géométrie des segments
 order: 3
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/road.png" alt="">
+
 # Géométrie des segments
 
 Cette page rassemble les règles de géométrie pour l'édition des segments en Suisse : micro-segments, boucles, culs-de-sac, demi-tours, rue étroite, voies privées, transitions et routes décalées.

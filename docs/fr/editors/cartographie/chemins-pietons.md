@@ -3,6 +3,8 @@ title: Chemins piétons
 order: 10
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/people2.png" alt="">
+
 # Chemins piétons
 
 Waze est une application de navigation automobile. Les chemins piétons ne se cartographient que lorsqu'ils servent réellement la navigation routière. Le reste encombre l'affichage sans bénéfice.

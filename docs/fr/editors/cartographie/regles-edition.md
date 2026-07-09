@@ -4,6 +4,8 @@ description: Règles spécifiques à la Suisse romande pour l'édition de la car
 order: 2
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/checkmark.png" alt="">
+
 # Règles d'édition — Suisse romande
 
 ::: note Niveau L2

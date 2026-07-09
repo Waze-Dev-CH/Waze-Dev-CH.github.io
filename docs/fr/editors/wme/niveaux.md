@@ -3,6 +3,15 @@ title: Niveaux d'éditeur
 order: 13
 ---
 
+<div class="media-row">
+<img src="/img/editors/badge-l1.png" alt="Niveau 1" width="84">
+<img src="/img/editors/badge-l2.png" alt="Niveau 2" width="84">
+<img src="/img/editors/badge-l3.png" alt="Niveau 3" width="84">
+<img src="/img/editors/badge-l4.png" alt="Niveau 4" width="84">
+<img src="/img/editors/badge-l5.png" alt="Niveau 5" width="84">
+<img src="/img/editors/badge-l6.png" alt="Niveau 6" width="84">
+</div>
+
 # Niveaux d'éditeur
 
 Waze utilise un système de niveaux (L1 à L6+) qui détermine le rayon d'édition et les segments accessibles.

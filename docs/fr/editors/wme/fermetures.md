@@ -3,6 +3,8 @@ title: Fermetures de routes
 order: 10
 ---
 
+<img class="macaron" src="/img/editors/roadblock.png" alt="" width="128" height="128">
+
 # Fermetures de routes
 
 Cette page couvre la gestion des fermetures de routes et des interdictions de circuler limitées dans le temps en Suisse: le choix de l'approche selon la durée, l'ajout de restrictions horaires dans l'éditeur, le signalement d'une fermeture et le traitement des Update Requests (URs) de fermeture.

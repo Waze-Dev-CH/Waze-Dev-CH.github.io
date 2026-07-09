@@ -4,6 +4,8 @@ description: Règles d'édition pour les dangers permanents (passages à niveau,
 order: 9
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/flame.png" alt="">
+
 # Dangers permanents
 
 ::: warning Niveau L4+

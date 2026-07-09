@@ -4,6 +4,8 @@ description: Comment les types de segments influencent le calcul d'itinéraire d
 order: 4
 ---
 
+<img class="banner-img is-narrow" src="/img/editors/road.png" alt="">
+
 # Bases du routing
 
 ::: note Niveau L2
