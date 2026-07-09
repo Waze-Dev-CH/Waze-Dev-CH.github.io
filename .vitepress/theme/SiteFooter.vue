@@ -1,6 +1,5 @@
 <script setup>
 import { useData } from 'vitepress';
-import { useSidebar } from 'vitepress/theme';
 import { computed } from 'vue';
 import { data as taglines } from './taglines.data';
 
@@ -15,12 +14,11 @@ const COPY = {
 };
 
 const { lang } = useData();
-const { hasSidebar } = useSidebar();
 const line = computed(() => COPY[lang.value] ?? COPY.fr);
 </script>
 
 <template>
-  <footer class="site-footer" :class="{ 'has-sidebar': hasSidebar }">
+  <footer class="site-footer">
     <p v-if="taglines.length" class="sf-slogans">
       <template v-for="(t, i) in taglines" :key="t.lang"><span
         v-if="i"
@@ -34,35 +32,31 @@ const line = computed(() => COPY[lang.value] ?? COPY.fr);
 
 <style scoped>
 .site-footer {
-  border-top: 1px solid var(--vp-c-divider);
-  padding: 1rem 1.5rem 1.25rem;
+  /** z-index : passe au-dessus du « curtain » (fixed, fond blanc) de l'aside
+      qui débordait sur la bande cyan en bas de page. */
+  position: relative;
+  z-index: 20;
+  background: #32CCFF;
+  padding: 1.5rem;
   text-align: center;
-}
-
-/* Le contenu (fixe) laisse la sidebar occuper la gouttière gauche en desktop ;
-   on décale le footer d'autant pour qu'il reste centré dans la colonne. */
-@media (min-width: 960px) {
-  .site-footer.has-sidebar {
-    padding-left: calc(var(--vp-sidebar-width) + 1.5rem);
-  }
 }
 
 .sf-slogans {
   margin: 0 0 0.3rem;
   font-size: 0.8rem;
   line-height: 1.6;
-  color: var(--vp-c-text-2);
+  color: rgba(15, 30, 42, 0.75);
 }
 
 .sf-sep {
   margin: 0 0.5em;
-  color: var(--vp-c-divider);
+  color: rgba(15, 30, 42, 0.35);
 }
 
 .sf-copy {
   margin: 0;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: var(--vp-c-text-1);
+  color: #0F1E2A;
 }
 </style>

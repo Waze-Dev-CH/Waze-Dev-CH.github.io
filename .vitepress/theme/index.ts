@@ -4,12 +4,14 @@ import { h } from 'vue';
 import HomeCards from './HomeCards.vue';
 import SiteFooter from './SiteFooter.vue';
 import ChampsGrid from './ChampsGrid.vue';
+import WazerHome from './wazer/WazerHome.vue';
 import './custom.css';
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }: EnhanceAppContext) {
     app.component('ChampsGrid', ChampsGrid);
+    app.component('WazerHome', WazerHome);
   },
   Layout() {
     return h(DefaultTheme.Layout, null, {

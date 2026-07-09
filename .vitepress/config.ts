@@ -87,7 +87,7 @@ export default defineConfig({
   ],
 
   head: [
-    ['link', { rel: 'icon', href: '/waze-swiss-hero.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: '/waze-suisse-logo.png', type: 'image/png' }],
   ],
 
   locales: {
@@ -95,6 +95,7 @@ export default defineConfig({
       label: 'Français',
       lang: 'fr',
       link: '/fr/',
+      title: 'Waze Suisse',
       themeConfig: {
         nav: [
           { text: 'Wazers', link: '/fr/wazers/', activeMatch: '/fr/wazers/' },
@@ -114,6 +115,7 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en',
+      title: 'Waze Switzerland',
       themeConfig: {
         nav: [
           { text: 'Editors', link: '/en/editors/', activeMatch: '/en/editors/' },
@@ -131,6 +133,7 @@ export default defineConfig({
     de: {
       label: 'Deutsch',
       lang: 'de',
+      title: 'Waze Schweiz',
       themeConfig: {
         nav: [
           { text: 'Editoren', link: '/de/editors/', activeMatch: '/de/editors/' },
@@ -148,6 +151,7 @@ export default defineConfig({
     it: {
       label: 'Italiano',
       lang: 'it',
+      title: 'Waze Svizzera',
       themeConfig: {
         nav: [
           { text: 'Editor', link: '/it/editors/', activeMatch: '/it/editors/' },
@@ -173,7 +177,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: { src: '/waze-swiss-hero.svg', alt: 'Waze CH' },
+    logo: { src: '/waze-suisse-logo.png', alt: 'Waze Community Switzerland' },
       socialLinks: [{ icon: 'github', link: 'https://github.com/Waze-Dev-CH/Waze-Dev-CH.github.io' }],
     search: {
       provider: 'local',

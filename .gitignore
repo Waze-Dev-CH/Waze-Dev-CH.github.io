@@ -29,3 +29,8 @@ npm-debug.log*
 
 # Obsidian vault
 .obsidian/
+
+# Dump brut du kit d'assets Waze (source) — seuls les assets utilisés sont dans docs/public/
+Waze_Switzerland_Assets/
+# Playwright MCP artefacts
+.playwright-mcp/
