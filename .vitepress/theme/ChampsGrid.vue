@@ -10,6 +10,20 @@ const { frontmatter } = useData();
 const champs = computed(() => frontmatter.value.champs ?? []);
 const domain = 'waze-switzerland.ch';
 
+// Badges de fonction officiels Waze, déduits du champ `roles`.
+function roleIcons(c) {
+  const r = c.roles || '';
+  const out = [];
+  if (/Partners Coordinator/i.test(r)) out.push({ src: '/img/roles/partner-coordinator.png', label: 'Waze Partners Coordinator' });
+  if (/Global[^·]*Champ/i.test(r))     out.push({ src: '/img/roles/global-champ.png', label: 'Global Champ' });
+  if (/Local Champ/i.test(r))          out.push({ src: '/img/roles/local-champ.png', label: 'Local Champ' });
+  if (/Country Manager/i.test(r))      out.push({ src: '/img/roles/country-manager.png', label: 'Country Manager' });
+  const lvl = r.match(/Level\s*([1-6])\s*Map Editor/i);
+  if (lvl)                             out.push({ src: `/img/editors/badge-l${lvl[1]}.png`, label: `Level ${lvl[1]} Map Editor` });
+  else if (/Map Editor/i.test(r))      out.push({ src: '/img/editors/editors.png', label: 'Map Editor' });
+  return out;
+}
+
 const revealed = ref(false);
 onMounted(() => { revealed.value = true; });
 </script>
@@ -18,8 +32,23 @@ onMounted(() => { revealed.value = true; });
   <div class="champs-grid">
     <div v-for="c in champs" :key="c.pseudo" class="champ-card">
       <div class="champ-head">
-        <span class="champ-pseudo">{{ c.pseudo }}</span>
-        <span v-if="c.title" class="champ-title">{{ c.title }}</span>
+        <div class="champ-id">
+          <span class="champ-pseudo">{{ c.pseudo }}</span>
+          <span v-if="c.title" class="champ-title">{{ c.title }}</span>
+        </div>
+        <div v-if="roleIcons(c).length" class="champ-icons" aria-label="Fonctions">
+          <img
+            v-for="ic in roleIcons(c)"
+            :key="ic.label"
+            class="champ-icon"
+            :src="ic.src"
+            :alt="ic.label"
+            :title="ic.label"
+            width="30"
+            height="30"
+            loading="lazy"
+          />
+        </div>
       </div>
       <p v-if="c.roles" class="champ-roles">{{ c.roles }}</p>
       <p v-if="c.langs" class="champ-langs">
@@ -62,8 +91,32 @@ onMounted(() => { revealed.value = true; });
 
 .champ-head {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.champ-id {
+  display: flex;
   flex-direction: column;
   gap: 0.1rem;
+  min-width: 0;
+}
+
+.champ-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  flex-shrink: 0;
+  max-width: 132px;
+  justify-content: flex-end;
+}
+
+.champ-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 
 .champ-pseudo {

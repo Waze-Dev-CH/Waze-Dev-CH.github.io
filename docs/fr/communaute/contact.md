@@ -25,7 +25,7 @@ champs:
     email: mattko
   - pseudo: alediwi
     title: DACH Local Champ
-    roles: DACH Local Champ · Country Manager · Map Editor
+    roles: DACH Local Champ · Country Manager · Level 5 Map Editor
     langs: [DE, EN, IT]
     email: alediwi
 ---
