@@ -6,7 +6,7 @@ order: 2
 
 # Vignette autoroutière suisse
 
-<img class="banner-img" style="max-width:280px" src="/img/wazers/vignette-1.png" alt="Waze et la vignette autoroutière suisse">
+<img class="banner-img is-narrow" src="/img/wazers/vignette-1.png" alt="Waze et la vignette autoroutière suisse">
 
 ::: important
 La vignette est **obligatoire** sur toutes les autoroutes suisses. L'amende en cas d'absence est de **CHF 200**.

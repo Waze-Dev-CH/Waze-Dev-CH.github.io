@@ -494,6 +494,11 @@
     height: auto;
 }
 
+/* Bannière étroite (logo carré) */
+.vp-doc .banner-img.is-narrow {
+    max-width: min(280px, 100%);
+}
+
 /* Petit macaron / pictogramme */
 .vp-doc .macaron {
     display: block;

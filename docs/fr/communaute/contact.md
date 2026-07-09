@@ -32,7 +32,7 @@ champs:
 
 # Contact
 
-Chez Waze, la Suisse fait partie du groupement **DACH** (Allemagne, Autriche, Suisse). La communication entre utilisateurs et communauté se fait principalement sur les **forums Waze** et sur **Discord**. Pour signaler une information aux éditeurs de carte (fermeture, changement de voirie, etc.), écrivez à **report@waze-switzerland.ch**.
+Chez Waze, la Suisse fait partie du groupement **DACH** (Allemagne, Autriche, Suisse). La communication entre utilisateurs et communauté se fait principalement sur les **forums Waze** et sur **Discord**. Pour signaler une erreur de carte aux éditeurs, écrivez à **report@waze-switzerland.ch**. Pour une **fermeture de route** planifiée (événement, chantier), voir la section [Signaler une fermeture de route](#signaler-une-fermeture-de-route) ci-dessous.
 
 ## Les Champs
 
@@ -55,7 +55,6 @@ Ces adresses sont destinées aux fermetures planifiées et aux chantiers. Pour l
 
 - **Forum Waze Suisse** — catégorie éditeurs : https://www.waze.com/discuss/c/editors/switzerland/4790
 - **Discord communautaire « Waze DACH »** — échanges en temps réel : https://discord.gg/dmxUwvTkk5
-- **Page Facebook** de la communauté Waze Suisse — annonces et actualités
 
 ::: quote Source(s)
 - Contact — Waze Switzerland : https://www.waze-switzerland.ch/contact/fr

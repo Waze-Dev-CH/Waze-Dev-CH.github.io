@@ -2,19 +2,16 @@
 import { useData } from 'vitepress';
 import { ref, computed, onMounted } from 'vue';
 
-// Champs are declared in the page frontmatter (`champs:`). Emails are stored as
-// the user part only + a shared domain; the full address is never in the SSR
-// HTML — it is assembled client-side on mount, so scrapers reading the static
-// markup don't get a harvestable address.
+// Champs are declared in the page frontmatter (`champs:`). Only the user part of
+// the address is in the frontmatter; the domain is added client-side on mount,
+// so the static HTML never contains a complete, recomposable address. Before
+// hydration we render a plain <span> (no dead href, works without JS as text).
 const { frontmatter } = useData();
 const champs = computed(() => frontmatter.value.champs ?? []);
 const domain = 'waze-switzerland.ch';
 
 const revealed = ref(false);
 onMounted(() => { revealed.value = true; });
-
-const label = (user) => (revealed.value ? `${user}@${domain}` : `${user} [chez] ${domain}`);
-const href = (user) => (revealed.value ? `mailto:${user}@${domain}` : undefined);
 </script>
 
 <template>
@@ -28,12 +25,19 @@ const href = (user) => (revealed.value ? `mailto:${user}@${domain}` : undefined)
       <p v-if="c.langs" class="champ-langs">
         <span v-for="l in c.langs" :key="l" class="champ-lang">{{ l }}</span>
       </p>
-      <a
-        v-if="c.email"
-        class="champ-mail"
-        :href="href(c.email)"
-        :title="revealed ? 'Écrire un e-mail' : undefined"
-      >{{ label(c.email) }}</a>
+      <template v-if="c.email">
+        <a
+          v-if="revealed"
+          class="champ-mail"
+          :href="`mailto:${c.email}@${domain}`"
+          title="Écrire un e-mail"
+        >{{ c.email }}@{{ domain }}</a>
+        <span
+          v-else
+          class="champ-mail"
+          aria-label="Adresse e-mail (activez JavaScript pour l'afficher)"
+        >{{ c.email }}@…</span>
+      </template>
     </div>
   </div>
 </template>
