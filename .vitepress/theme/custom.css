@@ -66,6 +66,25 @@
     padding: 18px;
 }
 
+/* ── Home — condenser la hauteur (cover sans scroll) ─────────────────── */
+@media (min-width: 768px) {
+
+    /* On garde la marge haute (sinon le titre passe sous la barre de nav),
+       on ne condense que le bas et l'espace vers les sections. */
+    .VPHome .VPHero {
+        padding-bottom: 0.5rem;
+    }
+
+    .VPHome .VPHomeFeatures {
+        padding-top: 0.75rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .VPHome {
+        margin-bottom: 0 !important;
+    }
+}
+
 /* ── Typography ──────────────────────────────────────────────────────── */
 .vp-doc {
     line-height: 1.68;
@@ -444,6 +463,57 @@
     width: auto;
     margin: 0;
     border-radius: 0.4rem;
+}
+
+/* ── Images d'illustration (captures d'app, bannières, photos) ────────── */
+.vp-doc .media-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1.5rem 0;
+}
+
+.vp-doc .media-row img {
+    margin: 0;
+}
+
+/* Captures d'écran de l'app (mockups téléphone, fond transparent) */
+.vp-doc .app-shot {
+    max-height: 440px;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Bannière / logo centré */
+.vp-doc .banner-img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: min(460px, 100%);
+    height: auto;
+}
+
+/* Bannière étroite (logo carré) */
+.vp-doc .banner-img.is-narrow {
+    max-width: min(280px, 100%);
+}
+
+/* Petit macaron / pictogramme */
+.vp-doc .macaron {
+    display: block;
+    margin: 1rem auto;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Photo pleine largeur arrondie */
+.vp-doc .photo {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
 }
 
 /* Illustration maison : segment et croisement */

@@ -31,24 +31,8 @@ Les zones où vous avez conduit avec Waze au cours des **90 derniers jours**. Le
 Vous ne pouvez pas l'éditer directement. Demandez le déverrouillage via le forum communautaire. Une fois approuvé, vous pouvez faire la modification.
 
 
-## Spécificités suisses
+## Spécificités suisses (conducteurs)
 
-**Pourquoi Waze évite-t-il les autoroutes suisses ?**
-Les autoroutes suisses nécessitent une **vignette** (CHF 40 / an). Sans elle, l'amende est de CHF 200. Waze évite les autoroutes par défaut pour les utilisateurs n'ayant pas confirmé la possession d'une vignette. Voir la page [Vignette autoroutière](/fr/editors/cartographie/vignette).
+Les questions côté conducteur — **vignette et autoroutes**, **radars désactivés**, **prix du carburant**, **signalement de fermetures** — sont regroupées dans la [FAQ conducteurs](/fr/wazers/faq) pour éviter les doublons.
 
-**Pourquoi les radars fixes ne sont-ils pas signalés en Suisse ?**
-Les alertes radars sont **interdites par la loi suisse**. Cette fonctionnalité est donc désactivée dans l'application en Suisse. Il n'y a pas de plan de réactivation sauf changement législatif.
-
-**Comment signaler une fermeture de route (événement, chantier) ?**
-Contactez la communauté Waze Suisse :
-- Forum : [Romandie](https://www.waze.com/discuss/c/editors/switzerland/romandie/4797)
-- Email : fermetures@waze-switzerland.ch (FR) / sperrungen@waze-switzerland.ch (DE)
-
-
-## Prix du carburant
-
-**Comment corriger un prix de carburant incorrect ?**
-Uniquement via l'application, lorsque vous vous trouvez à **moins de 500 mètres** de la station-service, via le bouton de signalement.
-
-**Pourquoi les éditeurs de carte ne peuvent-ils pas corriger les prix ?**
-Les éditeurs n'ont pas accès à la mise à jour des prix à distance. Seuls les utilisateurs à proximité immédiate peuvent le faire. Un UR pour prix incorrect doit être fermé comme « techniquement impossible à corriger par l'éditeur ».
+Rappel utile aux éditeurs : un UR signalant un **prix de carburant** incorrect doit être fermé comme « techniquement impossible à corriger par l'éditeur » — seuls les conducteurs à moins de 500 m de la station peuvent mettre à jour le prix depuis l'application.

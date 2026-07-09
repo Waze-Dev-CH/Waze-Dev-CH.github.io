@@ -28,6 +28,10 @@ Pour comprendre qui fait quoi (AM, SM, RTC, CM), voir [Rôles d'éditeur](/fr/ed
 - [FAQ](/fr/editors/communaute/faq) — questions fréquentes
 - [Ressources](/fr/editors/communaute/ressources) — liens externes, Wikis, outils
 
+::: note Rencontres, contacts et partenariats
+Les **Cafés & Meetups**, les **coordinateurs (Champs)** et les **partenariats officiels** ont désormais leur propre section : voir [Communauté](/fr/communaute/).
+:::
+
 ::: quote Sources
 - Hauptseite (page principale DACH) : https://www.waze.com/discuss/t/hauptseite/377253
 - Informations en français : https://www.waze.com/discuss/t/informations-en-francais/377254

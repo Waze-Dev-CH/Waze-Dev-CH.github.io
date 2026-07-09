@@ -7,7 +7,7 @@ import taskLists from 'markdown-it-task-lists';
 import abbr from 'markdown-it-abbr';
 
 const sections = [
-  'fr/editors', 'fr/scripters',
+  'fr/editors', 'fr/wazers', 'fr/communaute', 'fr/scripters',
   'en/editors', 'en/scripters',
   'de/editors', 'de/scripters',
   'it/editors', 'it/scripters',
@@ -97,8 +97,10 @@ export default defineConfig({
       link: '/fr/',
       themeConfig: {
         nav: [
+          { text: 'Wazers', link: '/fr/wazers/', activeMatch: '/fr/wazers/' },
           { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
           { text: 'Scripteurs', link: '/fr/scripters/', activeMatch: '/fr/scripters/' },
+          { text: 'Communauté', link: '/fr/communaute/', activeMatch: '/fr/communaute/' },
         ],
         sidebar,
         outline: { level: [2, 3], label: 'Sur cette page' },
@@ -107,10 +109,6 @@ export default defineConfig({
         sidebarMenuLabel: 'Menu',
         returnToTopLabel: 'Retour en haut',
         lastUpdatedText: 'Dernière mise à jour',
-        footer: {
-          message: 'Waze Community Switzerland',
-          copyright: 'Documentation communautaire — non affiliée à Waze/Google',
-        },
       },
     },
     en: {
@@ -128,10 +126,6 @@ export default defineConfig({
         sidebarMenuLabel: 'Menu',
         returnToTopLabel: 'Return to top',
         lastUpdatedText: 'Last updated',
-        footer: {
-          message: 'Waze Community Switzerland',
-          copyright: 'Community documentation — not affiliated with Waze/Google',
-        },
       },
     },
     de: {
@@ -149,10 +143,6 @@ export default defineConfig({
         sidebarMenuLabel: 'Menü',
         returnToTopLabel: 'Nach oben',
         lastUpdatedText: 'Zuletzt aktualisiert',
-        footer: {
-          message: 'Waze Community Schweiz',
-          copyright: 'Community-Dokumentation — nicht mit Waze/Google verbunden',
-        },
       },
     },
     it: {
@@ -170,10 +160,6 @@ export default defineConfig({
         sidebarMenuLabel: 'Menu',
         returnToTopLabel: 'Torna su',
         lastUpdatedText: 'Ultimo aggiornamento',
-        footer: {
-          message: 'Waze Community Svizzera',
-          copyright: 'Documentazione comunitaria — non affiliata a Waze/Google',
-        },
       },
     },
   },
