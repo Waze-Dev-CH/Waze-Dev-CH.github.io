@@ -1,6 +1,8 @@
 ---
 title: FAQ conducteurs
 description: Réponses aux questions fréquentes des conducteurs sur Waze en Suisse.
+sidebar: false
+aside: false
 order: 4
 ---
 

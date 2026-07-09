@@ -1,6 +1,8 @@
 ---
 title: Vignette autoroutière suisse
 description: Comment configurer Waze pour utiliser les autoroutes suisses avec la vignette, et où l'acheter.
+sidebar: false
+aside: false
 order: 2
 ---
 
