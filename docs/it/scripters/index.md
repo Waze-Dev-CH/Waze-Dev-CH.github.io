@@ -2,9 +2,11 @@
 title: Scrittori
 ---
 
+<img class="macaron" src="/img/waze-kit/scripters.png" alt="" width="96" height="96">
+
 # Scrittori Waze CH
 
-Benvenuto nella sezione scrittori. Questa documentazione tratta il contributo agli script Waze — dalla creazione alla manutenzione.
+Benvenuto nella sezione degli scrittori. Questa documentazione tratta il contributo agli script Waze: dalla creazione alla manutenzione.
 
 ::: note In costruzione
 Questa sezione è in fase di redazione. I contenuti saranno aggiunti progressivamente.
@@ -12,16 +14,16 @@ Questa sezione è in fase di redazione. I contenuti saranno aggiunti progressiva
 
 ## Introduzione agli script Waze
 
-*Prossimamente — panoramica degli script WME e del loro ruolo.*
+*Prossimamente: presentazione degli script WME e del loro ruolo.*
 
 ## Buone pratiche di sviluppo
 
-*Prossimamente — convenzioni di codice, compatibilità, test.*
+*Prossimamente: convenzioni di codice, compatibilità, test.*
 
 ## Script popolari in Svizzera
 
-*Prossimamente — elenco e documentazione degli script usati dalla community svizzera.*
+*Prossimamente: elenco e documentazione degli script usati dalla community svizzera.*
 
 ## Contribuire e pubblicare
 
-*Prossimamente — come inviare uno script, processo di revisione.*
+*Prossimamente: come inviare uno script, processo di revisione.*

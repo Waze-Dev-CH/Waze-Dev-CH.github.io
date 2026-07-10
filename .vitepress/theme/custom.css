@@ -1,13 +1,13 @@
 /* ── Fonts ───────────────────────────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* ── Design system — light ───────────────────────────────────────────── */
+/* ── Design system : light ───────────────────────────────────────────── */
 :root {
     /* Fonts */
     --vp-font-family-base: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
     --vp-font-family-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
 
-    /* Accent — bleu Waze (interface) */
+    /* Accent : bleu Waze (interface) */
     --vp-c-brand-1: #0075E3;
     --vp-c-brand-2: #225AA8;
     --vp-c-brand-3: #33CCFF;
@@ -17,7 +17,7 @@
     --swiss-red: #E2231A;
     --swiss-red-deep: #8E1409;
 
-    /* Waze × Suisse — accents joyeux (section Wazers + home) */
+    /* Waze × Suisse : accents joyeux (section Wazers + home) */
     --wz-sky: #05C8F0;
     --wz-sky-deep: #0399C4;
     --wz-ink: #0F1E2A;
@@ -64,7 +64,7 @@
     --vp-home-hero-image-filter: blur(44px);
 }
 
-/* ── Design system — dark ────────────────────────────────────────────── */
+/* ── Design system : dark ────────────────────────────────────────────── */
 .dark {
     --vp-c-brand-1: #65DBFF;
     --vp-c-brand-2: #33CCFF;
@@ -94,7 +94,7 @@
     padding: 18px;
 }
 
-/* ── Home — condenser la hauteur (cover sans scroll) ─────────────────── */
+/* ── Home : condenser la hauteur (cover sans scroll) ─────────────────── */
 @media (min-width: 768px) {
 
     /* On garde la marge haute (sinon le titre passe sous la barre de nav),
@@ -113,7 +113,7 @@
     }
 }
 
-/* ── Home "à la Waze" — police arrondie + features joyeuses ───────────── */
+/* ── Home "à la Waze" : police arrondie + features joyeuses ───────────── */
 .VPHero .name,
 .VPHero .text {
     font-family: var(--wz-font-display);
@@ -247,7 +247,7 @@
     background-color: var(--vp-c-bg);
 }
 
-/* Titre de marque « Waze Suisse » — un peu plus grand */
+/* Titre de marque « Waze Suisse » : un peu plus grand */
 .VPNavBarTitle .title {
     font-size: 1.2rem;
 }

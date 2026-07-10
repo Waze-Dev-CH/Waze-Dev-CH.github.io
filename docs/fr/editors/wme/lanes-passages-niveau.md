@@ -1,6 +1,6 @@
 ---
 title: Voies de circulation et passages à niveau
-description: Règles d'édition pour les voies (lanes) et passages à niveau en Suisse — L3+.
+description: Règles d'édition pour les voies (lanes) et passages à niveau en Suisse (L3+).
 order: 8
 ---
 
@@ -47,7 +47,7 @@ Les nouveaux éditeurs et les éditeurs juniors devraient consulter un éditeur 
 
 ## Passages à niveau
 
-::: note Passages à niveau — Niveau L4+
+::: note Passages à niveau : Niveau L4+
 Depuis juin 2024, les règles relatives aux passages à niveau ont été déplacées dans les directives « Permanent Hazards » (dangers permanents) de Waze. Voir [Dangers permanents](/fr/editors/wme/dangers-permanents) (L4+).
 :::
 

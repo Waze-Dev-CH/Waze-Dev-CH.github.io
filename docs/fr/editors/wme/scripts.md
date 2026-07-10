@@ -25,7 +25,7 @@ Il ajoute au WME :
 ::: help Installation
 1. Installer [Tampermonkey](https://www.tampermonkey.net/) dans votre navigateur
 2. Ouvrir la page GitHub du script et cliquer sur le fichier `.user.js`
-3. Tampermonkey propose automatiquement l'installation — confirmer
+3. Tampermonkey propose automatiquement l'installation : confirmer
 4. Recharger le WME
 :::
 

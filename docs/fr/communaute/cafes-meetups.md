@@ -6,7 +6,7 @@ order: 2
 
 # Cafés & Meetups
 
-<img class="banner-img" src="/img/communaute/cafe-1.png" alt="Waze Café — carte des cantons de Suisse romande">
+<img class="banner-img" src="/img/communaute/cafe-1.png" alt="Waze Café : carte des cantons de Suisse romande">
 
 La communauté Waze suisse se retrouve régulièrement lors d'événements locaux et régionaux, sous deux formats principaux : les Waze Cafés et les Local Meetups.
 
@@ -14,7 +14,7 @@ La communauté Waze suisse se retrouve régulièrement lors d'événements locau
 
 Les Waze Cafés sont de petits événements informels (10–15 participants) organisés par la communauté locale. Éditeurs de la région se réunissent pour collaborer sur des sujets d'édition ou de vie communautaire, partager des bonnes pratiques et se rencontrer en dehors des forums en ligne.
 
-**Waze Café Romandie** — organisé par la communauté romande. La dernière rencontre a eu lieu en octobre 2025 à Genève. La prochaine édition 2026 est en cours de planification ; la date et le lieu restent à déterminer.
+**Waze Café Romandie** : organisé par la communauté romande. La dernière rencontre a eu lieu en octobre 2025 à Genève. La prochaine édition 2026 est en cours de planification ; la date et le lieu restent à déterminer.
 
 ::: note
 Il n'existe pas encore d'initiative équivalente côté alémanique ou tessinois. N'hésitez pas à en proposer une via le Discord ou le forum.
@@ -44,5 +44,5 @@ Les D-A-CH Local Meetups sont des rencontres régionales conjointes regroupant l
 La prochaine édition 2026 est à déterminer. Suivez les annonces sur le [Discord communautaire](https://discord.gg/dmxUwvTkk5) et le forum Waze Suisse.
 
 ::: quote Source(s)
-- Cafés & Meetups — Waze Switzerland : https://www.waze-switzerland.ch/cafes-meetups
+- Cafés & Meetups (Waze Switzerland) : https://www.waze-switzerland.ch/cafes-meetups
 :::

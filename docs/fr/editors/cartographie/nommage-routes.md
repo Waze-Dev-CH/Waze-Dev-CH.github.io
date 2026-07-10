@@ -8,7 +8,7 @@ order: 4
 
 # Nommage des routes et des villes
 
-::: tip Accessible à tous — Niveau L1
+::: tip Accessible à tous : Niveau L1
 Cette page s'adresse à tous les éditeurs, débutants compris.
 :::
 
@@ -56,8 +56,8 @@ Ne pas abréger les types de voie. Écrire le nom en toutes lettres :
 
 Deux types existent, avec un comportement de routage différent :
 
-- **Walking Trail (WT) — Chemin piéton routable** : si connecté à une route carrossable et le plus proche d'une destination, Waze peut router à travers ce chemin pour atteindre la destination
-- **Pedestrian Boardwalk (PB) — Zone piétonne non routable** : ignoré pour le routage, Waze guide vers le segment carrossable le plus proche indépendamment de sa classe
+- **Walking Trail (WT), chemin piéton routable** : si connecté à une route carrossable et le plus proche d'une destination, Waze peut router à travers ce chemin pour atteindre la destination
+- **Pedestrian Boardwalk (PB), zone piétonne non routable** : ignoré pour le routage, Waze guide vers le segment carrossable le plus proche indépendamment de sa classe
 
 ## Nommage des routes
 
@@ -70,7 +70,7 @@ Nommer **A1L**, **A52**, etc. (selon la signalisation officielle).
 ### Routes nationales (N1–N30)
 
 - **En agglomération** : nom de rue principal + entrée « Alt Street/Alias » avec le numéro (N1, N2…)
-- **Hors agglomération** : numéro seul (**N1**, **N2**, etc.) — sauf si la nationale passe sur une autoroute, auquel cas utiliser le nom de rue
+- **Hors agglomération** : numéro seul (**N1**, **N2**, etc.), sauf si la nationale passe sur une autoroute, auquel cas utiliser le nom de rue
 
 ### Routes principales numérotées (H1–…)
 
@@ -102,7 +102,7 @@ Pour une voie portant un nom dans deux langues, renseigner le second nom via le 
 
 ## Voies ferrées
 
-Les voies ferrées ne portent jamais de nom de ville ni de nom de rue. Laisser le champ de nom vide (ou y indiquer le nom de la compagnie, sans ville — voir [Légende de la carte](/fr/editors/wme/legende-carte)).
+Les voies ferrées ne portent jamais de nom de ville ni de nom de rue. Laisser le champ de nom vide (ou y indiquer le nom de la compagnie, sans ville, voir [Légende de la carte](/fr/editors/wme/legende-carte)).
 
 ## Nommage des villes et villages
 
@@ -112,7 +112,7 @@ Règles importantes :
 
 - Pas de « terra nullius » : toutes les rues doivent avoir un champ Ville renseigné (**sauf** les autoroutes, bretelles et rampes)
 - Certaines grandes villes ont plusieurs NPA et sont divisées en quartiers (Lausanne, Lucerne, Zurich, etc.)
-- Un même nom ne doit exister qu'**une seule fois** — vérifier la liste avant de créer une nouvelle entrée
+- Un même nom ne doit exister qu'**une seule fois** : vérifier la liste avant de créer une nouvelle entrée
 
 ::: important
 Les noms de rues doivent être orthographiés sans abréviation et avec les majuscules correctes. Exemple : « Chemin de la Paix » et non « Ch. de la Paix » ni « chemin de la paix ».
@@ -123,7 +123,7 @@ Les noms de rues doivent être orthographiés sans abréviation et avec les maju
 - **Autoroutes** : en règle générale, deux voies (simplifie le mapping des bretelles)
 - **Autres routes** : séparer en deux sens uniquement si la séparation physique est ≥ 5 mètres ou si des marquages spéciaux le justifient
 
-## Panneaux de signalisation — rappel
+## Panneaux de signalisation : rappel
 
 | Panneau | Type de segment |
 |---------|----------------|

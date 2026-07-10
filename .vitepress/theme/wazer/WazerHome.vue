@@ -1,6 +1,15 @@
 <script setup>
-// Landing grand public de la section Wazers (FR).
+// Landing grand public de la section Wazers, internationalisée (fr/en/de/it).
 // Hero = illustration officielle Waze en fond + carte de contenu lisible.
+import { computed } from 'vue';
+import { useData } from 'vitepress';
+
+const { lang } = useData();
+const loc = computed(() => {
+  const l = (lang.value || 'fr').slice(0, 2);
+  return ['fr', 'en', 'de', 'it'].includes(l) ? l : 'fr';
+});
+
 const stores = {
   android: 'https://play.google.com/store/apps/details?id=com.waze',
   ios: 'https://apps.apple.com/app/id323229106',
@@ -10,52 +19,109 @@ const liveMap = 'https://www.waze.com/live-map/directions?rp_subscription=vignet
 // Icônes : illustrations Waze officielles (kit communautaire).
 const ICONS = '/img/wazers/waze-kit/icons';
 
-const tiles = [
-  {
-    link: '/fr/wazers/vignette',
-    accent: 'var(--swiss-red)',
-    title: 'Vignette autoroutière',
-    desc: "Activer les autoroutes suisses dans Waze — et savoir où l'acheter.",
-    icon: `${ICONS}/vignette.png`,
-  },
-  {
-    link: '/fr/wazers/stickair',
-    accent: 'var(--wz-go)',
-    title: "Stick'AIR — Genève",
-    desc: 'Circulation différenciée : Waze contourne les zones restreintes.',
-    icon: `${ICONS}/stickair.png`,
-  },
-  {
-    link: '/fr/wazers/faq',
-    accent: 'var(--wz-sky-deep)',
-    title: 'FAQ conducteurs',
-    desc: "Radars, prix de l'essence, autoroutes… les réponses courtes.",
-    icon: `${ICONS}/faq.png`,
-  },
+// Structure partagée (chemins, couleurs, icônes) ; les textes sont par locale ci-dessous.
+const TILES = [
+  { path: 'wazers/vignette', accent: 'var(--swiss-red)', icon: 'vignette.png' },
+  { path: 'wazers/stickair', accent: 'var(--wz-go)', icon: 'stickair.png' },
+  { path: 'wazers/faq', accent: 'var(--wz-sky-deep)', icon: 'faq.png' },
+];
+const MORE = [
+  { path: 'editors/', accent: '#8A5CF6', icon: 'editor.png' },
+  { path: 'scripters/', accent: '#FF7A45', icon: 'scripter.png' },
 ];
 
-// Passerelles vers les autres publics (contributeurs).
-const moreTiles = [
-  {
-    link: '/fr/editors/',
-    accent: '#8A5CF6',
-    title: 'Devenir éditeur',
-    desc: 'Améliorer la carte suisse dans l’éditeur Waze (WME).',
-    icon: `${ICONS}/editor.png`,
+const STRINGS = {
+  fr: {
+    eyebrow: 'Waze Suisse',
+    h1: 'Waze connaît la Suisse par cœur.',
+    sub: "La navigation communautaire, le trafic en temps réel, et l'essentiel côté suisse : vignette, Stick'AIR et vos questions fréquentes.",
+    ghost: 'Tester un itinéraire avec vignette',
+    g1: 'Par où commencer ?',
+    g2: 'Aller plus loin',
+    tiles: [
+      { title: 'Vignette autoroutière', desc: "Activer les autoroutes suisses dans Waze, et savoir où l'acheter." },
+      { title: "Stick'AIR à Genève", desc: 'Circulation différenciée : Waze contourne les zones restreintes.' },
+      { title: 'FAQ conducteurs', desc: "Radars, prix de l'essence, autoroutes… les réponses courtes." },
+    ],
+    more: [
+      { title: 'Devenir éditeur', desc: 'Améliorer la carte suisse dans l’éditeur Waze (WME).' },
+      { title: 'Scripter Waze', desc: 'Développer des userscripts pour la communauté.' },
+    ],
   },
-  {
-    link: '/fr/scripters/',
-    accent: '#FF7A45',
-    title: 'Scripter Waze',
-    desc: 'Développer des userscripts pour la communauté.',
-    icon: `${ICONS}/scripter.png`,
+  en: {
+    eyebrow: 'Waze Switzerland',
+    h1: 'Waze knows Switzerland by heart.',
+    sub: "Community navigation, real-time traffic, and the Swiss essentials: motorway vignette, Stick'AIR and your frequently asked questions.",
+    ghost: 'Try a route with the vignette',
+    g1: 'Where to start?',
+    g2: 'Go further',
+    tiles: [
+      { title: 'Motorway vignette', desc: 'Enable Swiss motorways in Waze, and find out where to buy it.' },
+      { title: "Stick'AIR in Geneva", desc: 'Low-emission zones: Waze avoids the restricted areas.' },
+      { title: 'Driver FAQ', desc: 'Speed cameras, fuel prices, motorways: the short answers.' },
+    ],
+    more: [
+      { title: 'Become an editor', desc: 'Improve the Swiss map in the Waze Map Editor (WME).' },
+      { title: 'Script for Waze', desc: 'Develop userscripts for the community.' },
+    ],
   },
-];
+  de: {
+    eyebrow: 'Waze Schweiz',
+    h1: 'Waze kennt die Schweiz in- und auswendig.',
+    sub: "Community-Navigation, Verkehr in Echtzeit, und das Wichtigste für die Schweiz: Autobahnvignette, Stick'AIR und Ihre häufigen Fragen.",
+    ghost: 'Eine Route mit Vignette testen',
+    g1: 'Wo anfangen?',
+    g2: 'Mehr entdecken',
+    tiles: [
+      { title: 'Autobahnvignette', desc: 'Schweizer Autobahnen in Waze aktivieren, und erfahren, wo man sie kauft.' },
+      { title: "Stick'AIR in Genf", desc: 'Umweltzonen: Waze umfährt die eingeschränkten Bereiche.' },
+      { title: 'Fahrer-FAQ', desc: 'Blitzer, Benzinpreise, Autobahnen: die kurzen Antworten.' },
+    ],
+    more: [
+      { title: 'Editor werden', desc: 'Die Schweizer Karte im Waze Map Editor (WME) verbessern.' },
+      { title: 'Für Waze skripten', desc: 'Userscripts für die Community entwickeln.' },
+    ],
+  },
+  it: {
+    eyebrow: 'Waze Svizzera',
+    h1: 'Waze conosce la Svizzera a memoria.',
+    sub: "Navigazione comunitaria, traffico in tempo reale, e l'essenziale lato svizzero: vignetta autostradale, Stick'AIR e le tue domande frequenti.",
+    ghost: 'Prova un itinerario con la vignetta',
+    g1: 'Da dove iniziare?',
+    g2: 'Andare oltre',
+    tiles: [
+      { title: 'Vignetta autostradale', desc: 'Attivare le autostrade svizzere in Waze, e sapere dove acquistarla.' },
+      { title: "Stick'AIR a Ginevra", desc: 'Zone a traffico limitato: Waze evita le aree soggette a restrizioni.' },
+      { title: 'FAQ conducenti', desc: 'Autovelox, prezzi del carburante, autostrade: le risposte brevi.' },
+    ],
+    more: [
+      { title: 'Diventare editor', desc: 'Migliorare la mappa svizzera nel Waze Map Editor (WME).' },
+      { title: 'Creare script per Waze', desc: 'Sviluppare userscript per la comunità.' },
+    ],
+  },
+};
 
-const groups = [
-  { title: 'Par où commencer ?', items: tiles },
-  { title: 'Aller plus loin', items: moreTiles },
-];
+const t = computed(() => {
+  const s = STRINGS[loc.value] || STRINGS.fr;
+  const mk = (defs, txt) =>
+    defs.map((d, i) => ({
+      link: `/${loc.value}/${d.path}`,
+      accent: d.accent,
+      icon: `${ICONS}/${d.icon}`,
+      title: txt[i].title,
+      desc: txt[i].desc,
+    }));
+  return {
+    eyebrow: s.eyebrow,
+    h1: s.h1,
+    sub: s.sub,
+    ghost: s.ghost,
+    groups: [
+      { title: s.g1, items: mk(TILES, s.tiles) },
+      { title: s.g2, items: mk(MORE, s.more) },
+    ],
+  };
+});
 </script>
 
 <template>
@@ -66,21 +132,17 @@ const groups = [
       <div class="wz-hero-inner">
         <div class="wz-card">
           <div class="wz-brand">
-            <img class="wz-logo" src="/img/wazers/waze-kit/waze-swiss-square.png" alt="Waze Community Switzerland" width="52" height="52" />
-            <span class="wz-eyebrow">Waze Suisse</span>
+            <img class="wz-logo" src="/img/wazers/waze-kit/waze-swiss-square.png" alt="Waze Community Switzerland" width="40" height="40" />
+            <span class="wz-eyebrow">{{ t.eyebrow }}</span>
           </div>
-          <h1 class="wz-h1">Waze connaît la Suisse par cœur.</h1>
-          <p class="wz-sub">
-            Waze, c'est la navigation communautaire : le trafic en temps réel,
-            signalé par des millions de conducteurs. Côté suisse, on vous explique
-            l'essentiel — vignette, Stick'AIR, et les questions qui reviennent.
-          </p>
+          <h1 class="wz-h1">{{ t.h1 }}</h1>
+          <p class="wz-sub">{{ t.sub }}</p>
           <div class="wz-cta">
             <a class="wz-store" :href="stores.android" target="_blank" rel="noopener">Google&nbsp;Play</a>
             <a class="wz-store" :href="stores.ios" target="_blank" rel="noopener">App&nbsp;Store</a>
           </div>
           <a class="wz-ghost" :href="liveMap" target="_blank" rel="noopener">
-            Tester un itinéraire avec vignette <span aria-hidden="true">→</span>
+            {{ t.ghost }} <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>
@@ -88,7 +150,7 @@ const groups = [
 
     <!-- ── TUILES ────────────────────────────────────────────────── -->
     <div class="wz-body">
-      <template v-for="group in groups" :key="group.title">
+      <template v-for="group in t.groups" :key="group.title">
         <h2 class="wz-tiles-title">{{ group.title }}</h2>
         <section class="wz-tiles">
           <a
@@ -117,7 +179,7 @@ const groups = [
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  min-height: clamp(440px, 42vw, 560px);
+  min-height: clamp(240px, 24vw, 330px);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -138,13 +200,13 @@ const groups = [
   width: 100%;
   max-width: 1152px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .wz-card {
   max-width: 540px;
-  padding: 2rem 2.1rem;
-  border-radius: 1.5rem;
+  padding: 1.25rem 1.8rem;
+  border-radius: 1.35rem;
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-divider);
   box-shadow: 0 18px 50px rgba(15, 30, 42, 0.25);
@@ -154,14 +216,14 @@ const groups = [
 .wz-brand {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  margin: 0 0 0.9rem;
+  gap: 0.55rem;
+  margin: 0 0 0.55rem;
 }
 
 .wz-logo {
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   display: block;
   flex-shrink: 0;
 }
@@ -178,30 +240,30 @@ const groups = [
 .wz-h1 {
   font-family: var(--wz-font-display);
   font-weight: 600;
-  font-size: clamp(2rem, 4.4vw, 3rem);
-  line-height: 1.06;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.08;
   letter-spacing: -0.01em;
   text-wrap: balance;
   color: var(--vp-c-text-1);
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.55rem;
 }
 
 .wz-sub {
-  font-size: 1.02rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.45;
   color: var(--vp-c-text-2);
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
 }
 
 .wz-cta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 0.9rem;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .wz-store {
-  padding: 0.7em 1.4em;
+  padding: 0.6em 1.3em;
   border-radius: 999px;
   background: var(--wz-ink);
   color: #fff;
@@ -260,7 +322,7 @@ const groups = [
 .wz-body {
   max-width: 1152px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .wz-tiles-title {
@@ -273,7 +335,7 @@ const groups = [
 }
 
 .wz-tiles-title:not(:first-child) {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .wz-tiles {
@@ -341,6 +403,23 @@ const groups = [
 }
 
 /* ── Responsive ───────────────────────────────────────────────────── */
+/* Tablettes / petits laptops : la hauteur du hero suit son contenu
+   (on retire le plancher de 440px) pour remonter les tuiles. */
+@media (max-width: 960px) {
+  .wz-hero {
+    min-height: auto;
+  }
+
+  .wz-hero-inner {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .wz-body {
+    padding-top: 2rem;
+  }
+}
+
 @media (max-width: 640px) {
   .wz-hero {
     min-height: 0;
@@ -354,6 +433,14 @@ const groups = [
   .wz-card {
     padding: 1.5rem 1.35rem;
     box-shadow: 0 12px 34px rgba(15, 30, 42, 0.3);
+  }
+
+  .wz-sub {
+    margin-bottom: 1.1rem;
+  }
+
+  .wz-body {
+    padding: 1.75rem 1rem;
   }
 }
 

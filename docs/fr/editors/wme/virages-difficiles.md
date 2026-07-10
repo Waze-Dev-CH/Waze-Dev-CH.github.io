@@ -12,7 +12,7 @@ order: 7
 Seuls les éditeurs de niveau 2 et plus peuvent modifier cette fonctionnalité.
 :::
 
-La fonction « virages difficiles » (difficult turns) permet à la communauté — et non à l'algorithme Waze — de signaler un mouvement compliqué à un carrefour, pour que Waze puisse l'éviter selon les préférences du conducteur.
+La fonction « virages difficiles » (difficult turns) permet à la communauté, et non à l'algorithme Waze, de signaler un mouvement compliqué à un carrefour, pour que Waze puisse l'éviter selon les préférences du conducteur.
 
 ## À quoi ça sert
 
@@ -40,7 +40,7 @@ Côté conducteur, le réglage qui évite ces virages est **activé par défaut*
 
 - Conçu principalement pour les **intersections sans feux** où un virage à gauche ou un franchissement est dangereux du fait de la priorité.
 - **Ne pas utiliser** à des fins personnelles pour influencer négativement un itinéraire.
-- **Ne pas marquer** les intersections équipées de feux de signalisation — l'algorithme prend déjà en compte les temps d'attente.
+- **Ne pas marquer** les intersections équipées de feux de signalisation : l'algorithme prend déjà en compte les temps d'attente.
 - Appliquer uniquement quand le virage est **objectivement difficile** pour la majorité des conducteurs.
 
 ::: help En cas de doute

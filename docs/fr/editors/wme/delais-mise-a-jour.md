@@ -8,7 +8,7 @@ order: 12
 
 # Délais de mise à jour de la carte
 
-::: tip Accessible à tous — Niveau L1
+::: tip Accessible à tous : Niveau L1
 Comprendre ces délais évite de re-modifier des segments déjà corrigés.
 :::
 

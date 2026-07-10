@@ -7,10 +7,10 @@ import { data as taglines } from './taglines.data';
 // themeConfig.footer, so the default VPFooter stays off and we render a single
 // condensed footer. Add a locale here when you add one to the site.
 const COPY = {
-  fr: 'Waze Community Switzerland · Documentation communautaire — non affiliée à Waze/Google',
-  en: 'Waze Community Switzerland · Community documentation — not affiliated with Waze/Google',
-  de: 'Waze Community Schweiz · Community-Dokumentation — nicht mit Waze/Google verbunden',
-  it: 'Waze Community Svizzera · Documentazione comunitaria — non affiliata a Waze/Google',
+  fr: 'Waze Community Switzerland · Documentation communautaire, non affiliée à Waze/Google',
+  en: 'Waze Community Switzerland · Community documentation, not affiliated with Waze/Google',
+  de: 'Waze Community Schweiz · Community-Dokumentation, nicht mit Waze/Google verbunden',
+  it: 'Waze Community Svizzera · Documentazione comunitaria, non affiliata a Waze/Google',
 };
 
 const { lang } = useData();

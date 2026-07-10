@@ -40,7 +40,7 @@ Le seul moyen de mettre à jour les prix est de le faire depuis l'application, d
 
 **J'ai signalé des prix faux mais rien n'a été corrigé, pourquoi ?**
 
-Les éditeurs de carte ne peuvent pas mettre à jour les prix à distance — seules les personnes situées à moins de 500 m de la station peuvent le faire via l'application. Les éditeurs ferment donc ces signalements sans action possible de leur côté.
+Les éditeurs de carte ne peuvent pas mettre à jour les prix à distance : seules les personnes situées à moins de 500 m de la station peuvent le faire via l'application. Les éditeurs ferment donc ces signalements sans action possible de leur côté.
 
 ::: help Besoin d'aide supplémentaire ?
 Rejoignez la communauté Waze Suisse :

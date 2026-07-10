@@ -1,12 +1,12 @@
 ---
-title: FAQ — Questions fréquentes
+title: "FAQ : Questions fréquentes"
 description: Réponses aux questions les plus courantes sur Waze en Suisse, pour les utilisateurs et les éditeurs.
 order: 2
 ---
 
 <img class="banner-img is-narrow" src="/img/editors/magnifier.png" alt="">
 
-# FAQ — Questions fréquentes
+# FAQ : Questions fréquentes
 
 ## Application Waze
 
@@ -35,6 +35,6 @@ Vous ne pouvez pas l'éditer directement. Demandez le déverrouillage via le for
 
 ## Spécificités suisses (conducteurs)
 
-Les questions côté conducteur — **vignette et autoroutes**, **radars désactivés**, **prix du carburant**, **signalement de fermetures** — sont regroupées dans la [FAQ conducteurs](/fr/wazers/faq) pour éviter les doublons.
+Les questions côté conducteur (**vignette et autoroutes**, **radars désactivés**, **prix du carburant**, **signalement de fermetures**) sont regroupées dans la [FAQ conducteurs](/fr/wazers/faq) pour éviter les doublons.
 
-Rappel utile aux éditeurs : un UR signalant un **prix de carburant** incorrect doit être fermé comme « techniquement impossible à corriger par l'éditeur » — seuls les conducteurs à moins de 500 m de la station peuvent mettre à jour le prix depuis l'application.
+Rappel utile aux éditeurs : un UR signalant un **prix de carburant** incorrect doit être fermé comme « techniquement impossible à corriger par l'éditeur » : seuls les conducteurs à moins de 500 m de la station peuvent mettre à jour le prix depuis l'application.

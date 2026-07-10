@@ -1,6 +1,6 @@
 ---
 title: Éditeurs
-description: Documentation pour les éditeurs Waze en Suisse — bonnes pratiques, règles locales et guides cartographiques.
+description: "Documentation pour les éditeurs Waze en Suisse : bonnes pratiques, règles locales et guides cartographiques."
 order: 1
 ---
 
@@ -20,6 +20,6 @@ Nouveau sur Waze ? La page [Premiers pas](/fr/editors/premiers-pas) vous guide �
 
 ## Sections
 
-- [Éditeur de carte (WME)](/fr/editors/wme/) — interface, niveaux, rôles, outils techniques
-- [Cartographie](/fr/editors/cartographie/) — règles d'édition suisses, autoroutes, spécificités locales
-- [Communauté](/fr/editors/communaute/) — forum, Discord, FAQ, ressources
+- [Éditeur de carte (WME)](/fr/editors/wme/) : interface, niveaux, rôles, outils techniques
+- [Cartographie](/fr/editors/cartographie/) : règles d'édition suisses, autoroutes, spécificités locales
+- [Communauté](/fr/editors/communaute/) : forum, Discord, FAQ, ressources

@@ -9,13 +9,13 @@ order: 11
 
 Les autoroutes suisses sont identifiées par deux systèmes de numérotation affichés sur les panneaux physiques :
 
-- **Axx** — numéro national suisse (ex. A1, A9, A13)
-- **Exx** — numéro de route européenne (ex. E25, E27, E62)
+- **Axx** : numéro national suisse (ex. A1, A9, A13)
+- **Exx** : numéro de route européenne (ex. E25, E27, E62)
 
-Ces numéros doivent être ajoutés comme **noms alternatifs** sur les segments d'autoroute dans WME. Cela améliore le routage longue distance, car le serveur de routage identifie la continuité d'une route via son nom alternatif — contrairement au nom principal, qui change fréquemment aux bifurcations A/E.
+Ces numéros doivent être ajoutés comme **noms alternatifs** sur les segments d'autoroute dans WME. Cela améliore le routage longue distance, car le serveur de routage identifie la continuité d'une route via son nom alternatif, contrairement au nom principal, qui change fréquemment aux bifurcations A/E.
 
 ::: important
-Ne jamais modifier le nom principal du segment — ajouter uniquement des noms alternatifs.
+Ne jamais modifier le nom principal du segment : ajouter uniquement des noms alternatifs.
 :::
 
 ## Réutiliser un bouclier existant
@@ -36,11 +36,11 @@ Vérifier sur la carte WME si le numéro existe déjà ailleurs en Suisse avant 
 
 Si le numéro n'existe encore nulle part en Suisse :
 
-1. Saisir le nom Exx ou Axx — lettres et chiffres collés, sans espace ni tiret (ex. **E25** ✓ / E 25 ✗ / E-25 ✗) — laisser Ville sur « Aucune »
+1. Saisir le nom Exx ou Axx, lettres et chiffres collés, sans espace ni tiret (ex. **E25** ✓ / E 25 ✗ / E-25 ✗), puis laisser Ville sur « Aucune »
 2. Cliquer sur **Appliquer**
 3. Cliquer sur l'icône bouclier
 4. Sélectionner le type de bouclier
-5. Saisir le numéro — pour les Axx, entrer **uniquement le chiffre** dans le champ bouclier (sans la lettre A)
+5. Saisir le numéro : pour les Axx, entrer **uniquement le chiffre** dans le champ bouclier (sans la lettre A)
 6. Cliquer sur **Appliquer**
 7. Sauvegarder
 

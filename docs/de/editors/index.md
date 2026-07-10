@@ -1,27 +1,25 @@
 ---
 title: Editoren
+description: "Dokumentation für Waze-Editoren in der Schweiz: Best Practices, lokale Regeln und Kartografie-Leitfäden."
+order: 1
 ---
+
+<img class="macaron" src="/img/waze-kit/editors.png" alt="" width="96" height="96">
 
 # Waze CH Editoren
 
-Willkommen im Editoren-Bereich. Diese Dokumentation enthält Best Practices für die Mitarbeit an der Waze-Karte in der Schweiz.
+Willkommen in der Dokumentation für Waze-Editoren in der Schweiz. Die Waze-Karte wird vollständig von Freiwilligen erstellt: Wenn du mit der App fährst, sammelst du Bearbeitungsrechte für die befahrenen Gebiete.
 
-::: note Im Aufbau
-Dieser Abschnitt wird gerade geschrieben. Inhalte werden schrittweise hinzugefügt.
+::: important Wichtig
+Bevor du etwas änderst, lies die schweizspezifischen Regeln, die in dieser Dokumentation vorgestellt werden. Stütze dich niemals auf die Regeln eines Nachbarlandes.
 :::
 
-## Allgemeine Best Practices
+## Wo fange ich an?
 
-*Demnächst — Grundregeln für qualitativ hochwertige Kartenbearbeitung.*
+Neu bei Waze? Die Seite [Erste Schritte](/de/editors/premiers-pas) führt dich Schritt für Schritt: den Editor öffnen, die richtigen Werkzeuge installieren und deine ersten Änderungen sicher vornehmen.
 
-## Schweizer Besonderheiten
+## Bereiche
 
-*Demnächst — Besonderheiten der Kartierung in der Schweiz (Straßennummerierung, Zonen, etc.).*
-
-## Orte und Points of Interest
-
-*Demnächst — Hinzufügen und Bearbeiten von Orten (POI).*
-
-## Nützliche Ressourcen
-
-*Demnächst — Links zum Waze-Wiki, Foren und Community-Tools.*
+- [Karteneditor (WME)](/de/editors/wme/): Oberfläche, Stufen, Rollen, technische Werkzeuge
+- [Kartografie](/de/editors/cartographie/): schweizerische Bearbeitungsregeln, Autobahnen, lokale Besonderheiten
+- [Community](/de/editors/communaute/): Forum, Discord, FAQ, Ressourcen

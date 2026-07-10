@@ -1,27 +1,25 @@
 ---
 title: Editors
+description: "Documentation for Waze editors in Switzerland: best practices, local rules and mapping guides."
+order: 1
 ---
+
+<img class="macaron" src="/img/waze-kit/editors.png" alt="" width="96" height="96">
 
 # Waze CH Editors
 
-Welcome to the editors section. This documentation covers best practices for contributing to the Waze map in Switzerland.
+Welcome to the documentation for Waze editors in Switzerland. The Waze map is built entirely by volunteers: by driving with the app, you accumulate editing rights over the areas you travel through.
 
-::: note Under construction
-This section is being written. Content will be added gradually.
+::: important Important
+Before making any change, read the Switzerland-specific rules presented in this documentation. Never rely on the rules of a neighbouring country.
 :::
 
-## General best practices
+## Where to start?
 
-*Coming soon — core rules for quality map editing.*
+New to Waze? The [Getting started](/en/editors/premiers-pas) page guides you step by step: opening the editor, installing the right tools and making your first edits safely.
 
-## Swiss specifics
+## Sections
 
-*Coming soon — particularities of mapping in Switzerland (road numbering, zones, etc.).*
-
-## Places and points of interest
-
-*Coming soon — adding and editing places (POI).*
-
-## Useful resources
-
-*Coming soon — links to the Waze Wiki, forums and community tools.*
+- [Map Editor (WME)](/en/editors/wme/): interface, levels, roles, technical tools
+- [Mapping](/en/editors/cartographie/): Swiss editing rules, freeways, local specifics
+- [Community](/en/editors/communaute/): forum, Discord, FAQ, resources

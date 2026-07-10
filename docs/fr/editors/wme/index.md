@@ -39,26 +39,26 @@ Pour l'obtenir : positionner la carte sur la zone souhaitée, puis cliquer sur l
 
 ### Découvrir l'éditeur
 
-- [Interface du WME](/fr/editors/wme/interface) — panneaux, couches, raccourcis
+- [Interface du WME](/fr/editors/wme/interface) : panneaux, couches, raccourcis
 
 ### Comprendre la carte
 
-- [Légende de la carte](/fr/editors/wme/legende-carte) — types de segments
-- [Bases du routing](/fr/editors/wme/routing) — impact des types sur la navigation
+- [Légende de la carte](/fr/editors/wme/legende-carte) : types de segments
+- [Bases du routing](/fr/editors/wme/routing) : impact des types sur la navigation
 
 ### Éditer la carte
 
-- [Segments](/fr/editors/wme/segments) — créer et modifier des segments
-- [Restrictions de virage](/fr/editors/wme/restrictions-virage) — autoriser et interdire des virages
-- [Virages difficiles](/fr/editors/wme/virages-difficiles) — signalement (L2+)
-- [Voies & passages à niveau](/fr/editors/wme/lanes-passages-niveau) — lane guidance (L3+)
-- [Dangers permanents](/fr/editors/wme/dangers-permanents) — passages à niveau (L4+)
-- [Fermetures de routes](/fr/editors/wme/fermetures) — restrictions horaires
-- [Fermeture des URs](/fr/editors/wme/fermeture-urs) — traiter les signalements
-- [Délais de mise à jour](/fr/editors/wme/delais-mise-a-jour) — quand les changements apparaissent
+- [Segments](/fr/editors/wme/segments) : créer et modifier des segments
+- [Restrictions de virage](/fr/editors/wme/restrictions-virage) : autoriser et interdire des virages
+- [Virages difficiles](/fr/editors/wme/virages-difficiles) : signalement (L2+)
+- [Voies & passages à niveau](/fr/editors/wme/lanes-passages-niveau) : lane guidance (L3+)
+- [Dangers permanents](/fr/editors/wme/dangers-permanents) : passages à niveau (L4+)
+- [Fermetures de routes](/fr/editors/wme/fermetures) : restrictions horaires
+- [Fermeture des URs](/fr/editors/wme/fermeture-urs) : traiter les signalements
+- [Délais de mise à jour](/fr/editors/wme/delais-mise-a-jour) : quand les changements apparaissent
 
 ### Niveaux, rôles et outils
 
-- [Niveaux d'éditeur](/fr/editors/wme/niveaux) — niveaux, rayons d'édition, locks
-- [Rôles](/fr/editors/wme/roles) — AM, SM, RTC State Manager, CM
-- [Scripts et outils](/fr/editors/wme/scripts) — WME Switzerland Helper et autres
+- [Niveaux d'éditeur](/fr/editors/wme/niveaux) : niveaux, rayons d'édition, locks
+- [Rôles](/fr/editors/wme/roles) : AM, SM, RTC State Manager, CM
+- [Scripts et outils](/fr/editors/wme/scripts) : WME Switzerland Helper et autres
