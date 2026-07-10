@@ -8,9 +8,9 @@ import abbr from 'markdown-it-abbr';
 
 const sections = [
   'fr/editors', 'fr/wazers', 'fr/communaute', 'fr/scripters',
-  'en/editors', 'en/scripters',
-  'de/editors', 'de/scripters',
-  'it/editors', 'it/scripters',
+  'en/editors', 'en/wazers', 'en/communaute', 'en/scripters',
+  'de/editors', 'de/wazers', 'de/communaute', 'de/scripters',
+  'it/editors', 'it/wazers', 'it/communaute', 'it/scripters',
 ];
 
 const sidebar = generateSidebar(
@@ -118,8 +118,10 @@ export default defineConfig({
       title: 'Waze Switzerland',
       themeConfig: {
         nav: [
+          { text: 'Wazers', link: '/en/wazers/', activeMatch: '/en/wazers/' },
           { text: 'Editors', link: '/en/editors/', activeMatch: '/en/editors/' },
           { text: 'Scripters', link: '/en/scripters/', activeMatch: '/en/scripters/' },
+          { text: 'Community', link: '/en/communaute/', activeMatch: '/en/communaute/' },
         ],
         sidebar,
         outline: { level: [2, 3], label: 'On this page' },
@@ -136,8 +138,10 @@ export default defineConfig({
       title: 'Waze Schweiz',
       themeConfig: {
         nav: [
+          { text: 'Wazers', link: '/de/wazers/', activeMatch: '/de/wazers/' },
           { text: 'Editoren', link: '/de/editors/', activeMatch: '/de/editors/' },
           { text: 'Skripter', link: '/de/scripters/', activeMatch: '/de/scripters/' },
+          { text: 'Community', link: '/de/communaute/', activeMatch: '/de/communaute/' },
         ],
         sidebar,
         outline: { level: [2, 3], label: 'Auf dieser Seite' },
@@ -154,8 +158,10 @@ export default defineConfig({
       title: 'Waze Svizzera',
       themeConfig: {
         nav: [
+          { text: 'Wazers', link: '/it/wazers/', activeMatch: '/it/wazers/' },
           { text: 'Editor', link: '/it/editors/', activeMatch: '/it/editors/' },
           { text: 'Scrittori', link: '/it/scripters/', activeMatch: '/it/scripters/' },
+          { text: 'Comunità', link: '/it/communaute/', activeMatch: '/it/communaute/' },
         ],
         sidebar,
         outline: { level: [2, 3], label: 'In questa pagina' },

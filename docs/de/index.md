@@ -1,30 +1,12 @@
 ---
-layout: home
-
+layout: page
+sidebar: false
+aside: false
+title: "Waze Schweiz: Autofahrer"
+description: "Das Wichtigste zum Fahren mit Waze in der Schweiz: Autobahnvignette, Stick'AIR und häufige Fragen."
+# hero.text wird von taglines.data.ts für die Slogan-Leiste im Footer gelesen, bitte behalten.
 hero:
-  name: "Waze CH"
   text: "Gemeinsam dem Verkehr entfliehen"
-  tagline: Ressourcen für Waze-Editoren und Skripter in der Schweiz — Best Practices, Anleitungen und Werkzeuge.
-  image:
-    src: /waze-swiss-hero.svg
-    alt: Waze CH
-  actions:
-    - theme: brand
-      text: Editoren →
-      link: /de/editors/
-    - theme: alt
-      text: Skripter →
-      link: /de/scripters/
-
-features:
-  - icon: 🗺️
-    title: Editoren
-    details: Best Practices für die Bearbeitung der Waze-Karte in der Schweiz — Straßen, Orte, lokale Besonderheiten.
-    link: /de/editors/
-    linkText: Loslegen
-  - icon: ⚙️
-    title: Skripter
-    details: Ressourcen für die Beiträge zu Waze-Skripten — Entwicklung, Veröffentlichung und Wartung.
-    link: /de/scripters/
-    linkText: Loslegen
 ---
+
+<WazerHome />

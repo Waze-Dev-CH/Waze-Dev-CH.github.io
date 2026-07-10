@@ -2,26 +2,28 @@
 title: Skripter
 ---
 
+<img class="macaron" src="/img/waze-kit/scripters.png" alt="" width="96" height="96">
+
 # Waze CH Skripter
 
-Willkommen im Skripter-Bereich. Diese Dokumentation behandelt die Beiträge zu Waze-Skripten — von der Erstellung bis zur Wartung.
+Willkommen im Bereich der Skripter. Diese Dokumentation behandelt die Beiträge zu Waze-Skripten: von der Erstellung bis zur Wartung.
 
 ::: note Im Aufbau
-Dieser Abschnitt wird gerade geschrieben. Inhalte werden schrittweise hinzugefügt.
+Dieser Abschnitt wird gerade geschrieben. Die Inhalte werden schrittweise hinzugefügt.
 :::
 
-## Einführung in Waze-Skripte
+## Einführung in die Waze-Skripte
 
-*Demnächst — Überblick über WME-Skripte und ihre Funktion.*
+*Demnächst: Vorstellung der WME-Skripte und ihrer Funktion.*
 
 ## Best Practices für die Entwicklung
 
-*Demnächst — Code-Konventionen, Kompatibilität, Tests.*
+*Demnächst: Code-Konventionen, Kompatibilität, Tests.*
 
 ## Beliebte Skripte in der Schweiz
 
-*Demnächst — Liste und Dokumentation der von der Schweizer Community verwendeten Skripte.*
+*Demnächst: Liste und Dokumentation der von der Schweizer Community verwendeten Skripte.*
 
 ## Beitragen und veröffentlichen
 
-*Demnächst — wie man ein Skript einreicht, Review-Prozess.*
+*Demnächst: wie man ein Skript einreicht, Review-Prozess.*
