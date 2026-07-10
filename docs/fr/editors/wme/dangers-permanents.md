@@ -1,6 +1,6 @@
 ---
 title: Dangers permanents
-description: Règles d'édition pour les dangers permanents (passages à niveau, virages dangereux, etc.) en Suisse — L4+.
+description: Règles d'édition pour les dangers permanents (passages à niveau, virages dangereux, etc.) en Suisse (L4+).
 order: 9
 ---
 
@@ -16,7 +16,7 @@ Les **dangers permanents** (permanent hazards) signalent aux conducteurs un risq
 
 Les directives complètes ont été mises à jour et sont publiées sous forme de document de référence dédié, accessible via le sujet du forum suisse.
 
-::: note Mise à jour — juin 2024
+::: note Mise à jour : juin 2024
 Les règles pour les **passages à niveau** ont été intégrées dans cette section. Elles étaient auparavant dans les guidelines Lanes (L3+).
 :::
 

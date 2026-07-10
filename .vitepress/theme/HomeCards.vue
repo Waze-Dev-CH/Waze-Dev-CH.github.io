@@ -26,7 +26,7 @@ const cards = computed(() => frontmatter.value.cards ?? []);
           :rel="card.external ? 'noopener' : undefined"
         >{{ card.title }}<span class="hc-arrow" aria-hidden="true">→</span></a>
         <strong v-else class="hc-title">{{ card.title }}</strong>
-        <!-- ponytail: v-html of author-controlled frontmatter — lets a locale drop an inline link (e.g. on "vignette"). Not user input, so safe. -->
+        <!-- ponytail: v-html of author-controlled frontmatter, lets a locale drop an inline link (e.g. on "vignette"). Not user input, so safe. -->
         <span v-if="card.body" class="hc-text" v-html="card.body"></span>
         <span v-if="card.buttons?.length" class="hc-buttons">
           <a

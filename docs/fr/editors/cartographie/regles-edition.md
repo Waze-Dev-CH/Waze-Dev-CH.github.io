@@ -1,12 +1,12 @@
 ---
-title: Règles d'édition — Suisse romande
+title: "Règles d'édition : Suisse romande"
 description: Règles spécifiques à la Suisse romande pour l'édition de la carte Waze.
 order: 2
 ---
 
 <img class="banner-img is-narrow" src="/img/editors/checkmark.png" alt="">
 
-# Règles d'édition — Suisse romande
+# Règles d'édition : Suisse romande
 
 ::: note Niveau L2
 Ces règles s'appliquent dès que vous effectuez des modifications significatives sur la carte.
@@ -16,13 +16,13 @@ Ces règles s'appliquent dès que vous effectuez des modifications significative
 
 Toute édition de carte doit viser trois objectifs :
 
-1. **Convivialité** — des cartes simples avec des instructions de navigation claires, données uniquement quand nécessaire
-2. **Simplicité** — éviter le détail excessif (trop de voies, de segments inutiles) qui génère de la complexité et de la maintenance
-3. **Préservation** — ne pas supprimer des segments existants sans raison : ils contiennent des données précieuses (vitesses, historique de routing)
+1. **Convivialité** : des cartes simples avec des instructions de navigation claires, données uniquement quand nécessaire
+2. **Simplicité** : éviter le détail excessif (trop de voies, de segments inutiles) qui génère de la complexité et de la maintenance
+3. **Préservation** : ne pas supprimer des segments existants sans raison : ils contiennent des données précieuses (vitesses, historique de routing)
 
 ## Nommage des segments
 
-Voir [Nommage des routes et des villes](/fr/editors/cartographie/nommage-routes) — la page de référence pour la casse, les abréviations et les types de voies.
+Voir [Nommage des routes et des villes](/fr/editors/cartographie/nommage-routes) : la page de référence pour la casse, les abréviations et les types de voies.
 
 ## Parkings et aires de stationnement
 
@@ -43,7 +43,7 @@ Réserver aux parkings avec voies d'accès dédiées. Utiliser la catégorie **P
 
 ## Chemins piétons
 
-Voir [Chemins piétons](/fr/editors/cartographie/chemins-pietons) — quand les inclure et quand ne pas les tracer.
+Voir [Chemins piétons](/fr/editors/cartographie/chemins-pietons) : quand les inclure et quand ne pas les tracer.
 
 ## Voies privées
 

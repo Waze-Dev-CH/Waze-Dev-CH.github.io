@@ -8,7 +8,7 @@ order: 8
 
 # Cartographie des parkings
 
-::: tip Accessible à tous — Niveau L1
+::: tip Accessible à tous : Niveau L1
 Ces règles s'appliquent à tous les éditeurs.
 :::
 
@@ -16,7 +16,7 @@ Les parkings jouent un rôle clé dans le projet Waze Parking, qui vise à offri
 
 ## Principe général
 
-Ces guidelines s'appliquent à **tous les parkings** — publics et privés — mais **pas** aux places de stationnement en voirie (rue).
+Ces guidelines s'appliquent à **tous les parkings** (publics et privés), mais **pas** aux places de stationnement en voirie (rue).
 
 Un parking se cartographie sous deux aspects complémentaires :
 
@@ -31,7 +31,7 @@ Chaque parking doit être créé comme un **lieu en forme de polygone** (Place d
 
 1. Survoler le bouton **Ajouter un lieu**
 2. Sélectionner **Services automobiles** → choisir l'option **Polygone**
-3. Cliquer pour créer les nœuds du polygone — double-cliquer sur le dernier point pour terminer
+3. Cliquer pour créer les nœuds du polygone : double-cliquer sur le dernier point pour terminer
 4. Placer le marqueur d'entrée à l'**entrée réelle** du parking
 5. Sélectionner **Parking Lot** dans le menu Catégories
 6. Sauvegarder
@@ -83,7 +83,7 @@ Le point d'entrée doit être placé à la véritable entrée physique du parkin
 :::
 
 ::: note
-Les parkings en voirie (parking sur rue le long des trottoirs) **ne sont pas concernés** par ces guidelines — ils se cartographient différemment.
+Les parkings en voirie (parking sur rue le long des trottoirs) **ne sont pas concernés** par ces guidelines : ils se cartographient différemment.
 :::
 
 ::: quote Sources

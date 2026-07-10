@@ -14,7 +14,7 @@ order: 2
 La vignette est **obligatoire** sur toutes les autoroutes suisses. L'amende en cas d'absence est de **CHF 200**.
 :::
 
-Waze intègre désormais la vignette autoroutière suisse dans ses calculs d'itinéraire. Auparavant, l'app ne pouvait qu'autoriser ou bloquer globalement les routes à péage, sans distinguer les systèmes de péage des différents pays. Vous pouvez donc indiquer à l'app que vous possédez une vignette suisse tout en continuant d'éviter les péages ailleurs — utile pour les trajets transfrontaliers en Europe.
+Waze intègre désormais la vignette autoroutière suisse dans ses calculs d'itinéraire. Auparavant, l'app ne pouvait qu'autoriser ou bloquer globalement les routes à péage, sans distinguer les systèmes de péage des différents pays. Vous pouvez donc indiquer à l'app que vous possédez une vignette suisse tout en continuant d'éviter les péages ailleurs, utile pour les trajets transfrontaliers en Europe.
 
 <img class="banner-img" src="/img/wazers/vignette-3.jpg" alt="Carte du réseau autoroutier européen dans Waze : pays à vignette et pays à péage">
 
@@ -40,8 +40,8 @@ Modifier ce paramètre dans Waze **ne remplace pas l'obligation d'acheter la vig
 
 ## Acheter la vignette
 
-- [e-vignette.ch](https://e-vignette.ch/) — vignette numérique officielle
-- [via.admin.ch/shop](https://via.admin.ch/shop) — boutique officielle de la Confédération
+- [e-vignette.ch](https://e-vignette.ch/) : vignette numérique officielle
+- [via.admin.ch/shop](https://via.admin.ch/shop) : boutique officielle de la Confédération
 
 ## Tester le routage avec vignette
 

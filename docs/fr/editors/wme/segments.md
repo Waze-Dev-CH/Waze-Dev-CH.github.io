@@ -27,7 +27,7 @@ Sélectionner un segment pour afficher ses propriétés dans le panneau droit :
 
 | Propriété | Description |
 |-----------|-------------|
-| **Type** | Classification routière (Freeway, Primary Street, Street…) — influence le routing. Voir [Bases du routing](/fr/editors/wme/routing) |
+| **Type** | Classification routière (Freeway, Primary Street, Street…) : influence le routing. Voir [Bases du routing](/fr/editors/wme/routing) |
 | **Nom** | Nom officiel de la voie, sans abréviation. Voir [Nommage des routes](/fr/editors/cartographie/nommage-routes) |
 | **Ville** | Localité officielle (code postal requis). Voir [Nommage des routes](/fr/editors/cartographie/nommage-routes) |
 | **Sens** | Bidirectionnel, sens unique A→B, sens unique B→A |

@@ -8,7 +8,7 @@ order: 3
 
 # Légende de la carte suisse
 
-::: tip Accessible à tous — Niveau L1
+::: tip Accessible à tous : Niveau L1
 Cette page s'adresse à tous les éditeurs, débutants compris.
 :::
 

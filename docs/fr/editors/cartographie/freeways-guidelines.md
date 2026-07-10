@@ -1,11 +1,11 @@
 ---
-title: "Cartographie des autoroutes — Guidelines 2024"
+title: "Cartographie des autoroutes : Guidelines 2024"
 order: 12
 ---
 
 <img class="macaron" src="/img/editors/badge-freeway.png" alt="" width="128" height="128">
 
-# Cartographie des autoroutes — Guidelines 2024
+# Cartographie des autoroutes : Guidelines 2024
 
 Par vince1612  
 Co-coordinateur Suisse et Global Champ  
@@ -64,7 +64,7 @@ Les bretelles sortant de l'autoroute devraient déjà ressembler à ceci :
 
 ![](/freeways/image5.png)
 
-##### Avertissement — éditions non conformes
+##### Avertissement : éditions non conformes
 
 Certaines des éditions non conformes que nous avons vues d'un ancien responsable de pays consistaient à supprimer le symbole « > » après la bifurcation en Y de la bretelle. Si vous voyez cela, veuillez le réajouter. C'est mieux visuellement dans WME (non affiché dans l'application de toute façon) et sert à avoir l'instruction de virage TTS déjà correcte sans avoir à la modifier manuellement.
 

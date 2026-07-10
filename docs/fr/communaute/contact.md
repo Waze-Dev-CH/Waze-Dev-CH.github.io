@@ -36,7 +36,7 @@ Chez Waze, la Suisse fait partie du groupement **DACH** (Allemagne, Autriche, Su
 
 ## Les Champs
 
-La communauté suisse est encadrée par les **Champs** (coordinateurs). Cliquez sur une adresse pour écrire — elles sont assemblées par le navigateur pour limiter la collecte automatique.
+La communauté suisse est encadrée par les **Champs** (coordinateurs). Cliquez sur une adresse pour écrire ; elles sont assemblées par le navigateur pour limiter la collecte automatique.
 
 <ChampsGrid />
 
@@ -44,8 +44,8 @@ La communauté suisse est encadrée par les **Champs** (coordinateurs). Cliquez 
 
 Pour signaler une fermeture de route à l'équipe d'édition :
 
-- **fermetures@waze-switzerland.ch** — messages en français, italien ou anglais
-- **sperrungen@waze-switzerland.ch** — messages en allemand ou anglais
+- **fermetures@waze-switzerland.ch** : messages en français, italien ou anglais
+- **sperrungen@waze-switzerland.ch** : messages en allemand ou anglais
 
 ::: reminder
 Ces adresses sont destinées aux fermetures planifiées et aux chantiers. Pour les incidents ponctuels, utilisez directement le signalement dans l'application Waze.
@@ -53,10 +53,10 @@ Ces adresses sont destinées aux fermetures planifiées et aux chantiers. Pour l
 
 ## Canaux
 
-- **Forum Waze Suisse** — catégorie éditeurs : https://www.waze.com/discuss/c/editors/switzerland/4790
-- **Discord communautaire « Waze DACH »** — échanges en temps réel : https://discord.gg/dmxUwvTkk5
-- **Page Facebook** — annonces et actualités : https://www.facebook.com/WazeSwitzerland
+- **Forum Waze Suisse**, catégorie éditeurs : https://www.waze.com/discuss/c/editors/switzerland/4790
+- **Discord communautaire « Waze DACH »**, échanges en temps réel : https://discord.gg/dmxUwvTkk5
+- **Page Facebook**, annonces et actualités : https://www.facebook.com/WazeSwitzerland
 
 ::: quote Source(s)
-- Contact — Waze Switzerland : https://www.waze-switzerland.ch/contact/fr
+- Contact (Waze Switzerland) : https://www.waze-switzerland.ch/contact/fr
 :::

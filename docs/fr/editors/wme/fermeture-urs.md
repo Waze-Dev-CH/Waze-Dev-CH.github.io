@@ -12,7 +12,7 @@ order: 11
 La clôture des URs est réservée aux éditeurs de niveau 2 et plus.
 :::
 
-Un **UR (Update Request)** est un signalement déposé par un utilisateur Waze lorsqu'il constate un problème sur la carte. Clore un UR incorrectement envoie une notification automatique au signaleur indiquant que le problème a été corrigé — même si ce n'est pas le cas. Il est donc essentiel de clore avec précision.
+Un **UR (Update Request)** est un signalement déposé par un utilisateur Waze lorsqu'il constate un problème sur la carte. Clore un UR incorrectement envoie une notification automatique au signaleur indiquant que le problème a été corrigé, même si ce n'est pas le cas. Il est donc essentiel de clore avec précision.
 
 ## Corrigé (Solved)
 
@@ -42,5 +42,5 @@ Le terme anglais **"Wrong driving direction"** peut désigner deux choses diffé
 Demandez toujours une clarification au signaleur avant d'agir.
 
 ::: warning
-Ne jamais clore un UR comme « Corrigé » sans avoir effectué de modification réelle dans le WME. Le signaleur reçoit une notification automatique — clore sans corriger est trompeur et nuit à la confiance des utilisateurs.
+Ne jamais clore un UR comme « Corrigé » sans avoir effectué de modification réelle dans le WME. Le signaleur reçoit une notification automatique : clore sans corriger est trompeur et nuit à la confiance des utilisateurs.
 :::
