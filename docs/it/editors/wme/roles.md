@@ -27,6 +27,10 @@ Un **Area Manager** gestisce una zona geografica definita e può modificarne la 
 3. Contattare un Country Manager tramite il forum con questi link
 4. Un Country Manager si mette in contatto entro **24 ore**
 
+La richiesta può anche essere inviata tramite il [modulo ufficiale di richiesta Area Manager](https://www.waze.com/il-ContactForm/form-web/en/community-am-self-managed?locale=en&redirectedFromFormId=community-requests-hub): accedi con il tuo account Waze/WME e seleziona "Area Manager - self managed countries". Ogni richiesta viene esaminata dai Champ svizzeri prima dell'approvazione.
+
+È disponibile una [lista di poligoni (zone) predefiniti per cantone](https://docs.google.com/spreadsheets/d/e/2PACX-1vSPysCQdoPgxjxtzmHv8OgthaIRsfAvDRvbSzLTdELkR7vSxhzWgwOltaVCNQ3m_c4N6lOlKBWYRBOH/pubhtml?gid=868765124&single=true) per delimitare la zona richiesta.
+
 ::: important Importante
 Gli Area Manager devono modificare la mappa **almeno una volta ogni 90 giorni**. Trascorso questo termine, i diritti AM vengono revocati automaticamente.
 :::
@@ -35,9 +39,11 @@ Gli Area Manager devono modificare la mappa **almeno una volta ogni 90 giorni**.
 
 Un **State Manager** dispone dei diritti di modifica completi nel cantone assegnatogli, soggetti alle stesse regole di blocco.
 
-## RTC State Manager
+## MTE Marshal (RTC State Manager)
 
-Ruolo proprio della Svizzera (unico in questo paese): gestione delle chiusure stradali in tempo reale. Vedi [Chiusure stradali](/it/editors/wme/fermetures) per il dettaglio delle procedure.
+Ruolo proprio della Svizzera (unico in questo paese), chiamato anche **SM RTC**: coordinamento dei grandi eventi di traffico (MTE) e gestione delle chiusure in tempo reale (RTC), spesso a scala cantonale. Questo ruolo non concede **alcun diritto di modifica della mappa**, riguarda unicamente la gestione delle chiusure in tempo reale. Vedi [Chiusure stradali](/it/editors/wme/fermetures) per il dettaglio delle procedure.
+
+La richiesta si effettua tramite il modulo "MTE Marshal" nell'[hub delle richieste della comunità](https://www.waze.com/il-ContactForm/form-web/en/community-requests-hub?locale=en) (accesso richiesto) e viene anch'essa esaminata dai Champ svizzeri.
 
 ## Country Manager (CM)
 

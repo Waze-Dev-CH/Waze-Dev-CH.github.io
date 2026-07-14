@@ -27,6 +27,10 @@ An **Area Manager** manages a defined geographic area and can edit the map there
 3. Contact a Country Manager via the forum with these links
 4. A Country Manager gets in touch within **24 hours**
 
+The request can also be submitted via the [official Area Manager request form](https://www.waze.com/il-ContactForm/form-web/en/community-am-self-managed?locale=en&redirectedFromFormId=community-requests-hub): log in with your Waze/WME account and select "Area Manager - self managed countries". Each request is reviewed by the Swiss Champs before approval.
+
+A [list of pre-established polygons (areas) by canton](https://docs.google.com/spreadsheets/d/e/2PACX-1vSPysCQdoPgxjxtzmHv8OgthaIRsfAvDRvbSzLTdELkR7vSxhzWgwOltaVCNQ3m_c4N6lOlKBWYRBOH/pubhtml?gid=868765124&single=true) is available to delimit the requested area.
+
 ::: important Important
 Area Managers must edit the map **at least once every 90 days**. After this period, AM rights are automatically revoked.
 :::
@@ -35,9 +39,11 @@ Area Managers must edit the map **at least once every 90 days**. After this peri
 
 A **State Manager** has full editing rights in the assigned canton, subject to the same locking rules.
 
-## RTC State Manager
+## MTE Marshal (RTC State Manager)
 
-A role specific to Switzerland (unique in this country): managing real-time road closures. See [Road closures](/en/editors/wme/fermetures) for details on the procedures.
+A role specific to Switzerland (unique in this country), also known as **SM RTC**: coordinating major traffic events (MTEs) and managing real-time closures (RTCs), often at the cantonal scale. This role grants **no map-editing permissions**, it covers the handling of real-time closures only. See [Road closures](/en/editors/wme/fermetures) for details on the procedures.
+
+The request is made via the "MTE Marshal" form in the [community requests hub](https://www.waze.com/il-ContactForm/form-web/en/community-requests-hub?locale=en) (login required) and is also reviewed by the Swiss Champs.
 
 ## Country Manager (CM)
 
