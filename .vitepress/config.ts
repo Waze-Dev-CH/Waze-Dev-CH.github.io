@@ -7,230 +7,250 @@ import taskLists from 'markdown-it-task-lists';
 import abbr from 'markdown-it-abbr';
 
 const sections = [
-  'fr/editors', 'fr/wazers', 'fr/communaute', 'fr/scripters',
-  'en/editors', 'en/wazers', 'en/communaute', 'en/scripters',
-  'de/editors', 'de/wazers', 'de/communaute', 'de/scripters',
-  'it/editors', 'it/wazers', 'it/communaute', 'it/scripters',
+    'fr/editors', 'fr/wazers', 'fr/communaute', 'fr/scripters',
+    'en/editors', 'en/wazers', 'en/communaute', 'en/scripters',
+    'de/editors', 'de/wazers', 'de/communaute', 'de/scripters',
+    'it/editors', 'it/wazers', 'it/communaute', 'it/scripters',
 ];
 
 const sidebar = generateSidebar(
-  sections.map((section) => ({
-    documentRootPath: 'docs',
-    scanStartPath: section,
-    resolvePath: `/${section}/`,
-    useTitleFromFrontmatter: true,
-    useTitleFromFileHeading: true,
-    useFolderTitleFromIndexFile: true,
-    useFolderLinkFromIndexFile: true,
-    sortMenusByFrontmatterOrder: true,
-    frontmatterOrderDefaultValue: 999,
-    includeFolderIndexFile: false,
-    folderLinkNotIncludesFileName: true,
-    collapsed: false,
-    collapseDepth: 2,
-    excludeByGlobPattern: ['**/_shared/**'],
-  }))
+    sections.map((section) => ({
+        documentRootPath: 'docs',
+        scanStartPath: section,
+        resolvePath: `/${section}/`,
+        useTitleFromFrontmatter: true,
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
+        frontmatterOrderDefaultValue: 999,
+        includeFolderIndexFile: false,
+        folderLinkNotIncludesFileName: true,
+        collapsed: false,
+        collapseDepth: 2,
+        excludeByGlobPattern: ['**/_shared/**'],
+    }))
 );
 
 const customContainerTypes = [
-  'note', 'example', 'question', 'quote', 'reminder',
-  'people', 'bug', 'abstract', 'important', 'failure', 'help', 'success',
+    'note', 'example', 'question', 'quote', 'reminder',
+    'people', 'bug', 'abstract', 'important', 'failure', 'help', 'success',
 ];
 
 const defaultTitles: Record<string, string> = {
-  note: 'Note', example: 'Exemple', question: 'Question', quote: 'Citation',
-  reminder: 'Rappel', people: 'Contact', bug: 'Bug', abstract: 'Résumé',
-  important: 'Important', failure: 'Erreur', help: 'Conseil', success: 'Succès',
+    note: 'Note', example: 'Exemple', question: 'Question', quote: 'Citation',
+    reminder: 'Rappel', people: 'Contact', bug: 'Bug', abstract: 'Résumé',
+    important: 'Important', failure: 'Erreur', help: 'Conseil', success: 'Succès',
 };
 
 const typeIcons: Record<string, string> = {
-  note: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 9.5-9.5z"/></svg>`,
-  example: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>`,
-  question: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
-  quote: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
-  reminder: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>`,
-  people: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
-  bug: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M4 17l6-6-6-6"/><path d="M12 17h8"/></svg>`,
-  abstract: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
-  important: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
-  failure: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`,
-  help: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>`,
-  success: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`,
+    note: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 9.5-9.5z"/></svg>`,
+    example: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>`,
+    question: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
+    quote: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+    reminder: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>`,
+    people: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
+    bug: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M4 17l6-6-6-6"/><path d="M12 17h8"/></svg>`,
+    abstract: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+    important: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
+    failure: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`,
+    help: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>`,
+    success: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="custom-block-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`,
 };
 
 function createContainerPlugin(type: string) {
-  return (md: any) => {
-    md.use(container, type, {
-      render(tokens: any[], idx: number) {
-        const token = tokens[idx];
-        if (token.nesting === 1) {
-          const title = token.info.trim().slice(type.length).trim() || defaultTitles[type] || type;
-          const icon = typeIcons[type] ?? '';
-          return `<div class="custom-block ${type}">\n<p class="custom-block-title">${icon}${title}</p>\n`;
-        }
-        return '</div>\n';
-      },
-    });
-  };
+    return (md: any) => {
+        md.use(container, type, {
+            render(tokens: any[], idx: number) {
+                const token = tokens[idx];
+                if (token.nesting === 1) {
+                    const title = token.info.trim().slice(type.length).trim() || defaultTitles[type] || type;
+                    const icon = typeIcons[type] ?? '';
+                    return `<div class="custom-block ${type}">\n<p class="custom-block-title">${icon}${title}</p>\n`;
+                }
+                return '</div>\n';
+            },
+        });
+    };
 }
 
 export default defineConfig({
-  title: 'Waze CH',
-  description: 'Documentation communautaire pour les éditeurs et scripteurs Waze en Suisse.',
+    title: 'Waze CH',
+    description: 'Documentation communautaire pour les éditeurs et scripteurs Waze en Suisse.',
 
-  srcDir: 'docs',
-  srcExclude: ['**/_shared/**', 'superpowers/**'],
-  outDir: 'public',
-  lastUpdated: true,
-  ignoreDeadLinks: [
-    /localhost/,
-  ],
+    srcDir: 'docs',
+    srcExclude: ['**/_shared/**', 'superpowers/**'],
+    outDir: 'public',
+    lastUpdated: true,
+    ignoreDeadLinks: [
+        /localhost/,
+    ],
 
-  head: [
-    ['link', { rel: 'icon', href: '/waze-suisse-logo.png', type: 'image/png' }],
-  ],
+    head: [
+        ['link', { rel: 'icon', href: '/waze-suisse-logo.png', type: 'image/png' }],
+    ],
 
-  locales: {
-    fr: {
-      label: 'Français',
-      lang: 'fr',
-      link: '/fr/',
-      title: 'Waze Suisse',
-      themeConfig: {
-        nav: [
-          { text: 'Wazers', link: '/fr/wazers/', activeMatch: '/fr/wazers/' },
-          { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
-          { text: 'Scripteurs', link: '/fr/scripters/', activeMatch: '/fr/scripters/' },
-          { text: 'Communauté', link: '/fr/communaute/', activeMatch: '/fr/communaute/' },
-        ],
-        sidebar,
-        outline: { level: [2, 3], label: 'Sur cette page' },
-        docFooter: { prev: 'Page précédente', next: 'Page suivante' },
-        darkModeSwitchLabel: 'Apparence',
-        sidebarMenuLabel: 'Menu',
-        returnToTopLabel: 'Retour en haut',
-        lastUpdatedText: 'Dernière mise à jour',
-      },
-    },
-    en: {
-      label: 'English',
-      lang: 'en',
-      title: 'Waze Switzerland',
-      themeConfig: {
-        nav: [
-          { text: 'Wazers', link: '/en/wazers/', activeMatch: '/en/wazers/' },
-          { text: 'Editors', link: '/en/editors/', activeMatch: '/en/editors/' },
-          { text: 'Scripters', link: '/en/scripters/', activeMatch: '/en/scripters/' },
-          { text: 'Community', link: '/en/communaute/', activeMatch: '/en/communaute/' },
-        ],
-        sidebar,
-        outline: { level: [2, 3], label: 'On this page' },
-        docFooter: { prev: 'Previous page', next: 'Next page' },
-        darkModeSwitchLabel: 'Appearance',
-        sidebarMenuLabel: 'Menu',
-        returnToTopLabel: 'Return to top',
-        lastUpdatedText: 'Last updated',
-      },
-    },
-    de: {
-      label: 'Deutsch',
-      lang: 'de',
-      title: 'Waze Schweiz',
-      themeConfig: {
-        nav: [
-          { text: 'Wazers', link: '/de/wazers/', activeMatch: '/de/wazers/' },
-          { text: 'Editoren', link: '/de/editors/', activeMatch: '/de/editors/' },
-          { text: 'Skripter', link: '/de/scripters/', activeMatch: '/de/scripters/' },
-          { text: 'Community', link: '/de/communaute/', activeMatch: '/de/communaute/' },
-        ],
-        sidebar,
-        outline: { level: [2, 3], label: 'Auf dieser Seite' },
-        docFooter: { prev: 'Vorherige Seite', next: 'Nächste Seite' },
-        darkModeSwitchLabel: 'Erscheinungsbild',
-        sidebarMenuLabel: 'Menü',
-        returnToTopLabel: 'Nach oben',
-        lastUpdatedText: 'Zuletzt aktualisiert',
-      },
-    },
-    it: {
-      label: 'Italiano',
-      lang: 'it',
-      title: 'Waze Svizzera',
-      themeConfig: {
-        nav: [
-          { text: 'Wazers', link: '/it/wazers/', activeMatch: '/it/wazers/' },
-          { text: 'Editor', link: '/it/editors/', activeMatch: '/it/editors/' },
-          { text: 'Scrittori', link: '/it/scripters/', activeMatch: '/it/scripters/' },
-          { text: 'Comunità', link: '/it/communaute/', activeMatch: '/it/communaute/' },
-        ],
-        sidebar,
-        outline: { level: [2, 3], label: 'In questa pagina' },
-        docFooter: { prev: 'Pagina precedente', next: 'Pagina successiva' },
-        darkModeSwitchLabel: 'Aspetto',
-        sidebarMenuLabel: 'Menu',
-        returnToTopLabel: 'Torna su',
-        lastUpdatedText: 'Ultimo aggiornamento',
-      },
-    },
-  },
-
-  markdown: {
-    config: (md) => {
-      md.use(taskLists);
-      md.use(abbr);
-      customContainerTypes.forEach((type) => createContainerPlugin(type)(md));
-    },
-  },
-
-  themeConfig: {
-    logo: { src: '/waze-suisse-logo.png', alt: 'Waze Community Switzerland' },
-      socialLinks: [{ icon: 'github', link: 'https://github.com/Waze-Dev-CH/Waze-Dev-CH.github.io' }],
-    search: {
-      provider: 'local',
-      options: {
-        locales: {
-          root: {
-            translations: {
-              button: { buttonText: 'Rechercher', buttonAriaLabel: 'Rechercher' },
-              modal: {
-                noResultsText: 'Aucun résultat pour',
-                resetButtonTitle: 'Réinitialiser',
-                footer: { selectText: 'pour sélectionner', navigateText: 'pour naviguer', closeText: 'pour fermer' },
-              },
+    locales: {
+        fr: {
+            label: 'Français',
+            lang: 'fr',
+            link: '/fr/',
+            title: 'Waze Suisse',
+            themeConfig: {
+                nav: [
+                    { text: 'Wazers', link: '/fr/wazers/', activeMatch: '/fr/wazers/' },
+                    { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
+                    { text: 'Scripteurs', link: '/fr/scripters/', activeMatch: '/fr/scripters/' },
+                    { text: 'Communauté', link: '/fr/communaute/', activeMatch: '/fr/communaute/' },
+                ],
+                sidebar,
+                outline: { level: [2, 3], label: 'Sur cette page' },
+                docFooter: { prev: 'Page précédente', next: 'Page suivante' },
+                darkModeSwitchLabel: 'Apparence',
+                sidebarMenuLabel: 'Menu',
+                returnToTopLabel: 'Retour en haut',
+                lastUpdatedText: 'Dernière mise à jour',
+                editLink: {
+                    pattern:
+                        'https://vscode.dev/github/Waze-Dev-CH/Waze-Dev-CH.github.io/blob/main/docs/:path',
+                    text: 'Je veux contribuer à cette page !',
+                },
             },
-          },
-          en: {
-            translations: {
-              button: { buttonText: 'Search', buttonAriaLabel: 'Search' },
-              modal: {
-                noResultsText: 'No results for',
-                resetButtonTitle: 'Reset search',
-                footer: { selectText: 'to select', navigateText: 'to navigate', closeText: 'to close' },
-              },
-            },
-          },
-          de: {
-            translations: {
-              button: { buttonText: 'Suchen', buttonAriaLabel: 'Suchen' },
-              modal: {
-                noResultsText: 'Keine Ergebnisse für',
-                resetButtonTitle: 'Suche zurücksetzen',
-                footer: { selectText: 'zum Auswählen', navigateText: 'zum Navigieren', closeText: 'zum Schließen' },
-              },
-            },
-          },
-          it: {
-            translations: {
-              button: { buttonText: 'Cerca', buttonAriaLabel: 'Cerca' },
-              modal: {
-                noResultsText: 'Nessun risultato per',
-                resetButtonTitle: 'Azzera la ricerca',
-                footer: { selectText: 'per selezionare', navigateText: 'per navigare', closeText: 'per chiudere' },
-              },
-            },
-          },
         },
-      },
+        en: {
+            label: 'English',
+            lang: 'en',
+            title: 'Waze Switzerland',
+            themeConfig: {
+                nav: [
+                    { text: 'Wazers', link: '/en/wazers/', activeMatch: '/en/wazers/' },
+                    { text: 'Editors', link: '/en/editors/', activeMatch: '/en/editors/' },
+                    { text: 'Scripters', link: '/en/scripters/', activeMatch: '/en/scripters/' },
+                    { text: 'Community', link: '/en/communaute/', activeMatch: '/en/communaute/' },
+                ],
+                sidebar,
+                outline: { level: [2, 3], label: 'On this page' },
+                docFooter: { prev: 'Previous page', next: 'Next page' },
+                darkModeSwitchLabel: 'Appearance',
+                sidebarMenuLabel: 'Menu',
+                returnToTopLabel: 'Return to top',
+                lastUpdatedText: 'Last updated',
+                editLink: {
+                    pattern:
+                        'https://vscode.dev/github/Waze-Dev-CH/Waze-Dev-CH.github.io/blob/main/docs/:path',
+                    text: 'I want to contribute to this page!',
+                },
+            },
+        },
+        de: {
+            label: 'Deutsch',
+            lang: 'de',
+            title: 'Waze Schweiz',
+            themeConfig: {
+                nav: [
+                    { text: 'Wazers', link: '/de/wazers/', activeMatch: '/de/wazers/' },
+                    { text: 'Editoren', link: '/de/editors/', activeMatch: '/de/editors/' },
+                    { text: 'Skripter', link: '/de/scripters/', activeMatch: '/de/scripters/' },
+                    { text: 'Community', link: '/de/communaute/', activeMatch: '/de/communaute/' },
+                ],
+                sidebar,
+                outline: { level: [2, 3], label: 'Auf dieser Seite' },
+                docFooter: { prev: 'Vorherige Seite', next: 'Nächste Seite' },
+                darkModeSwitchLabel: 'Erscheinungsbild',
+                sidebarMenuLabel: 'Menü',
+                returnToTopLabel: 'Nach oben',
+                lastUpdatedText: 'Zuletzt aktualisiert',
+                editLink: {
+                    pattern:
+                        'https://vscode.dev/github/Waze-Dev-CH/Waze-Dev-CH.github.io/blob/main/docs/:path',
+                    text: 'Ich möchte zu dieser Seite beitragen!',
+                },
+            },
+        },
+        it: {
+            label: 'Italiano',
+            lang: 'it',
+            title: 'Waze Svizzera',
+            themeConfig: {
+                nav: [
+                    { text: 'Wazers', link: '/it/wazers/', activeMatch: '/it/wazers/' },
+                    { text: 'Editor', link: '/it/editors/', activeMatch: '/it/editors/' },
+                    { text: 'Scrittori', link: '/it/scripters/', activeMatch: '/it/scripters/' },
+                    { text: 'Comunità', link: '/it/communaute/', activeMatch: '/it/communaute/' },
+                ],
+                sidebar,
+                outline: { level: [2, 3], label: 'In questa pagina' },
+                docFooter: { prev: 'Pagina precedente', next: 'Pagina successiva' },
+                darkModeSwitchLabel: 'Aspetto',
+                sidebarMenuLabel: 'Menu',
+                returnToTopLabel: 'Torna su',
+                lastUpdatedText: 'Ultimo aggiornamento',
+                editLink: {
+                    pattern:
+                        'https://vscode.dev/github/Waze-Dev-CH/Waze-Dev-CH.github.io/blob/main/docs/:path',
+                    text: 'Voglio contribuire a questa pagina!',
+                },
+            },
+        },
     },
-  },
+
+    markdown: {
+        config: (md) => {
+            md.use(taskLists);
+            md.use(abbr);
+            customContainerTypes.forEach((type) => createContainerPlugin(type)(md));
+        },
+    },
+
+    themeConfig: {
+        logo: { src: '/waze-suisse-logo.png', alt: 'Waze Community Switzerland' },
+        socialLinks: [{ icon: 'github', link: 'https://github.com/Waze-Dev-CH/Waze-Dev-CH.github.io' }],
+        search: {
+            provider: 'local',
+            options: {
+                locales: {
+                    root: {
+                        translations: {
+                            button: { buttonText: 'Rechercher', buttonAriaLabel: 'Rechercher' },
+                            modal: {
+                                noResultsText: 'Aucun résultat pour',
+                                resetButtonTitle: 'Réinitialiser',
+                                footer: { selectText: 'pour sélectionner', navigateText: 'pour naviguer', closeText: 'pour fermer' },
+                            },
+                        },
+                    },
+                    en: {
+                        translations: {
+                            button: { buttonText: 'Search', buttonAriaLabel: 'Search' },
+                            modal: {
+                                noResultsText: 'No results for',
+                                resetButtonTitle: 'Reset search',
+                                footer: { selectText: 'to select', navigateText: 'to navigate', closeText: 'to close' },
+                            },
+                        },
+                    },
+                    de: {
+                        translations: {
+                            button: { buttonText: 'Suchen', buttonAriaLabel: 'Suchen' },
+                            modal: {
+                                noResultsText: 'Keine Ergebnisse für',
+                                resetButtonTitle: 'Suche zurücksetzen',
+                                footer: { selectText: 'zum Auswählen', navigateText: 'zum Navigieren', closeText: 'zum Schließen' },
+                            },
+                        },
+                    },
+                    it: {
+                        translations: {
+                            button: { buttonText: 'Cerca', buttonAriaLabel: 'Cerca' },
+                            modal: {
+                                noResultsText: 'Nessun risultato per',
+                                resetButtonTitle: 'Azzera la ricerca',
+                                footer: { selectText: 'per selezionare', navigateText: 'per navigare', closeText: 'per chiudere' },
+                            },
+                        },
+                    },
+                },
+            },
+        },
+    },
 });
