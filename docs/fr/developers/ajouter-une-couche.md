@@ -10,7 +10,7 @@ order: 3
 Exemple concret de bout en bout : ajouter une **couche raster** (tuiles WMTS swisstopo) au Helper. C'est le type de contribution le plus courant. Pour une couche de **données** (points, géométries), voir la section en bas.
 
 ::: reminder À lire d'abord
-Cette page suppose un environnement de dev qui tourne. Sinon, commencer par [Contribuer](/fr/scripters/contribuer) puis les [conventions de code](/fr/scripters/conventions).
+Cette page suppose un environnement de dev qui tourne. Sinon, commencer par [Contribuer](/fr/developers/contribuer) puis les [conventions de code](/fr/developers/conventions).
 :::
 
 ## 1. Déclarer la couche
@@ -49,7 +49,7 @@ La clé i18n passée à `i18next.t()` doit exister pour **les quatre langues**. 
 
 ## 3. Mettre à jour le changelog
 
-Ajouter une entrée *Added* dans la section Changelog de **tous** les README (`README.md`, `README.fr.md`, `README.de.md`, `README.it.md`), voir [conventions](/fr/scripters/conventions#changelog).
+Ajouter une entrée *Added* dans la section Changelog de **tous** les README (`README.md`, `README.fr.md`, `README.de.md`, `README.it.md`), voir [conventions](/fr/developers/conventions#changelog).
 
 ## 4. Construire et tester
 
@@ -61,7 +61,7 @@ Puis smoke test dans le WME : charger le build local, cocher la nouvelle couche,
 
 ## 5. Ouvrir la PR
 
-Suivre le [flux de contribution](/fr/scripters/contribuer) : branche, checklist, PR avec review.
+Suivre le [flux de contribution](/fr/developers/contribuer) : branche, checklist, PR avec review.
 
 ## Couche de données (vecteur)
 

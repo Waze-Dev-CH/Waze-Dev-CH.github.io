@@ -23,7 +23,7 @@ Guide pratique pour éditer le site (VitePress, 4 langues). À lire avant de mod
 
 4. **Messages de commit** en [Conventional Commits](https://www.conventionalcommits.org/) :
    - `docs(editors): ajoute la page sur la numérotation des routes`
-   - `fix(i18n): corrige un lien cassé dans la page scripteurs DE`
+   - `fix(i18n): corrige un lien cassé dans la page développeurs DE`
    - `style:` pour de la mise en forme pure, `chore:` pour la config.
 
 ## Parité des langues (i18n)
@@ -97,7 +97,7 @@ Les titres par défaut sont **codés en français uniquement**. Dans une page `e
 docs/
 ├── index.md            Accueil FR (layout: home)
 ├── fr/editors/index.md    Section éditeurs FR
-├── fr/scripters/index.md  Section scripteurs FR
+├── fr/developers/index.md  Section développeurs FR
 ├── en/ de/ it/         Mêmes fichiers, traduits
 └── public/             Images, SVG (servis à la racine /)
 ```

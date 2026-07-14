@@ -27,7 +27,7 @@ const TILES = [
 ];
 const MORE = [
   { path: 'editors/', accent: '#8A5CF6', icon: 'editor.png' },
-  { path: 'scripters/', accent: '#FF7A45', icon: 'scripter.png' },
+  { path: 'developers/', accent: '#FF7A45', icon: 'scripter.png' },
 ];
 
 const STRINGS = {
@@ -45,7 +45,7 @@ const STRINGS = {
     ],
     more: [
       { title: 'Devenir éditeur', desc: 'Améliorer la carte suisse dans l’éditeur Waze (WME).' },
-      { title: 'Scripter Waze', desc: 'Développer des userscripts pour la communauté.' },
+      { title: 'Devenir développeur', desc: 'Développer des userscripts pour la communauté.' },
     ],
   },
   en: {
@@ -62,7 +62,7 @@ const STRINGS = {
     ],
     more: [
       { title: 'Become an editor', desc: 'Improve the Swiss map in the Waze Map Editor (WME).' },
-      { title: 'Script for Waze', desc: 'Develop userscripts for the community.' },
+      { title: 'Become a developer', desc: 'Develop userscripts for the community.' },
     ],
   },
   de: {
@@ -79,7 +79,7 @@ const STRINGS = {
     ],
     more: [
       { title: 'Editor werden', desc: 'Die Schweizer Karte im Waze Map Editor (WME) verbessern.' },
-      { title: 'Für Waze skripten', desc: 'Userscripts für die Community entwickeln.' },
+      { title: 'Developer werden', desc: 'Userscripts für die Community entwickeln.' },
     ],
   },
   it: {
@@ -96,7 +96,7 @@ const STRINGS = {
     ],
     more: [
       { title: 'Diventare editor', desc: 'Migliorare la mappa svizzera nel Waze Map Editor (WME).' },
-      { title: 'Creare script per Waze', desc: 'Sviluppare userscript per la comunità.' },
+      { title: 'Diventare developer', desc: 'Sviluppare userscript per la comunità.' },
     ],
   },
 };

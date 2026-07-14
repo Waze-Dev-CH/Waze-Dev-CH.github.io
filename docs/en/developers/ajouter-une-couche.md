@@ -10,7 +10,7 @@ order: 3
 A concrete end-to-end example: adding a **raster layer** (swisstopo WMTS tiles) to the Helper. This is the most common kind of contribution. For a **data** layer (points, geometries), see the section at the bottom.
 
 ::: reminder Read first
-This page assumes a running dev environment. Otherwise, start with [Contributing](/en/scripters/contribuer), then the [code conventions](/en/scripters/conventions).
+This page assumes a running dev environment. Otherwise, start with [Contributing](/en/developers/contribuer), then the [code conventions](/en/developers/conventions).
 :::
 
 ## 1. Declare the layer
@@ -49,7 +49,7 @@ The i18n key passed to `i18next.t()` must exist for **all four languages**. Add 
 
 ## 3. Update the changelog
 
-Add an *Added* entry in the Changelog section of **every** README (`README.md`, `README.fr.md`, `README.de.md`, `README.it.md`), see [conventions](/en/scripters/conventions#changelog).
+Add an *Added* entry in the Changelog section of **every** README (`README.md`, `README.fr.md`, `README.de.md`, `README.it.md`), see [conventions](/en/developers/conventions#changelog).
 
 ## 4. Build and test
 
@@ -61,7 +61,7 @@ Then smoke test in the WME: load the local build, check the new layer, and verif
 
 ## 5. Open the PR
 
-Follow the [contribution flow](/en/scripters/contribuer): branch, checklist, PR with review.
+Follow the [contribution flow](/en/developers/contribuer): branch, checklist, PR with review.
 
 ## Data layer (vector)
 

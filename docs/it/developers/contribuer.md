@@ -77,7 +77,7 @@ Il progetto funziona tramite **Pull Request**; `main` è protetto.
    git checkout -b feat/mia-funzionalita
    ```
 
-2. Programmare seguendo le [convenzioni di codice](/it/scripters/conventions): conformità all'SDK WME e codice pensato per essere letto.
+2. Programmare seguendo le [convenzioni di codice](/it/developers/conventions): conformità all'SDK WME e codice pensato per essere letto.
 3. Commit in [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, `chore:`…).
 
 ::: success Checklist prima di aprire la PR
@@ -85,7 +85,7 @@ Il progetto funziona tramite **Pull Request**; `main` è protetto.
 - eslint pulito (`npx eslint .`, eseguito anche da `npm run watch`)
 - **Smoke test nel WME**: caricare lo script, attivare ogni livello, verificare il rendering
 - Stringhe i18n aggiunte per tutte e quattro le lingue in `locales/<lang>/common.json`
-- Voce di Changelog in **ogni** README (vedi [convenzioni](/it/scripters/conventions#changelog))
+- Voce di Changelog in **ogni** README (vedi [convenzioni](/it/developers/conventions#changelog))
 :::
 
 4. Fare push del branch e aprire una **Pull Request** verso `main`, poi **assegnare un maintainer come reviewer**.

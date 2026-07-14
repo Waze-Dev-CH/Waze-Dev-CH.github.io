@@ -7,13 +7,13 @@ order: 4
 
 # Ein eigenständiges Skript erstellen
 
-Sie müssen nicht über den Helper gehen: Sie können **Ihr eigenes** Waze-Userscript für die Schweiz erstellen und pflegen. Diese Seite gibt die Orientierungspunkte; die [Code-Konventionen](/de/scripters/conventions) gelten auch für Ihr Projekt.
+Sie müssen nicht über den Helper gehen: Sie können **Ihr eigenes** Waze-Userscript für die Schweiz erstellen und pflegen. Diese Seite gibt die Orientierungspunkte; die [Code-Konventionen](/de/developers/conventions) gelten auch für Ihr Projekt.
 
 ## Ausgangspunkt
 
 Ein Userscript läuft im WME über **Tampermonkey** (oder Greasemonkey auf Firefox). Um die Karte zu berühren, das **offizielle WME-SDK** verwenden, typisiert durch `wme-sdk-typings`, dokumentiert auf [waze.com/editor/sdk](https://www.waze.com/editor/sdk/index.html). DOM-Hacks vermeiden, die das SDK umgehen: Sie brechen bei jedem WME-Update.
 
-Der [Helper](/de/scripters/architecture) ist ein gutes Beispiel für ein vollständiges SDK-Projekt (TypeScript + Rollup + Tests), an dem man sich orientieren kann.
+Der [Helper](/de/developers/architecture) ist ein gutes Beispiel für ein vollständiges SDK-Projekt (TypeScript + Rollup + Tests), an dem man sich orientieren kann.
 
 ## Den Code hosten
 
@@ -30,7 +30,7 @@ Optional: auch auf [GreasyFork](https://greasyfork.org/) veröffentlichen für d
 
 ## Konventionen
 
-Den [Code-Konventionen](/de/scripters/conventions) folgen: SDK-Konformität, Code, der zum Lesen gedacht ist. Wenn das Skript mehrsprachig ist, alle vier Sprachen vorsehen (de, en, fr, it).
+Den [Code-Konventionen](/de/developers/conventions) folgen: SDK-Konformität, Code, der zum Lesen gedacht ist. Wenn das Skript mehrsprachig ist, alle vier Sprachen vorsehen (de, en, fr, it).
 
 ## Mit der Community teilen
 

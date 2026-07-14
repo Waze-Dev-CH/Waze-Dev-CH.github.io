@@ -1,6 +1,6 @@
 # CLAUDE.md — Waze CH Documentation
 
-Documentation communautaire pour les éditeurs et scripteurs Waze en Suisse.
+Documentation communautaire pour les éditeurs et développeurs Waze en Suisse.
 Construit avec VitePress, déployé sur GitHub Pages.
 
 ## Structure
@@ -18,7 +18,7 @@ docs/public/            Assets statiques servis à la racine (/)
 ## Conventions
 
 - Le français est sous `/fr/` ; toutes les locales ont leur sous-répertoire (`fr/`, `en/`, `de/`, `it/`)
-- Chaque locale a `editors/index.md` et `scripters/index.md`
+- Chaque locale a `editors/index.md` et `developers/index.md`
 - Quand on ajoute une page dans une langue, on ajoute un stub dans les 3 autres
 - La sidebar est configurée statiquement dans `config.ts` (pas d'auto-génération)
 - Blocs d'admonition personnalisés (définis dans `config.ts`) : `note`, `example`, `question`, `quote`, `reminder`, `people`, `bug`, `abstract`, `important`, `failure`, `help`, `success` (titres par défaut en français uniquement)

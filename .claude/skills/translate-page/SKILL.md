@@ -37,7 +37,7 @@ Pour chaque langue cible (en, de, it), créer le fichier au chemin ci-dessus en 
    - IT : `::: example Esempio`
    - Idem pour les autres types : `note` (Note/Notiz/Nota), `important` (Important/Wichtig/Importante), `success` (Success/Erfolg/Successo), `failure` (Error/Fehler/Errore), `bug`, `help` (Tip/Tipp/Consiglio), `question` (Question/Frage/Domanda), `reminder` (Reminder/Erinnerung/Promemoria), `quote` (Quote/Zitat/Citazione), `abstract` (Summary/Zusammenfassung/Sintesi), `people` (Contact/Kontakt/Contatto). Traduire le contenu du bloc normalement.
 
-5. **Glossaire — ne pas traduire** : `Waze`, `WME`, les noms de scripts/userscripts, les noms propres et lieux suisses (cantons, communes), les termes d'interface Waze laissés en anglais par la communauté. Garder une terminologie cohérente entre les pages (éditeur = editor/Editor/editor, scripteur = scripter/Skripter/scrittore).
+5. **Glossaire — ne pas traduire** : `Waze`, `WME`, les noms de scripts/userscripts, les noms propres et lieux suisses (cantons, communes), les termes d'interface Waze laissés en anglais par la communauté. Garder une terminologie cohérente entre les pages (éditeur = editor/Editor/editor, développeur = developer, terme anglais conservé en en/de/it).
 
 ## Étape 3 — Navigation
 

@@ -77,7 +77,7 @@ The project works through **Pull Requests**; `main` is protected.
    git checkout -b feat/my-feature
    ```
 
-2. Code following the [code conventions](/en/scripters/conventions): WME SDK conformance and code written to be read.
+2. Code following the [code conventions](/en/developers/conventions): WME SDK conformance and code written to be read.
 3. Commits in [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, `chore:`…).
 
 ::: success Checklist before opening the PR
@@ -85,7 +85,7 @@ The project works through **Pull Requests**; `main` is protected.
 - eslint clean (`npx eslint .`, also run by `npm run watch`)
 - **Smoke test in the WME**: load the script, toggle each layer, check the rendering
 - i18n strings added for all four languages in `locales/<lang>/common.json`
-- Changelog entry in **every** README (see [conventions](/en/scripters/conventions#changelog))
+- Changelog entry in **every** README (see [conventions](/en/developers/conventions#changelog))
 :::
 
 4. Push the branch and open a **Pull Request** against `main`, then **assign a maintainer as reviewer**.

@@ -7,13 +7,13 @@ order: 4
 
 # Creare uno script standalone
 
-Non sei obbligato a passare dal Helper: puoi creare e mantenere il **tuo** userscript Waze per la Svizzera. Questa pagina dà i punti di riferimento; le [convenzioni di codice](/it/scripters/conventions) si applicano anche al tuo progetto.
+Non sei obbligato a passare dal Helper: puoi creare e mantenere il **tuo** userscript Waze per la Svizzera. Questa pagina dà i punti di riferimento; le [convenzioni di codice](/it/developers/conventions) si applicano anche al tuo progetto.
 
 ## Punto di partenza
 
 Un userscript gira nel WME tramite **Tampermonkey** (o Greasemonkey su Firefox). Per toccare la mappa, passare dall'**SDK ufficiale del WME**, tipizzato da `wme-sdk-typings`, documentato su [waze.com/editor/sdk](https://www.waze.com/editor/sdk/index.html). Evitare gli hack del DOM che aggirano l'SDK: si rompono a ogni aggiornamento del WME.
 
-Il [Helper](/it/scripters/architecture) è un buon esempio di progetto SDK completo (TypeScript + Rollup + test) a cui ispirarsi.
+Il [Helper](/it/developers/architecture) è un buon esempio di progetto SDK completo (TypeScript + Rollup + test) a cui ispirarsi.
 
 ## Ospitare il codice
 
@@ -30,7 +30,7 @@ Opzione: pubblicare anche su [GreasyFork](https://greasyfork.org/) per la reperi
 
 ## Convenzioni
 
-Seguire le [convenzioni di codice](/it/scripters/conventions): conformità all'SDK, codice pensato per essere letto. Se lo script è multilingue, prevedere tutte e quattro le lingue (de, en, fr, it).
+Seguire le [convenzioni di codice](/it/developers/conventions): conformità all'SDK, codice pensato per essere letto. Se lo script è multilingue, prevedere tutte e quattro le lingue (de, en, fr, it).
 
 ## Condividere con la community
 
