@@ -7,10 +7,10 @@ import taskLists from 'markdown-it-task-lists';
 import abbr from 'markdown-it-abbr';
 
 const sections = [
-    'fr/editors', 'fr/wazers', 'fr/communaute', 'fr/scripters',
-    'en/editors', 'en/wazers', 'en/communaute', 'en/scripters',
-    'de/editors', 'de/wazers', 'de/communaute', 'de/scripters',
-    'it/editors', 'it/wazers', 'it/communaute', 'it/scripters',
+    'fr/editors', 'fr/wazers', 'fr/communaute', 'fr/developers',
+    'en/editors', 'en/wazers', 'en/communaute', 'en/developers',
+    'de/editors', 'de/wazers', 'de/communaute', 'de/developers',
+    'it/editors', 'it/wazers', 'it/communaute', 'it/developers',
 ];
 
 const sidebar = generateSidebar(
@@ -76,7 +76,7 @@ function createContainerPlugin(type: string) {
 
 export default defineConfig({
     title: 'Waze CH',
-    description: 'Documentation communautaire pour les éditeurs et scripteurs Waze en Suisse.',
+    description: 'Documentation communautaire pour les éditeurs et développeurs Waze en Suisse.',
 
     srcDir: 'docs',
     srcExclude: ['**/_shared/**', 'superpowers/**'],
@@ -100,7 +100,7 @@ export default defineConfig({
                 nav: [
                     { text: 'Wazers', link: '/fr/wazers/', activeMatch: '/fr/wazers/' },
                     { text: 'Éditeurs', link: '/fr/editors/', activeMatch: '/fr/editors/' },
-                    { text: 'Scripteurs', link: '/fr/scripters/', activeMatch: '/fr/scripters/' },
+                    { text: 'Développeurs', link: '/fr/developers/', activeMatch: '/fr/developers/' },
                     { text: 'Communauté', link: '/fr/communaute/', activeMatch: '/fr/communaute/' },
                 ],
                 sidebar,
@@ -125,7 +125,7 @@ export default defineConfig({
                 nav: [
                     { text: 'Wazers', link: '/en/wazers/', activeMatch: '/en/wazers/' },
                     { text: 'Editors', link: '/en/editors/', activeMatch: '/en/editors/' },
-                    { text: 'Scripters', link: '/en/scripters/', activeMatch: '/en/scripters/' },
+                    { text: 'Developers', link: '/en/developers/', activeMatch: '/en/developers/' },
                     { text: 'Community', link: '/en/communaute/', activeMatch: '/en/communaute/' },
                 ],
                 sidebar,
@@ -150,7 +150,7 @@ export default defineConfig({
                 nav: [
                     { text: 'Wazers', link: '/de/wazers/', activeMatch: '/de/wazers/' },
                     { text: 'Editoren', link: '/de/editors/', activeMatch: '/de/editors/' },
-                    { text: 'Skripter', link: '/de/scripters/', activeMatch: '/de/scripters/' },
+                    { text: 'Developers', link: '/de/developers/', activeMatch: '/de/developers/' },
                     { text: 'Community', link: '/de/communaute/', activeMatch: '/de/communaute/' },
                 ],
                 sidebar,
@@ -175,7 +175,7 @@ export default defineConfig({
                 nav: [
                     { text: 'Wazers', link: '/it/wazers/', activeMatch: '/it/wazers/' },
                     { text: 'Editor', link: '/it/editors/', activeMatch: '/it/editors/' },
-                    { text: 'Scrittori', link: '/it/scripters/', activeMatch: '/it/scripters/' },
+                    { text: 'Developers', link: '/it/developers/', activeMatch: '/it/developers/' },
                     { text: 'Comunità', link: '/it/communaute/', activeMatch: '/it/communaute/' },
                 ],
                 sidebar,

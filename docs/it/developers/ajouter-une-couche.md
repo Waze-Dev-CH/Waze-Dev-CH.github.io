@@ -10,7 +10,7 @@ order: 3
 Un esempio concreto end-to-end: aggiungere un **livello raster** (tile WMTS swisstopo) al Helper. È il tipo di contributo più comune. Per un livello di **dati** (punti, geometrie), vedi la sezione in fondo.
 
 ::: reminder Da leggere prima
-Questa pagina presuppone un ambiente di sviluppo funzionante. Altrimenti, iniziare da [Contribuire](/it/scripters/contribuer), poi le [convenzioni di codice](/it/scripters/conventions).
+Questa pagina presuppone un ambiente di sviluppo funzionante. Altrimenti, iniziare da [Contribuire](/it/developers/contribuer), poi le [convenzioni di codice](/it/developers/conventions).
 :::
 
 ## 1. Dichiarare il livello
@@ -49,7 +49,7 @@ La chiave i18n passata a `i18next.t()` deve esistere per **tutte e quattro le li
 
 ## 3. Aggiornare il changelog
 
-Aggiungere una voce *Added* nella sezione Changelog di **ogni** README (`README.md`, `README.fr.md`, `README.de.md`, `README.it.md`), vedi [convenzioni](/it/scripters/conventions#changelog).
+Aggiungere una voce *Added* nella sezione Changelog di **ogni** README (`README.md`, `README.fr.md`, `README.de.md`, `README.it.md`), vedi [convenzioni](/it/developers/conventions#changelog).
 
 ## 4. Costruire e testare
 
@@ -61,7 +61,7 @@ Poi smoke test nel WME: caricare la build locale, spuntare il nuovo livello e ve
 
 ## 5. Aprire la PR
 
-Seguire il [flusso di contribuzione](/it/scripters/contribuer): branch, checklist, PR con review.
+Seguire il [flusso di contribuzione](/it/developers/contribuer): branch, checklist, PR con review.
 
 ## Livello di dati (vettoriale)
 

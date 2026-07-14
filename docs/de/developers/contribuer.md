@@ -77,7 +77,7 @@ Das Projekt arbeitet über **Pull Requests**; `main` ist geschützt.
    git checkout -b feat/meine-funktion
    ```
 
-2. Nach den [Code-Konventionen](/de/scripters/conventions) programmieren: Konformität zum WME-SDK und Code, der zum Lesen gedacht ist.
+2. Nach den [Code-Konventionen](/de/developers/conventions) programmieren: Konformität zum WME-SDK und Code, der zum Lesen gedacht ist.
 3. Commits in [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, `chore:`…).
 
 ::: success Checkliste vor dem Öffnen des PR
@@ -85,7 +85,7 @@ Das Projekt arbeitet über **Pull Requests**; `main` ist geschützt.
 - eslint sauber (`npx eslint .`, auch von `npm run watch` ausgeführt)
 - **Smoke-Test im WME**: Skript laden, jede Ebene umschalten, das Rendering prüfen
 - i18n-Zeichenketten für alle vier Sprachen in `locales/<lang>/common.json` ergänzt
-- Changelog-Eintrag in **jeder** README (siehe [Konventionen](/de/scripters/conventions#changelog))
+- Changelog-Eintrag in **jeder** README (siehe [Konventionen](/de/developers/conventions#changelog))
 :::
 
 4. Den Branch pushen und einen **Pull Request** gegen `main` öffnen, dann **einen Maintainer als Reviewer zuweisen**.

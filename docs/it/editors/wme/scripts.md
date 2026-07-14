@@ -30,7 +30,7 @@ Aggiunge al WME:
 :::
 
 ::: note Vuoi contribuire al codice?
-Lo sviluppo del WME Switzerland Helper è documentato nella sezione [Scrittori](/it/scripters/).
+Lo sviluppo del WME Switzerland Helper è documentato nella sezione [Developers](/it/developers/).
 :::
 
 ## Altre risorse

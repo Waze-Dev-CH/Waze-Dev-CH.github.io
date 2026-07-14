@@ -1,6 +1,6 @@
 # Waze CH — Documentation communautaire
 
-Documentation pour les éditeurs et scripteurs Waze en Suisse.
+Documentation pour les éditeurs et développeurs Waze en Suisse.
 
 **Site:** https://waze-dev-ch.github.io
 
@@ -32,6 +32,6 @@ npm run docs:dev   # http://localhost:8765
 Chaque langue contient deux sections :
 
 - `editors/` — bonnes pratiques d'édition de la carte
-- `scripters/` — ressources pour la contribution aux scripts
+- `developers/` : ressources pour la contribution aux scripts
 
 Quand tu ajoutes une page dans une langue, ajoute un stub dans les 3 autres.

@@ -1,17 +1,17 @@
 ---
-title: Scripters
+title: Developers
 ---
 
 <img class="macaron" src="/img/waze-kit/scripters.png" alt="" width="96" height="96">
 
-# Waze CH Scripters
+# Waze CH Developers
 
 This section is for **developers** of Waze scripts for the Swiss community. Two paths:
 
 - **Contribute to the [WME Switzerland Helper](https://github.com/Waze-Dev-CH/WME-Switzerland-Helper)**, the community's flagship script (official Swiss layers and data in the WME).
 - **Create and maintain your own standalone script** for Switzerland.
 
-The [code conventions](/en/scripters/conventions) apply to both.
+The [code conventions](/en/developers/conventions) apply to both.
 
 ::: note Looking to *use* a script?
 To install and configure scripts as an editor, see [Scripts and tools](/en/editors/wme/scripts) in the Editors section. Here, we talk about **coding**.
@@ -23,9 +23,9 @@ The community's flagship script: a **TypeScript** userscript, bundled with **Rol
 
 What it brings to the editor: official Swiss layers (municipal and cantonal boundaries from swisstopo, geographic names from swissNAMES3D), public transport data (SBB stops with official names) and street-name checking against Swiss conventions.
 
-- [Contributing to the Helper](/en/scripters/contribuer): prerequisites, dev environment and Pull Request flow.
-- [Helper architecture](/en/scripters/architecture): startup flow, layer model, code map.
-- [Adding a layer to the Helper](/en/scripters/ajouter-une-couche): concrete end-to-end walkthrough.
+- [Contributing to the Helper](/en/developers/contribuer): prerequisites, dev environment and Pull Request flow.
+- [Helper architecture](/en/developers/architecture): startup flow, layer model, code map.
+- [Adding a layer to the Helper](/en/developers/ajouter-une-couche): concrete end-to-end walkthrough.
 
 ### Contributors
 
@@ -39,8 +39,8 @@ The Helper is maintained by the Swiss community. Thanks to its contributors:
 
 ## Your own script
 
-- [Creating a standalone script](/en/scripters/script-standalone): start, host, publish and share your own script with the community.
+- [Creating a standalone script](/en/developers/script-standalone): start, host, publish and share your own script with the community.
 
 ## For both
 
-- [Code conventions](/en/scripters/conventions): WME SDK, style, i18n, changelog.
+- [Code conventions](/en/developers/conventions): WME SDK, style, i18n, changelog.

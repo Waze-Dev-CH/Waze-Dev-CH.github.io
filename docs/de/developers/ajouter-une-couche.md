@@ -10,7 +10,7 @@ order: 3
 Ein konkretes End-to-End-Beispiel: eine **Raster-Ebene** (swisstopo-WMTS-Kacheln) zum Helper hinzufügen. Das ist die häufigste Art von Beitrag. Für eine **Daten**-Ebene (Punkte, Geometrien) siehe den Abschnitt unten.
 
 ::: reminder Zuerst lesen
-Diese Seite setzt eine laufende Entwicklungsumgebung voraus. Andernfalls mit [Beitragen](/de/scripters/contribuer) beginnen, dann die [Code-Konventionen](/de/scripters/conventions).
+Diese Seite setzt eine laufende Entwicklungsumgebung voraus. Andernfalls mit [Beitragen](/de/developers/contribuer) beginnen, dann die [Code-Konventionen](/de/developers/conventions).
 :::
 
 ## 1. Die Ebene deklarieren
@@ -49,7 +49,7 @@ Der an `i18next.t()` übergebene i18n-Schlüssel muss für **alle vier Sprachen*
 
 ## 3. Das Changelog aktualisieren
 
-Einen *Added*-Eintrag im Changelog-Abschnitt **jeder** README hinzufügen (`README.md`, `README.fr.md`, `README.de.md`, `README.it.md`), siehe [Konventionen](/de/scripters/conventions#changelog).
+Einen *Added*-Eintrag im Changelog-Abschnitt **jeder** README hinzufügen (`README.md`, `README.fr.md`, `README.de.md`, `README.it.md`), siehe [Konventionen](/de/developers/conventions#changelog).
 
 ## 4. Bauen und testen
 
@@ -61,7 +61,7 @@ Dann Smoke-Test im WME: den lokalen Build laden, die neue Ebene anhaken und prü
 
 ## 5. Den PR öffnen
 
-Dem [Beitragsablauf](/de/scripters/contribuer) folgen: Branch, Checkliste, PR mit Review.
+Dem [Beitragsablauf](/de/developers/contribuer) folgen: Branch, Checkliste, PR mit Review.
 
 ## Daten-Ebene (Vektor)
 
