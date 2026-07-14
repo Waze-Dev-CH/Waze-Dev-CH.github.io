@@ -29,6 +29,10 @@ It adds to WME:
 4. Reload WME
 :::
 
+::: note Want to contribute to the code?
+Development of the WME Switzerland Helper is documented in the [Scripters](/en/scripters/) section.
+:::
+
 ## Other resources
 
 For the full list of tools and external links: [Resources](/en/editors/communaute/ressources).
