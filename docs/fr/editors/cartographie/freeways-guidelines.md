@@ -189,3 +189,26 @@ En fonction des **recommandations du personnel**, nous passerons progressivement
 De plus, pour les sorties longues non standard, nous pouvons faire usage de la nouvelle fonction « Far turn » pour ajouter une instruction précoce. Mais ne l'utilisez pas sur les bretelles plus petites ou standard.
 
 Une priorité plus élevée sera accordée aux longues bretelles, et une priorité inférieure aux sorties standard avec bretelles courtes, plutôt qu'une mapraid, nous encouragerons les contributeurs à vérifier et corriger celles-ci à leur guise et progressivement au cours des mois suivants.
+
+## Restriction « Vignette obligatoire »
+
+Waze prend désormais en charge la vignette suisse : les segments d'autoroute peuvent porter une restriction conditionnelle qui n'autorise le passage qu'aux conducteurs ayant ajouté le pass *Vignette CH* dans l'app (voir [Vignette autoroutière](/fr/wazers/vignette)).
+
+### Où placer la restriction
+
+Ne posez la restriction **que** sur :
+
+- les **segments d'accès** à l'autoroute (bretelles d'entrée) ;
+- les **segments de continuité au niveau des sorties** (le tronçon qui continue sur l'autoroute juste après chaque sortie).
+
+Ne la mettez **pas** sur l'ensemble des segments de l'autoroute.
+
+### Pourquoi pas sur tous les segments
+
+À l'origine, la restriction était posée sur tous les segments, comme en Autriche. Cela générait beaucoup de plaintes et de UR : Waze semblait « buguer » complètement.
+
+Techniquement, une restriction fait que l'app se comporte comme si le segment n'existait pas. Un conducteur sans vignette dans ses pass était donc renvoyé de gauche à droite sur les petites routes voisines, et l'app paraissait totalement folle.
+
+En limitant la restriction à l'accès et aux continuités de sortie, un conducteur qui entre sans avoir configuré la vignette a un comportement bien plus « normal » : une fois le segment restreint franchi, l'app le voit et le positionne correctement sur l'autoroute, puis l'invite à sortir dès que possible — au lieu de le perdre et de le faire sauter dans tous les sens.
+
+Avec ce modèle, les conducteurs pensent plutôt à un problème de permission ou de réglage (la vignette à activer) qu'à un bug rendant l'app inutilisable.

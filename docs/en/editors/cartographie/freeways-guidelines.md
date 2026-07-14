@@ -189,3 +189,26 @@ Based on **staff recommendations**, we will gradually switch to placing the node
 Additionally, for non-standard long exits, we can make use of the new "Far turn" feature to add an early instruction. But do not use it on smaller or standard ramps.
 
 Higher priority will be given to long ramps, and lower priority to standard exits with short ramps; rather than a mapraid, we will encourage contributors to check and fix these at their leisure and gradually over the following months.
+
+## "Vignette required" restriction
+
+Waze now supports the Swiss vignette: freeway segments can carry a conditional restriction that only allows through-traffic for drivers who have added the *Vignette CH* pass in the app (see [Motorway vignette](/en/wazers/vignette)).
+
+### Where to place the restriction
+
+Apply the restriction **only** on:
+
+- the **entry segments** onto the freeway (on-ramps);
+- the **continuation segments at exits** (the segment that carries on along the freeway just past each exit).
+
+Do **not** apply it to all of the freeway's segments.
+
+### Why not on every segment
+
+Originally, the restriction was placed on every segment, as in Austria. This generated a lot of complaints and URs: Waze appeared to be completely "buggy".
+
+Technically, a restriction makes the app behave as if the segment did not exist. A driver without the vignette in their passes was therefore bounced from left to right onto the nearby small roads, and the app looked completely crazy.
+
+By limiting the restriction to the access and exit continuation segments, a driver who enters without having configured the vignette gets a much more "normal" behaviour: once past the restricted segment, the app sees them and places them correctly on the freeway, then invites them to exit as soon as possible — instead of losing them and making them jump all over the place.
+
+With this model, drivers are more likely to think of a permission or setting issue (the vignette to enable) than of a bug making the app unusable.

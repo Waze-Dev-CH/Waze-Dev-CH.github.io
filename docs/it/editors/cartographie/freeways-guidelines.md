@@ -189,3 +189,26 @@ In base alle **raccomandazioni dello staff**, passeremo progressivamente al posi
 Inoltre, per le uscite lunghe non standard, possiamo fare uso della nuova funzione «Far turn» per aggiungere un'istruzione anticipata. Ma non usarla sulle rampe più piccole o standard.
 
 Una priorità più alta sarà data alle rampe lunghe, e una priorità inferiore alle uscite standard con rampe corte, piuttosto che una mapraid, incoraggeremo i contributori a verificare e correggere queste ultime a loro piacimento e progressivamente nel corso dei mesi successivi.
+
+## Restrizione «Vignetta obbligatoria»
+
+Waze ora supporta la vignetta svizzera: i segmenti autostradali possono avere una restrizione condizionale che consente il passaggio solo ai conducenti che hanno aggiunto il pass *Vignette CH* nell'app (vedi [Vignetta autostradale](/it/wazers/vignette)).
+
+### Dove posizionare la restrizione
+
+Applica la restrizione **solo** su:
+
+- i **segmenti di accesso** all'autostrada (rampe di entrata);
+- i **segmenti di continuità in corrispondenza delle uscite** (il tratto che prosegue sull'autostrada subito dopo ogni uscita).
+
+**Non** applicarla a tutti i segmenti dell'autostrada.
+
+### Perché non su tutti i segmenti
+
+Inizialmente la restrizione era posta su tutti i segmenti, come in Austria. Questo generava molte lamentele e UR: Waze sembrava «buggare» completamente.
+
+Tecnicamente, una restrizione fa sì che l'app si comporti come se il segmento non esistesse. Un conducente senza vignetta nei suoi pass veniva quindi rimbalzato da sinistra a destra sulle piccole strade vicine, e l'app sembrava totalmente impazzita.
+
+Limitando la restrizione ai segmenti di accesso e di continuità delle uscite, un conducente che entra senza aver configurato la vignetta ha un comportamento molto più «normale»: una volta superato il segmento con restrizione, l'app lo vede e lo posiziona correttamente sull'autostrada, poi lo invita a uscire il prima possibile — invece di perderlo e farlo saltare in ogni direzione.
+
+Con questo modello, i conducenti pensano più a un problema di autorizzazione o di impostazione (la vignetta da attivare) che a un bug che rende l'app inutilizzabile.
