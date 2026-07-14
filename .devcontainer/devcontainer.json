@@ -1,6 +1,6 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-    "name": "Handbook",
+    "name": "Waze Switzerland Website",
     "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
     "remoteUser": "node",
     "features": {
