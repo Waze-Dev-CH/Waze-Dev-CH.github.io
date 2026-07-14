@@ -189,3 +189,26 @@ Basierend auf den **Empfehlungen des Personals** werden wir schrittweise zur Pla
 Darüber hinaus können wir für lange, nicht standardmäßige Ausfahrten die neue Funktion «Far turn» verwenden, um eine frühe Anweisung hinzuzufügen. Aber verwenden Sie sie nicht bei kleineren oder standardmäßigen Rampen.
 
 Eine höhere Priorität wird langen Rampen eingeräumt und eine niedrigere Priorität standardmäßigen Ausfahrten mit kurzen Rampen. Anstelle eines Mapraids ermutigen wir die Beitragenden, diese nach eigenem Ermessen und schrittweise im Laufe der folgenden Monate zu überprüfen und zu korrigieren.
+
+## Einschränkung «Vignette erforderlich»
+
+Waze unterstützt jetzt die Schweizer Vignette: Autobahnsegmente können eine bedingte Einschränkung tragen, die die Durchfahrt nur Fahrern erlaubt, die den Pass *Vignette CH* in der App hinzugefügt haben (siehe [Autobahnvignette](/de/wazers/vignette)).
+
+### Wo die Einschränkung platziert wird
+
+Setzen Sie die Einschränkung **nur** auf:
+
+- die **Zufahrtssegmente** zur Autobahn (Auffahrten);
+- die **Fortsetzungssegmente auf Höhe der Ausfahrten** (das Segment, das direkt nach jeder Ausfahrt auf der Autobahn weiterführt).
+
+Setzen Sie sie **nicht** auf alle Segmente der Autobahn.
+
+### Warum nicht auf jedes Segment
+
+Ursprünglich wurde die Einschränkung wie in Österreich auf jedes Segment gesetzt. Das führte zu vielen Beschwerden und URs: Waze schien komplett zu «buggen».
+
+Technisch gesehen sorgt eine Einschränkung dafür, dass sich die App so verhält, als würde das Segment nicht existieren. Ein Fahrer ohne Vignette in seinen Pässen wurde daher von links nach rechts auf die kleinen Nachbarstrassen geworfen, und die App wirkte völlig verrückt.
+
+Indem die Einschränkung auf die Zufahrts- und Ausfahrtsfortsetzungssegmente beschränkt wird, verhält sich ein Fahrer, der ohne konfigurierte Vignette einfährt, viel «normaler»: Sobald das eingeschränkte Segment passiert ist, erkennt die App ihn und platziert ihn korrekt auf der Autobahn und fordert ihn dann auf, so bald wie möglich abzufahren — anstatt ihn zu verlieren und ihn wild herumspringen zu lassen.
+
+Mit diesem Modell denken Fahrer eher an ein Berechtigungs- oder Einstellungsproblem (die zu aktivierende Vignette) als an einen Fehler, der die App unbrauchbar macht.
