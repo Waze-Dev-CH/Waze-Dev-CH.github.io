@@ -29,6 +29,10 @@ Il ajoute au WME :
 4. Recharger le WME
 :::
 
+::: note Vous voulez contribuer au code ?
+Le développement du WME Switzerland Helper est documenté dans la section [Scripteurs](/fr/scripters/).
+:::
+
 ## Autres ressources
 
 Pour la liste complète des outils et liens externes : [Ressources](/fr/editors/communaute/ressources).

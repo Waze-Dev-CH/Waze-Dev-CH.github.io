@@ -6,24 +6,41 @@ title: Scripters
 
 # Waze CH Scripters
 
-Welcome to the scripters section. This documentation covers contributing to Waze scripts: from creation to maintenance.
+This section is for **developers** of Waze scripts for the Swiss community. Two paths:
 
-::: note Under construction
-This section is being written. Content will be added gradually.
+- **Contribute to the [WME Switzerland Helper](https://github.com/Waze-Dev-CH/WME-Switzerland-Helper)**, the community's flagship script (official Swiss layers and data in the WME).
+- **Create and maintain your own standalone script** for Switzerland.
+
+The [code conventions](/en/scripters/conventions) apply to both.
+
+::: note Looking to *use* a script?
+To install and configure scripts as an editor, see [Scripts and tools](/en/editors/wme/scripts) in the Editors section. Here, we talk about **coding**.
 :::
 
-## Introduction to Waze scripts
+## The WME Switzerland Helper
 
-*Coming soon: presentation of WME scripts and their role.*
+The community's flagship script: a **TypeScript** userscript, bundled with **Rollup**, tested with **Vitest**, translated via **i18next**. It relies on the **official WME SDK** (`wme-sdk-typings`) and on **Turf.js** for geometry.
 
-## Development best practices
+What it brings to the editor: official Swiss layers (municipal and cantonal boundaries from swisstopo, geographic names from swissNAMES3D), public transport data (SBB stops with official names) and street-name checking against Swiss conventions.
 
-*Coming soon: code conventions, compatibility, testing.*
+- [Contributing to the Helper](/en/scripters/contribuer): prerequisites, dev environment and Pull Request flow.
+- [Helper architecture](/en/scripters/architecture): startup flow, layer model, code map.
+- [Adding a layer to the Helper](/en/scripters/ajouter-une-couche): concrete end-to-end walkthrough.
 
-## Popular scripts in Switzerland
+### Contributors
 
-*Coming soon: list and documentation of scripts used by the Swiss community.*
+The Helper is maintained by the Swiss community. Thanks to its contributors:
 
-## Contributing and publishing
+- [73VW](https://github.com/73VW)
+- [Neprena](https://github.com/Neprena)
+- [bedo2991](https://github.com/bedo2991)
 
-*Coming soon: how to submit a script, review process.*
+<!-- List taken from the repo's GitHub contributors (bots/AI omitted). Regenerate: gh api repos/Waze-Dev-CH/WME-Switzerland-Helper/contributors -->
+
+## Your own script
+
+- [Creating a standalone script](/en/scripters/script-standalone): start, host, publish and share your own script with the community.
+
+## For both
+
+- [Code conventions](/en/scripters/conventions): WME SDK, style, i18n, changelog.
