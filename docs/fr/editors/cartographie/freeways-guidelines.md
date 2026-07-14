@@ -11,10 +11,6 @@ Par vince1612
 Co-coordinateur Suisse et Global Champ  
 Communauté bénévole Waze
 
-::: note Niveau requis
-Ces directives concernent surtout les éditeurs **niveau 5 et plus** : l'édition des autoroutes n'est ni utile ni accessible aux débutants. Si tu débutes, tu peux passer ton chemin sans crainte.
-:::
-
 ## Vue d'ensemble
 
 Les autoroutes suisses ont été largement éditées par un contributeur non conforme qui a effectué de nombreuses modifications rendant la situation actuelle des autoroutes peu uniforme.

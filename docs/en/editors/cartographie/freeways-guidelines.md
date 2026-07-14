@@ -11,10 +11,6 @@ By vince1612
 Swiss Co-coordinator and Global Champ  
 Waze volunteer community
 
-::: note Required level
-These guidelines mainly concern **level 5 and above** editors: freeway editing is neither useful nor accessible to beginners. If you are just starting out, you can safely skip this page.
-:::
-
 ## Overview
 
 Swiss freeways have been heavily edited by a non-compliant contributor who made numerous changes, leaving the current state of the freeways inconsistent.

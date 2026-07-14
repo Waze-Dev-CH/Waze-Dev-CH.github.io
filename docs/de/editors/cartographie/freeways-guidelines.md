@@ -11,10 +11,6 @@ Von vince1612
 Co-Koordinator Schweiz und Global Champ  
 Freiwillige Waze-Community
 
-::: note Erforderliches Level
-Diese Richtlinien betreffen vor allem Editoren ab **Level 5**: Die Bearbeitung von Autobahnen ist für Anfänger weder nützlich noch zugänglich. Wenn du gerade erst anfängst, kannst du diese Seite bedenkenlos überspringen.
-:::
-
 ## Überblick
 
 Die Schweizer Autobahnen wurden weitgehend von einem nicht regelkonformen Beitragenden bearbeitet, der zahlreiche Änderungen vorgenommen hat, wodurch der aktuelle Zustand der Autobahnen wenig einheitlich ist.

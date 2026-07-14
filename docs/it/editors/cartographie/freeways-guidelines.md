@@ -11,10 +11,6 @@ Di vince1612
 Co-coordinatore Svizzera e Global Champ  
 Comunità di volontari Waze
 
-::: note Livello richiesto
-Queste linee guida riguardano soprattutto gli editor di **livello 5 e superiore**: la modifica delle autostrade non è né utile né accessibile ai principianti. Se sei alle prime armi, puoi tranquillamente saltare questa pagina.
-:::
-
 ## Panoramica
 
 Le autostrade svizzere sono state ampiamente modificate da un contributore non conforme che ha apportato numerose modifiche rendendo poco uniforme l'attuale situazione delle autostrade.
