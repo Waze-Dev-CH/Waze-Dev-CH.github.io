@@ -661,3 +661,32 @@
     fill: var(--vp-c-text-2);
     font-size: 14px;
 }
+
+/* ── Community Ladder : familles de critères (panneaux colorés) ───────── */
+.vp-doc .cat-group {
+    border-left: 4px solid var(--cat-accent);
+    background: var(--cat-bg);
+    border-radius: 0 8px 8px 0;
+    padding: 0.4rem 1.1rem;
+    margin: 0.85rem 0;
+}
+
+.vp-doc .cat-group > p:first-child {
+    margin: 0.5rem 0 0.35rem;
+    font-weight: 600;
+    color: var(--cat-accent);
+}
+
+.vp-doc .cat-group ul {
+    margin: 0.35rem 0;
+}
+
+.vp-doc .cat-edit      { --cat-accent: #8b5cf6; --cat-bg: #f8f2ff; }
+.vp-doc .cat-soft      { --cat-accent: #0a95bd; --cat-bg: #edf8ff; }
+.vp-doc .cat-community { --cat-accent: #1f9d55; --cat-bg: #eff9f3; }
+.vp-doc .cat-general   { --cat-accent: #b8890a; --cat-bg: #fffaeb; }
+
+.dark .vp-doc .cat-edit      { --cat-accent: #b79dff; --cat-bg: rgba(139, 92, 246, 0.10); }
+.dark .vp-doc .cat-soft      { --cat-accent: #4ec6e6; --cat-bg: rgba(10, 149, 189, 0.12); }
+.dark .vp-doc .cat-community { --cat-accent: #4ade80; --cat-bg: rgba(31, 157, 85, 0.14); }
+.dark .vp-doc .cat-general   { --cat-accent: #e6c045; --cat-bg: rgba(184, 137, 10, 0.14); }
