@@ -15,6 +15,7 @@ const stores = {
   ios: 'https://apps.apple.com/app/id323229106',
 };
 const liveMap = 'https://www.waze.com/live-map/directions?rp_subscription=vignette-switzerland';
+const discord = 'https://discord.gg/dmxUwvTkk5';
 
 // Icônes : illustrations Waze officielles (kit communautaire).
 const ICONS = '/img/wazers/waze-kit/icons';
@@ -47,6 +48,9 @@ const STRINGS = {
       { title: 'Devenir éditeur', desc: 'Améliorer la carte suisse dans l’éditeur Waze (WME).' },
       { title: 'Devenir développeur', desc: 'Développer des userscripts pour la communauté.' },
     ],
+    commTitle: 'Rejoignez la communauté',
+    commDesc: 'Questions, entraide et actualités Waze pour la Suisse : la communauté vous attend sur Discord.',
+    commCta: 'Rejoindre le Discord',
   },
   en: {
     eyebrow: 'Waze Switzerland',
@@ -64,6 +68,9 @@ const STRINGS = {
       { title: 'Become an editor', desc: 'Improve the Swiss map in the Waze Map Editor (WME).' },
       { title: 'Become a developer', desc: 'Develop userscripts for the community.' },
     ],
+    commTitle: 'Join the community',
+    commDesc: 'Questions, help and Waze news for Switzerland: the community is waiting for you on Discord.',
+    commCta: 'Join the Discord',
   },
   de: {
     eyebrow: 'Waze Schweiz',
@@ -81,6 +88,9 @@ const STRINGS = {
       { title: 'Editor werden', desc: 'Die Schweizer Karte im Waze Map Editor (WME) verbessern.' },
       { title: 'Developer werden', desc: 'Userscripts für die Community entwickeln.' },
     ],
+    commTitle: 'Werden Sie Teil der Community',
+    commDesc: 'Fragen, gegenseitige Hilfe und Waze-News für die Schweiz: die Community erwartet Sie auf Discord.',
+    commCta: 'Discord beitreten',
   },
   it: {
     eyebrow: 'Waze Svizzera',
@@ -98,6 +108,9 @@ const STRINGS = {
       { title: 'Diventare editor', desc: 'Migliorare la mappa svizzera nel Waze Map Editor (WME).' },
       { title: 'Diventare developer', desc: 'Sviluppare userscript per la comunità.' },
     ],
+    commTitle: 'Unisciti alla comunità',
+    commDesc: 'Domande, aiuto reciproco e novità Waze per la Svizzera: la comunità ti aspetta su Discord.',
+    commCta: 'Unisciti al Discord',
   },
 };
 
@@ -120,6 +133,9 @@ const t = computed(() => {
       { title: s.g1, items: mk(TILES, s.tiles) },
       { title: s.g2, items: mk(MORE, s.more) },
     ],
+    commTitle: s.commTitle,
+    commDesc: s.commDesc,
+    commCta: s.commCta,
   };
 });
 </script>
@@ -170,6 +186,22 @@ const t = computed(() => {
         </section>
       </template>
     </div>
+
+    <!-- ── COMMUNAUTÉ (Discord) ───────────────────────────────────── -->
+    <section class="wz-comm">
+      <div class="wz-comm-inner">
+        <svg class="wz-comm-logo" viewBox="0 0 127.14 96.36" fill="currentColor" aria-hidden="true">
+          <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+        </svg>
+        <div class="wz-comm-body">
+          <h2 class="wz-comm-title">{{ t.commTitle }}</h2>
+          <p class="wz-comm-desc">{{ t.commDesc }}</p>
+        </div>
+        <a class="wz-comm-btn" :href="discord" target="_blank" rel="noopener">
+          {{ t.commCta }} <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -402,6 +434,81 @@ const t = computed(() => {
   transform: translateX(4px);
 }
 
+/* ── Bandeau communauté (Discord) ─────────────────────────────────── */
+.wz-comm {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #5865f2;
+  color: #fff;
+}
+
+.wz-comm-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 2.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.wz-comm-logo {
+  flex-shrink: 0;
+  width: 56px;
+  height: 42px;
+}
+
+.wz-comm-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.wz-comm-title {
+  font-family: var(--wz-font-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.15;
+  color: #fff;
+  margin: 0 0 0.3rem;
+  border: none;
+  padding: 0;
+}
+
+.wz-comm-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+}
+
+.wz-comm-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.6em 1.3em;
+  border-radius: 999px;
+  background: #fff;
+  color: #5865f2;
+  font-family: var(--wz-font-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+  text-decoration: none;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.wz-comm-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 30, 42, 0.28);
+}
+
+.wz-comm-btn span {
+  transition: transform 0.16s ease;
+}
+
+.wz-comm-btn:hover span {
+  transform: translateX(4px);
+}
+
 /* ── Responsive ───────────────────────────────────────────────────── */
 /* Tablettes / petits laptops : la hauteur du hero suit son contenu
    (on retire le plancher de 440px) pour remonter les tuiles. */
@@ -441,6 +548,13 @@ const t = computed(() => {
 
   .wz-body {
     padding: 1.75rem 1rem;
+  }
+
+  .wz-comm-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
   }
 }
 
