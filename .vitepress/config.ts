@@ -204,7 +204,10 @@ export default defineConfig({
 
     themeConfig: {
         logo: { src: '/waze-suisse-logo.png', alt: 'Waze Community Switzerland' },
-        socialLinks: [{ icon: 'github', link: 'https://github.com/Waze-Dev-CH/Waze-Dev-CH.github.io' }],
+        socialLinks: [
+            { icon: 'discord', link: 'https://discord.gg/dmxUwvTkk5' },
+            { icon: 'github', link: 'https://github.com/Waze-Dev-CH/Waze-Dev-CH.github.io' },
+        ],
         search: {
             provider: 'local',
             options: {
