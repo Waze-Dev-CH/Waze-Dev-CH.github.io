@@ -56,6 +56,8 @@ Les préférences « Éviter » dans l'application n'empêchent **pas** l'utilis
 Une route classée « défavorisée » sera toujours empruntée si elle est la seule option pour rejoindre une destination dans le quartier. L'effet ne se manifeste que sur les gros calculs d'itinéraire.
 :::
 
+Au-delà des préférences, l'algorithme applique aussi des temps de pénalité à certaines manœuvres et propriétés de segments : voir [Pénalités de routage](/fr/editors/wme/penalites-routage).
+
 ## Niveaux de verrouillage (locks)
 
 Standard suisse : niveau de verrouillage attendu par type de route.

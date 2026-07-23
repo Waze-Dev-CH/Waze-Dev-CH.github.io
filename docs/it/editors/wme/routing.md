@@ -56,6 +56,8 @@ Le preferenze «Evita» nell'applicazione **non** impediscono l'uso locale di un
 Una strada classificata come «sfavorita» sarà sempre percorsa se è l'unica opzione per raggiungere una destinazione nel quartiere. L'effetto si manifesta solo sui grandi calcoli di percorso.
 :::
 
+Oltre alle preferenze, l'algoritmo applica anche tempi di penalità a determinate manovre e proprietà di segmenti: vedi [Penalità di instradamento](/it/editors/wme/penalites-routage).
+
 ## Livelli di blocco (locks)
 
 Standard svizzero: livello di blocco previsto per tipo di strada.

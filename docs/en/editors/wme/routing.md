@@ -56,6 +56,8 @@ The "Avoid" preferences in the app do **not** prevent the local use of a segment
 A road classified as "penalized" will always be used if it is the only option to reach a destination in the neighborhood. The effect only appears on large route calculations.
 :::
 
+Beyond preferences, the routing algorithm also applies penalty times to certain manoeuvres and segment properties: see [Routing penalties](/en/editors/wme/penalites-routage).
+
 ## Lock levels
 
 Swiss standard: expected lock level by road type.

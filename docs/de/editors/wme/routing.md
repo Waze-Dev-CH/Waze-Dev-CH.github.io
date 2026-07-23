@@ -56,6 +56,8 @@ Die "Vermeiden"-Präferenzen in der App verhindern **nicht** die lokale Nutzung 
 Eine als "benachteiligt" klassifizierte Straße wird immer benutzt, wenn sie die einzige Option ist, um ein Ziel im Quartier zu erreichen. Der Effekt zeigt sich nur bei großen Routenberechnungen.
 :::
 
+Über die Voreinstellungen hinaus wendet der Algorithmus auch Strafzeiten auf bestimmte Manöver und Segmenteigenschaften an: siehe [Routing-Strafen](/de/editors/wme/penalites-routage).
+
 ## Sperrstufen (Locks)
 
 Schweizer Standard: erwartete Sperrstufe je Straßentyp.
