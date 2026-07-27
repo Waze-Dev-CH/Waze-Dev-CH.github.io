@@ -19,14 +19,12 @@ Es fügt dem WME hinzu:
 
 - **Schweizer geografische Ebenen** (Kantonsgrenzen, nationale Luftbilder)
 - Die **Daten des öffentlichen Verkehrs** (SBB-Haltestellen mit offiziellen Namen)
-- Eine **Überprüfung der Strassennamen** nach den Schweizer Konventionen
-- **Sperrhinweise** für Segmente nach dem Schweizer Standard
+- Eine **Überprüfung der Strassennamen** nach dem amtlichen Schweizer Verzeichnis
+- Den **Import der Hausnummern** aus dem eidgenössischen Gebäuderegister
 
-::: help Installation
-1. [Tampermonkey](https://www.tampermonkey.net/) in Ihrem Browser installieren
-2. Die GitHub-Seite des Skripts öffnen und auf die Datei `.user.js` klicken
-3. Tampermonkey schlägt die Installation automatisch vor: bestätigen
-4. Das WME neu laden
+::: help Installation und Anleitung
+Das Vorgehen zur Installation und danach alle Einzelheiten zu jeder Funktion sind in der
+[Anleitung zum WME Switzerland Helper](/de/editors/wme/switzerland-helper/) zusammengefasst.
 :::
 
 ::: note Möchten Sie zum Code beitragen?

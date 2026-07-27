@@ -62,3 +62,4 @@ Per ottenerlo: posiziona la mappa sulla zona desiderata, poi clicca sul pulsante
 - [Livelli di editor](/it/editors/wme/niveaux) : livelli, raggi di modifica, lock
 - [Ruoli](/it/editors/wme/roles) : AM, SM, RTC State Manager, CM
 - [Script e strumenti](/it/editors/wme/scripts) : WME Switzerland Helper e altri
+- [WME Switzerland Helper](/it/editors/wme/switzerland-helper/) : istruzioni complete per l'uso dello script svizzero
