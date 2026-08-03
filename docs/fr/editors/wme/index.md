@@ -62,3 +62,4 @@ Pour l'obtenir : positionner la carte sur la zone souhaitée, puis cliquer sur l
 - [Niveaux d'éditeur](/fr/editors/wme/niveaux) : niveaux, rayons d'édition, locks
 - [Rôles](/fr/editors/wme/roles) : AM, SM, RTC State Manager, CM
 - [Scripts et outils](/fr/editors/wme/scripts) : WME Switzerland Helper et autres
+- [WME Switzerland Helper](/fr/editors/wme/switzerland-helper/) : mode d'emploi complet du script suisse

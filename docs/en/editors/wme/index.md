@@ -62,3 +62,4 @@ To obtain it: position the map over the desired area, then click the <kbd class=
 - [Editor levels](/en/editors/wme/niveaux): levels, editing radius, locks
 - [Roles](/en/editors/wme/roles): AM, SM, RTC State Manager, CM
 - [Scripts and tools](/en/editors/wme/scripts): WME Switzerland Helper and others
+- [WME Switzerland Helper](/en/editors/wme/switzerland-helper/): full user guide for the Swiss script

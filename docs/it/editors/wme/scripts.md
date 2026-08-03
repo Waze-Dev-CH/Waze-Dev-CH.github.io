@@ -19,14 +19,12 @@ Aggiunge al WME:
 
 - Dei **livelli geografici svizzeri** (confini cantonali, immagini aeree nazionali)
 - I **dati dei trasporti pubblici** (fermate SBB con nomi ufficiali)
-- Una **verifica dei nomi delle strade** secondo le convenzioni svizzere
-- Degli **avvisi di blocco** per i segmenti allo standard svizzero
+- Una **verifica dei nomi delle strade** secondo il repertorio ufficiale svizzero
+- L'**importazione dei numeri civici** dal registro federale degli edifici
 
-::: help Installazione
-1. Installare [Tampermonkey](https://www.tampermonkey.net/) nel proprio browser
-2. Aprire la pagina GitHub dello script e cliccare sul file `.user.js`
-3. Tampermonkey propone automaticamente l'installazione: confermare
-4. Ricaricare il WME
+::: help Installazione e istruzioni per l'uso
+La procedura per installarlo, poi il dettaglio di ogni funzione, sono riuniti nelle
+[istruzioni per l'uso del WME Switzerland Helper](/it/editors/wme/switzerland-helper/).
 :::
 
 ::: note Vuoi contribuire al codice?

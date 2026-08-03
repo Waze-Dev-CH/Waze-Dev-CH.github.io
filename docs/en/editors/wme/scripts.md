@@ -19,14 +19,12 @@ It adds to WME:
 
 - **Swiss geographic layers** (cantonal boundaries, national aerial imagery)
 - **Public transport data** (SBB stops with official names)
-- A **street name check** based on Swiss conventions
-- **Locking alerts** for segments at the Swiss standard
+- A **street name check** based on the official Swiss register
+- The **import of house numbers** from the federal building register
 
-::: help Installation
-1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser
-2. Open the script's GitHub page and click on the `.user.js` file
-3. Tampermonkey automatically offers to install it: confirm
-4. Reload WME
+::: help Installation and user guide
+How to install it, then the details of each feature, are gathered in the
+[WME Switzerland Helper user guide](/en/editors/wme/switzerland-helper/).
 :::
 
 ::: note Want to contribute to the code?
