@@ -24,15 +24,19 @@ hineinzoomt.
 
 | Punkt | Bedeutung | Anklickbar |
 | --- | --- | --- |
-| **Kräftig grün**, gross | Nummer der ausgewählten Strasse, in Waze nicht vorhanden | Ja |
-| **Blassgrün**, klein | Nummer bereits gesetzt | Nein |
-| **Grau** | Adresse einer anderen Strasse | Nein |
-| **Graublau** | Keine Strasse ausgewählt, oder Prüfung läuft | Nein |
+| **Kräftig grün**, mit einem **+** | Nummer der ausgewählten Strasse, in Waze nicht vorhanden | Ja |
+| **Schiefergrau**, mit einem **Haken** | Nummer bereits gesetzt | Nein |
+| **Hellgrau**, klein | Adresse einer anderen Strasse | Nein |
+| **Graublau**, klein | Keine Strasse ausgewählt, oder Prüfung läuft | Nein |
+
+Die ersten beiden tragen ein Piktogramm und sind gleich gross: Sie unterscheiden sie auch
+dann, wenn Sie den Farbunterschied nicht wahrnehmen. Die letzten beiden bleiben klein und
+matt, weil sich daran nichts machen lässt.
 
 ::: important Graublau heisst auch „bitte warten“
 Direkt nach der Auswahl eines Segments prüft das Skript, welche Nummern bereits existieren.
 Während dieses kurzen Moments bleiben die Punkte graublau und reagieren nicht auf Klicks, um
-kein Duplikat zu erzeugen. Warten Sie, bis sie grün werden.
+kein Duplikat zu erzeugen. Warten Sie, bis sie ihre endgültige Farbe annehmen.
 :::
 
 ## Eine Nummer importieren

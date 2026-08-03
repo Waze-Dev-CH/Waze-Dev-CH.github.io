@@ -24,15 +24,19 @@ zoome davantage.
 
 | Point | Signification | Cliquable |
 | --- | --- | --- |
-| **Vert vif**, gros | Numéro de la rue sélectionnée, absent de Waze | Oui |
-| **Vert pâle**, petit | Numéro déjà posé | Non |
-| **Gris** | Adresse d'une autre rue | Non |
-| **Gris-bleu** | Aucune rue sélectionnée, ou vérification en cours | Non |
+| **Vert vif**, marqué d'un **+** | Numéro de la rue sélectionnée, absent de Waze | Oui |
+| **Ardoise**, marqué d'une **coche** | Numéro déjà posé | Non |
+| **Gris clair**, petit | Adresse d'une autre rue | Non |
+| **Gris-bleu**, petit | Aucune rue sélectionnée, ou vérification en cours | Non |
+
+Les deux premiers portent un pictogramme et ont la même taille : vous les distinguez même
+sans percevoir la différence de couleur. Les deux derniers restent petits et ternes, parce
+qu'il n'y a rien à y faire.
 
 ::: important Le gris-bleu veut aussi dire « patientez »
 Juste après avoir sélectionné un segment, le script vérifie quels numéros existent déjà.
 Pendant ce court instant les points restent gris-bleu et ne réagissent pas au clic, pour
-éviter de créer un doublon. Attendez qu'ils passent au vert.
+éviter de créer un doublon. Attendez qu'ils prennent leur couleur définitive.
 :::
 
 ## Importer un numéro

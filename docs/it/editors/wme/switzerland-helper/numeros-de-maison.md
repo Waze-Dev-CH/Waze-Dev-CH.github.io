@@ -24,15 +24,19 @@ ingrandisce ulteriormente.
 
 | Punto | Significato | Cliccabile |
 | --- | --- | --- |
-| **Verde acceso**, grande | Numero della strada selezionata, assente da Waze | Sì |
-| **Verde pallido**, piccolo | Numero già posato | No |
-| **Grigio** | Indirizzo di un'altra strada | No |
-| **Grigio-blu** | Nessuna strada selezionata, o verifica in corso | No |
+| **Verde acceso**, con un **+** | Numero della strada selezionata, assente da Waze | Sì |
+| **Ardesia**, con una **spunta** | Numero già posato | No |
+| **Grigio chiaro**, piccolo | Indirizzo di un'altra strada | No |
+| **Grigio-blu**, piccolo | Nessuna strada selezionata, o verifica in corso | No |
+
+I primi due portano un pittogramma e hanno la stessa dimensione: li distinguete anche senza
+percepire la differenza di colore. Gli ultimi due restano piccoli e spenti, perché non c'è
+nulla da farci.
 
 ::: important Il grigio-blu vuol dire anche «aspetta»
 Subito dopo aver selezionato un segmento, lo script verifica quali numeri esistono già.
 Durante questo breve istante i punti restano grigio-blu e non reagiscono al clic, per evitare
-di creare un doppione. Aspetta che passino al verde.
+di creare un doppione. Aspetta che assumano il loro colore definitivo.
 :::
 
 ## Importare un numero

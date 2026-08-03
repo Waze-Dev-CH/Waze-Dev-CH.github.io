@@ -24,15 +24,19 @@ in further.
 
 | Point | Meaning | Clickable |
 | --- | --- | --- |
-| **Bright green**, large | Number of the selected street, missing from Waze | Yes |
-| **Pale green**, small | Number already placed | No |
-| **Grey** | Address of another street | No |
-| **Grey-blue** | No street selected, or check in progress | No |
+| **Bright green**, marked with a **+** | Number of the selected street, missing from Waze | Yes |
+| **Slate**, marked with a **check mark** | Number already placed | No |
+| **Light grey**, small | Address of another street | No |
+| **Grey-blue**, small | No street selected, or check in progress | No |
+
+The first two carry a pictogram and are the same size: you can tell them apart even without
+seeing the difference in colour. The last two stay small and dull, because there is nothing
+to be done about them.
 
 ::: important Grey-blue also means "please wait"
 Just after you select a segment, the script checks which numbers already exist. During that
 short moment the points stay grey-blue and do not react to clicks, so as to avoid creating a
-duplicate. Wait until they turn green.
+duplicate. Wait until they take on their final colour.
 :::
 
 ## Importing one number
