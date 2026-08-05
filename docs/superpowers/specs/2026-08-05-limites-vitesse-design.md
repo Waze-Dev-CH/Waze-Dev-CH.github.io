@@ -93,30 +93,63 @@ arbitrage utilisateur, pas d'une source citable. À signaler tel quel en revue.
 
 ## Illustrations
 
-Cinq SVG, **domaine public au titre de l'art. 5 LDA** (actes officiels), auteur ASTRA,
+Onze SVG, **domaine public au titre de l'art. 5 LDA** (actes officiels), auteur ASTRA,
 source OSR/SSV. Licence et description confirmées via l'API Commons `extmetadata`.
 
-Déposés dans `docs/public/img/panneaux/`, servis aux 4 locales, `alt` traduit par locale :
+Déposés dans `docs/public/img/panneaux/`. Téléchargement via
+`https://commons.wikimedia.org/wiki/Special:FilePath/<nom encodé>`.
 
-| Fichier cible | Fichier Commons | Signal |
-|---|---|---|
-| `osr-2-30-vitesse-maximale.svg` | `CH-Vorschriftssignal-Höchstgeschwindigkeit.svg` | 2.30 |
-| `osr-2-30-1-vitesse-maximale-50.svg` | `CH-Vorschriftssignal-Höchstgeschwindigkeit 50 generell.svg` | 2.30.1 |
-| `osr-2-53-1-fin-vitesse-maximale-50.svg` | `CH-Vorschriftssignal-Ende der Höchstgeschwindigkeit 50 generell-1.svg` | 2.53.1 |
-| `osr-2-59-1-zone-30.svg` | `CH-Vorschriftssignal-Zonensignal-1.svg` | 2.59.1 |
-| `osr-2-59-5-zone-de-rencontre.svg` | `CH-Vorschriftssignal-Begegnungszone-1.svg` | 2.59.5 |
+**Les panneaux suisses portant du texte sont localisés.** Identification visuelle par
+l'utilisateur, corroborée par un `diff` des tracés. Onze fichiers cibles :
 
-Téléchargement via `https://commons.wikimedia.org/wiki/Special:FilePath/<nom encodé>`.
+| Fichier cible | Fichier Commons | Signal | Texte |
+|---|---|---|---|
+| `osr-2-30-vitesse-maximale.svg` | `Höchstgeschwindigkeit.svg` | 2.30 | aucun (60) |
+| `osr-2-30-1-limite-generale-50-de.svg` | `Höchstgeschwindigkeit 50 generell.svg` | 2.30.1 | GENERELL |
+| `osr-2-30-1-limite-generale-50-fr.svg` | `Höchstgeschwindigkeit 50 generell-2.svg` | 2.30.1 | Limite générale |
+| `osr-2-30-1-limite-generale-50-it.svg` | `Höchstgeschwindigkeit 50 generell-4.svg` | 2.30.1 | Limita generale |
+| `osr-2-53-1-fin-limite-generale-50-de.svg` | `Ende der Höchstgeschwindigkeit 50 generell-1.svg` | 2.53.1 | GENERELL |
+| `osr-2-53-1-fin-limite-generale-50-fr.svg` | `Ende der Höchstgeschwindigkeit 50 generell-2.svg` | 2.53.1 | Limite générale |
+| `osr-2-53-1-fin-limite-generale-50-it.svg` | `Ende der Höchstgeschwindigkeit 50 generell-4.svg` | 2.53.1 | Limita generale |
+| `osr-2-59-1-zone-30.svg` | `Zonensignal-1.svg` | 2.59.1 | ZONE |
+| `osr-2-59-1-zone-30-it.svg` | `Zonensignal-4.svg` | 2.59.1 | ZONA |
+| `osr-2-59-5-zone-de-rencontre.svg` | `Begegnungszone-1.svg` | 2.59.5 | ZONE |
+| `osr-2-59-5-zone-de-rencontre-it.svg` | `Begegnungszone-2.svg` | 2.59.5 | ZONA |
+
+Tous les fichiers Commons sont préfixés `CH-Vorschriftssignal-`.
+
+Les variantes `-2` et `-3` des séries 2.30.1 et 2.53.1 sont **deux vectorisations du même
+panneau français** : `diff` sur les tracés, glyphes identiques, écarts de coordonnées
+sub-pixel. La `-2` est retenue arbitrairement. La `-3` est ignorée.
+
+Le mot « ZONE » étant identique en français et en allemand, un seul fichier sert les deux
+locales pour les signaux 2.59.1 et 2.59.5.
+
+### Répartition par locale
+
+| Locale | 2.30.1 | 2.53.1 | 2.59.1 | 2.59.5 |
+|---|---|---|---|---|
+| `fr` | fr | fr | ZONE | ZONE |
+| `de` | de | de | ZONE | ZONE |
+| `it` | it | it | ZONA | ZONA |
+| `en` | **les trois côte à côte** | les trois | les deux | les deux |
+
+La Suisse n'ayant pas de signalisation en anglais, la locale `en` présente les variantes
+linguistiques côte à côte, ce qui est aussi le plus utile à un éditeur étranger. Elle
+demande donc une mise en page propre : une rangée d'images, sur le modèle de la classe
+`.media-row` déjà définie dans `custom.css:539` et utilisée par `wme/niveaux.md` pour les
+badges de niveau.
 
 Aucune attribution n'est légalement exigée ; l'ASTRA et l'OSR seront néanmoins crédités
 dans le bloc Sources, avec les liens Commons, pour documenter la provenance.
 
-**Réserve ouverte, à lever visuellement.** Commons n'a pas de fichier nommé « Zone 30 ».
-Le candidat retenu, `Zonensignal-1`, est décrit comme le gabarit générique de signal de
-zone. Les SVG étant en tracés et non en texte, son contenu réel n'a pas pu être vérifié
-par inspection. Il sera déposé puis validé à l'œil sur le serveur de développement avant
-publication. S'il ne porte aucun chiffre, la section passe à quatre panneaux et la zone 30
-est décrite sans illustration.
+**Réserve levée (2026-08-05).** Les variantes Commons portent toutes la même description
+générique et leurs SVG sont en tracés, sans élément texte lisible. L'utilisateur les a
+identifiées visuellement, ce qui a révélé que la localisation des panneaux textuels est la
+règle et non l'exception. La correspondance complète figure dans le tableau ci-dessus.
+
+Pour mémoire, les `Zonensignal` non retenus : `-2` et `-5` sont des interdictions de
+stationner (zone), `-3` et `-6` des zones de parcage.
 
 ## Hors périmètre
 
@@ -134,6 +167,6 @@ de l'usage Waze. Une section absente vaut mieux qu'une section inventée.
 ## Vérification
 
 1. `npm run docs:build` doit passer (il échoue sur lien interne mort).
-2. Contrôle visuel sur `npm run docs:dev` : rendu des 5 SVG en thème clair **et** sombre,
-   et validation du fichier Zone 30.
+2. Contrôle visuel sur `npm run docs:dev` : rendu des 11 SVG en thème clair **et** sombre,
+   et contrôle que chaque locale sert bien sa variante linguistique.
 3. Aucun tiret cadratin (hook), aucune admonition sans titre en en/de/it.
