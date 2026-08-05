@@ -13,7 +13,7 @@ Cette page décrit la création et l'édition d'un rond-point dans WME, ainsi qu
 
 - Le rond-point conserve toujours le type de route le plus élevé parmi ses branches. Exception : si une autoroute débute dans un rond-point en localité, prendre le type le plus élevé hors autoroute, pour éviter les erreurs de routage.
 - Pas de nom de rue : un nom s'affiche mal dans l'application. Cocher "Sans nom". Si le rond-point porte un nom propre, créer un Place nommé à l'intérieur.
-- Pas de limite de vitesse sur un rond-point.
+- Pas de limite de vitesse sur un rond-point. Voir [Limites de vitesse](/fr/editors/cartographie/limites-vitesse).
 - Diamètre maximum d'environ 100 m (limite technique).
 
 ## Ce qui n'est PAS un rond-point

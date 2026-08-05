@@ -13,7 +13,7 @@ Questa pagina descrive la creazione e la modifica di una rotonda in WME, oltre a
 
 - La rotonda mantiene sempre il tipo di strada più elevato tra i suoi rami. Eccezione: se un'autostrada inizia in una rotonda in località, adottare il tipo più elevato escludendo l'autostrada, per evitare errori di instradamento.
 - Nessun nome di strada: un nome viene visualizzato male nell'applicazione. Spuntare "Senza nome". Se la rotonda porta un nome proprio, creare un Place con nome al suo interno.
-- Nessun limite di velocità su una rotonda.
+- Nessun limite di velocità su una rotonda. Vedi [Limiti di velocità](/it/editors/cartographie/limites-vitesse).
 - Diametro massimo di circa 100 m (limite tecnico).
 
 ## Ciò che NON è una rotonda

@@ -13,7 +13,7 @@ This page describes how to create and edit a roundabout in WME, as well as the S
 
 - A roundabout always keeps the highest road type among its branches. Exception: if a freeway starts inside a roundabout within a built-up area, use the highest type excluding freeway, to avoid routing errors.
 - No street name: a name displays poorly in the app. Check "None". If the roundabout has a proper name, create a named Place inside it.
-- No speed limit on a roundabout.
+- No speed limit on a roundabout. See [Speed limits](/en/editors/cartographie/limites-vitesse).
 - Maximum diameter of about 100 m (technical limit).
 
 ## What is NOT a roundabout

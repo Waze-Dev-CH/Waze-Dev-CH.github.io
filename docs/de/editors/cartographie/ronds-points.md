@@ -13,7 +13,7 @@ Diese Seite beschreibt das Erstellen und Bearbeiten eines Kreisverkehrs im WME s
 
 - Der Kreisverkehr behält immer den höchsten Strassentyp unter seinen Zweigen. Ausnahme: Wenn eine Autobahn in einem Kreisverkehr innerorts beginnt, den höchsten Typ ausserhalb der Autobahn nehmen, um Routing-Fehler zu vermeiden.
 - Kein Strassenname: Ein Name wird in der App schlecht angezeigt. "Ohne Namen" ankreuzen. Wenn der Kreisverkehr einen Eigennamen trägt, einen benannten Place im Inneren erstellen.
-- Keine Geschwindigkeitsbegrenzung auf einem Kreisverkehr.
+- Keine Geschwindigkeitsbegrenzung auf einem Kreisverkehr. Siehe [Geschwindigkeitsbegrenzungen](/de/editors/cartographie/limites-vitesse).
 - Maximaler Durchmesser von etwa 100 m (technische Grenze).
 
 ## Was KEIN Kreisverkehr ist
