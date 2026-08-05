@@ -41,6 +41,6 @@ Il termine inglese **"Wrong driving direction"** può indicare due cose diverse:
 
 Chiedi sempre un chiarimento al segnalatore prima di agire.
 
-::: warning
+::: failure Mai chiudere senza correggere
 Non chiudere mai un UR come « Corretto » senza aver effettuato una modifica reale nel WME. Il segnalatore riceve una notifica automatica: chiudere senza correggere è ingannevole e danneggia la fiducia degli utenti.
 :::

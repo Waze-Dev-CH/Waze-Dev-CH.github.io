@@ -213,6 +213,6 @@ Inizialmente la restrizione era posta su tutti i segmenti, come in Austria. Ques
 
 Tecnicamente, una restrizione fa sì che l'app si comporti come se il segmento non esistesse. Un conducente senza vignetta nei suoi pass veniva quindi rimbalzato da sinistra a destra sulle piccole strade vicine, e l'app sembrava totalmente impazzita.
 
-Limitando la restrizione ai segmenti di accesso e di continuità delle uscite, un conducente che entra senza aver configurato la vignetta ha un comportamento molto più «normale»: una volta superato il segmento con restrizione, l'app lo vede e lo posiziona correttamente sull'autostrada, poi lo invita a uscire il prima possibile — invece di perderlo e farlo saltare in ogni direzione.
+Limitando la restrizione ai segmenti di accesso e di continuità delle uscite, un conducente che entra senza aver configurato la vignetta ha un comportamento molto più «normale»: una volta superato il segmento con restrizione, l'app lo vede e lo posiziona correttamente sull'autostrada, poi lo invita a uscire il prima possibile, invece di perderlo e farlo saltare in ogni direzione.
 
 Con questo modello, i conducenti pensano più a un problema di autorizzazione o di impostazione (la vignetta da attivare) che a un bug che rende l'app inutilizzabile.

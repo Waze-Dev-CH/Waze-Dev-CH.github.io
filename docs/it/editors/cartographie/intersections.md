@@ -80,7 +80,7 @@ Esempio: un viale che prosegue dritto mentre una via si distacca.
 
 ### Anelli
 
-Un segmento non può collegarsi a sé stesso tramite un solo nodo. Un anello deve essere interrotto da un nodo aggiuntivo, oppure disegnato con due segmenti. In pratica, creare un incrocio a 3 rami all'incirca a metà percorso dell'anello affinché l'instradamento funzioni.
+Un segmento non può collegarsi a sé stesso tramite un solo nodo. Un anello deve contare **almeno 3 segmenti**: un anello di 2 segmenti produce errori di guida ("same endpoint drivable segments"). In pratica, creare un incrocio a 3 rami all'incirca a metà percorso dell'anello affinché l'instradamento funzioni.
 
 ### Strade sfalsate
 

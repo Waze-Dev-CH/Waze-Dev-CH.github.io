@@ -30,7 +30,7 @@ La classification Waze correspond aux types de voies suivants en Suisse :
 | Ramp | Bretelles d'autoroute |
 | Primary Street | Route principale (panneau bleu / carré jaune) |
 | Street | Toutes les autres rues (panneau blanc) |
-| Dirt Road / 4x4 | Route non goudronnée, chemin forestier |
+| Dirt Road / 4x4 | Piste 4x4 ou chemin impraticable pour une voiture normale. Un chemin de terre carrossable se cartographie en Street avec l'attribut Non bitumée |
 | Parking Lot Road | Grande aire de stationnement |
 | Private Road | Chemin privé |
 | Ferry | Traversée en ferry |

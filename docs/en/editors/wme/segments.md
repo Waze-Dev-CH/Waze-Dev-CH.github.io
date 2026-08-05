@@ -23,7 +23,7 @@ Any new segment must be connected to the existing map. An isolated segment (not 
 
 ## Segment properties
 
-Select a segment to display its properties in the right-hand panel:
+Select a segment to display its properties in the left-hand panel:
 
 | Property | Description |
 |-----------|-------------|

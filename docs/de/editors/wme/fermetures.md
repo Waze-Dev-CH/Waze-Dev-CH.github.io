@@ -1,13 +1,13 @@
 ---
-title: Straßensperrungen
+title: Strassensperrungen
 order: 10
 ---
 
 <img class="macaron" src="/img/editors/roadblock.png" alt="" width="128" height="128">
 
-# Straßensperrungen
+# Strassensperrungen
 
-Diese Seite behandelt die Verwaltung von Straßensperrungen und zeitlich begrenzten Fahrverboten in der Schweiz: die Wahl des Vorgehens je nach Dauer, das Hinzufügen zeitlicher Beschränkungen im Editor, das Melden einer Sperrung und die Bearbeitung von Update Requests (URs) zu Sperrungen.
+Diese Seite behandelt die Verwaltung von Strassensperrungen und zeitlich begrenzten Fahrverboten in der Schweiz: die Wahl des Vorgehens je nach Dauer, das Hinzufügen zeitlicher Beschränkungen im Editor, das Melden einer Sperrung und die Bearbeitung von Update Requests (URs) zu Sperrungen.
 
 ## Zwei Ansätze je nach Dauer
 
@@ -23,12 +23,12 @@ Zeitliche Beschränkungen werden Segment für Segment gesetzt und berücksichtig
 Vorgehensweise:
 
 1. Das Segment auswählen, dann auf das Uhr-Symbol „Beschränkung hinzufügen" klicken oder das Tastenkürzel <kbd>T</kbd> verwenden.
-2. Auf einer Straße mit Gegenverkehr erscheinen zwei Reiter: **„A nach B"** und **„B nach A"**, die den beiden Fahrtrichtungen entsprechen. Im Reiter der betreffenden Richtung arbeiten.
+2. Auf einer Strasse mit Gegenverkehr erscheinen zwei Reiter: **„A nach B"** und **„B nach A"**, die den beiden Fahrtrichtungen entsprechen. Im Reiter der betreffenden Richtung arbeiten.
 3. **Tage:** die betreffenden Tage ankreuzen. Die Links „Alle auswählen / abwählen" erleichtern die Eingabe.
 4. **Uhrzeiten:** „Ganzer Tag" für eine durchgehende Beschränkung wählen oder einen Zeitraum im 24-Stunden-Format festlegen (zum Beispiel „10:00 bis 15:00").
 5. **Überschreiten von Mitternacht:** für einen Zeitraum, der Mitternacht überschreitet (zum Beispiel 22 Uhr bis 5 Uhr), „22:00 bis 05:00" eingeben. Das System verlängert automatisch auf den folgenden Tag; die Eingabe nicht verdoppeln.
-6. **Datumsbereich:** standardmäßig wiederholt sich die Beschränkung jede Woche. „Bereich" wählen, um sie auf genaue Daten zu beschränken (Grenzen inklusive).
-7. **Fahrzeugtypen:** standardmäßig sind alle Fahrzeuge betroffen. Auf „Bearbeiten" klicken, um die Beschränkung auf bestimmte Typen einzugrenzen. Die angekreuzten Typen sind jene, die blockiert werden.
+6. **Datumsbereich:** standardmässig wiederholt sich die Beschränkung jede Woche. „Bereich" wählen, um sie auf genaue Daten zu beschränken (Grenzen inklusive).
+7. **Fahrzeugtypen:** standardmässig sind alle Fahrzeuge betroffen. Auf „Bearbeiten" klicken, um die Beschränkung auf bestimmte Typen einzugrenzen. Die angekreuzten Typen sind jene, die blockiert werden.
 8. **Beschreibung:** den Grund der Sperrung angeben (Baustelle, Veranstaltung usw.). Der Text ist auf **100 Zeichen** begrenzt; darüber hinaus schlägt das Speichern fehl.
 
 ### In die Gegenrichtung kopieren
@@ -37,7 +37,7 @@ Nachdem eine Beschränkung erstellt wurde, „Dieselbe Beschränkung für die Ge
 
 ### Auf mehrere Segmente anwenden
 
-Um eine Beschränkung auf eine Folge von Segmenten anzuwenden, mehrere davon auswählen (Strg oder Cmd unter macOS), dann „Auf alle anwenden" verwenden, um die Beschränkung auf die gesamte Auswahl zu übertragen. Vorab die Einbahnstraßen und die Richtung der Segmente (A nach B oder B nach A) prüfen, bevor übertragen wird.
+Um eine Beschränkung auf eine Folge von Segmenten anzuwenden, mehrere davon auswählen (Strg oder Cmd unter macOS), dann „Auf alle anwenden" verwenden, um die Beschränkung auf die gesamte Auswahl zu übertragen. Vorab die Einbahnstrassen und die Richtung der Segmente (A nach B oder B nach A) prüfen, bevor übertragen wird.
 
 ## Eine Sperrung melden
 
@@ -48,8 +48,8 @@ Um eine Beschränkung auf eine Folge von Segmenten anzuwenden, mehrere davon aus
 
 Die Bearbeitung eines Update Requests zu einer Sperrung folgt dem Vorsichtsprinzip:
 
-- Nur dann mit **„Behoben"** abschließen, wenn die Ursache identifiziert, die Korrektur angewendet und die Änderung gespeichert wurde.
-- Wenn die Situation nicht überprüft werden kann, mit **„Nicht identifiziert"** abschließen.
+- Nur dann mit **„Behoben"** abschliessen, wenn die Ursache identifiziert, die Korrektur angewendet und die Änderung gespeichert wurde.
+- Wenn die Situation nicht überprüft werden kann, mit **„Nicht identifiziert"** abschliessen.
 - Keinen falschen Abschluss vornehmen.
 - Fälle, in denen die Fahrtrichtung mehrdeutig ist, mit Vorsicht behandeln.
 

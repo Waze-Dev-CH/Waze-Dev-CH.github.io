@@ -47,7 +47,7 @@ Attribuzione su criteri (approvazione staff + champion locali). I 10 criteri:
 - **Junction Box (JB)**: comprendere il loro impatto sul routing (o formazione completata)
 - **Lane Guidance**: saper aggiungere la guida di corsia e le istruzioni di navigazione
 - **Suggest an Edit**: moderazione dei suggerimenti con una comunicazione professionale
-- **Pericoli permanenti**: comprovata esperienza nell'aggiunta di pericoli permanenti a livello locale
+- **Pericoli permanenti**: conoscere le direttive svizzere e sapere quando un pericolo permanente è giustificato (la loro modifica è aperta solo dal L4)
 - **Zone scolastiche**: saper definire correttamente i poligoni
 
 </div>

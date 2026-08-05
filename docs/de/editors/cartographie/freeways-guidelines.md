@@ -23,11 +23,11 @@ Da uns bewusst ist, dass die alten Richtlinien ohnehin einer Überarbeitung bed�
 
 ## Allgemeine Hinweise
 
-### Straßentyp: Rampe
+### Strassentyp: Rampe
 
-Im Gegensatz zu anderen Straßentypen werden Rampen bei Langstreckenrouten niemals ignoriert. Sie gelten als wesentlich für die Verbindung von Autobahnen und anderen Hauptstraßen.
+Im Gegensatz zu anderen Strassentypen werden Rampen bei Langstreckenrouten niemals ignoriert. Sie gelten als wesentlich für die Verbindung von Autobahnen und anderen Hauptstrassen.
 
-Rampen haben standardmäßig keinen spezifischen Routing-Präferenzparameter (wie «bevorzugt» oder «nicht bevorzugt»). Ihre Routing-Priorität ergibt sich aus ihrer Funktion als Verbindungsstücke.
+Rampen haben standardmässig keinen spezifischen Routing-Präferenzparameter (wie «bevorzugt» oder «nicht bevorzugt»). Ihre Routing-Priorität ergibt sich aus ihrer Funktion als Verbindungsstücke.
 
 Die Namen der Rampen erscheinen nicht auf der Karte der Client-App, was hilft, die Überfrachtung zu reduzieren. Sie erscheinen jedoch im Text der Richtungsanweisungen, falls erforderlich. Daher kann es sinnvoll sein, ihre Äste in WME unterschiedlich zu benennen, wenn sie sich in ein Y aufteilen, ohne einen durchgehenden Namen oder einen alternativen Namen pflegen zu müssen.
 
@@ -39,13 +39,13 @@ Zum Beispiel wird eine Person, die Waze auf Französisch verwendet, «Sortie» h
 
 ### Symbol «>»
 
-Dieses Symbol ist in Europa weit verbreitet und TTS für die meisten Sprachen weiß, dass es als «towards» / «richtung» / «direction» / usw. gelesen werden soll.
+Dieses Symbol ist in Europa weit verbreitet und TTS für die meisten Sprachen weiss, dass es als «towards» / «richtung» / «direction» / usw. gelesen werden soll.
 
 Auch wenn es nicht visuell angezeigt wird, kann es im TTS-Feld einer Abbiegeanweisung verwendet werden, um in vielen Sprachen automatisch korrekt ausgesprochen zu werden.
 
 ### Wayfinders
 
-Bevor es Schilder (Shields) oder Abbiegeanweisungen gab, waren Wayfinders in der Kartierung üblich. Sie bestanden aus kleinen Segmenten (5-20 m), um eine TTS-Anweisung zu erzwingen, die etwas anderes als der Straßenname war. Wenn Sie welche finden, löschen Sie sie und verwenden Sie stattdessen eine Abbiegeanweisung.
+Bevor es Schilder (Shields) oder Abbiegeanweisungen gab, waren Wayfinders in der Kartierung üblich. Sie bestanden aus kleinen Segmenten (5-20 m), um eine TTS-Anweisung zu erzwingen, die etwas anderes als der Strassenname war. Wenn Sie welche finden, löschen Sie sie und verwenden Sie stattdessen eine Abbiegeanweisung.
 
 ![](/freeways/image3.png)
 
@@ -55,7 +55,7 @@ Bevor es Schilder (Shields) oder Abbiegeanweisungen gab, waren Wayfinders in der
 
 #### Benennung der Segmente
 
-Wir werden an der vorherigen Methode nicht viel ändern, basierend auf den Hinweisen zu «Straßentyp: Rampe» (siehe vorheriger Abschnitt), und aus Gründen der Einfachheit, da dies derzeit gut funktioniert beim «Lesen» der Kreuzung, wenn man sie in WME betrachtet.
+Wir werden an der vorherigen Methode nicht viel ändern, basierend auf den Hinweisen zu «Strassentyp: Rampe» (siehe vorheriger Abschnitt), und aus Gründen der Einfachheit, da dies derzeit gut funktioniert beim «Lesen» der Kreuzung, wenn man sie in WME betrachtet.
 
 Die Rampen, die aus der Autobahn herausführen, sollten bereits so aussehen:
 
@@ -92,7 +92,7 @@ Gegebenenfalls (wenn dies existiert), fügen Sie für die Y-Abzweigung keine Anw
 
 ##### Abbiegeanweisungen Autobahn → Ausfahrtsrampe (neues Mapping)
 
-1. **Visual instructions**: Geben Sie den **Namen der Kreuzung** ein (entweder gemäß [https://map.geo.admin.ch/](https://map.geo.admin.ch/) oder einem kantonalen Geoportal)
+1. **Visual instructions**: Geben Sie den **Namen der Kreuzung** ein (entweder gemäss [https://map.geo.admin.ch/](https://map.geo.admin.ch/) oder einem kantonalen Geoportal)
 2. **Towards**: Geben Sie die verbleibenden Richtungen ein, getrennt mit / , ohne den Namen der Stadt, der dem Namen der Kreuzung entspricht, ein zweites Mal zu wiederholen.
 3. **Exit signs**: Fügen Sie das Ausfahrtssymbol (Shield) und seine Nummer ein
 4. **TTS**: Alles sollte bereits korrekt sein und dem Hauptnamen des Rampensegments entsprechen.
@@ -170,7 +170,7 @@ Natürlich müssen diese Segmente alle alternativen Namen Axx und Exx konfigurie
 
 **Exit signs**: Muss leer sein
 
-**Voice prompt**: Passen Sie ihn an das an, was am besten ist, da durchgehende Straßennamen jede Anweisung entfernen können und es notwendig sein kann, eine zu erzwingen
+**Voice prompt**: Passen Sie ihn an das an, was am besten ist, da durchgehende Strassennamen jede Anweisung entfernen können und es notwendig sein kann, eine zu erzwingen
 
 **TTS**: Sollte je nach Segmentname bereits korrekt sein.
 
@@ -184,15 +184,15 @@ Die Schweiz hat zuvor die folgende Kartierungsregel übernommen:
 
 ![](/freeways/image19.png)
 
-Es wurde jedoch vom Personal während der Meetings gemeldet, dass die Kartierung des Rampenknotens am Punkt A weder empfohlen noch optimal für das Routing und Falcon (den GPS-Korrektor der Straßen) ist.
+Es wurde jedoch vom Personal während der Meetings gemeldet, dass die Kartierung des Rampenknotens am Punkt A weder empfohlen noch optimal für das Routing und Falcon (den GPS-Korrektor der Strassen) ist.
 
 Basierend auf den **Empfehlungen des Personals** werden wir schrittweise zur Platzierung des Knotens am letzten legalen Ausfahrtspunkt übergehen (dargestellt durch den Punkt C im Screenshot oben).
 
 *[Anruf mit Aufzeichnung des Personals: Off ramps – 2024_09_26 16_26 BST – Recording.mp4](https://drive.google.com/file/d/1eCMVwhmgbLBHPeZY6tYVySE6O9Y4NI-3/view?usp=sharing) (30 Min., Englisch)*
 
-Darüber hinaus können wir für lange, nicht standardmäßige Ausfahrten die neue Funktion «Far turn» verwenden, um eine frühe Anweisung hinzuzufügen. Aber verwenden Sie sie nicht bei kleineren oder standardmäßigen Rampen.
+Darüber hinaus können wir für lange, nicht standardmässige Ausfahrten die neue Funktion «Far turn» verwenden, um eine frühe Anweisung hinzuzufügen. Aber verwenden Sie sie nicht bei kleineren oder standardmässigen Rampen.
 
-Eine höhere Priorität wird langen Rampen eingeräumt und eine niedrigere Priorität standardmäßigen Ausfahrten mit kurzen Rampen. Anstelle eines Mapraids ermutigen wir die Beitragenden, diese nach eigenem Ermessen und schrittweise im Laufe der folgenden Monate zu überprüfen und zu korrigieren.
+Eine höhere Priorität wird langen Rampen eingeräumt und eine niedrigere Priorität standardmässigen Ausfahrten mit kurzen Rampen. Anstelle eines Mapraids ermutigen wir die Beitragenden, diese nach eigenem Ermessen und schrittweise im Laufe der folgenden Monate zu überprüfen und zu korrigieren.
 
 ## Einschränkung «Vignette erforderlich»
 
@@ -213,6 +213,6 @@ Ursprünglich wurde die Einschränkung wie in Österreich auf jedes Segment gese
 
 Technisch gesehen sorgt eine Einschränkung dafür, dass sich die App so verhält, als würde das Segment nicht existieren. Ein Fahrer ohne Vignette in seinen Pässen wurde daher von links nach rechts auf die kleinen Nachbarstrassen geworfen, und die App wirkte völlig verrückt.
 
-Indem die Einschränkung auf die Zufahrts- und Ausfahrtsfortsetzungssegmente beschränkt wird, verhält sich ein Fahrer, der ohne konfigurierte Vignette einfährt, viel «normaler»: Sobald das eingeschränkte Segment passiert ist, erkennt die App ihn und platziert ihn korrekt auf der Autobahn und fordert ihn dann auf, so bald wie möglich abzufahren — anstatt ihn zu verlieren und ihn wild herumspringen zu lassen.
+Indem die Einschränkung auf die Zufahrts- und Ausfahrtsfortsetzungssegmente beschränkt wird, verhält sich ein Fahrer, der ohne konfigurierte Vignette einfährt, viel «normaler»: Sobald das eingeschränkte Segment passiert ist, erkennt die App ihn und platziert ihn korrekt auf der Autobahn und fordert ihn dann auf, so bald wie möglich abzufahren, anstatt ihn zu verlieren und ihn wild herumspringen zu lassen.
 
 Mit diesem Modell denken Fahrer eher an ein Berechtigungs- oder Einstellungsproblem (die zu aktivierende Vignette) als an einen Fehler, der die App unbrauchbar macht.

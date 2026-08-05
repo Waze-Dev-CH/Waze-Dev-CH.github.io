@@ -7,7 +7,7 @@ description: Décline une page de doc française du site Waze CH (VitePress) ver
 
 Ce site VitePress a **quatre locales symétriques** : `fr` / `en` / `de` / `it`, toutes sous leur sous-dossier. Ce skill prend une page française et produit ses équivalents traduits au bon chemin, en préservant la structure.
 
-## Étape 1 — Identifier la source
+## Étape 1 : Identifier la source
 
 - La source est un fichier sous `docs/fr/`.
 - Calculer le **chemin relatif** : `docs/fr/editors/routing.md` → chemin relatif `editors/routing.md`.
@@ -18,7 +18,7 @@ Ce site VitePress a **quatre locales symétriques** : `fr` / `en` / `de` / `it`,
 
 Lire entièrement la source avant de traduire.
 
-## Étape 2 — Produire chaque traduction
+## Étape 2 : Produire chaque traduction
 
 Pour chaque langue cible (en, de, it), créer le fichier au chemin ci-dessus en respectant **toutes** ces règles :
 
@@ -37,13 +37,13 @@ Pour chaque langue cible (en, de, it), créer le fichier au chemin ci-dessus en 
    - IT : `::: example Esempio`
    - Idem pour les autres types : `note` (Note/Notiz/Nota), `important` (Important/Wichtig/Importante), `success` (Success/Erfolg/Successo), `failure` (Error/Fehler/Errore), `bug`, `help` (Tip/Tipp/Consiglio), `question` (Question/Frage/Domanda), `reminder` (Reminder/Erinnerung/Promemoria), `quote` (Quote/Zitat/Citazione), `abstract` (Summary/Zusammenfassung/Sintesi), `people` (Contact/Kontakt/Contatto). Traduire le contenu du bloc normalement.
 
-5. **Glossaire — ne pas traduire** : `Waze`, `WME`, les noms de scripts/userscripts, les noms propres et lieux suisses (cantons, communes), les termes d'interface Waze laissés en anglais par la communauté. Garder une terminologie cohérente entre les pages (éditeur = editor/Editor/editor, développeur = developer, terme anglais conservé en en/de/it).
+5. **Glossaire, ne pas traduire** : `Waze`, `WME`, les noms de scripts/userscripts, les noms propres et lieux suisses (cantons, communes), les termes d'interface Waze laissés en anglais par la communauté. Garder une terminologie cohérente entre les pages (éditeur = editor/Editor/editor, développeur = developer, terme anglais conservé en en/de/it).
 
-## Étape 3 — Navigation
+## Étape 3 : Navigation
 
-Si la page entre dans un menu, rappeler à l'utilisateur d'ajouter l'entrée dans `nav` et/ou `sidebar` de `.vitepress/config.ts` pour les **4 locales** (libellés traduits). La navigation n'est pas auto-générée.
+Rien à faire dans `.vitepress/config.ts` : la sidebar est auto-générée par `vitepress-sidebar` à partir du `title:` et de l'`order:` du frontmatter. Veiller seulement à reprendre **le même `order:`** que la page française, sinon la sidebar sera ordonnée différemment selon la langue. Seule la `nav` (menu du haut, 4 entrées par locale) est écrite à la main, et elle ne change pas quand on ajoute une page.
 
-## Étape 4 — Vérifier
+## Étape 4 : Vérifier
 
 ```bash
 npm run docs:build

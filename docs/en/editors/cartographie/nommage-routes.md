@@ -30,7 +30,7 @@ The Waze classification corresponds to the following types of roads in Switzerla
 | Ramp | Motorway ramps |
 | Primary Street | Main road (blue sign / yellow square) |
 | Street | All other streets (white sign) |
-| Dirt Road / 4x4 | Unpaved road, forest track |
+| Dirt Road / 4x4 | 4x4 trail or track impassable for a normal car. A drivable dirt track is mapped as Street with the Unpaved attribute |
 | Parking Lot Road | Large parking area |
 | Private Road | Private path |
 | Ferry | Ferry crossing |

@@ -14,37 +14,37 @@ Ein gutes Verständnis des Routings ist notwendig, um die Segmente korrekt zu kl
 
 Der WME klassifiziert die Segmente nach einer Hierarchie, die den Navigationsalgorithmus direkt beeinflusst, besonders bei Langstreckenfahrten.
 
-## Hierarchie der Straßentypen
+## Hierarchie der Strassentypen
 
 Vom wichtigsten zum unwichtigsten:
 
-1. Autobahnen und Schnellstraßen (Freeway / Major Highway)
+1. Autobahnen und Schnellstrassen (Freeway / Major Highway)
 2. Auffahrten (Sonderfall)
-3. Hauptstraßen (Minor Highway)
-4. Primäre Straßen (Primary Street)
-5. Straßen (Street)
+3. Hauptstrassen (Minor Highway)
+4. Primäre Strassen (Primary Street)
+5. Strassen (Street)
 
 ## Kontinuitätsprinzip
 
 > Die Kontinuität der Typen ist im WME wesentlich: Man darf niemals eine Abfolge von Segmenten eines bestimmten Typs durch Segmente eines niedrigeren Typs unterbrechen.
 
-Beispiel: Eine Nationalstraße darf nicht durch ein als "Straße" klassifiziertes Segment unterbrochen werden. Das bricht die Kohärenz des Netzes und stört die Berechnung langer Routen.
+Beispiel: Eine Nationalstrasse darf nicht durch ein als "Strasse" klassifiziertes Segment unterbrochen werden. Das bricht die Kohärenz des Netzes und stört die Berechnung langer Routen.
 
 ## Pruning-Mechanismus (Beschneidung)
 
-Waze verwendet ein System der **progressiven Beschneidung**: Je weiter man sich vom Start oder vom Ziel entfernt, desto mehr werden die Straßen mit niedriger Priorität von der Berechnung ausgeschlossen.
+Waze verwendet ein System der **progressiven Beschneidung**: Je weiter man sich vom Start oder vom Ziel entfernt, desto mehr werden die Strassen mit niedriger Priorität von der Berechnung ausgeschlossen.
 
-| Straßentyp | Verhalten |
+| Strassentyp | Verhalten |
 |--------------|-------------|
-| Straße / Primäre Straße | Ausgeschlossen ab einem bestimmten Distanzschwellwert |
-| Haupt- / Nebenstraßen | Höherer Ausschlussschwellwert |
+| Strasse / Primäre Strasse | Ausgeschlossen ab einem bestimmten Distanzschwellwert |
+| Haupt- / Nebenstrassen | Höherer Ausschlussschwellwert |
 | Autobahnen / Auffahrten | **Niemals ausgeschlossen** |
 
 ## Kurze vs. lange Fahrten
 
-**Kurze Fahrt** (z. B. Genève → Lausanne): Alle Straßentypen werden berücksichtigt, einschließlich der lokalen Straßen.
+**Kurze Fahrt** (z. B. Genève → Lausanne): Alle Strassentypen werden berücksichtigt, einschliesslich der lokalen Strassen.
 
-**Lange Fahrt** (z. B. Genève → Zürich): Nur die Autobahnen und Hauptstraßen werden verwendet. Die Nebenstraßen kommen nur in der Nähe des Starts/Ziels oder bei einer Neuberechnung ins Spiel.
+**Lange Fahrt** (z. B. Genève → Zürich): Nur die Autobahnen und Hauptstrassen werden verwendet. Die Nebenstrassen kommen nur in der Nähe des Starts/Ziels oder bei einer Neuberechnung ins Spiel.
 
 ## Routing-Präferenzen
 
@@ -53,28 +53,28 @@ Die "Vermeiden"-Präferenzen in der App verhindern **nicht** die lokale Nutzung 
 :::
 
 ::: example Beispiel
-Eine als "benachteiligt" klassifizierte Straße wird immer benutzt, wenn sie die einzige Option ist, um ein Ziel im Quartier zu erreichen. Der Effekt zeigt sich nur bei großen Routenberechnungen.
+Eine als "benachteiligt" klassifizierte Strasse wird immer benutzt, wenn sie die einzige Option ist, um ein Ziel im Quartier zu erreichen. Der Effekt zeigt sich nur bei grossen Routenberechnungen.
 :::
 
 Über die Voreinstellungen hinaus wendet der Algorithmus auch Strafzeiten auf bestimmte Manöver und Segmenteigenschaften an: siehe [Routing-Strafen](/de/editors/wme/penalites-routage).
 
 ## Sperrstufen (Locks)
 
-Schweizer Standard: erwartete Sperrstufe je Straßentyp.
+Schweizer Standard: erwartete Sperrstufe je Strassentyp.
 
-| Straßentyp | Sperrstufe |
+| Strassentyp | Sperrstufe |
 | --- | --- |
 | Autobahn (Freeway) | L5 |
-| Hauptstraße (Major Highway) | L4 |
-| Nebenstraße (Minor Highway) | L3 |
-| Primäre Straße (Primary Street) | L2 |
-| Straße (Street) | L1 |
+| Hauptstrasse (Major Highway) | L4 |
+| Nebenstrasse (Minor Highway) | L3 |
+| Primäre Strasse (Primary Street) | L2 |
+| Strasse (Street) | L1 |
 
 ::: reminder Erinnerung
-Je höher der Straßentyp in der Hierarchie steht, desto höher ist die erwartete Sperrstufe. Das schützt die strukturierenden Segmente des Netzes vor unbeabsichtigten Änderungen.
+Je höher der Strassentyp in der Hierarchie steht, desto höher ist die erwartete Sperrstufe. Das schützt die strukturierenden Segmente des Netzes vor unbeabsichtigten Änderungen.
 :::
 
-Mit Maß sperren. Das Sperren zielt vor allem auf die strukturierenden Typen ab: Autobahnen, Straßen, Auffahrten und Kreisverkehre. Man sollte nicht alles ohne Grund sperren, denn eine zu weitreichende Sperre bremst die anderen Editoren unnötig.
+Mit Mass sperren. Das Sperren zielt vor allem auf die strukturierenden Typen ab: Autobahnen, Strassen, Auffahrten und Kreisverkehre. Man sollte nicht alles ohne Grund sperren, denn eine zu weitreichende Sperre bremst die anderen Editoren unnötig.
 
 Ein Editor kann ein gesperrtes Segment nur ändern, wenn sein Rang mindestens der Sperrstufe entspricht. Die Sperrstufe nach der Wichtigkeit des Segments wählen, nicht aus übertriebener Vorsicht.
 

@@ -17,16 +17,16 @@ Le panneau gauche permet de basculer entre trois onglets :
 - **Lieux** : points d'intérêt (POIs) dans la zone visible
 - **Update Requests (URs)** : signalements des utilisateurs à traiter
 
-## Panneau droit (propriétés)
+## Panneau de propriétés
 
-Quand un segment ou un lieu est sélectionné, le panneau droit affiche ses propriétés éditables : type, nom, sens de circulation, vitesse, restrictions, etc.
+Quand un segment ou un lieu est sélectionné, la barre latérale gauche bascule sur le panneau de propriétés et affiche ses attributs éditables : type, nom, sens de circulation, vitesse, restrictions, etc. Les onglets ajoutés par les scripts y sont temporairement masqués.
 
 ## Barre d'outils supérieure
 
 | Outil | Raccourci | Usage |
 |-------|-----------|-------|
 | Sélection | <kbd>S</kbd> ou <kbd>Esc</kbd> | Sélectionner des éléments existants |
-| Dessin de segment | <kbd>D</kbd> | Tracer un nouveau segment |
+| Dessin de segment | <kbd>I</kbd> | Tracer un nouveau segment |
 | Restriction de virage | <kbd>T</kbd> | Poser une restriction temporelle |
 | Ajouter un lieu | <kbd>P</kbd> | Créer un point d'intérêt |
 | Annuler | <kbd>Ctrl</kbd>+<kbd>Z</kbd> | Annuler la dernière action |

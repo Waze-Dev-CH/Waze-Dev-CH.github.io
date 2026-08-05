@@ -30,7 +30,7 @@ Die Waze-Klassifizierung entspricht in der Schweiz den folgenden Verkehrswegen:
 | Ramp | Autobahnauffahrten |
 | Primary Street | Hauptstrasse (blaues Schild / gelbes Quadrat) |
 | Street | Alle übrigen Strassen (weisses Schild) |
-| Dirt Road / 4x4 | Unbefestigte Strasse, Waldweg |
+| Dirt Road / 4x4 | 4x4-Piste oder für ein normales Auto unbefahrbarer Weg. Ein befahrbarer Erdweg wird als Street mit dem Attribut Unbefestigt erfasst |
 | Parking Lot Road | Grosser Parkplatz |
 | Private Road | Privatweg |
 | Ferry | Fährüberfahrt |

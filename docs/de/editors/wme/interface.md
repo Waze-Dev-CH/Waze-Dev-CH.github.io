@@ -17,16 +17,16 @@ Das linke Panel erlaubt den Wechsel zwischen drei Registerkarten:
 - **Orte**: Points of Interest (POIs) im sichtbaren Bereich
 - **Update Requests (URs)**: zu bearbeitende Meldungen der Nutzer
 
-## Rechtes Panel (Eigenschaften)
+## Eigenschaften-Panel
 
-Wenn ein Segment oder ein Ort ausgewählt ist, zeigt das rechte Panel dessen bearbeitbare Eigenschaften an: Typ, Name, Fahrtrichtung, Geschwindigkeit, Einschränkungen usw.
+Wenn ein Segment oder ein Ort ausgewählt ist, wechselt die linke Seitenleiste zum Eigenschaften-Panel und zeigt dessen bearbeitbare Attribute an: Typ, Name, Fahrtrichtung, Geschwindigkeit, Einschränkungen usw. Von Skripten hinzugefügte Registerkarten sind dabei vorübergehend ausgeblendet.
 
 ## Obere Werkzeugleiste
 
 | Werkzeug | Tastenkürzel | Verwendung |
 |-------|-----------|-------|
 | Auswahl | <kbd>S</kbd> oder <kbd>Esc</kbd> | Bestehende Elemente auswählen |
-| Segment zeichnen | <kbd>D</kbd> | Ein neues Segment zeichnen |
+| Segment zeichnen | <kbd>I</kbd> | Ein neues Segment zeichnen |
 | Abbiegebeschränkung | <kbd>T</kbd> | Eine zeitliche Beschränkung setzen |
 | Ort hinzufügen | <kbd>P</kbd> | Einen Point of Interest erstellen |
 | Rückgängig | <kbd>Ctrl</kbd>+<kbd>Z</kbd> | Die letzte Aktion rückgängig machen |

@@ -18,7 +18,7 @@ Bevor Sie eine Frage stellen, konsultieren Sie das Wiki und das Forum: Die Antwo
 - **Community-Website CH**: [waze-switzerland.ch](https://www.waze-switzerland.ch/)
 
 ::: note Notiz
-Jede Sprachregion hat ihre eigenen Regeln. Für die französischsprachige Schweiz befolgen Sie die lokalen Regeln, nicht die von Frankreich. Für die deutschsprachige Schweiz ist das deutschsprachige Wiki maßgebend.
+Jede Sprachregion hat ihre eigenen Regeln. Für die französischsprachige Schweiz befolgen Sie die lokalen Regeln, nicht die von Frankreich. Für die deutschsprachige Schweiz ist das deutschsprachige Wiki massgebend.
 :::
 
 ## Rollen in der Community

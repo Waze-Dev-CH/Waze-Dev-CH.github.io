@@ -20,7 +20,7 @@ Cette page décrit la création et l'édition d'un rond-point dans WME, ainsi qu
 
 - Un croisement sans îlot central.
 - Une intersection non signalée.
-- Un cul-de-sac se terminant en boucle : dessiner une boucle plutôt qu'un rond-point.
+- Un cul-de-sac se terminant en boucle : ne rien dessiner du tout, ni boucle ni rond-point. Prolonger simplement le segment jusqu'au point le plus loin atteignable.
 - Une très grande zone au-delà de 100 m.
 - Une intersection résidentielle avec chicanes.
 
@@ -54,13 +54,13 @@ Pour modifier des connexions, supprimer entièrement le rond-point et le redessi
 
 Un type bien choisi évite les pénalités de routage. La hiérarchie est : fédérale > nationale > principale > rue. Les rampes prennent le type du segment connecté. Les routes locales, privées et parkings sont des rues standard.
 
-Méthode : repérer les deux segments de plus haut type connectés au rond-point (une rue scindée en deux sens uniques compte comme un seul segment), puis attribuer au rond-point le type le PLUS BAS des deux.
+Méthode : repérer le type le plus élevé parmi les segments connectés au rond-point (une rue scindée en deux sens uniques compte comme un seul segment), puis l'attribuer au rond-point.
 
 | Branches | Type attribué |
 | --- | --- |
 | 2 principales + 2 standard | Principale |
-| 1 federale + 3 principales + 2 standard | Federale |
-| 1 federale + 2 principales + 1 standard | Principale |
+| 1 fédérale + 3 principales + 2 standard | Fédérale |
+| 1 fédérale + 2 principales + 1 standard | Fédérale |
 
 ## Entrées et sorties
 

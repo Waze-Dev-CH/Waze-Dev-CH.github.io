@@ -45,6 +45,7 @@ Pour l'obtenir : positionner la carte sur la zone souhaitée, puis cliquer sur l
 
 - [Légende de la carte](/fr/editors/wme/legende-carte) : types de segments
 - [Bases du routing](/fr/editors/wme/routing) : impact des types sur la navigation
+- [Pénalités de routage](/fr/editors/wme/penalites-routage) : virages soft et hard, coûts de trajet
 
 ### Éditer la carte
 

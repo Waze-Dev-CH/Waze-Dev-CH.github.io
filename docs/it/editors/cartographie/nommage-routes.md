@@ -30,7 +30,7 @@ La classificazione Waze corrisponde ai seguenti tipi di via in Svizzera:
 | Ramp | Rampe autostradali |
 | Primary Street | Strada principale (cartello blu / quadrato giallo) |
 | Street | Tutte le altre vie (cartello bianco) |
-| Dirt Road / 4x4 | Strada non asfaltata, strada forestale |
+| Dirt Road / 4x4 | Pista 4x4 o strada impraticabile per un'auto normale. Una strada sterrata percorribile si mappa come Street con l'attributo Non asfaltata |
 | Parking Lot Road | Grande area di parcheggio |
 | Private Road | Strada privata |
 | Ferry | Traversata in traghetto |

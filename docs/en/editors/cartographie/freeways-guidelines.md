@@ -213,6 +213,6 @@ Originally, the restriction was placed on every segment, as in Austria. This gen
 
 Technically, a restriction makes the app behave as if the segment did not exist. A driver without the vignette in their passes was therefore bounced from left to right onto the nearby small roads, and the app looked completely crazy.
 
-By limiting the restriction to the access and exit continuation segments, a driver who enters without having configured the vignette gets a much more "normal" behaviour: once past the restricted segment, the app sees them and places them correctly on the freeway, then invites them to exit as soon as possible — instead of losing them and making them jump all over the place.
+By limiting the restriction to the access and exit continuation segments, a driver who enters without having configured the vignette gets a much more "normal" behaviour: once past the restricted segment, the app sees them and places them correctly on the freeway, then invites them to exit as soon as possible, instead of losing them and making them jump all over the place.
 
 With this model, drivers are more likely to think of a permission or setting issue (the vignette to enable) than of a bug making the app unusable.

@@ -23,7 +23,7 @@ Tout nouveau segment doit être raccordé à la carte existante. Un segment isol
 
 ## Propriétés d'un segment
 
-Sélectionner un segment pour afficher ses propriétés dans le panneau droit :
+Sélectionner un segment pour afficher ses propriétés dans le panneau latéral gauche :
 
 | Propriété | Description |
 |-----------|-------------|

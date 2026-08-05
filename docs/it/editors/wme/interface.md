@@ -17,16 +17,16 @@ Il pannello sinistro consente di passare da una scheda all'altra tra tre schede:
 - **Luoghi**: punti di interesse (POI) nell'area visibile
 - **Update Requests (URs)**: segnalazioni degli utenti da trattare
 
-## Pannello destro (proprietà)
+## Pannello delle proprietà
 
-Quando un segmento o un luogo è selezionato, il pannello destro mostra le sue proprietà modificabili: tipo, nome, senso di circolazione, velocità, restrizioni, ecc.
+Quando un segmento o un luogo è selezionato, la barra laterale sinistra passa al pannello delle proprietà e mostra i suoi attributi modificabili: tipo, nome, senso di circolazione, velocità, restrizioni, ecc. Le schede aggiunte dagli script sono temporaneamente nascoste.
 
 ## Barra degli strumenti superiore
 
 | Strumento | Scorciatoia | Utilizzo |
 |-------|-----------|-------|
 | Selezione | <kbd>S</kbd> o <kbd>Esc</kbd> | Selezionare elementi esistenti |
-| Disegno di segmento | <kbd>D</kbd> | Tracciare un nuovo segmento |
+| Disegno di segmento | <kbd>I</kbd> | Tracciare un nuovo segmento |
 | Restrizione di svolta | <kbd>T</kbd> | Impostare una restrizione temporale |
 | Aggiungere un luogo | <kbd>P</kbd> | Creare un punto di interesse |
 | Annullare | <kbd>Ctrl</kbd>+<kbd>Z</kbd> | Annullare l'ultima azione |

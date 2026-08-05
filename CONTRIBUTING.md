@@ -104,9 +104,9 @@ docs/
 
 ### Ajouter une page
 
-1. Créer le fichier français, ex. `docs/fr/editors/routing.md`, avec son frontmatter `title:`.
-2. Créer les équivalents `docs/en/editors/routing.md`, `docs/de/...`, `docs/it/...` (skill `translate-page`).
-3. Si la page doit apparaître dans le menu, l'ajouter à la **`sidebar`** (et au besoin la **`nav`**) dans `.vitepress/config.ts`, pour les **4 locales**, avec les libellés traduits. La navigation n'est pas auto-générée.
+1. Créer le fichier français, ex. `docs/fr/editors/routing.md`, avec son frontmatter `title:` et `order:`.
+2. Créer les équivalents `docs/en/editors/routing.md`, `docs/de/...`, `docs/it/...` (skill `translate-page`), avec le **même `order:`** pour que la sidebar soit ordonnée pareil dans les 4 langues.
+3. Rien à faire dans `.vitepress/config.ts` : la **sidebar est auto-générée** par `vitepress-sidebar` (`generateSidebar`), qui scanne les répertoires et construit les entrées à partir du `title:` et de l'`order:` de chaque page. Seule la **`nav`** (le menu du haut, 4 entrées par locale) est écrite à la main.
 4. Images : déposer dans `docs/public/`, référencer par `/nom-du-fichier.svg`.
 
 ### Vérification finale

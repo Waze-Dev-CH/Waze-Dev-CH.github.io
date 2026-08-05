@@ -80,7 +80,7 @@ Example: an avenue that continues straight ahead while a street branches off.
 
 ### Loops
 
-A segment cannot connect to itself through a single node. A loop must be interrupted by an additional node, or drawn with two segments. In practice, create a 3-branch intersection roughly midway along the loop so that routing works.
+A segment cannot connect to itself through a single node. A loop must have **at least 3 segments**: a 2-segment loop produces guidance errors ("same endpoint drivable segments"). In practice, create a 3-branch intersection roughly midway along the loop so that routing works.
 
 ### Offset roads
 

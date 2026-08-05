@@ -23,7 +23,7 @@ Ogni nuovo segmento deve essere collegato alla mappa esistente. Un segmento isol
 
 ## Proprietà di un segmento
 
-Selezionare un segmento per visualizzarne le proprietà nel pannello di destra:
+Selezionare un segmento per visualizzarne le proprietà nel pannello di sinistra:
 
 | Proprietà | Descrizione |
 |-----------|-------------|

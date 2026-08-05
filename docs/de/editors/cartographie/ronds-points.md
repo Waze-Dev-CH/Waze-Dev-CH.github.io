@@ -20,7 +20,7 @@ Diese Seite beschreibt das Erstellen und Bearbeiten eines Kreisverkehrs im WME s
 
 - Eine Kreuzung ohne Mittelinsel.
 - Eine nicht signalisierte Kreuzung.
-- Eine Sackgasse, die in einer Schleife endet: eher eine Schleife zeichnen als einen Kreisverkehr.
+- Eine Sackgasse, die in einer Schleife endet: gar nichts zeichnen, weder Schleife noch Kreisverkehr. Das Segment einfach bis zum am weitesten befahrbaren Punkt verlängern.
 - Ein sehr grosser Bereich über 100 m hinaus.
 - Eine Wohnkreuzung mit Schikanen.
 
@@ -54,13 +54,13 @@ Um Verbindungen zu ändern, den Kreisverkehr vollständig löschen und neu zeich
 
 Ein gut gewählter Typ vermeidet Routing-Strafen. Die Hierarchie lautet: bundesweit > national > Haupt > Strasse. Die Rampen nehmen den Typ des verbundenen Segments an. Lokale Strassen, Privatstrassen und Parkplätze sind Standardstrassen.
 
-Methode: Die zwei Segmente mit dem höchsten Typ, die mit dem Kreisverkehr verbunden sind, ausfindig machen (eine in zwei Einbahnstrassen aufgeteilte Strasse zählt als ein einziges Segment), dann dem Kreisverkehr den NIEDRIGSTEN Typ der beiden zuweisen.
+Methode: Den höchsten Typ unter den mit dem Kreisverkehr verbundenen Segmenten ausfindig machen (eine in zwei Einbahnstrassen aufgeteilte Strasse zählt als ein einziges Segment), dann diesen dem Kreisverkehr zuweisen.
 
 | Zweige | Zugewiesener Typ |
 | --- | --- |
 | 2 Haupt + 2 Standard | Haupt |
 | 1 bundesweit + 3 Haupt + 2 Standard | bundesweit |
-| 1 bundesweit + 2 Haupt + 1 Standard | Haupt |
+| 1 bundesweit + 2 Haupt + 1 Standard | bundesweit |
 
 ## Ein- und Ausfahrten
 

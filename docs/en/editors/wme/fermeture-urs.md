@@ -41,6 +41,6 @@ The English term **"Wrong driving direction"** can refer to two different things
 
 Always ask the reporter for clarification before acting.
 
-::: warning
+::: failure Never close without fixing
 Never close a UR as "Solved" without having made an actual change in the WME. The reporter receives an automatic notification: closing without fixing is misleading and undermines user trust.
 :::

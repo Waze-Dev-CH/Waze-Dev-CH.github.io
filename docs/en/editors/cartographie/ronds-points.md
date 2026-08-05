@@ -20,7 +20,7 @@ This page describes how to create and edit a roundabout in WME, as well as the S
 
 - A junction without a central island.
 - An unmarked intersection.
-- A dead end ending in a loop: draw a loop rather than a roundabout.
+- A dead end ending in a loop: draw nothing at all, neither loop nor roundabout. Simply extend the segment to the furthest drivable point.
 - A very large area beyond 100 m.
 - A residential intersection with chicanes.
 
@@ -54,13 +54,13 @@ To modify connections, delete the roundabout entirely and redraw it. Deletion ca
 
 A well-chosen type avoids routing penalties. The hierarchy is: federal > national > major > street. Ramps take the type of the connected segment. Local roads, private roads, and parking lots are standard streets.
 
-Method: identify the two highest-type segments connected to the roundabout (a street split into two one-way segments counts as a single segment), then assign the roundabout the LOWEST type of the two.
+Method: identify the highest type among the segments connected to the roundabout (a street split into two one-way segments counts as a single segment), then assign it to the roundabout.
 
 | Branches | Assigned type |
 | --- | --- |
 | 2 major + 2 standard | Major |
 | 1 federal + 3 major + 2 standard | Federal |
-| 1 federal + 2 major + 1 standard | Major |
+| 1 federal + 2 major + 1 standard | Federal |
 
 ## Entries and exits
 

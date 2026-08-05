@@ -80,7 +80,7 @@ Exemple : une avenue qui continue tout droit pendant qu'une rue se détache.
 
 ### Boucles
 
-Un segment ne peut pas se connecter à lui-même via un seul noeud. Une boucle doit être interrompue par un noeud supplémentaire, ou dessinée avec deux segments. En pratique, créer une intersection à 3 branches à peu près à mi-parcours de la boucle pour que le routage fonctionne.
+Un segment ne peut pas se connecter à lui-même via un seul noeud. Une boucle doit compter **au minimum 3 segments** : une boucle à 2 segments produit des erreurs de guidage (« same endpoint drivable segments »). En pratique, créer une intersection à 3 branches à peu près à mi-parcours de la boucle pour que le routage fonctionne.
 
 ### Routes décalées
 

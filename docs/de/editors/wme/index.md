@@ -45,6 +45,7 @@ So erhalten Sie ihn: Positionieren Sie die Karte auf das gewünschte Gebiet und 
 
 - [Kartenlegende](/de/editors/wme/legende-carte): Segmenttypen
 - [Grundlagen des Routings](/de/editors/wme/routing): Auswirkung der Typen auf die Navigation
+- [Routing-Strafen](/de/editors/wme/penalites-routage): weiche und harte Abbiegungen, Fahrtkosten
 
 ### Die Karte bearbeiten
 

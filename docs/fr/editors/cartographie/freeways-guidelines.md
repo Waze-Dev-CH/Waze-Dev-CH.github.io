@@ -213,6 +213,6 @@ Ne la mettez **pas** sur l'ensemble des segments de l'autoroute.
 
 Techniquement, une restriction fait que l'app se comporte comme si le segment n'existait pas. Un conducteur sans vignette dans ses pass était donc renvoyé de gauche à droite sur les petites routes voisines, et l'app paraissait totalement folle.
 
-En limitant la restriction à l'accès et aux continuités de sortie, un conducteur qui entre sans avoir configuré la vignette a un comportement bien plus « normal » : une fois le segment restreint franchi, l'app le voit et le positionne correctement sur l'autoroute, puis l'invite à sortir dès que possible — au lieu de le perdre et de le faire sauter dans tous les sens.
+En limitant la restriction à l'accès et aux continuités de sortie, un conducteur qui entre sans avoir configuré la vignette a un comportement bien plus « normal » : une fois le segment restreint franchi, l'app le voit et le positionne correctement sur l'autoroute, puis l'invite à sortir dès que possible, au lieu de le perdre et de le faire sauter dans tous les sens.
 
 Avec ce modèle, les conducteurs pensent plutôt à un problème de permission ou de réglage (la vignette à activer) qu'à un bug rendant l'app inutilisable.

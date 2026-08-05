@@ -41,6 +41,6 @@ Der englische Begriff **"Wrong driving direction"** kann zwei verschiedene Dinge
 
 Bitte immer den Melder um eine Klärung, bevor du handelst.
 
-::: warning
+::: failure Nie ohne Korrektur schliessen
 Schliesse einen UR niemals als « Behoben », ohne eine tatsächliche Änderung im WME vorgenommen zu haben. Der Melder erhält eine automatische Benachrichtigung: ohne Korrektur zu schliessen ist irreführend und schadet dem Vertrauen der Nutzer.
 :::

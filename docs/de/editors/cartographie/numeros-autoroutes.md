@@ -23,7 +23,7 @@ Niemals den Hauptnamen des Segments ändern: nur alternative Namen hinzufügen.
 Bevor du einen neuen alternativen Namen erstellst, prüfe, ob das Schild bereits in der Nähe des Segments existiert. Falls ja, wähle es aus den Vorschlägen aus, um dieselbe ID wiederzuverwenden.
 
 ::: warning Zu vermeidende ID-Duplikate
-Die WME-Vorschläge zeigen nur geografisch nahe Namen an. Ein in Genf erstelltes E25 erscheint nicht als Vorschlag in Zürich, selbst wenn es bereits existiert. Ein zweites E25 mit einer anderen ID zu erstellen, würde die Kohärenz des Straßennetzes zerstören.
+Die WME-Vorschläge zeigen nur geografisch nahe Namen an. Ein in Genf erstelltes E25 erscheint nicht als Vorschlag in Zürich, selbst wenn es bereits existiert. Ein zweites E25 mit einer anderen ID zu erstellen, würde die Kohärenz des Strassennetzes zerstören.
 
 Prüfe auf der WME-Karte, ob die Nummer bereits anderswo in der Schweiz existiert, bevor du etwas erstellst.
 :::

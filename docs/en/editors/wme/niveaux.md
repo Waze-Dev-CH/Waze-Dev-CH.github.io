@@ -47,7 +47,7 @@ Granted on criteria (staff approval + local champions). The 10 criteria:
 - **Junction Box (JB)**: understanding their impact on routing (or completed training)
 - **Lane Guidance**: ability to add lane guidance and navigation instructions
 - **Suggest an Edit**: moderating suggestions with professional communication
-- **Permanent Hazards**: a proven record of adding permanent hazards locally
+- **Permanent Hazards**: knowing the Swiss guidelines and when a permanent hazard is warranted (editing them only opens at L4)
 - **School Zones**: knowing how to define the polygons correctly
 
 </div>

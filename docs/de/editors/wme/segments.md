@@ -23,7 +23,7 @@ Jedes neue Segment muss mit der bestehenden Karte verbunden sein. Ein isoliertes
 
 ## Eigenschaften eines Segments
 
-Wähle ein Segment aus, um seine Eigenschaften im rechten Bedienfeld anzuzeigen:
+Wähle ein Segment aus, um seine Eigenschaften im linken Bedienfeld anzuzeigen:
 
 | Eigenschaft | Beschreibung |
 |-----------|-------------|

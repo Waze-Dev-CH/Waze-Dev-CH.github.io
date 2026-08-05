@@ -20,7 +20,7 @@ Questa pagina descrive la creazione e la modifica di una rotonda in WME, oltre a
 
 - Un incrocio senza isola centrale.
 - Un'intersezione non segnalata.
-- Una strada senza uscita che termina ad anello: disegnare un anello piuttosto che una rotonda.
+- Una strada senza uscita che termina ad anello: non disegnare nulla, né anello né rotonda. Prolungare semplicemente il segmento fino al punto più lontano percorribile.
 - Un'area molto grande oltre i 100 m.
 - Un'intersezione residenziale con chicane.
 
@@ -54,13 +54,13 @@ Per modificare delle connessioni, eliminare interamente la rotonda e ridisegnarl
 
 Un tipo ben scelto evita le penalità di instradamento. La gerarchia è: federale > nazionale > principale > strada. Le rampe adottano il tipo del segmento collegato. Le strade locali, private e i parcheggi sono strade standard.
 
-Metodo: individuare i due segmenti di tipo più elevato collegati alla rotonda (una strada suddivisa in due sensi unici conta come un solo segmento), poi assegnare alla rotonda il tipo PIÙ BASSO tra i due.
+Metodo: individuare il tipo più elevato tra i segmenti collegati alla rotonda (una strada suddivisa in due sensi unici conta come un solo segmento), poi assegnarlo alla rotonda.
 
 | Rami | Tipo assegnato |
 | --- | --- |
 | 2 principali + 2 standard | Principale |
 | 1 federale + 3 principali + 2 standard | Federale |
-| 1 federale + 2 principali + 1 standard | Principale |
+| 1 federale + 2 principali + 1 standard | Federale |
 
 ## Ingressi e uscite
 

@@ -20,8 +20,8 @@ Waze aktualisiert verschiedene Komponenten mit unterschiedlicher Häufigkeit. Di
 |---------|-------------------|
 | Kartenaktualisierungen (Navigation) | **~1 Tag** auf dem Routing-Server |
 | Verkehrsmeldungen (Unfälle, Geschwindigkeiten) | **Echtzeit** in der App |
-| Neue Straßen | **2 bis 5 Tage** in der App und Live Map |
-| Neue Straßen auf dem Routing-Server | 1 zusätzlicher Tag nach Erscheinen in der App |
+| Neue Strassen | **2 bis 5 Tage** in der App und Live Map |
+| Neue Strassen auf dem Routing-Server | 1 zusätzlicher Tag nach Erscheinen in der App |
 | Bearbeitungsrechte für Nicht-AM (nach Fahrt) | Verfügbar innerhalb von **2 Tagen** |
 | Städtenamen / Grenzen | Einige Tage |
 | Punkte (Score) | **Einmal täglich** serverseitig aktualisiert |
@@ -32,13 +32,13 @@ Waze aktualisiert verschiedene Komponenten mit unterschiedlicher Häufigkeit. Di
 
 Waze strebt **tägliche** Aktualisierungen an: Der aktuelle Zustand der Karte wird kopiert, für die Navigation umgewandelt und an die Routing-Server gesendet. Der Vorgang dauert etwas weniger als 24 Stunden. Unter optimalen Bedingungen ist eine Änderung **am nächsten Tag** auf dem Routing-Server sichtbar.
 
-### Neue Straßen
+### Neue Strassen
 
-Nach Bearbeitung und Aktualisierung der Karte erscheint eine neue Straße innerhalb von **2 bis 5 Tagen** in der App und auf der Live Map. Der Routing-Server kann einen zusätzlichen Tag benötigen, um die Straße korrekt für die Routenberechnung zu verarbeiten.
+Nach Bearbeitung und Aktualisierung der Karte erscheint eine neue Strasse innerhalb von **2 bis 5 Tagen** in der App und auf der Live Map. Der Routing-Server kann einen zusätzlichen Tag benötigen, um die Strasse korrekt für die Routenberechnung zu verarbeiten.
 
 ### Bearbeitungsrechte (keine Area Managers)
 
-Editoren ohne AM-Status können Routen im Umkreis von **1,6 km** von den Straßen bearbeiten, die sie befahren haben. Diese Rechte werden innerhalb von **2 Tagen** nach der aufgezeichneten Fahrt verfügbar.
+Editoren ohne AM-Status können Routen im Umkreis von **1,6 km** von den Strassen bearbeiten, die sie befahren haben. Diese Rechte werden innerhalb von **2 Tagen** nach der aufgezeichneten Fahrt verfügbar.
 
 ### Punkte und Score
 

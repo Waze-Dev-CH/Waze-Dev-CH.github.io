@@ -41,6 +41,6 @@ Le terme anglais **"Wrong driving direction"** peut désigner deux choses diffé
 
 Demandez toujours une clarification au signaleur avant d'agir.
 
-::: warning
+::: failure Ne jamais clore sans corriger
 Ne jamais clore un UR comme « Corrigé » sans avoir effectué de modification réelle dans le WME. Le signaleur reçoit une notification automatique : clore sans corriger est trompeur et nuit à la confiance des utilisateurs.
 :::

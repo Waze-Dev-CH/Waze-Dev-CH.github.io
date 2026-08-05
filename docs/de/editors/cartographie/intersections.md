@@ -80,7 +80,7 @@ Beispiel: eine Allee, die geradeaus weiterführt, während sich eine Strasse abz
 
 ### Schleifen
 
-Ein Segment kann sich nicht über einen einzigen Knoten mit sich selbst verbinden. Eine Schleife muss durch einen zusätzlichen Knoten unterbrochen oder mit zwei Segmenten gezeichnet werden. In der Praxis eine Kreuzung mit 3 Ästen etwa auf halber Strecke der Schleife erstellen, damit das Routing funktioniert.
+Ein Segment kann sich nicht über einen einzigen Knoten mit sich selbst verbinden. Eine Schleife muss **mindestens 3 Segmente** umfassen: eine Schleife aus 2 Segmenten erzeugt Führungsfehler («same endpoint drivable segments»). In der Praxis eine Kreuzung mit 3 Ästen etwa auf halber Strecke der Schleife erstellen, damit das Routing funktioniert.
 
 ### Versetzte Strassen
 

@@ -45,6 +45,7 @@ Per ottenerlo: posiziona la mappa sulla zona desiderata, poi clicca sul pulsante
 
 - [Legenda della mappa](/it/editors/wme/legende-carte) : tipi di segmenti
 - [Basi del routing](/it/editors/wme/routing) : impatto dei tipi sulla navigazione
+- [Penalità di routing](/it/editors/wme/penalites-routage) : svolte soft e hard, costi di percorso
 
 ### Modificare la mappa
 

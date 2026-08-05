@@ -17,16 +17,16 @@ The left panel lets you switch between three tabs:
 - **Places**: points of interest (POIs) in the visible area
 - **Update Requests (URs)**: user reports to process
 
-## Right panel (properties)
+## Properties panel
 
-When a segment or a place is selected, the right panel shows its editable properties: type, name, direction of travel, speed, restrictions, and so on.
+When a segment or a place is selected, the left sidebar switches to the properties panel and shows its editable attributes: type, name, direction of travel, speed, restrictions, and so on. Tabs added by scripts are temporarily hidden.
 
 ## Top toolbar
 
 | Tool | Shortcut | Usage |
 |-------|-----------|-------|
 | Selection | <kbd>S</kbd> or <kbd>Esc</kbd> | Select existing elements |
-| Draw a segment | <kbd>D</kbd> | Draw a new segment |
+| Draw a segment | <kbd>I</kbd> | Draw a new segment |
 | Turn restriction | <kbd>T</kbd> | Set a time-based restriction |
 | Add a place | <kbd>P</kbd> | Create a point of interest |
 | Undo | <kbd>Ctrl</kbd>+<kbd>Z</kbd> | Undo the last action |

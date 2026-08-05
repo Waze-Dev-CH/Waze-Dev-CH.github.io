@@ -42,12 +42,12 @@ Zuweisung nach Kriterien (Genehmigung durch Staff + lokale Champions). Die 10 Kr
 
 **Bearbeitungs-Kompetenzen**
 
-- **Area Manager**: regelmäßige Pflege des eigenen Gebiets (korrekte Segmente/Orte/Hausnummern), zügige Bearbeitung von URs und MPs, Verfolgung von Straßenänderungen
-- **Sperrungen**: Beherrschung von Straßensperrungen (oder abgeschlossene Schulung)
+- **Area Manager**: regelmässige Pflege des eigenen Gebiets (korrekte Segmente/Orte/Hausnummern), zügige Bearbeitung von URs und MPs, Verfolgung von Strassenänderungen
+- **Sperrungen**: Beherrschung von Strassensperrungen (oder abgeschlossene Schulung)
 - **Junction Box (JB)**: Verständnis ihrer Auswirkung auf das Routing (oder abgeschlossene Schulung)
 - **Lane Guidance**: Fähigkeit, Spurführung und Navigationshinweise hinzuzufügen
 - **Suggest an Edit**: Moderation von Vorschlägen mit professioneller Kommunikation
-- **Permanente Gefahren**: nachgewiesene Erfahrung beim lokalen Hinzufügen permanenter Gefahren
+- **Permanente Gefahren**: die Schweizer Richtlinien kennen und wissen, wann eine permanente Gefahr gerechtfertigt ist (ihre Bearbeitung ist erst ab L4 möglich)
 - **Schulzonen**: korrekte Definition der Polygone
 
 </div>
@@ -96,8 +96,8 @@ Zuweisung nach Kriterien (Genehmigung durch Staff + lokale Champions). Die 10 Kr
 
 **Community-Beitrag**
 
-- **Bindung neuer Editoren**: Neulinge erkennen und willkommen heißen
-- **Neulinge willkommen heißen**: Ansprache mit Ressourcen und Unterstützung anführen
+- **Bindung neuer Editoren**: Neulinge erkennen und willkommen heissen
+- **Neulinge willkommen heissen**: Ansprache mit Ressourcen und Unterstützung anführen
 - **Wazeopedia & Wissensaustausch**: lokale Dokumentation pflegen
 - **Community-Rückhalt**: Rückhalt durch die lokale Leitung
 
@@ -119,7 +119,7 @@ Zuweisung nach Kriterien (Genehmigung durch Staff + lokale Champions). Die 10 Kr
 
 **Soft Skills**
 
-- **Aktiv im Chat**: Gespräche anstoßen und Staff-Ankündigungen weitergeben
+- **Aktiv im Chat**: Gespräche anstossen und Staff-Ankündigungen weitergeben
 
 </div>
 
@@ -150,16 +150,16 @@ Die ausgewählten Kriterien spiegeln den stärksten Konsens innerhalb der Schwei
 - Community Ladder for Switzerland: https://www.waze.com/discuss/t/community-ladder-for-switzerland/408162
 :::
 
-## Sperrstufen nach Straßentyp
+## Sperrstufen nach Strassentyp
 
 Die Sperrstufe eines Segments ist von der Stufe des Editors zu unterscheiden. Schweizer Standard:
 
-| Straßentyp | Erwartete Sperrstufe (Lock) |
+| Strassentyp | Erwartete Sperrstufe (Lock) |
 | --- | --- |
 | Autobahn (Freeway) | L5 |
-| Hauptstraße (Major Highway) | L4 |
-| Nebenstraße (Minor Highway) | L3 |
-| Vorrangstraße (Primary Street) | L2 |
-| Straße (Street) | L1 |
+| Hauptstrasse (Major Highway) | L4 |
+| Nebenstrasse (Minor Highway) | L3 |
+| Vorrangstrasse (Primary Street) | L2 |
+| Strasse (Street) | L1 |
 
-Siehe [Grundlagen des Routings](/de/editors/wme/routing), um die Auswirkung der Straßentypen auf die Navigation zu verstehen.
+Siehe [Grundlagen des Routings](/de/editors/wme/routing), um die Auswirkung der Strassentypen auf die Navigation zu verstehen.

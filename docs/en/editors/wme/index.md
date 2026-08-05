@@ -45,6 +45,7 @@ To obtain it: position the map over the desired area, then click the <kbd class=
 
 - [Map legend](/en/editors/wme/legende-carte): segment types
 - [Routing basics](/en/editors/wme/routing): impact of types on navigation
+- [Routing penalties](/en/editors/wme/penalites-routage): soft and hard turns, travel costs
 
 ### Edit the map
 
