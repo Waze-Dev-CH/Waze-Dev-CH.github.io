@@ -690,3 +690,15 @@
 .dark .vp-doc .cat-soft      { --cat-accent: #4ec6e6; --cat-bg: rgba(10, 149, 189, 0.12); }
 .dark .vp-doc .cat-community { --cat-accent: #4ade80; --cat-bg: rgba(31, 157, 85, 0.14); }
 .dark .vp-doc .cat-general   { --cat-accent: #e6c045; --cat-bg: rgba(184, 137, 10, 0.14); }
+
+/* Sommaire de droite : VitePress force les titres sur une seule ligne et les
+   tronque avec des points de suspension. Les titres de section longs
+   (« Fermetures de routes et événements », « Strassensperrungen und
+   Veranstaltungen ») deviennent illisibles. On autorise le retour à la ligne. */
+.VPDocAsideOutline .outline-link {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.35;
+    padding: 4px 0;
+}
