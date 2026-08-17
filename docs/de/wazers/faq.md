@@ -116,7 +116,7 @@ Beschreiben Sie das Problem so genau wie möglich: die betroffene Fahrtrichtung,
 Die Schaltfläche **Melden** deckt unter anderem ab:
 
 - Verkehr und Staus
-- Polizei
+- Polizei <sup>[<Badge type="warning" text="ⓘ wird bald deaktiviert" />](#blitzer-und-polizei)</sup>
 - Unfälle
 - Gefahren auf der Strasse
 - Schlechtes Wetter
@@ -131,7 +131,7 @@ Eine Sprachmeldung ist ebenfalls möglich: Beschreiben Sie die Situation in norm
 :::
 
 ::: details Was ist der Unterschied zwischen einer Verkehrsmeldung und einem Kartenproblem?
-Eine Meldung zu **Verkehr, Polizei, Unfall oder Gefahr** ist eine kurzlebige Echtzeitwarnung: Sie warnt die Fahrer, die hinter Ihnen kommen, und verschwindet dann wieder. Sie verändert die Karte nicht.
+Eine Meldung zu **Verkehr**, **Polizei** <sup>[<Badge type="warning" text="ⓘ wird bald deaktiviert" />](#blitzer-und-polizei)</sup>, **Unfall** oder **Gefahr** ist eine kurzlebige Echtzeitwarnung: Sie warnt die Fahrer, die hinter Ihnen kommen, und verschwindet dann wieder. Sie verändert die Karte nicht.
 
 Eine Meldung zu einem **Kartenproblem** ist anderer Natur: Sie erzeugt eine Aktualisierungsanfrage, die von einem freiwilligen Editor manuell bearbeitet wird, der die Karte korrigiert, wenn sich das Problem bestätigt. Es ist die einzige Meldungsart, die zu einer dauerhaften Änderung führt.
 :::
@@ -145,12 +145,26 @@ Zwei Grundsätze:
 Und selbstverständlich: Melden Sie sicher, idealerweise im Stillstand oder indem Sie Ihren Beifahrer damit beauftragen.
 :::
 
-## Blitzer
+## Blitzer und Polizei
 
 ::: details Warum werden in der Schweiz keine fest installierten Blitzer auf Waze gemeldet?
 Die Blitzer wurden in der Schweiz aufgrund der Schweizer Gesetzgebung deaktiviert, die Geräte verbietet, welche vor Geschwindigkeitskontrollen warnen.
 
 Diese Funktion wird ohne Gesetzesänderung nicht wieder aktiviert. Es handelt sich weder um einen Fehler noch um eine Lücke in der Karte: Es ist zwecklos, fehlende Blitzer zu melden.
+:::
+
+::: details Wird die Polizeimeldung in der Schweiz verschwinden?
+Ja. Waze hat angekündigt, dass die Polizeimeldung in der Schweiz und in Liechtenstein deaktiviert wird, nach internen Diskussionen über die lokalen Vorschriften.
+
+Die Änderung ist noch nicht in Kraft: Die Option bleibt vorerst in der App verfügbar, und ihre Deaktivierung wurde als bevorstehend angekündigt, ohne genaues Datum.
+
+Sobald die Änderung umgesetzt ist, handelt es sich wie bei den Blitzern weder um einen Fehler noch um eine Lücke in der Karte: Es ist dann zwecklos, die Option im Meldemenü zu suchen oder sie als fehlend zu melden.
+:::
+
+::: note Rechtsgrundlage
+In der Schweiz verbietet Art. 98a des Strassenverkehrsgesetzes (SVG, SR 741.01) Geräte und Vorrichtungen, die dazu dienen, die amtliche Kontrolle des Strassenverkehrs zu erschweren, zu stören oder unwirksam zu machen, sowie die Warnung der Strassenbenützer vor solchen Kontrollen.
+
+[Text von Art. 98a SVG](https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/de#art_98_a)
 :::
 
 ## Treibstoffpreise

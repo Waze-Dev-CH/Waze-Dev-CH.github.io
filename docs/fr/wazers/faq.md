@@ -116,7 +116,7 @@ Décrivez le problème le plus précisément possible : le sens de circulation c
 Le bouton **Signaler** couvre notamment :
 
 - Trafic et embouteillages
-- Police
+- Police <sup>[<Badge type="warning" text="ⓘ bientôt désactivé" />](#radars-et-police)</sup>
 - Accidents
 - Dangers sur la route
 - Mauvaise météo
@@ -131,7 +131,7 @@ Un signalement vocal est également possible : décrivez la situation en langage
 :::
 
 ::: details Quelle différence entre un signalement de trafic et un problème de carte ?
-Un signalement de **trafic, police, accident ou danger** est une alerte temps réel, éphémère : elle prévient les conducteurs qui arrivent derrière vous, puis disparaît. Elle ne modifie pas la carte.
+Un signalement de **trafic**, **police** <sup>[<Badge type="warning" text="ⓘ bientôt désactivé" />](#radars-et-police)</sup>, **accident** ou **danger** est une alerte temps réel, éphémère : elle prévient les conducteurs qui arrivent derrière vous, puis disparaît. Elle ne modifie pas la carte.
 
 Un signalement de **problème de carte** est d'une autre nature : il crée une demande de mise à jour traitée manuellement par un éditeur bénévole, qui corrigera la carte si le problème est confirmé. C'est le seul type de signalement qui débouche sur une modification durable.
 :::
@@ -145,12 +145,26 @@ Deux principes :
 Et bien sûr : signalez en sécurité, idéalement à l'arrêt ou en confiant l'opération à votre passager.
 :::
 
-## Radars
+## Radars et police
 
 ::: details Pourquoi aucun radar fixe n'est signalé sur Waze en Suisse ?
 Les radars ont été désactivés en Suisse en raison de la législation suisse, qui interdit les dispositifs avertissant de la présence de contrôles de vitesse.
 
 Cette fonctionnalité ne sera pas réactivée à moins d'un changement de loi. Il ne s'agit ni d'un bug, ni d'un manque dans la carte : inutile de signaler des radars manquants.
+:::
+
+::: details Le signalement de la police va-t-il disparaître en Suisse ?
+Oui. Waze a annoncé que le signalement de la police sera désactivé en Suisse et au Liechtenstein, à la suite de discussions internes au sujet de la réglementation locale.
+
+Le changement n'est pas encore en vigueur : l'option reste pour l'instant disponible dans l'application, et sa désactivation est annoncée comme prochaine, sans date précise.
+
+Une fois le changement appliqué, il ne s'agira, comme pour les radars, ni d'un bug ni d'une lacune de la carte : inutile de chercher l'option dans le menu de signalement, ou de la signaler comme manquante.
+:::
+
+::: note Base légale
+En Suisse, l'art. 98a de la loi fédérale sur la circulation routière (LCR, RS 741.01) interdit les appareils et dispositifs destinés à rendre plus difficile, à perturber ou à rendre inefficace le contrôle officiel du trafic routier, ainsi que la mise en garde des usagers de la route contre ces contrôles.
+
+[Texte de l'art. 98a LCR](https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr#art_98_a)
 :::
 
 ## Prix des carburants

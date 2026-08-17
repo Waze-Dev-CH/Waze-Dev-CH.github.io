@@ -116,7 +116,7 @@ Descrivi il problema nel modo più preciso possibile: il senso di marcia interes
 Il pulsante **Segnala** comprende in particolare:
 
 - Traffico e code
-- Polizia
+- Polizia <sup>[<Badge type="warning" text="ⓘ presto disattivato" />](#autovelox-e-polizia)</sup>
 - Incidenti
 - Pericoli sulla strada
 - Maltempo
@@ -131,7 +131,7 @@ Il pulsante **Segnala** comprende in particolare:
 :::
 
 ::: details Che differenza c'è tra una segnalazione di traffico e un problema mappa?
-Una segnalazione di **traffico, polizia, incidente o pericolo** è un avviso in tempo reale, effimero: avverte i conducenti che arrivano dietro di te, poi scompare. Non modifica la mappa.
+Una segnalazione di **traffico**, **polizia** <sup>[<Badge type="warning" text="ⓘ presto disattivato" />](#autovelox-e-polizia)</sup>, **incidente** o **pericolo** è un avviso in tempo reale, effimero: avverte i conducenti che arrivano dietro di te, poi scompare. Non modifica la mappa.
 
 Una segnalazione di **problema mappa** è di altra natura: crea una richiesta di aggiornamento gestita manualmente da un editor volontario, che correggerà la mappa se il problema viene confermato. È l'unico tipo di segnalazione che porta a una modifica duratura.
 :::
@@ -145,12 +145,26 @@ Due principi:
 E naturalmente: segnala in sicurezza, idealmente da fermo o affidando l'operazione al passeggero.
 :::
 
-## Autovelox
+## Autovelox e polizia
 
 ::: details Perché nessun autovelox fisso viene segnalato su Waze in Svizzera?
 Gli autovelox sono stati disattivati in Svizzera a causa della legge svizzera, che vieta i dispositivi che avvisano della presenza di controlli di velocità.
 
 Questa funzionalità non sarà riattivata a meno di un cambiamento della legge. Non si tratta né di un bug, né di una lacuna nella mappa: è inutile segnalare autovelox mancanti.
+:::
+
+::: details La segnalazione della polizia sparirà in Svizzera?
+Sì. Waze ha annunciato che la segnalazione della polizia sarà disattivata in Svizzera e nel Liechtenstein, in seguito a discussioni interne sulla normativa locale.
+
+La modifica non è ancora in vigore: per il momento l'opzione resta disponibile nell'applicazione, e la sua disattivazione è annunciata come imminente, senza una data precisa.
+
+Una volta applicata la modifica, non si tratterà né di un bug né di una lacuna nella mappa, come per gli autovelox: sarà inutile cercare l'opzione nel menu di segnalazione, o segnalarla come mancante.
+:::
+
+::: note Base giuridica
+In Svizzera, l'art. 98a della legge federale sulla circolazione stradale (LCStr, RS 741.01) vieta gli apparecchi e i dispositivi destinati a rendere più difficile, a disturbare o a rendere inefficace il controllo ufficiale del traffico stradale, come pure l'avvertimento degli utenti della strada su tali controlli.
+
+[Testo dell'art. 98a LCStr](https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/it#art_98_a)
 :::
 
 ## Prezzo della benzina

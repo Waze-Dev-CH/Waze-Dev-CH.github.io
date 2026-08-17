@@ -702,3 +702,20 @@
     line-height: 1.35;
     padding: 4px 0;
 }
+
+/* Badge de renvoi en exposant, utilisé pour signaler une fonctionnalité en cours
+   de retrait à côté du terme concerné (FAQ conducteurs : « Police ⓘ bientôt
+   désactivé »). Le VPBadge a une taille en pixels fixe, que <sup> ne réduit pas :
+   on la ramène à l'échelle d'un exposant et on neutralise son alignement propre,
+   la remontée étant assurée par le <sup> parent. */
+.vp-doc sup .VPBadge {
+    font-size: 10px;
+    line-height: 16px;
+    padding: 0 6px;
+    vertical-align: baseline;
+    margin-left: 0;
+}
+
+.vp-doc sup a:has(.VPBadge) {
+    text-decoration: none;
+}

@@ -116,7 +116,7 @@ Describe the problem as precisely as possible: the direction of travel concerned
 The **Report** button covers in particular:
 
 - Traffic and jams
-- Police
+- Police <sup>[<Badge type="warning" text="ⓘ being disabled soon" />](#speed-cameras-and-police)</sup>
 - Crashes
 - Hazards on the road
 - Bad weather
@@ -131,7 +131,7 @@ Voice reporting is also possible: describe the situation in plain language inste
 :::
 
 ::: details What is the difference between a traffic report and a map issue?
-A **traffic, police, crash or hazard** report is a real-time, short-lived alert: it warns the drivers coming up behind you, then disappears. It does not change the map.
+A **traffic**, **police** <sup>[<Badge type="warning" text="ⓘ being disabled soon" />](#speed-cameras-and-police)</sup>, **crash** or **hazard** report is a real-time, short-lived alert: it warns the drivers coming up behind you, then disappears. It does not change the map.
 
 A **map issue** report is a different beast: it creates an update request handled manually by a volunteer editor, who will correct the map if the problem is confirmed. It is the only type of report that leads to a lasting change.
 :::
@@ -145,12 +145,28 @@ Two principles:
 And of course: report safely, ideally while stopped or by handing the task to your passenger.
 :::
 
-## Speed cameras
+## Speed cameras and police
 
 ::: details Why are no fixed speed cameras reported on Waze in Switzerland?
 Speed cameras have been disabled in Switzerland because of Swiss law, which prohibits devices that warn of the presence of speed checks.
 
 This feature will not be re-enabled unless the law changes. It is neither a bug nor a gap in the map: there is no point reporting missing speed cameras.
+:::
+
+::: details Is police reporting going away in Switzerland?
+Yes. Waze has announced that police reporting will be disabled in Switzerland and Liechtenstein, following internal discussions about local regulations.
+
+The change is not in effect yet: the option is still available in the application for now, and its removal has been announced as upcoming, without a specific date.
+
+Once the change is applied, it will be neither a bug nor a gap in the map, just as with speed cameras: there will be no point looking for the option in the report menu, or reporting it as missing.
+:::
+
+::: note Legal basis
+In Switzerland, art. 98a of the Federal Act on Road Traffic (RTA, SR 741.01) prohibits devices intended to hinder, disrupt or render ineffective the official monitoring of road traffic, as well as warning road users about such checks.
+
+The Act is published in German, French and Italian; there is no official English version.
+
+[Text of art. 98a RTA (French)](https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr#art_98_a) / [German](https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/de#art_98_a)
 :::
 
 ## Fuel prices
