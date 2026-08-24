@@ -116,7 +116,7 @@ Describe the problem as precisely as possible: the direction of travel concerned
 The **Report** button covers in particular:
 
 - Traffic and jams
-- Police <sup>[<Badge type="warning" text="ⓘ being disabled soon" />](#speed-cameras-and-police)</sup>
+- Police <sup>[<Badge type="danger" text="ⓘ disabled" />](#speed-cameras-and-police)</sup>
 - Crashes
 - Hazards on the road
 - Bad weather
@@ -131,7 +131,7 @@ Voice reporting is also possible: describe the situation in plain language inste
 :::
 
 ::: details What is the difference between a traffic report and a map issue?
-A **traffic**, **police** <sup>[<Badge type="warning" text="ⓘ being disabled soon" />](#speed-cameras-and-police)</sup>, **crash** or **hazard** report is a real-time, short-lived alert: it warns the drivers coming up behind you, then disappears. It does not change the map.
+A **traffic**, **police** <sup>[<Badge type="danger" text="ⓘ disabled" />](#speed-cameras-and-police)</sup>, **crash** or **hazard** report is a real-time, short-lived alert: it warns the drivers coming up behind you, then disappears. It does not change the map.
 
 A **map issue** report is a different beast: it creates an update request handled manually by a volunteer editor, who will correct the map if the problem is confirmed. It is the only type of report that leads to a lasting change.
 :::
@@ -153,12 +153,12 @@ Speed cameras have been disabled in Switzerland because of Swiss law, which proh
 This feature will not be re-enabled unless the law changes. It is neither a bug nor a gap in the map: there is no point reporting missing speed cameras.
 :::
 
-::: details Is police reporting going away in Switzerland?
-Yes. Waze has announced that police reporting will be disabled in Switzerland and Liechtenstein, following internal discussions about local regulations.
+::: details Why can't I report police in Switzerland any more?
+Police reporting was disabled in Switzerland and Liechtenstein in August 2026, following internal discussions at Waze about local regulations.
 
-The change is not in effect yet: the option is still available in the application for now, and its removal has been announced as upcoming, without a specific date.
+The option has been removed from the report menu and police alerts are no longer shown. Just as with speed cameras, it is neither a bug nor a gap in the map: there is no point looking for the option in the application, or reporting it as missing.
 
-Once the change is applied, it will be neither a bug nor a gap in the map, just as with speed cameras: there will be no point looking for the option in the report menu, or reporting it as missing.
+Everything else in the application keeps working as usual: navigation, real-time traffic, road hazard alerts and route calculation.
 :::
 
 ::: note Legal basis

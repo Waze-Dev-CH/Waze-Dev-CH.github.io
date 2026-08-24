@@ -116,7 +116,7 @@ Descrivi il problema nel modo più preciso possibile: il senso di marcia interes
 Il pulsante **Segnala** comprende in particolare:
 
 - Traffico e code
-- Polizia <sup>[<Badge type="warning" text="ⓘ presto disattivato" />](#autovelox-e-polizia)</sup>
+- Polizia <sup>[<Badge type="danger" text="ⓘ disattivato" />](#autovelox-e-polizia)</sup>
 - Incidenti
 - Pericoli sulla strada
 - Maltempo
@@ -131,7 +131,7 @@ Il pulsante **Segnala** comprende in particolare:
 :::
 
 ::: details Che differenza c'è tra una segnalazione di traffico e un problema mappa?
-Una segnalazione di **traffico**, **polizia** <sup>[<Badge type="warning" text="ⓘ presto disattivato" />](#autovelox-e-polizia)</sup>, **incidente** o **pericolo** è un avviso in tempo reale, effimero: avverte i conducenti che arrivano dietro di te, poi scompare. Non modifica la mappa.
+Una segnalazione di **traffico**, **polizia** <sup>[<Badge type="danger" text="ⓘ disattivato" />](#autovelox-e-polizia)</sup>, **incidente** o **pericolo** è un avviso in tempo reale, effimero: avverte i conducenti che arrivano dietro di te, poi scompare. Non modifica la mappa.
 
 Una segnalazione di **problema mappa** è di altra natura: crea una richiesta di aggiornamento gestita manualmente da un editor volontario, che correggerà la mappa se il problema viene confermato. È l'unico tipo di segnalazione che porta a una modifica duratura.
 :::
@@ -153,12 +153,12 @@ Gli autovelox sono stati disattivati in Svizzera a causa della legge svizzera, c
 Questa funzionalità non sarà riattivata a meno di un cambiamento della legge. Non si tratta né di un bug, né di una lacuna nella mappa: è inutile segnalare autovelox mancanti.
 :::
 
-::: details La segnalazione della polizia sparirà in Svizzera?
-Sì. Waze ha annunciato che la segnalazione della polizia sarà disattivata in Svizzera e nel Liechtenstein, in seguito a discussioni interne sulla normativa locale.
+::: details Perché non si può più segnalare la polizia in Svizzera?
+La segnalazione della polizia è stata disattivata in Svizzera e nel Liechtenstein nell'agosto 2026, in seguito a discussioni interne a Waze sulla normativa locale.
 
-La modifica non è ancora in vigore: per il momento l'opzione resta disponibile nell'applicazione, e la sua disattivazione è annunciata come imminente, senza una data precisa.
+L'opzione è sparita dal menu di segnalazione e gli avvisi polizia non vengono più visualizzati. Come per gli autovelox, non si tratta né di un bug né di una lacuna nella mappa: è inutile cercare l'opzione nell'applicazione, o segnalarla come mancante.
 
-Una volta applicata la modifica, non si tratterà né di un bug né di una lacuna nella mappa, come per gli autovelox: sarà inutile cercare l'opzione nel menu di segnalazione, o segnalarla come mancante.
+Tutto il resto dell'applicazione continua a funzionare normalmente: la navigazione, il traffico in tempo reale, gli avvisi di pericolo sulla strada e il calcolo dell'itinerario.
 :::
 
 ::: note Base giuridica

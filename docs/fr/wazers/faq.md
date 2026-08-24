@@ -116,7 +116,7 @@ Décrivez le problème le plus précisément possible : le sens de circulation c
 Le bouton **Signaler** couvre notamment :
 
 - Trafic et embouteillages
-- Police <sup>[<Badge type="warning" text="ⓘ bientôt désactivé" />](#radars-et-police)</sup>
+- Police <sup>[<Badge type="danger" text="ⓘ désactivé" />](#radars-et-police)</sup>
 - Accidents
 - Dangers sur la route
 - Mauvaise météo
@@ -131,7 +131,7 @@ Un signalement vocal est également possible : décrivez la situation en langage
 :::
 
 ::: details Quelle différence entre un signalement de trafic et un problème de carte ?
-Un signalement de **trafic**, **police** <sup>[<Badge type="warning" text="ⓘ bientôt désactivé" />](#radars-et-police)</sup>, **accident** ou **danger** est une alerte temps réel, éphémère : elle prévient les conducteurs qui arrivent derrière vous, puis disparaît. Elle ne modifie pas la carte.
+Un signalement de **trafic**, **police** <sup>[<Badge type="danger" text="ⓘ désactivé" />](#radars-et-police)</sup>, **accident** ou **danger** est une alerte temps réel, éphémère : elle prévient les conducteurs qui arrivent derrière vous, puis disparaît. Elle ne modifie pas la carte.
 
 Un signalement de **problème de carte** est d'une autre nature : il crée une demande de mise à jour traitée manuellement par un éditeur bénévole, qui corrigera la carte si le problème est confirmé. C'est le seul type de signalement qui débouche sur une modification durable.
 :::
@@ -153,12 +153,12 @@ Les radars ont été désactivés en Suisse en raison de la législation suisse,
 Cette fonctionnalité ne sera pas réactivée à moins d'un changement de loi. Il ne s'agit ni d'un bug, ni d'un manque dans la carte : inutile de signaler des radars manquants.
 :::
 
-::: details Le signalement de la police va-t-il disparaître en Suisse ?
-Oui. Waze a annoncé que le signalement de la police sera désactivé en Suisse et au Liechtenstein, à la suite de discussions internes au sujet de la réglementation locale.
+::: details Pourquoi ne peut-on plus signaler la police en Suisse ?
+Le signalement de la police a été désactivé en Suisse et au Liechtenstein en août 2026, à la suite de discussions internes à Waze au sujet de la réglementation locale.
 
-Le changement n'est pas encore en vigueur : l'option reste pour l'instant disponible dans l'application, et sa désactivation est annoncée comme prochaine, sans date précise.
+L'option a disparu du menu de signalement et les alertes police ne sont plus affichées. Comme pour les radars, il ne s'agit ni d'un bug ni d'une lacune de la carte : inutile de chercher l'option dans l'application, ou de la signaler comme manquante.
 
-Une fois le changement appliqué, il ne s'agira, comme pour les radars, ni d'un bug ni d'une lacune de la carte : inutile de chercher l'option dans le menu de signalement, ou de la signaler comme manquante.
+Tout le reste de l'application continue de fonctionner normalement : la navigation, le trafic en temps réel, les alertes de danger sur la route et le calcul d'itinéraire.
 :::
 
 ::: note Base légale
