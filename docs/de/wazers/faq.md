@@ -154,7 +154,7 @@ Diese Funktion wird ohne Gesetzesänderung nicht wieder aktiviert. Es handelt si
 :::
 
 ::: details Warum kann man die Polizei in der Schweiz nicht mehr melden?
-Die Option ist aus dem Meldemenü verschwunden und Polizeiwarnungen werden nicht mehr angezeigt. Wie bei den Blitzern handelt es sich weder um einen Fehler noch um eine Lücke in der Karte: Es ist zwecklos, die Option in der App zu suchen oder sie als fehlend zu melden.
+Die Polizeimeldung wurde in der Schweiz und in Liechtenstein im August 2026 deaktiviert. Diese Funktion ist derzeit in diesen beiden Ländern nicht mehr verfügbar.
 
 Alles Übrige in der App funktioniert weiterhin normal: die Navigation, der Verkehr in Echtzeit, die Gefahrenwarnungen auf der Strasse und die Routenberechnung.
 :::

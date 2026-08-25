@@ -154,7 +154,7 @@ This feature will not be re-enabled unless the law changes. It is neither a bug 
 :::
 
 ::: details Why can't I report police in Switzerland any more?
-The option has been removed from the report menu and police alerts are no longer shown. Just as with speed cameras, it is neither a bug nor a gap in the map: there is no point looking for the option in the application, or reporting it as missing.
+Police reporting was disabled in Switzerland and Liechtenstein in August 2026. This feature is currently no longer available in these two countries.
 
 Everything else in the application keeps working as usual: navigation, real-time traffic, road hazard alerts and route calculation.
 :::
