@@ -154,8 +154,6 @@ Questa funzionalità non sarà riattivata a meno di un cambiamento della legge. 
 :::
 
 ::: details Perché non si può più segnalare la polizia in Svizzera?
-La segnalazione della polizia è stata disattivata in Svizzera e nel Liechtenstein nell'agosto 2026, in seguito a discussioni interne a Waze sulla normativa locale.
-
 L'opzione è sparita dal menu di segnalazione e gli avvisi polizia non vengono più visualizzati. Come per gli autovelox, non si tratta né di un bug né di una lacuna nella mappa: è inutile cercare l'opzione nell'applicazione, o segnalarla come mancante.
 
 Tutto il resto dell'applicazione continua a funzionare normalmente: la navigazione, il traffico in tempo reale, gli avvisi di pericolo sulla strada e il calcolo dell'itinerario.
