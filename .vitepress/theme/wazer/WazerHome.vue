@@ -262,6 +262,14 @@ const t = computed(() => {
 </template>
 
 <style scoped>
+/* Le hero prend la hauteur restante quand la page est plus courte que
+   l'écran (cf. .VPContent:has(.wz) dans custom.css). */
+.wz {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 /* ── Bandeau info masquable ───────────────────────────────────────── */
 .wz-notice {
   width: 100vw;
@@ -337,7 +345,8 @@ const t = computed(() => {
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  min-height: clamp(240px, 24vw, 330px);
+  min-height: clamp(200px, 20vw, 290px);
+  flex: 1 0 auto;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -358,12 +367,12 @@ const t = computed(() => {
   width: 100%;
   max-width: 1152px;
   margin: 0 auto;
-  padding: 1.5rem 1.5rem;
+  padding: 1.15rem 1.5rem;
 }
 
 .wz-card {
   max-width: 540px;
-  padding: 1.25rem 1.8rem;
+  padding: 1.05rem 1.7rem;
   border-radius: 1.35rem;
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-divider);
@@ -410,14 +419,14 @@ const t = computed(() => {
   font-size: 0.95rem;
   line-height: 1.45;
   color: var(--vp-c-text-2);
-  margin: 0 0 1rem;
+  margin: 0 0 0.85rem;
 }
 
 .wz-cta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.55rem;
 }
 
 .wz-store {
@@ -480,7 +489,9 @@ const t = computed(() => {
 .wz-body {
   max-width: 1152px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem;
+  /* Enfant flex avec marges auto : sans width, il se réduit à son contenu. */
+  width: 100%;
 }
 
 .wz-tiles-title {
@@ -489,11 +500,11 @@ const t = computed(() => {
   font-size: 1.5rem;
   color: var(--vp-c-text-1);
   text-align: center;
-  margin: 0 0 1.4rem;
+  margin: 0 0 1rem;
 }
 
 .wz-tiles-title:not(:first-child) {
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .wz-tiles {
@@ -506,7 +517,7 @@ const t = computed(() => {
   display: flex;
   align-items: flex-start;
   gap: 0.9rem;
-  padding: 1.3rem;
+  padding: 1.1rem;
   border-radius: 1.1rem;
   border: 1.5px solid var(--vp-c-divider);
   background: var(--vp-c-bg-soft);
@@ -571,7 +582,7 @@ const t = computed(() => {
 .wz-comm-inner {
   max-width: 1152px;
   margin: 0 auto;
-  padding: 2.25rem 1.5rem;
+  padding: 1.55rem 1.5rem;
   display: flex;
   align-items: center;
   gap: 1.4rem;
@@ -644,12 +655,12 @@ const t = computed(() => {
   }
 
   .wz-hero-inner {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
   }
 
   .wz-body {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
 }
 

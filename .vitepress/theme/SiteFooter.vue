@@ -37,7 +37,7 @@ const line = computed(() => COPY[lang.value] ?? COPY.fr);
   position: relative;
   z-index: 20;
   background: #32CCFF;
-  padding: 1.5rem;
+  padding: 1.05rem 1.5rem;
   text-align: center;
 }
 

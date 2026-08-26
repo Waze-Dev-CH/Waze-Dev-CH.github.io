@@ -273,6 +273,22 @@
     overflow-x: clip;
 }
 
+/* Landing Wazers (:has(.wz)) : la chaîne flex descend jusqu'au hero, qui
+   absorbe la hauteur restante. Sans ça, sur un grand écran le surplus
+   apparaît en bande blanche entre la bande Discord et le footer. */
+.VPContent:has(.wz) {
+    display: flex;
+    flex-direction: column;
+}
+
+.VPContent:has(.wz) .VPPage,
+/* VitePress intercale deux div anonymes entre .VPPage et .wz */
+.VPContent:has(.wz) .VPPage div:has(.wz) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 /* ── Custom admonition blocks ────────────────────────────────────────── */
 .vp-doc .custom-block {
     border-radius: 0.75rem;
