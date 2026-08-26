@@ -1,8 +1,25 @@
 <script setup>
 // Landing grand public de la section Wazers, internationalisée (fr/en/de/it).
 // Hero = illustration officielle Waze en fond + carte de contenu lisible.
-import { computed } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import { useData } from 'vitepress';
+
+// Bandeau d'info signalement police (aout 2026), masquable et memorise par navigateur.
+const NOTICE_KEY = 'wz-notice-police-2026-08';
+const noticeOpen = ref(false);
+onMounted(() => {
+  try {
+    noticeOpen.value = localStorage.getItem(NOTICE_KEY) !== '1';
+  } catch {
+    noticeOpen.value = true;
+  }
+});
+function dismissNotice() {
+  noticeOpen.value = false;
+  try {
+    localStorage.setItem(NOTICE_KEY, '1');
+  } catch {}
+}
 
 const { lang } = useData();
 const loc = computed(() => {
@@ -33,6 +50,11 @@ const MORE = [
 
 const STRINGS = {
   fr: {
+    noticeTitle: "Depuis août 2026, le signalement de la police est désactivé sur Waze en Suisse et au Liechtenstein.",
+    noticeBody: "Cette fonctionnalité n'est actuellement plus disponible dans ces deux pays. Plus de détails,",
+    noticeMore: 'ici',
+    noticeClose: 'Fermer',
+    noticeLink: 'wazers/faq#radars-et-police',
     eyebrow: 'Waze Suisse',
     h1: 'Waze connaît la Suisse par cœur.',
     sub: "La navigation communautaire, le trafic en temps réel, et l'essentiel côté suisse : vignette, Stick'AIR et vos questions fréquentes.",
@@ -53,6 +75,11 @@ const STRINGS = {
     commCta: 'Rejoindre le Discord',
   },
   en: {
+    noticeTitle: "Since August 2026, police reporting has been disabled on Waze in Switzerland and Liechtenstein.",
+    noticeBody: "This feature is currently no longer available in these two countries. More details",
+    noticeMore: 'here',
+    noticeClose: 'Close',
+    noticeLink: 'wazers/faq#speed-cameras-and-police',
     eyebrow: 'Waze Switzerland',
     h1: 'Waze knows Switzerland by heart.',
     sub: "Community navigation, real-time traffic, and the Swiss essentials: motorway vignette, Stick'AIR and your frequently asked questions.",
@@ -73,6 +100,11 @@ const STRINGS = {
     commCta: 'Join the Discord',
   },
   de: {
+    noticeTitle: "Seit August 2026 sind die Polizeimeldungen auf Waze in der Schweiz und in Liechtenstein deaktiviert.",
+    noticeBody: "Diese Funktion ist in diesen beiden Ländern derzeit nicht mehr verfügbar. Mehr Details",
+    noticeMore: 'hier',
+    noticeClose: 'Schliessen',
+    noticeLink: 'wazers/faq#blitzer-und-polizei',
     eyebrow: 'Waze Schweiz',
     h1: 'Waze kennt die Schweiz in- und auswendig.',
     sub: "Community-Navigation, Verkehr in Echtzeit, und das Wichtigste für die Schweiz: Autobahnvignette, Stick'AIR und Ihre häufigen Fragen.",
@@ -93,6 +125,11 @@ const STRINGS = {
     commCta: 'Discord beitreten',
   },
   it: {
+    noticeTitle: "Da agosto 2026 le segnalazioni della polizia su Waze sono disattivate in Svizzera e nel Liechtenstein.",
+    noticeBody: "Questa funzione attualmente non è più disponibile in questi due paesi. Maggiori dettagli",
+    noticeMore: 'qui',
+    noticeClose: 'Chiudi',
+    noticeLink: 'wazers/faq#autovelox-e-polizia',
     eyebrow: 'Waze Svizzera',
     h1: 'Waze conosce la Svizzera a memoria.',
     sub: "Navigazione comunitaria, traffico in tempo reale, e l'essenziale lato svizzero: vignetta autostradale, Stick'AIR e le tue domande frequenti.",
@@ -125,6 +162,11 @@ const t = computed(() => {
       desc: txt[i].desc,
     }));
   return {
+    noticeTitle: s.noticeTitle,
+    noticeBody: s.noticeBody,
+    noticeMore: s.noticeMore,
+    noticeClose: s.noticeClose,
+    noticeLink: `/${loc.value}/${s.noticeLink}`,
     eyebrow: s.eyebrow,
     h1: s.h1,
     sub: s.sub,
@@ -142,6 +184,20 @@ const t = computed(() => {
 
 <template>
   <div class="wz">
+    <!-- ── BANDEAU INFO (signalement police) ───────────────────────── -->
+    <aside v-if="noticeOpen" class="wz-notice">
+      <div class="wz-notice-inner">
+        <span class="wz-notice-icon" aria-hidden="true">!</span>
+        <p class="wz-notice-text">
+          <strong>{{ t.noticeTitle }}</strong> {{ t.noticeBody }}
+          <a :href="t.noticeLink">{{ t.noticeMore }}</a>.
+        </p>
+        <button class="wz-notice-close" type="button" :aria-label="t.noticeClose" @click="dismissNotice">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+    </aside>
+
     <!-- ── HERO ────────────────────────────────────────────────────── -->
     <section class="wz-hero">
       <img class="wz-bg" src="/img/wazers/waze-kit/waze-bg.png" alt="" aria-hidden="true" />
@@ -206,6 +262,76 @@ const t = computed(() => {
 </template>
 
 <style scoped>
+/* ── Bandeau info masquable ───────────────────────────────────────── */
+.wz-notice {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: color-mix(in srgb, var(--swiss-red) 12%, var(--vp-c-bg));
+  border-bottom: 1px solid color-mix(in srgb, var(--swiss-red) 40%, transparent);
+}
+
+.wz-notice-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.wz-notice-icon {
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: var(--swiss-red);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+.wz-notice-text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--vp-c-text-1);
+}
+
+.wz-notice-text a {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--swiss-red);
+  text-decoration: none;
+}
+
+.wz-notice-text a:hover {
+  text-decoration: underline;
+}
+
+.wz-notice-close {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 0 0.35rem;
+  border: 0;
+  background: none;
+  color: var(--vp-c-text-2);
+  font-size: 1.3rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.wz-notice-close:hover {
+  color: var(--vp-c-text-1);
+}
+
+@media (max-width: 640px) {
+  .wz-notice-inner {
+    padding: 0.75rem 1rem;
+  }
+}
+
 /* ── Hero full-bleed : illustration Waze + carte de contenu ───────── */
 .wz-hero {
   position: relative;
