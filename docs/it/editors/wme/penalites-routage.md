@@ -78,7 +78,7 @@ Una leggera penalità si applica ai percorsi che contengono molti segmenti brevi
 
 ### Strada privata attraversata da una strada
 
-Quando una strada privata è attraversata da una strada, i suoi due tratti non devono toccarsi al nodo dell'incrocio. Su almeno un lato, si inserisce un breve segmento di almeno 5 metri, **dello stesso tipo della strada che incrocia la strada privata**, tra l'incrocio e l'inizio della strada privata. Un solo lato è sufficiente: in entrambe le direzioni, l'attraversamento passa quindi per questo segmento. Negli esempi seguenti, la strada è di tipo Strada (Street).
+Quando una strada privata è attraversata da una strada, i suoi due tratti non devono toccarsi al nodo dell'incrocio. Su almeno un lato, si inserisce un breve segmento di almeno 10 metri, **dello stesso tipo della strada che incrocia la strada privata**, tra l'incrocio e l'inizio della strada privata. Un solo lato è sufficiente: in entrambe le direzioni, l'attraversamento passa quindi per questo segmento. Negli esempi seguenti, la strada è di tipo Strada (Street).
 
 <svg class="diagram" viewBox="0 0 760 380" role="img" aria-label="Tre casi di incrocio tra una strada privata e una strada. Senza segmento Strada, la strada privata passa direttamente per il nodo dell'incrocio: nessuna penalità per la strada privata, da evitare. Con un segmento Strada su un lato: corretto, l'uscita dalla strada privata attiva la penalità. Con un segmento Strada su ogni lato: anche questo è corretto.">
   <rect class="d-panel" x="16" y="16" width="236" height="348" rx="16" />
@@ -171,7 +171,7 @@ Una restrizione di svolta «dura» vieta la manovra a tutti, compresi gli aventi
 :::
 
 ::: warning Attenzione
-- Rispettare il minimo di 5 metri per segmento ([micro-segmenti](/it/editors/cartographie/geometrie-segments#micro-segmenti)).
+- Puntare ad almeno 10 metri per segmento intermedio: il minimo assoluto è di 5 metri ([micro-segmenti](/it/editors/cartographie/geometrie-segments#micro-segmenti)), e questo margine evita che un segmento troppo corto venga trattato come micro-segmento.
 - Assegnare al segmento o ai segmenti intermedi lo stesso tipo della strada che incrocia la strada privata.
 :::
 

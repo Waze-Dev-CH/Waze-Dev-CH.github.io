@@ -78,7 +78,7 @@ Eine geringe Strafe gilt für Routen mit vielen kurzen Segmenten, insbesondere k
 
 ### Private Strasse von einer Strasse gekreuzt
 
-Wenn eine private Strasse von einer Strasse gekreuzt wird, dürfen sich ihre beiden Abschnitte nicht am Kreuzungsknoten berühren. Auf mindestens einer Seite wird zwischen der Kreuzung und dem Beginn der privaten Strasse ein kurzes Segment von mindestens 5 Metern eingefügt, **mit demselben Typ wie die Strasse, die die private Strasse kreuzt**. Eine Seite genügt: In beiden Richtungen führt die Querung dann über dieses Segment. In den folgenden Beispielen ist die kreuzende Strasse vom Typ Strasse (Street).
+Wenn eine private Strasse von einer Strasse gekreuzt wird, dürfen sich ihre beiden Abschnitte nicht am Kreuzungsknoten berühren. Auf mindestens einer Seite wird zwischen der Kreuzung und dem Beginn der privaten Strasse ein kurzes Segment von mindestens 10 Metern eingefügt, **mit demselben Typ wie die Strasse, die die private Strasse kreuzt**. Eine Seite genügt: In beiden Richtungen führt die Querung dann über dieses Segment. In den folgenden Beispielen ist die kreuzende Strasse vom Typ Strasse (Street).
 
 <svg class="diagram" viewBox="0 0 760 380" role="img" aria-label="Drei Fälle einer Kreuzung zwischen einer privaten Strasse und einer Strasse. Ohne Strasse-Segment führt die private Strasse direkt durch den Kreuzungsknoten: keine Strafe für die private Strasse, zu vermeiden. Mit einem Strasse-Segment auf einer Seite: korrekt, die Ausfahrt aus der privaten Strasse löst die Strafe aus. Mit einem Strasse-Segment auf jeder Seite: ebenfalls korrekt.">
   <rect class="d-panel" x="16" y="16" width="236" height="348" rx="16" />
@@ -162,7 +162,7 @@ Wenn eine private Strasse von einer Strasse gekreuzt wird, dürfen sich ihre bei
 
 **Warum.** Die Strafe für eine private Strasse gilt bei der **Ausfahrt** zu einem anderen Strassentyp, nicht bei der Einfahrt. Wenn beide privaten Abschnitte direkt an den Knoten anschliessen, bleibt die gerade Querung ein Übergang von privat zu privat: keine Strafe für die private Strasse an der Kreuzung. Eine Folge privater Strassen löst dann nur eine einzige Strafe aus, bei der letzten Ausfahrt zu einem anderen Strassentyp, und Waze kann sie als Abkürzung für den Durchgangsverkehr wählen.
 
-Mit einem Strasse-Segment löst jede Querung der Strasse von einer privaten Strasse aus eine Strafe bei der Ausfahrt aus dem privaten Abschnitt aus. Diese Strafen summieren sich und machen die Abkürzung bei der Routenberechnung weniger vorteilhaft.
+Mit einem Strasse-Segment löst jede Querung, die von einer privaten Strasse kommt, beim Verlassen des privaten Abschnitts eine Strafe aus. Diese Strafen summieren sich und machen die Abkürzung bei der Routenberechnung weniger vorteilhaft.
 
 ![Chemin de Sorécot und Chemin de Pre-Louis: hier ein Strasse-Segment auf jeder Seite der Kreuzung (gestrichelte Auswahl)](/penalites/voie-privee-croisement.jpg)
 
@@ -171,7 +171,7 @@ Eine «harte» Abbiegebeschränkung verbietet das Manöver für alle, auch für 
 :::
 
 ::: warning Warnung
-- Halten Sie die Mindestlänge von 5 Metern pro Segment ein ([Mikrosegmente](/de/editors/cartographie/geometrie-segments#mikrosegmente)).
+- Planen Sie mindestens 10 Meter pro Zwischensegment ein: Das absolute Minimum beträgt 5 Meter ([Mikrosegmente](/de/editors/cartographie/geometrie-segments#mikrosegmente)), und diese Reserve verhindert, dass ein knappes Segment als Mikrosegment behandelt wird.
 - Geben Sie dem oder den Zwischensegmenten denselben Typ wie der Strasse, die die private Strasse kreuzt.
 :::
 

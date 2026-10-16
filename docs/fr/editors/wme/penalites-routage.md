@@ -78,7 +78,7 @@ Une légère pénalité s'applique aux itinéraires comportant beaucoup de segme
 
 ### Voie privée traversée par une rue
 
-Quand une voie privée est coupée par une rue, ses deux tronçons ne doivent pas se toucher au nœud du croisement. On insère, d'un côté au moins, un court segment d'au moins 5 mètres, **du même type que la rue qui croise la voie privée**, entre le croisement et le début de la voie privée. Un seul côté suffit : dans les deux sens, la traversée passe alors par ce segment. Dans les exemples ci-dessous, la rue est de type Rue (Street).
+Quand une voie privée est coupée par une rue, ses deux tronçons ne doivent pas se toucher au nœud du croisement. On insère, d'un côté au moins, un court segment d'au moins 10 mètres, **du même type que la rue qui croise la voie privée**, entre le croisement et le début de la voie privée. Un seul côté suffit : dans les deux sens, la traversée passe alors par ce segment. Dans les exemples ci-dessous, la rue est de type Rue (Street).
 
 <svg class="diagram" viewBox="0 0 760 380" role="img" aria-label="Trois cas de croisement entre une voie privée et une rue. Sans segment Rue, la voie privée passe directement par le nœud du croisement : aucune pénalité de voie privée, à éviter. Avec un segment Rue d'un côté : correct, la sortie de la voie privée déclenche la pénalité. Avec un segment Rue de chaque côté : correct aussi.">
   <rect class="d-panel" x="16" y="16" width="236" height="348" rx="16" />
@@ -167,8 +167,8 @@ Avec un segment Rue, chaque traversée de la rue depuis une voie privée déclen
 Une restriction de virage « dure » interdit la manœuvre à tous, y compris aux ayants droit et aux conducteurs qui veulent rejoindre une destination située sur la voie. La pénalité laisse la manœuvre possible tout en la défavorisant dans le calcul d'itinéraire.
 :::
 
-::: warning
-- Respecter le minimum de 5 mètres par segment ([micro-segments](/fr/editors/cartographie/geometrie-segments#micro-segments)).
+::: warning Attention
+- Viser au moins 10 mètres par segment intermédiaire : le minimum absolu est de 5 mètres ([micro-segments](/fr/editors/cartographie/geometrie-segments#micro-segments)), et cette marge évite qu'un segment trop juste soit traité comme micro-segment.
 - Donner au ou aux segments intermédiaires le même type que la rue qui croise la voie privée.
 :::
 

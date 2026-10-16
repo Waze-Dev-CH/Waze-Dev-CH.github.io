@@ -78,7 +78,7 @@ A slight penalty applies to routes containing many short segments, particularly 
 
 ### Private road crossed by a street
 
-When a private road is crossed by a street, its two sections must not meet at the intersection node. On at least one side, insert a short segment of at least 5 meters, **of the same type as the street crossing the private road**, between the intersection and the start of the private road. One side is enough: in both directions, crossing then involves this segment. In the examples below, the street is of type Street.
+When a private road is crossed by a street, its two sections must not meet at the intersection node. On at least one side, insert a short segment of at least 10 meters, **of the same type as the street crossing the private road**, between the intersection and the start of the private road. One side is enough: in both directions, crossing then involves this segment. In the examples below, the street is of type Street.
 
 <svg class="diagram" viewBox="0 0 760 380" role="img" aria-label="Three cases of a private road crossing a street. Without a Street segment, the private road passes directly through the intersection node: no private road penalty, avoid this. With a Street segment on one side: correct, exiting the private road triggers the penalty. With a Street segment on each side: also correct.">
   <rect class="d-panel" x="16" y="16" width="236" height="348" rx="16" />
@@ -168,7 +168,7 @@ A hard turn restriction prohibits the manoeuvre for everyone, including authoriz
 :::
 
 ::: warning Warning
-- Respect the minimum of 5 meters per segment ([micro-segments](/en/editors/cartographie/geometrie-segments#micro-segments)).
+- Aim for at least 10 meters per intermediate segment: the absolute minimum is 5 meters ([micro-segments](/en/editors/cartographie/geometrie-segments#micro-segments)), and this margin keeps a borderline segment from being treated as a micro-segment.
 - Give the intermediate segment or segments the same type as the street crossing the private road.
 :::
 
