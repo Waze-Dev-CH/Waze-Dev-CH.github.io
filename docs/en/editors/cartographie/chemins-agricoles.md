@@ -46,6 +46,8 @@ Two acceptable options:
 
 → **Private Road**
 
+If the track is crossed by a street, see [Routing penalties, Exceptions](/en/editors/wme/penalites-routage#exceptions).
+
 ### Case 3: Small paved road without a prohibition sign
 
 Two acceptable options:

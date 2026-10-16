@@ -46,6 +46,8 @@ Due opzioni accettabili:
 
 → **Private Road**
 
+Se la strada agricola è attraversata da una strada, vedere [Penalità di instradamento, Eccezioni](/it/editors/wme/penalites-routage#eccezioni).
+
 ### Caso 3: Piccola strada asfaltata senza segnale di divieto
 
 Due opzioni accettabili:

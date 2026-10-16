@@ -50,7 +50,7 @@ Ferries receive a penalty only if the driver has enabled "avoid ferries", an opt
 
 ### Private roads, parking lots and unmaintained roads
 
-A private road (Private Road), a parking lot (Parking Lot Road), or an unmaintained road apply their penalty on the transition out to another road type, not on entry. See [Parking lot mapping](/en/editors/cartographie/parkings).
+A private road (Private Road), a parking lot (Parking Lot Road), or an unmaintained road apply their penalty on the transition out to another road type, not on entry. See [Parking lot mapping](/en/editors/cartographie/parkings). For a private road crossed by a street, see [Exceptions](#exceptions).
 
 ### Passageways
 
@@ -73,6 +73,104 @@ The detour prevention mechanism penalizes routes that exit a freeway to return t
 ### Many short segments
 
 A slight penalty applies to routes containing many short segments, particularly recently created segments without available historical traffic data.
+
+## Exceptions
+
+### Private road crossed by a street
+
+When a private road is crossed by a street, its two sections must not meet at the intersection node. On at least one side, insert a short segment of at least 5 meters, **of the same type as the street crossing the private road**, between the intersection and the start of the private road. One side is enough: in both directions, crossing then involves this segment. In the examples below, the street is of type Street.
+
+<svg class="diagram" viewBox="0 0 760 380" role="img" aria-label="Three cases of a private road crossing a street. Without a Street segment, the private road passes directly through the intersection node: no private road penalty, avoid this. With a Street segment on one side: correct, exiting the private road triggers the penalty. With a Street segment on each side: also correct.">
+  <rect class="d-panel" x="16" y="16" width="236" height="348" rx="16" />
+  <rect class="d-panel" x="262" y="16" width="236" height="348" rx="16" />
+  <rect class="d-panel" x="508" y="16" width="236" height="348" rx="16" />
+
+  <text class="d-cap" x="36" y="52">No Street segment</text>
+  <text class="d-penalty" x="36" y="76">Avoid</text>
+  <text class="d-cap" x="282" y="52">One Street segment</text>
+  <text class="d-sub" x="282" y="76">Correct, sufficient</text>
+  <text class="d-cap" x="528" y="52">Two Street segments</text>
+  <text class="d-sub" x="528" y="76">Also correct</text>
+
+  <line class="d-casing" x1="38" y1="235" x2="230" y2="235" />
+  <line class="d-casing" x1="134" y1="120" x2="134" y2="340" />
+  <line class="d-road d-private" x1="38" y1="235" x2="230" y2="235" />
+  <line class="d-road d-street" x1="134" y1="120" x2="134" y2="340" />
+
+  <line class="d-casing" x1="284" y1="235" x2="476" y2="235" />
+  <line class="d-casing" x1="380" y1="120" x2="380" y2="340" />
+  <line class="d-road d-private" x1="284" y1="235" x2="336" y2="235" />
+  <line class="d-road d-street" x1="336" y1="235" x2="380" y2="235" />
+  <line class="d-road d-private" x1="380" y1="235" x2="476" y2="235" />
+  <line class="d-road d-street" x1="380" y1="120" x2="380" y2="340" />
+
+  <line class="d-casing" x1="530" y1="235" x2="722" y2="235" />
+  <line class="d-casing" x1="626" y1="120" x2="626" y2="340" />
+  <line class="d-road d-private" x1="530" y1="235" x2="582" y2="235" />
+  <line class="d-road d-street" x1="582" y1="235" x2="670" y2="235" />
+  <line class="d-road d-private" x1="670" y1="235" x2="722" y2="235" />
+  <line class="d-road d-street" x1="626" y1="120" x2="626" y2="340" />
+
+  <circle class="d-end" cx="38" cy="235" r="5" />
+  <circle class="d-end" cx="230" cy="235" r="5" />
+  <circle class="d-end" cx="134" cy="120" r="5" />
+  <circle class="d-end" cx="134" cy="340" r="5" />
+  <circle class="d-junction" cx="134" cy="235" r="9" />
+
+  <circle class="d-end" cx="284" cy="235" r="5" />
+  <circle class="d-end" cx="476" cy="235" r="5" />
+  <circle class="d-end" cx="380" cy="120" r="5" />
+  <circle class="d-end" cx="380" cy="340" r="5" />
+  <circle class="d-junction" cx="336" cy="235" r="7" />
+  <circle class="d-junction" cx="380" cy="235" r="9" />
+
+  <circle class="d-end" cx="530" cy="235" r="5" />
+  <circle class="d-end" cx="722" cy="235" r="5" />
+  <circle class="d-end" cx="626" cy="120" r="5" />
+  <circle class="d-end" cx="626" cy="340" r="5" />
+  <circle class="d-junction" cx="582" cy="235" r="7" />
+  <circle class="d-junction" cx="626" cy="235" r="9" />
+  <circle class="d-junction" cx="670" cy="235" r="7" />
+
+  <text class="d-sub" x="40" y="272">Private road</text>
+  <text class="d-sub" x="146" y="140">Street</text>
+  <text class="d-sub" x="286" y="272">Private road</text>
+  <text class="d-sub" x="392" y="140">Street</text>
+  <text class="d-sub" x="532" y="272">Private road</text>
+  <text class="d-sub" x="638" y="140">Street</text>
+
+  <text class="d-sub" x="120" y="180" text-anchor="end">no</text>
+  <text class="d-sub" x="120" y="197" text-anchor="end">penalty</text>
+  <line class="d-lead" x1="114" y1="204" x2="126" y2="225" />
+  <line class="d-arrow" x1="42" y1="214" x2="74" y2="214" />
+  <polyline class="d-arrow" points="67,209 74,214 67,219" />
+
+  <text class="d-penalty" x="336" y="196" text-anchor="middle">penalty</text>
+  <line class="d-lead" x1="336" y1="203" x2="336" y2="224" />
+  <line class="d-arrow" x1="288" y1="214" x2="320" y2="214" />
+  <polyline class="d-arrow" points="313,209 320,214 313,219" />
+
+  <text class="d-penalty" x="582" y="196" text-anchor="middle">penalty</text>
+  <line class="d-lead" x1="582" y1="203" x2="582" y2="224" />
+  <line class="d-arrow" x1="534" y1="214" x2="566" y2="214" />
+  <polyline class="d-arrow" points="559,209 566,214 559,219" />
+
+</svg>
+
+**Why.** The private road penalty applies on **exit** to another road type, not on entry. If both private sections connect directly to the node, crossing straight ahead remains a transition from private to private: no private road penalty at the intersection. A series of private roads then triggers only one penalty, at the final exit to another road type, and Waze may select it as a shortcut for through traffic.
+
+With a Street segment, each crossing of the street from a private road triggers a penalty on exiting the private section. These penalties add up and make the shortcut less advantageous in route calculation.
+
+![Chemin de Sorécot and Chemin de Pre-Louis: here a Street segment on each side of the intersection (dotted selection)](/penalites/voie-privee-croisement.jpg)
+
+::: important Why not a turn restriction
+A hard turn restriction prohibits the manoeuvre for everyone, including authorized users and drivers who want to reach a destination on the road. The penalty keeps the manoeuvre possible while making it less favourable in route calculation.
+:::
+
+::: warning Warning
+- Respect the minimum of 5 meters per segment ([micro-segments](/en/editors/cartographie/geometrie-segments#micro-segments)).
+- Give the intermediate segment or segments the same type as the street crossing the private road.
+:::
 
 ## Absolute restrictions
 

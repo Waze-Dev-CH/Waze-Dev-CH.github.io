@@ -71,6 +71,8 @@ Kartografieren Sie individuelle private Zufahrten nicht, ausser wenn:
 - die Strasse besonders lang ist oder sich die Wohnung mehr als 100 Meter von der Strasse entfernt befindet, oder
 - das Fehlen der Kartografierung Führungsprobleme verursachen würde.
 
+Wenn eine private Zufahrt von einer Strasse gekreuzt wird, siehe [Routing-Strafen, Ausnahmen](/de/editors/wme/penalites-routage#ausnahmen).
+
 ## Übergänge und versetzte Strassen
 
 ### Übergänge

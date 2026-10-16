@@ -71,6 +71,8 @@ Non mappare gli accessi privati individuali, tranne se:
 - la via è particolarmente lunga, o l'abitazione si trova a più di 100 metri dalla strada, oppure
 - l'assenza di mappatura causerebbe problemi di guida.
 
+Se una via privata è attraversata da una strada, vedere [Penalità di instradamento, Eccezioni](/it/editors/wme/penalites-routage#eccezioni).
+
 ## Transizioni e strade sfalsate
 
 ### Transizioni

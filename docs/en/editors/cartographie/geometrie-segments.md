@@ -71,6 +71,8 @@ Do not map individual private driveways, unless:
 - the road is particularly long, or the dwelling is more than 100 meters from the road, or
 - not mapping it would cause routing problems.
 
+If a private driveway is crossed by a street, see [Routing penalties, Exceptions](/en/editors/wme/penalites-routage#exceptions).
+
 ## Transitions and offset roads
 
 ### Transitions

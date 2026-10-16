@@ -46,6 +46,8 @@ Zwei akzeptable Optionen:
 
 → **Private Road**
 
+Wenn der Weg von einer Strasse gekreuzt wird, siehe [Routing-Strafen, Ausnahmen](/de/editors/wme/penalites-routage#ausnahmen).
+
 ### Fall 3: Kleine asphaltierte Strasse ohne Fahrverbotsschild
 
 Zwei akzeptable Optionen:
