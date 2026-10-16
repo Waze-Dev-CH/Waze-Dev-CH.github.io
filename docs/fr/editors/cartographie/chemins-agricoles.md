@@ -46,6 +46,8 @@ Deux options acceptables :
 
 → **Private Road**
 
+Si le chemin est coupé par une rue, voir [Pénalités de routage, Exceptions](/fr/editors/wme/penalites-routage#exceptions).
+
 ### Cas 3 : Petite route goudronnée sans panneau d'interdiction
 
 Deux options acceptables :

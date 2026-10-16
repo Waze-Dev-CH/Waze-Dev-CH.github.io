@@ -71,6 +71,8 @@ Ne pas cartographier les accès privés individuels, sauf si :
 - la voie est particulièrement longue, ou l'habitation se trouve à plus de 100 mètres de la route, ou
 - l'absence de cartographie causerait des problèmes de guidage.
 
+Si une voie privée est coupée par une rue, voir [Pénalités de routage, Exceptions](/fr/editors/wme/penalites-routage#exceptions).
+
 ## Transitions et routes décalées
 
 ### Transitions

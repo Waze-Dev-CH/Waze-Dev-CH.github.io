@@ -649,6 +649,24 @@
     stroke: #fff;
 }
 
+.vp-doc .diagram .d-private {
+    stroke: #B8B56A;
+}
+
+.vp-doc .diagram .d-arrow {
+    stroke: var(--swiss-red);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.vp-doc .diagram .d-penalty {
+    fill: var(--swiss-red);
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .vp-doc .diagram .d-junction {
     fill: #fff;
     stroke: var(--swiss-red);
