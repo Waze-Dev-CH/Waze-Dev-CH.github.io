@@ -7,7 +7,7 @@ order: 4
 # Partnerschaften
 
 ::: note Notiz
-Diese Website und diese Dokumentation werden von Freiwilligen der Schweizer Community verwaltet. Partnerschaften werden direkt zwischen den interessierten Organisationen und den Waze-Teams abgewickelt, nicht durch die lokale Community. Bei Fragen zu einer Partnerschaft in der Schweiz können Sie [Athannor](/de/communaute/contact), Koordinator Waze Partners, kontaktieren.
+Diese Website und diese Dokumentation werden von Freiwilligen der Schweizer Community verwaltet. Partnerschaften werden direkt zwischen den interessierten Organisationen und den Waze-Teams abgewickelt, nicht durch die lokale Community. Bei Fragen zu einer Partnerschaft in der Schweiz können Sie [vince1612](/de/communaute/contact), Koordinator Waze Partners, kontaktieren.
 :::
 
 ## Offizielle Waze-Programme
@@ -28,7 +28,7 @@ Waze bietet mehrere offizielle Programme für Organisationen, Gebietskörperscha
 
 - **Waze Audio Player**: ermöglicht die Integration von Audio-Anwendungen (Podcasts, Streaming) direkt in die Waze-Oberfläche, für Medien- und Audiopartner.
 
-Um mehr über diese Programme zu erfahren, besuchen Sie [waze.com](https://www.waze.com) oder kontaktieren Sie [Athannor](/de/communaute/contact), der die Waze-Partnerschaften für die Schweiz koordiniert.
+Um mehr über diese Programme zu erfahren, besuchen Sie [waze.com](https://www.waze.com) oder kontaktieren Sie [vince1612](/de/communaute/contact), der die Waze-Partnerschaften für die Schweiz koordiniert.
 
 ::: quote Quelle(n)
 - Partnerships (Waze Switzerland): https://www.waze-switzerland.ch/partnerships

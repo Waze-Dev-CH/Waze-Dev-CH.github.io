@@ -3,21 +3,11 @@ title: Contatto
 description: Coordinatori (Champs), e-mail e canali di comunicazione della comunità Waze Svizzera.
 order: 3
 champs:
-  - pseudo: popel22
-    title: Coordinatore svizzero
-    roles: Waze Partners Coordinator · Global & Local Champ · Country Manager · Level 6 Map Editor
-    langs: [DE, EN]
-    email: popel22
   - pseudo: vince1612
-    title: Co-coordinatore svizzero
+    title: Coordinatore svizzero
     roles: Waze Partners Coordinator · Global & Local Champ · Country Manager · Level 6 Map Editor
     langs: [FR, EN, IT, DE]
     email: vince1612
-  - pseudo: Athannor
-    title: Coordinatore Waze Partners
-    roles: Waze Partners Coordinator · DACH Local Champ · Country Manager · Level 6 Map Editor
-    langs: [FR, EN]
-    email: athannor
   - pseudo: MattKo
     title: DACH Local Champ
     roles: DACH Local Champ · Country Manager · Level 6 Map Editor
@@ -28,6 +18,22 @@ champs:
     roles: DACH Local Champ · Country Manager · Level 5 Map Editor
     langs: [DE, EN, IT]
     email: alediwi
+  - pseudo: Marelitaw
+    title: DACH Local Champ
+    roles: DACH Local Champ · Country Manager · Level 5 Map Editor
+    langs: [FR, EN]
+  - pseudo: Maloma
+    title: DACH Local Champ
+    roles: DACH Local Champ · Country Manager · Level 5 Map Editor
+    langs: [FR, EN]
+  - pseudo: popel22
+    title: Ex coordinatore svizzero
+    roles: Waze Emeritus Local Champ · Country Manager · Level 6 Map Editor
+    emeritus: true
+  - pseudo: Athannor
+    title: Ex coordinatore Waze Partners
+    roles: Waze Emeritus Local Champ · Country Manager · Level 6 Map Editor
+    emeritus: true
 ---
 
 # Contatto
@@ -39,6 +45,12 @@ Presso Waze, la Svizzera fa parte del raggruppamento **DACH** (Germania, Austria
 La comunità svizzera è coordinata dai **Champs** (coordinatori). Fai clic su un indirizzo per scrivere; vengono assemblati dal browser per limitare la raccolta automatica.
 
 <ChampsGrid />
+
+### Waze Emeritus Local Champs
+
+Questi ex Champs hanno coordinato la comunità svizzera e hanno poi passato il testimone. Grazie per il loro impegno.
+
+<ChampsGrid emeritus />
 
 ## Segnalare una chiusura di strada
 

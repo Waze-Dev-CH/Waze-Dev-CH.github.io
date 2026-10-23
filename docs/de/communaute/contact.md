@@ -3,21 +3,11 @@ title: Kontakt
 description: Koordinatoren (Champs), E-Mails und Kommunikationskanäle der Waze-Community Schweiz.
 order: 3
 champs:
-  - pseudo: popel22
-    title: Schweizer Koordinator
-    roles: Waze Partners Coordinator · Global & Local Champ · Country Manager · Level 6 Map Editor
-    langs: [DE, EN]
-    email: popel22
   - pseudo: vince1612
-    title: Schweizer Co-Koordinator
+    title: Schweizer Koordinator
     roles: Waze Partners Coordinator · Global & Local Champ · Country Manager · Level 6 Map Editor
     langs: [FR, EN, IT, DE]
     email: vince1612
-  - pseudo: Athannor
-    title: Waze Partners Koordinator
-    roles: Waze Partners Coordinator · DACH Local Champ · Country Manager · Level 6 Map Editor
-    langs: [FR, EN]
-    email: athannor
   - pseudo: MattKo
     title: DACH Local Champ
     roles: DACH Local Champ · Country Manager · Level 6 Map Editor
@@ -28,6 +18,22 @@ champs:
     roles: DACH Local Champ · Country Manager · Level 5 Map Editor
     langs: [DE, EN, IT]
     email: alediwi
+  - pseudo: Marelitaw
+    title: DACH Local Champ
+    roles: DACH Local Champ · Country Manager · Level 5 Map Editor
+    langs: [FR, EN]
+  - pseudo: Maloma
+    title: DACH Local Champ
+    roles: DACH Local Champ · Country Manager · Level 5 Map Editor
+    langs: [FR, EN]
+  - pseudo: popel22
+    title: Ehemaliger Schweizer Koordinator
+    roles: Waze Emeritus Local Champ · Country Manager · Level 6 Map Editor
+    emeritus: true
+  - pseudo: Athannor
+    title: Ehemaliger Waze Partners Koordinator
+    roles: Waze Emeritus Local Champ · Country Manager · Level 6 Map Editor
+    emeritus: true
 ---
 
 # Kontakt
@@ -39,6 +45,12 @@ Bei Waze gehört die Schweiz zur Gruppe **DACH** (Deutschland, Österreich, Schw
 Die Schweizer Community wird von den **Champs** (Koordinatoren) betreut. Klicken Sie auf eine Adresse, um zu schreiben; sie werden vom Browser zusammengesetzt, um die automatische Erfassung zu begrenzen.
 
 <ChampsGrid />
+
+### Waze Emeritus Local Champs
+
+Diese ehemaligen Champs haben die Schweizer Community betreut und inzwischen den Stab weitergegeben. Vielen Dank für ihr Engagement.
+
+<ChampsGrid emeritus />
 
 ## Strassensperrung melden
 

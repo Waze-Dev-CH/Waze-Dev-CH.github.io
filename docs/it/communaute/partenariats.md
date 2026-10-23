@@ -7,7 +7,7 @@ order: 4
 # Partnership
 
 ::: note Nota
-Questo sito e questa documentazione sono gestiti da volontari della comunità svizzera. Le partnership vengono trattate direttamente tra le organizzazioni interessate e i team Waze, non dalla comunità locale. Per qualsiasi domanda relativa a una partnership in Svizzera, puoi contattare [Athannor](/it/communaute/contact), coordinatore Waze Partners.
+Questo sito e questa documentazione sono gestiti da volontari della comunità svizzera. Le partnership vengono trattate direttamente tra le organizzazioni interessate e i team Waze, non dalla comunità locale. Per qualsiasi domanda relativa a una partnership in Svizzera, puoi contattare [vince1612](/it/communaute/contact), coordinatore Waze Partners.
 :::
 
 ## Programmi ufficiali Waze
@@ -28,7 +28,7 @@ Waze propone diversi programmi ufficiali destinati a organizzazioni, enti pubbli
 
 - **Waze Audio Player** : consente l'integrazione di applicazioni audio (podcast, streaming) direttamente nell'interfaccia Waze, per i partner media e audio.
 
-Per saperne di più su questi programmi, consulta [waze.com](https://www.waze.com) oppure contatta [Athannor](/it/communaute/contact), che coordina le partnership Waze per la Svizzera.
+Per saperne di più su questi programmi, consulta [waze.com](https://www.waze.com) oppure contatta [vince1612](/it/communaute/contact), che coordina le partnership Waze per la Svizzera.
 
 ::: quote Fonte/i
 - Partnerships (Waze Switzerland) : https://www.waze-switzerland.ch/partnerships

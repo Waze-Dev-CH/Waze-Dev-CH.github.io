@@ -3,21 +3,11 @@ title: Contact
 description: Coordinateurs (Champs), e-mails et canaux de communication de la communauté Waze Suisse.
 order: 3
 champs:
-  - pseudo: popel22
-    title: Coordinateur suisse
-    roles: Waze Partners Coordinator · Global & Local Champ · Country Manager · Level 6 Map Editor
-    langs: [DE, EN]
-    email: popel22
   - pseudo: vince1612
-    title: Co-coordinateur suisse
+    title: Coordinateur suisse
     roles: Waze Partners Coordinator · Global & Local Champ · Country Manager · Level 6 Map Editor
     langs: [FR, EN, IT, DE]
     email: vince1612
-  - pseudo: Athannor
-    title: Coordinateur Waze Partners
-    roles: Waze Partners Coordinator · DACH Local Champ · Country Manager · Level 6 Map Editor
-    langs: [FR, EN]
-    email: athannor
   - pseudo: MattKo
     title: DACH Local Champ
     roles: DACH Local Champ · Country Manager · Level 6 Map Editor
@@ -28,6 +18,22 @@ champs:
     roles: DACH Local Champ · Country Manager · Level 5 Map Editor
     langs: [DE, EN, IT]
     email: alediwi
+  - pseudo: Marelitaw
+    title: DACH Local Champ
+    roles: DACH Local Champ · Country Manager · Level 5 Map Editor
+    langs: [FR, EN]
+  - pseudo: Maloma
+    title: DACH Local Champ
+    roles: DACH Local Champ · Country Manager · Level 5 Map Editor
+    langs: [FR, EN]
+  - pseudo: popel22
+    title: Ancien coordinateur suisse
+    roles: Waze Emeritus Local Champ · Country Manager · Level 6 Map Editor
+    emeritus: true
+  - pseudo: Athannor
+    title: Ancien coordinateur Waze Partners
+    roles: Waze Emeritus Local Champ · Country Manager · Level 6 Map Editor
+    emeritus: true
 ---
 
 # Contact
@@ -39,6 +45,12 @@ Chez Waze, la Suisse fait partie du groupement **DACH** (Allemagne, Autriche, Su
 La communauté suisse est encadrée par les **Champs** (coordinateurs). Cliquez sur une adresse pour écrire ; elles sont assemblées par le navigateur pour limiter la collecte automatique.
 
 <ChampsGrid />
+
+### Waze Emeritus Local Champs
+
+Ces anciens Champs ont coordonné la communauté suisse et ont depuis passé le relais. Merci à eux pour leur engagement.
+
+<ChampsGrid emeritus />
 
 ## Signaler une fermeture de route
 
