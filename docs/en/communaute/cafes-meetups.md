@@ -14,7 +14,7 @@ The Swiss Waze community meets regularly at local and regional events, in two ma
 
 Waze Cafés are small, informal events (10-15 participants) organized by the local community. Editors from the region gather to collaborate on editing or community-life topics, share best practices, and meet outside the online forums.
 
-**Waze Café Romandie**: organized by the French-speaking community. The last gathering took place in October 2025 in Geneva. The next 2026 edition is being planned; the date and location are still to be determined.
+**Waze Café Romandie**: organized by the French-speaking community. The latest edition took place in 2026 in Neuchâtel, following the October 2025 one in Geneva. The 2027 edition is still to be defined: the date and location have not been set yet.
 
 ::: note Note
 There is not yet an equivalent initiative on the German-speaking or Ticino side. Feel free to propose one via Discord or the forum.

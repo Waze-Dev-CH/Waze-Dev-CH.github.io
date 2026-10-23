@@ -14,7 +14,7 @@ Die Schweizer Waze-Community trifft sich regelmässig bei lokalen und regionalen
 
 Die Waze Cafés sind kleine, informelle Veranstaltungen (10 bis 15 Teilnehmende), die von der lokalen Community organisiert werden. Editoren der Region treffen sich, um an Themen rund um die Kartenbearbeitung oder das Community-Leben zusammenzuarbeiten, bewährte Praktiken auszutauschen und sich ausserhalb der Online-Foren zu begegnen.
 
-**Waze Café Romandie**: organisiert von der Westschweizer Community. Das letzte Treffen fand im Oktober 2025 in Genf statt. Die nächste Ausgabe 2026 befindet sich in Planung; Datum und Ort stehen noch nicht fest.
+**Waze Café Romandie**: organisiert von der Westschweizer Community. Die letzte Ausgabe fand 2026 in Neuenburg statt, nach jener vom Oktober 2025 in Genf. Die Ausgabe 2027 ist noch offen: Datum und Ort stehen noch nicht fest.
 
 ::: note Notiz
 Auf Deutschschweizer oder Tessiner Seite gibt es noch keine vergleichbare Initiative. Zögere nicht, über den Discord oder das Forum eine solche vorzuschlagen.

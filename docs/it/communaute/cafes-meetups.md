@@ -14,7 +14,7 @@ La comunità Waze svizzera si ritrova regolarmente in occasione di eventi locali
 
 I Waze Café sono piccoli eventi informali (10-15 partecipanti) organizzati dalla comunità locale. Gli editor della regione si riuniscono per collaborare su temi di editing o di vita comunitaria, condividere buone pratiche e incontrarsi al di fuori dei forum online.
 
-**Waze Café Romandie**: organizzato dalla comunità romanda. L'ultimo incontro si è tenuto in ottobre 2025 a Ginevra. La prossima edizione 2026 è in fase di pianificazione; data e luogo restano da definire.
+**Waze Café Romandie**: organizzato dalla comunità romanda. L'ultima edizione si è tenuta nel 2026 a Neuchâtel, dopo quella di ottobre 2025 a Ginevra. L'edizione 2027 è ancora da definire: data e luogo non sono ancora stati fissati.
 
 ::: note Nota
 Non esiste ancora un'iniziativa equivalente sul versante svizzero tedesco o ticinese. Non esitate a proporne una tramite Discord o il forum.
