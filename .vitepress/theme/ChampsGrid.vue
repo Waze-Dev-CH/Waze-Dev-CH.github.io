@@ -6,8 +6,13 @@ import { ref, computed, onMounted } from 'vue';
 // the address is in the frontmatter; the domain is added client-side on mount,
 // so the static HTML never contains a complete, recomposable address. Before
 // hydration we render a plain <span> (no dead href, works without JS as text).
+// `<ChampsGrid />` lists active Champs, `<ChampsGrid emeritus />` those flagged
+// `emeritus: true` (Waze Emeritus Local Champs), shown without e-mail.
+const props = defineProps({ emeritus: Boolean });
 const { frontmatter } = useData();
-const champs = computed(() => frontmatter.value.champs ?? []);
+const champs = computed(() =>
+  (frontmatter.value.champs ?? []).filter((c) => !!c.emeritus === props.emeritus)
+);
 const domain = 'waze-switzerland.ch';
 
 // Badges de fonction officiels Waze, déduits du champ `roles`.
@@ -16,7 +21,7 @@ function roleIcons(c) {
   const out = [];
   if (/Partners Coordinator/i.test(r)) out.push({ src: '/img/roles/partner-coordinator.png', label: 'Waze Partners Coordinator' });
   if (/Global[^·]*Champ/i.test(r))     out.push({ src: '/img/roles/global-champ.png', label: 'Global Champ' });
-  if (/Local Champ/i.test(r))          out.push({ src: '/img/roles/local-champ.png', label: 'Local Champ' });
+  if (/(?<!Emeritus )Local Champ/i.test(r)) out.push({ src: '/img/roles/local-champ.png', label: 'Local Champ' });
   if (/Country Manager/i.test(r))      out.push({ src: '/img/roles/country-manager.png', label: 'Country Manager' });
   const lvl = r.match(/Level\s*([1-6])\s*Map Editor/i);
   if (lvl)                             out.push({ src: `/img/editors/badge-l${lvl[1]}.png`, label: `Level ${lvl[1]} Map Editor` });
@@ -29,7 +34,7 @@ onMounted(() => { revealed.value = true; });
 </script>
 
 <template>
-  <div class="champs-grid">
+  <div class="champs-grid" :class="{ 'is-emeritus': emeritus }">
     <div v-for="c in champs" :key="c.pseudo" class="champ-card">
       <div class="champ-head">
         <div class="champ-id">
@@ -54,7 +59,7 @@ onMounted(() => { revealed.value = true; });
       <p v-if="c.langs" class="champ-langs">
         <span v-for="l in c.langs" :key="l" class="champ-lang">{{ l }}</span>
       </p>
-      <template v-if="c.email">
+      <template v-if="c.email && !emeritus">
         <a
           v-if="revealed"
           class="champ-mail"
@@ -87,6 +92,15 @@ onMounted(() => { revealed.value = true; });
   border: 1px solid var(--vp-c-divider);
   border-radius: 0.75rem;
   background: var(--vp-c-bg-soft);
+}
+
+.is-emeritus .champ-card {
+  background: transparent;
+  border-style: dashed;
+}
+
+.is-emeritus .champ-pseudo {
+  color: var(--vp-c-text-2);
 }
 
 .champ-head {
