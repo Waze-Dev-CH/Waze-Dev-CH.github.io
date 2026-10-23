@@ -21,6 +21,16 @@ Les autoroutes suisses ont été largement éditées par un contributeur non con
 
 Conscients que les anciennes directives ont besoin d'une révision de toute façon, en raison de l'évolution de l'application et de WME, nous présenterons de nouvelles directives à appliquer lors de la vérification et de la correction des éditions non conformes.
 
+::: failure Anciennes règles à ne plus appliquer
+Ces pratiques ont été abandonnées. On les croise encore sur la carte, sur Discord ou dans d'anciennes captures : ne plus les appliquer. Chacune est signalée plus bas par un encadré « Ancienne règle : ne plus appliquer ».
+
+- **Wayfinders** : petits segments (5-20 m) pour forcer une annonce, voir [Wayfinders](#wayfinders)
+- **Tout dans « Visual instructions » et « > » dans « Towards »**, voir [Instruction de virage](#instruction-de-virage)
+- **Boucliers sur les bretelles d'entrée**, voir [Vérification et suppression des boucliers](#verification-et-suppression-des-boucliers)
+- **Nœud de sortie au point A** et ancien mapping des voies (« Branch-out style », « Third lane style »), voir [Géométrie](#geometrie)
+- **Restriction vignette sur tous les segments**, voir [Pourquoi pas sur tous les segments](#pourquoi-pas-sur-tous-les-segments)
+:::
+
 ## Notes générales
 
 ### Type de route : bretelle
@@ -45,9 +55,13 @@ Même s'il n'est pas affiché visuellement, il peut être utilisé dans le champ
 
 ### Wayfinders
 
-Avant que les boucliers ou les instructions de virage n'existent, les wayfinders étaient courants dans la cartographie. Ils consistaient en de petits segments (5-20m) pour forcer une instruction TTS à être quelque chose d'autre que le nom de la route. Si vous en trouvez, supprimez-les et utilisez une instruction de virage à la place.
+::: failure Ancienne règle : ne plus appliquer
+Avant que les boucliers ou les instructions de virage n'existent, les wayfinders étaient courants dans la cartographie. Ils consistaient en de petits segments (5-20m) pour forcer une instruction TTS à être quelque chose d'autre que le nom de la route.
 
-![](/freeways/image3.png)
+![Wayfinder : petit segment entre A et B, à supprimer](/freeways/image3.png)
+:::
+
+Si vous en trouvez, supprimez-les et utilisez une instruction de virage à la place.
 
 ## Instructions de cartographie
 
@@ -76,7 +90,9 @@ Certaines des éditions non conformes que nous avons vues d'un ancien responsabl
 
 Les instructions de virage subiront un léger changement par rapport aux directives de cartographie précédentes.
 
+::: failure Ancienne règle : ne plus appliquer
 Autrefois, nous avions l'habitude de tout mettre dans le champ « Visual instructions », et nous utilisions parfois « > » dans le champ « Towards ».
+:::
 
 En raison d'Android Auto et CarPlay, qui insèrent automatiquement un point entre les instructions visuelles et vers, ce que nous ne pouvons pas supprimer et sur lequel nous n'avons aucun contrôle, il est préférable de supprimer le « > » pour éviter d'avoir des visuels étranges comme ci-dessous :
 
@@ -105,7 +121,9 @@ Le cas échéant (quand cela existe), pour la bifurcation en Y, n'ajoutez pas ou
 
 #### Vérification et suppression des boucliers
 
+::: failure Ancienne règle : ne plus appliquer
 Lors de l'ajout précoce de boucliers à WME, de nombreux segments de bretelle ont eu des boucliers ajoutés.
+:::
 
 Ce n'est pas nécessaire et les boucliers ne doivent être appliqués que sur les segments réels d'autoroute. Si vous trouvez des bretelles d'entrée avec des boucliers, vous pouvez les supprimer.
 
@@ -180,9 +198,13 @@ Bien sûr, ces segments doivent avoir tous les noms alternatifs Axx et Exx confi
 
 *Priorité pour les longues bretelles - les bretelles petites/régulières ne sont pas une priorité*
 
-La Suisse a précédemment adopté la règle de cartographie suivante :
+::: failure Ancienne règle : ne plus appliquer
+La Suisse appliquait auparavant la règle illustrée ci-dessous : nœud de la bretelle au **point A** (début de la voie de sortie) et voies cartographiées en « Branch-out style ». Pour les longues sorties non standard, elle prévoyait en plus, exceptionnellement, une troisième voie (« Third lane style »).
 
-![](/freeways/image19.png)
+![Ancienne règle, à ne plus appliquer : nœud au point A et voies en « Branch-out style »](/freeways/image19.png)
+
+Ces recommandations ont été retirées du document communautaire sur les voies, mais la capture circule encore et a déjà été citée à tort comme règle en vigueur. Pour le mapping des voies aux sorties, se renseigner auprès d'un CM ou LC ayant participé au projet Nexus (2024), ou de vince1612.
+:::
 
 Cependant, il a été signalé par le personnel lors des réunions que cartographier le nœud de la bretelle au point A n'est pas recommandé ni optimal pour le routage et Falcon (le correcteur GPS des routes).
 
@@ -209,7 +231,11 @@ Ne la mettez **pas** sur l'ensemble des segments de l'autoroute.
 
 ### Pourquoi pas sur tous les segments
 
-À l'origine, la restriction était posée sur tous les segments, comme en Autriche. Cela générait beaucoup de plaintes et de UR : Waze semblait « buguer » complètement.
+::: failure Ancienne règle : ne plus appliquer
+À l'origine, la restriction était posée sur tous les segments, comme en Autriche.
+:::
+
+Cela générait beaucoup de plaintes et de UR : Waze semblait « buguer » complètement.
 
 Techniquement, une restriction fait que l'app se comporte comme si le segment n'existait pas. Un conducteur sans vignette dans ses pass était donc renvoyé de gauche à droite sur les petites routes voisines, et l'app paraissait totalement folle.
 

@@ -21,6 +21,16 @@ Le autostrade svizzere sono state ampiamente modificate da un contributore non c
 
 Consapevoli che le vecchie linee guida necessitano comunque di una revisione, a causa dell'evoluzione dell'applicazione e di WME, presenteremo nuove linee guida da applicare durante la verifica e la correzione delle modifiche non conformi.
 
+::: failure Vecchie regole: non applicare più
+Queste pratiche sono state abbandonate. Si trovano ancora sulla mappa, su Discord o in vecchi screenshot: non applicarle più. Ciascuna è segnalata più sotto da un riquadro «Vecchia regola: non applicare più».
+
+- **Wayfinders**: piccoli segmenti (5-20 m) per forzare un'istruzione, vedi [Wayfinders](#wayfinders)
+- **Tutto in «Visual instructions» e «>» in «Towards»**, vedi [Istruzione di svolta](#istruzione-di-svolta)
+- **Scudi sulle rampe di entrata**, vedi [Verifica e rimozione degli scudi](#verifica-e-rimozione-degli-scudi)
+- **Nodo di uscita al punto A** e la vecchia mappatura delle corsie («Branch-out style», «Third lane style»), vedi [Geometria](#geometria)
+- **Restrizione vignetta su tutti i segmenti**, vedi [Perché non su tutti i segmenti](#perche-non-su-tutti-i-segmenti)
+:::
+
 ## Note generali
 
 ### Tipo di strada: rampa
@@ -45,9 +55,13 @@ Anche se non è visualizzato visivamente, può essere utilizzato nel campo TTS d
 
 ### Wayfinders
 
-Prima che esistessero gli scudi o le istruzioni di svolta, i wayfinders erano comuni nella mappatura. Consistevano in piccoli segmenti (5-20m) per forzare un'istruzione TTS a essere qualcosa di diverso dal nome della strada. Se ne trovi, eliminali e usa invece un'istruzione di svolta.
+::: failure Vecchia regola: non applicare più
+Prima che esistessero gli scudi o le istruzioni di svolta, i wayfinders erano comuni nella mappatura. Consistevano in piccoli segmenti (5-20m) per forzare un'istruzione TTS a essere qualcosa di diverso dal nome della strada.
 
-![](/freeways/image3.png)
+![Wayfinder: piccolo segmento tra A e B, da eliminare](/freeways/image3.png)
+:::
+
+Se ne trovi, eliminali e usa invece un'istruzione di svolta.
 
 ## Istruzioni di mappatura
 
@@ -76,7 +90,9 @@ Alcune delle modifiche non conformi che abbiamo visto da un vecchio responsabile
 
 Le istruzioni di svolta subiranno un lieve cambiamento rispetto alle linee guida di mappatura precedenti.
 
+::: failure Vecchia regola: non applicare più
 In passato, avevamo l'abitudine di mettere tutto nel campo «Visual instructions», e a volte usavamo «>» nel campo «Towards».
+:::
 
 A causa di Android Auto e CarPlay, che inseriscono automaticamente un punto tra le istruzioni visive e verso, che non possiamo rimuovere e su cui non abbiamo alcun controllo, è preferibile rimuovere il «>» per evitare di avere visuali strane come qui sotto:
 
@@ -105,7 +121,9 @@ Se applicabile (quando esiste), per la biforcazione a Y, non aggiungere né forz
 
 #### Verifica e rimozione degli scudi
 
+::: failure Vecchia regola: non applicare più
 Durante l'aggiunta precoce degli scudi a WME, molti segmenti di rampa hanno avuto scudi aggiunti.
+:::
 
 Questo non è necessario e gli scudi devono essere applicati solo sui segmenti reali di autostrada. Se trovi rampe di entrata con scudi, puoi rimuoverli.
 
@@ -180,9 +198,13 @@ Naturalmente, questi segmenti devono avere tutti i nomi alternativi Axx ed Exx c
 
 *Priorità per le rampe lunghe - le rampe piccole/regolari non sono una priorità*
 
-La Svizzera ha precedentemente adottato la seguente regola di mappatura:
+::: failure Vecchia regola: non applicare più
+In passato la Svizzera applicava la regola illustrata qui sotto: nodo della rampa al **punto A** (inizio della corsia di uscita) e corsie mappate in «Branch-out style». Per le uscite lunghe non standard prevedeva inoltre, in via eccezionale, una terza corsia («Third lane style»).
 
-![](/freeways/image19.png)
+![Vecchia regola, da non applicare più: nodo al punto A e corsie in «Branch-out style»](/freeways/image19.png)
+
+Queste raccomandazioni sono state rimosse dal documento comunitario sulle corsie, ma lo screenshot circola ancora ed è già stato citato erroneamente come regola in vigore. Per la mappatura delle corsie alle uscite, rivolgiti a un CM o LC che ha partecipato al progetto Nexus (2024), oppure a vince1612.
+:::
 
 Tuttavia, è stato segnalato dallo staff durante le riunioni che mappare il nodo della rampa al punto A non è raccomandato né ottimale per l'instradamento e Falcon (il correttore GPS delle strade).
 
@@ -209,7 +231,11 @@ Applica la restrizione **solo** su:
 
 ### Perché non su tutti i segmenti
 
-Inizialmente la restrizione era posta su tutti i segmenti, come in Austria. Questo generava molte lamentele e UR: Waze sembrava «buggare» completamente.
+::: failure Vecchia regola: non applicare più
+Inizialmente la restrizione era posta su tutti i segmenti, come in Austria.
+:::
+
+Questo generava molte lamentele e UR: Waze sembrava «buggare» completamente.
 
 Tecnicamente, una restrizione fa sì che l'app si comporti come se il segmento non esistesse. Un conducente senza vignetta nei suoi pass veniva quindi rimbalzato da sinistra a destra sulle piccole strade vicine, e l'app sembrava totalmente impazzita.
 

@@ -21,6 +21,16 @@ Die Schweizer Autobahnen wurden weitgehend von einem nicht regelkonformen Beitra
 
 Da uns bewusst ist, dass die alten Richtlinien ohnehin einer Überarbeitung bedürfen, aufgrund der Weiterentwicklung der App und von WME, stellen wir neue Richtlinien vor, die bei der Überprüfung und Korrektur nicht regelkonformer Bearbeitungen anzuwenden sind.
 
+::: failure Alte Regeln: nicht mehr anwenden
+Diese Praktiken wurden aufgegeben. Man trifft sie noch auf der Karte, auf Discord oder in alten Screenshots an: nicht mehr anwenden. Jede ist weiter unten mit einem Kasten «Alte Regel: nicht mehr anwenden» markiert.
+
+- **Wayfinders**: kleine Segmente (5-20 m), um eine Ansage zu erzwingen, siehe [Wayfinders](#wayfinders)
+- **Alles in «Visual instructions» und «>» in «Towards»**, siehe [Abbiegeanweisung](#abbiegeanweisung)
+- **Shields auf Einfahrtsrampen**, siehe [Überprüfung und Entfernung der Shields](#uberprufung-und-entfernung-der-shields)
+- **Ausfahrtsknoten am Punkt A** und das alte Spur-Mapping («Branch-out style», «Third lane style»), siehe [Geometrie](#geometrie)
+- **Vignetten-Einschränkung auf jedem Segment**, siehe [Warum nicht auf jedes Segment](#warum-nicht-auf-jedes-segment)
+:::
+
 ## Allgemeine Hinweise
 
 ### Strassentyp: Rampe
@@ -45,9 +55,13 @@ Auch wenn es nicht visuell angezeigt wird, kann es im TTS-Feld einer Abbiegeanwe
 
 ### Wayfinders
 
-Bevor es Schilder (Shields) oder Abbiegeanweisungen gab, waren Wayfinders in der Kartierung üblich. Sie bestanden aus kleinen Segmenten (5-20 m), um eine TTS-Anweisung zu erzwingen, die etwas anderes als der Strassenname war. Wenn Sie welche finden, löschen Sie sie und verwenden Sie stattdessen eine Abbiegeanweisung.
+::: failure Alte Regel: nicht mehr anwenden
+Bevor es Schilder (Shields) oder Abbiegeanweisungen gab, waren Wayfinders in der Kartierung üblich. Sie bestanden aus kleinen Segmenten (5-20 m), um eine TTS-Anweisung zu erzwingen, die etwas anderes als der Strassenname war.
 
-![](/freeways/image3.png)
+![Wayfinder: kleines Segment zwischen A und B, zu löschen](/freeways/image3.png)
+:::
+
+Wenn Sie welche finden, löschen Sie sie und verwenden Sie stattdessen eine Abbiegeanweisung.
 
 ## Kartierungsanweisungen
 
@@ -76,7 +90,9 @@ Einige der nicht regelkonformen Bearbeitungen, die wir von einem ehemaligen Land
 
 Die Abbiegeanweisungen werden gegenüber den vorherigen Kartierungsrichtlinien eine leichte Änderung erfahren.
 
+::: failure Alte Regel: nicht mehr anwenden
 Früher hatten wir die Angewohnheit, alles in das Feld «Visual instructions» zu setzen, und wir verwendeten manchmal «>» im Feld «Towards».
+:::
 
 Aufgrund von Android Auto und CarPlay, die automatisch einen Punkt zwischen den visuellen Anweisungen und Towards einfügen, was wir nicht entfernen können und worauf wir keinen Einfluss haben, ist es besser, das «>» zu entfernen, um seltsame visuelle Darstellungen wie unten zu vermeiden:
 
@@ -105,7 +121,9 @@ Gegebenenfalls (wenn dies existiert), fügen Sie für die Y-Abzweigung keine Anw
 
 #### Überprüfung und Entfernung der Shields
 
+::: failure Alte Regel: nicht mehr anwenden
 Beim frühen Hinzufügen von Shields zu WME wurden viele Rampensegmente mit Shields versehen.
+:::
 
 Dies ist nicht notwendig und Shields sollten nur auf den tatsächlichen Autobahnsegmenten angewendet werden. Wenn Sie Einfahrtsrampen mit Shields finden, können Sie diese entfernen.
 
@@ -180,9 +198,13 @@ Natürlich müssen diese Segmente alle alternativen Namen Axx und Exx konfigurie
 
 *Priorität für lange Rampen - kleine/reguläre Rampen sind keine Priorität*
 
-Die Schweiz hat zuvor die folgende Kartierungsregel übernommen:
+::: failure Alte Regel: nicht mehr anwenden
+Die Schweiz wandte früher die unten abgebildete Regel an: Rampenknoten am **Punkt A** (Beginn der Ausfahrtsspur) und Spuren im «Branch-out style». Für lange, nicht standardmässige Ausfahrten sah sie zusätzlich ausnahmsweise eine dritte Spur vor («Third lane style»).
 
-![](/freeways/image19.png)
+![Alte Regel, nicht mehr anwenden: Knoten am Punkt A und Spuren im «Branch-out style»](/freeways/image19.png)
+
+Diese Empfehlungen wurden aus dem Community-Dokument zu den Fahrspuren entfernt, der Screenshot kursiert aber weiterhin und wurde bereits fälschlicherweise als geltende Regel zitiert. Für das Mapping der Spuren an Ausfahrten wenden Sie sich an einen CM oder LC, der am Projekt Nexus (2024) teilgenommen hat, oder an vince1612.
+:::
 
 Es wurde jedoch vom Personal während der Meetings gemeldet, dass die Kartierung des Rampenknotens am Punkt A weder empfohlen noch optimal für das Routing und Falcon (den GPS-Korrektor der Strassen) ist.
 
@@ -209,7 +231,11 @@ Setzen Sie sie **nicht** auf alle Segmente der Autobahn.
 
 ### Warum nicht auf jedes Segment
 
-Ursprünglich wurde die Einschränkung wie in Österreich auf jedes Segment gesetzt. Das führte zu vielen Beschwerden und URs: Waze schien komplett zu «buggen».
+::: failure Alte Regel: nicht mehr anwenden
+Ursprünglich wurde die Einschränkung wie in Österreich auf jedes Segment gesetzt.
+:::
+
+Das führte zu vielen Beschwerden und URs: Waze schien komplett zu «buggen».
 
 Technisch gesehen sorgt eine Einschränkung dafür, dass sich die App so verhält, als würde das Segment nicht existieren. Ein Fahrer ohne Vignette in seinen Pässen wurde daher von links nach rechts auf die kleinen Nachbarstrassen geworfen, und die App wirkte völlig verrückt.
 

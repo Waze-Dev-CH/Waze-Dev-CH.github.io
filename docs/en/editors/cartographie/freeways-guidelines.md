@@ -21,6 +21,16 @@ Swiss freeways have been heavily edited by a non-compliant contributor who made 
 
 Aware that the old guidelines need a revision anyway, due to the evolution of the app and WME, we will present new guidelines to apply when checking and fixing non-compliant edits.
 
+::: failure Old rules: do not apply
+These practices have been abandoned. They can still be found on the map, on Discord or in old screenshots: do not apply them any more. Each one is flagged below with an "Old rule: do not apply" box.
+
+- **Wayfinders**: small segments (5-20 m) to force an instruction, see [Wayfinders](#wayfinders)
+- **Everything in "Visual instructions" and ">" in "Towards"**, see [Turn instruction](#turn-instruction)
+- **Shields on entrance ramps**, see [Checking and removing shields](#checking-and-removing-shields)
+- **Exit node at point A** and the old lane mapping ("Branch-out style", "Third lane style"), see [Geometry](#geometry)
+- **Vignette restriction on every segment**, see [Why not on every segment](#why-not-on-every-segment)
+:::
+
 ## General notes
 
 ### Road type: ramp
@@ -45,9 +55,13 @@ Even if it is not displayed visually, it can be used in the TTS field of a turn 
 
 ### Wayfinders
 
-Before shields or turn instructions existed, wayfinders were common in mapping. They consisted of small segments (5-20m) to force a TTS instruction to be something other than the road name. If you find any, remove them and use a turn instruction instead.
+::: failure Old rule: do not apply
+Before shields or turn instructions existed, wayfinders were common in mapping. They consisted of small segments (5-20m) to force a TTS instruction to be something other than the road name.
 
-![](/freeways/image3.png)
+![Wayfinder: small segment between A and B, to be removed](/freeways/image3.png)
+:::
+
+If you find any, remove them and use a turn instruction instead.
 
 ## Mapping instructions
 
@@ -76,7 +90,9 @@ Some of the non-compliant edits we saw from a former country manager consisted o
 
 Turn instructions will undergo a slight change compared to the previous mapping guidelines.
 
+::: failure Old rule: do not apply
 In the past, we used to put everything in the "Visual instructions" field, and we sometimes used ">" in the "Towards" field.
+:::
 
 Because of Android Auto and CarPlay, which automatically insert a dot between the visual and towards instructions, which we cannot remove and over which we have no control, it is better to remove the ">" to avoid having strange visuals like below:
 
@@ -105,7 +121,9 @@ Where applicable (when it exists), for the Y split, do not add or force instruct
 
 #### Checking and removing shields
 
+::: failure Old rule: do not apply
 During the early addition of shields to WME, many ramp segments had shields added.
+:::
 
 This is not necessary, and shields should only be applied on the actual freeway segments. If you find entrance ramps with shields, you can remove them.
 
@@ -180,9 +198,13 @@ Of course, these segments must have all the Axx and Exx alternate names set up, 
 
 *Priority for long ramps - small/regular ramps are not a priority*
 
-Switzerland previously adopted the following mapping rule:
+::: failure Old rule: do not apply
+Switzerland previously applied the rule shown below: ramp node at **point A** (start of the exit lane) and lanes mapped in "Branch-out style". For long non-standard exits, it also exceptionally called for a third lane ("Third lane style").
 
-![](/freeways/image19.png)
+![Old rule, do not apply: node at point A and lanes in "Branch-out style"](/freeways/image19.png)
+
+These recommendations have been removed from the community lanes document, but the screenshot still circulates and has already been wrongly quoted as a current rule. For lane mapping at exits, ask a CM or LC who took part in Project Nexus (2024), or vince1612.
+:::
 
 However, it was reported by staff during the meetings that mapping the ramp node at point A is not recommended nor optimal for routing and Falcon (the roads GPS corrector).
 
@@ -209,7 +231,11 @@ Do **not** apply it to all of the freeway's segments.
 
 ### Why not on every segment
 
-Originally, the restriction was placed on every segment, as in Austria. This generated a lot of complaints and URs: Waze appeared to be completely "buggy".
+::: failure Old rule: do not apply
+Originally, the restriction was placed on every segment, as in Austria.
+:::
+
+This generated a lot of complaints and URs: Waze appeared to be completely "buggy".
 
 Technically, a restriction makes the app behave as if the segment did not exist. A driver without the vignette in their passes was therefore bounced from left to right onto the nearby small roads, and the app looked completely crazy.
 
